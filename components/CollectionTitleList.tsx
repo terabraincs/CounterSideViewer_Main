@@ -1,4 +1,5 @@
 "use client";
+import { deploymentUrl } from "@/lib/deployment";
 import { useMemo, useState } from "react";
 import Image from "@/components/DeploymentImage";
 import CollectionSortButtons from "@/components/CollectionSortButtons";
@@ -41,13 +42,14 @@ export default function CollectionTitleList({ titles, categories, }: CollectionT
         });
     }, [categoryId, normalizedKeyword, sortMode, titles]);
     return (<>
-      <section className="mt-8 border border-[#343844] bg-[#111318] p-4">
+      <section className="mt-8 rounded-md border border-[#343844] bg-[#171a21] p-4">
         <div className="flex flex-col gap-3 lg:flex-row lg:items-end">
-          <label className="flex h-11 min-w-0 flex-1 items-center gap-3 border border-[#4b5563] bg-[#0b0d12] px-4 focus-within:border-white">
-            <SearchInput value={keyword} onChange={(event) => setKeyword(event.target.value)} ariaLabel="칭호 검색" containerClassName="h-full flex-1" inputClassName="h-full bg-transparent text-sm text-[#e5e7eb] outline-none placeholder:text-[#565c6b]"/>
+          <label className="flex min-w-0 flex-1 flex-col gap-2">
+            <span className="text-sm font-bold text-white">칭호 검색</span>
+            <SearchInput value={keyword} onChange={(event) => setKeyword(event.target.value)} ariaLabel="칭호 검색"/>
           </label>
 
-          <div className="flex items-center justify-between gap-3 lg:justify-end">
+          <div className="flex items-end justify-between gap-3 lg:justify-end">
             <CollectionSortButtons label="칭호" value={sortMode} onChange={setSortMode}/>
             <ListResultCount label="칭호" count={visibleTitles.length} total={titles.length}/>
           </div>
@@ -71,7 +73,7 @@ export default function CollectionTitleList({ titles, categories, }: CollectionT
           {visibleTitles.map((title) => (<article key={title.id} className="min-w-0 border border-[#343844] bg-[#171a21] p-4">
               <div className="flex justify-center border border-[#2b303a] bg-[#0b0d12] p-3">
                 <div className="relative aspect-[4/1] w-full max-w-[256px] overflow-hidden">
-                  {title.imagePath ? (<Image src={title.imagePath} alt="" fill sizes="256px" className="object-fill"/>) : null}
+                  {title.imagePath ? (<Image src={deploymentUrl(title.imagePath)} alt="" fill sizes="256px" className="object-fill"/>) : null}
                   {!title.isImageTitle ? (<span className="absolute inset-0 flex items-center justify-center px-3 text-center text-sm font-black" style={{
                         color: title.textColor,
                         textShadow: createOutlineShadow(title.outlineColor),

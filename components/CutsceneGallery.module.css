@@ -1,0 +1,198 @@
+.filterDialog {
+  width: min(42rem, calc(100vw - 32px));
+  max-width: none;
+  max-height: 90dvh;
+  margin: auto;
+  overflow-y: auto;
+  border: 1px solid #4b5563;
+  padding: 20px;
+  background: linear-gradient(90deg, #151515 0%, #303030 100%);
+  color: #e5e7eb;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 60%);
+  scrollbar-color: #6b7280 #151515;
+  scrollbar-width: thin;
+}
+
+.filterDialog::backdrop {
+  background: rgb(0 0 0 / 75%);
+}
+
+.filterDialog::-webkit-scrollbar {
+  width: 12px;
+}
+
+.filterDialog::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+.filterDialog::-webkit-scrollbar-track {
+  background: #151515;
+  border-left: 1px solid #343844;
+}
+
+.filterDialog::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border: 3px solid #151515;
+}
+
+.filterDialog::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+.dialog {
+  --cutscene-viewport-gap: 32px;
+  --cutscene-header-height: 72px;
+  --cutscene-controls-height: 40px;
+  --cutscene-tags-height: clamp(64px, 16dvh, 128px);
+  --cutscene-details-height: calc(var(--cutscene-controls-height) + var(--cutscene-tags-height) + 37px);
+  --cutscene-preferred-stage-height: min(64dvh, 675px);
+  --cutscene-stage-height: min(var(--cutscene-preferred-stage-height), max(0px, calc(100dvh - var(--cutscene-viewport-gap) - var(--cutscene-header-height) - var(--cutscene-details-height) - 2px)));
+  box-sizing: border-box;
+  width: min(1200px, calc(100vw - 32px));
+  max-width: none;
+  height: calc(var(--cutscene-header-height) + var(--cutscene-stage-height) + var(--cutscene-details-height) + 2px);
+  max-height: calc(100dvh - var(--cutscene-viewport-gap));
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  padding: 0;
+  background: #0b0d12;
+  color: #e5e7eb;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 65%);
+}
+
+.dialog[open] {
+  display: grid;
+  grid-template-rows: var(--cutscene-header-height) minmax(0, 1fr) var(--cutscene-details-height);
+}
+
+.dialog::backdrop {
+  background: rgb(0 0 0 / 85%);
+}
+
+.dialogHeader {
+  display: flex;
+  min-height: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  overflow: hidden;
+  border-bottom: 1px solid #343844;
+  padding: 8px 20px;
+  background: #171a21;
+}
+
+.imageStage {
+  display: flex;
+  min-height: 0;
+  height: var(--cutscene-stage-height);
+  align-items: center;
+  justify-content: center;
+  background: #171a21;
+}
+
+.fullImage {
+  display: block;
+  width: min(100%, calc(var(--cutscene-stage-height) * var(--cutscene-ratio)));
+  height: auto;
+  aspect-ratio: var(--cutscene-ratio);
+  object-fit: fill;
+}
+
+.dialogDetails {
+  display: grid;
+  min-height: 0;
+  grid-template-rows: var(--cutscene-controls-height) minmax(0, 1fr);
+  gap: 12px;
+  overflow: hidden;
+  border-top: 1px solid #343844;
+  padding: 12px 20px;
+  background: #171a21;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+}
+
+.controls > div {
+  grid-column: 2;
+  justify-self: center;
+}
+
+.controls > a {
+  grid-column: 3;
+  justify-self: end;
+}
+
+.tagRegion {
+  min-width: 0;
+  min-height: 0;
+  border-top: 1px solid #343844;
+  padding-top: 8px;
+}
+
+.storyTags {
+  display: flex;
+  height: 100%;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  scrollbar-color: #6b7280 #171a21;
+  scrollbar-width: thin;
+  padding: 4px;
+  overflow-wrap: break-word;
+}
+
+.storyTags:focus-visible {
+  outline: 2px solid white;
+  outline-offset: -2px;
+}
+
+@media (max-width: 639px) {
+  .dialog {
+    --cutscene-viewport-gap: 16px;
+    --cutscene-preferred-stage-height: 48dvh;
+    width: calc(100vw - 16px);
+  }
+
+  .dialogHeader {
+    padding-inline: 12px;
+  }
+
+  .dialogDetails {
+    padding-inline: 12px;
+  }
+}
+
+@media (max-width: 479px) {
+  .dialog {
+    --cutscene-controls-height: 88px;
+  }
+
+  .controls {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 40px 40px;
+    gap: 8px;
+  }
+
+  .controls > div {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .controls > a {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: stretch;
+  }
+}

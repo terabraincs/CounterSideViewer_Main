@@ -1,4 +1,6 @@
 import { deploymentUrl } from "@/lib/deployment";
+import { publicFileExists } from "@/lib/publicAssets";
+import { createRowTextMap as createTextMap } from "@/lib/textTable";
 import fs from "node:fs";
 import path from "node:path";
 type JsonTable<T> = {
@@ -36,9 +38,6 @@ type MissionRow = {
     m_RewardType_3?: string;
     m_RewardID_3?: number;
 };
-type TextTable = {
-    data?: unknown[];
-};
 export type CollectionTitleCategory = {
     id: number;
     name: string;
@@ -70,7 +69,7 @@ let cachedTitleData: CollectionTitleData | null = null;
 let cachedTacticalTitlesByUnitId: Map<number, CollectionTacticalTitleItem[]> | null = null;
 function readJsonTable<T>(fileName: string) {
     const filePath = path.join(titleDataDirectory, fileName);
-    if (!fs.existsSync(filePath)) {
+    if (!publicFileExists(filePath)) {
         return null;
     }
     try {
@@ -79,17 +78,6 @@ function readJsonTable<T>(fileName: string) {
     catch {
         return null;
     }
-}
-function createTextMap(table: TextTable | null) {
-    const textMap = new Map<string, string>();
-    for (const row of table?.data ?? []) {
-        if (Array.isArray(row) &&
-            typeof row[0] === "string" &&
-            typeof row[1] === "string") {
-            textMap.set(row[0], row[1]);
-        }
-    }
-    return textMap;
 }
 function stripUnityRichText(value: string) {
     return value

@@ -1,3 +1,4 @@
+import { publicFileExists } from "@/lib/publicAssets";
 import fs from "node:fs";
 import path from "node:path";
 type JsonRecord = Record<string, unknown>;
@@ -16,7 +17,7 @@ const acquisitionDirectory = path.join(collectionDirectory, "acquisition");
 const titleDirectory = path.join(collectionDirectory, "title");
 let cachedAcquisitionMap: Map<number, CollectionAcquisitionEntry[]> | null = null;
 function readTable(filePath: string) {
-    if (!fs.existsSync(filePath)) {
+    if (!publicFileExists(filePath)) {
         return null;
     }
     try {

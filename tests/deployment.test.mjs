@@ -23,8 +23,8 @@ test('minigames navigation stays inside the integrated Main site',()=>{
   assert.deepEqual(siteLink('/'),{href:'/',external:false});
   assert.deepEqual(siteLink(deploymentUrl('/equipment/ITEM')),{href:'/equipment/ITEM',external:false});
 });
-test('unpublished feature buttons retain their destinations',()=>{
-  for(const route of ['/characters','/story','/spine-viewer'])assert.deepEqual(siteLink(route),{href:route,external:false});
+test('unpublished employee, story and standalone Spine destinations remain placeholders while gallery and guide are internal',()=>{
+  for(const route of ['/characters','/story','/spine-viewer','/illustrations','/guide'])assert.deepEqual(siteLink(route),{href:route,external:false});
 });
 test('Main preview assets do not overlap the minigames project route',()=>{
   const url=deploymentUrl('/game-assets/match-ten/images/preview.png');

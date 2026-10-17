@@ -1,5 +1,6 @@
-import { publicFileExists } from "@/lib/publicAssets";
 import { deploymentUrl } from "@/lib/deployment";
+import { publicFileExists } from "@/lib/publicAssets";
+import { createDictionaryTextMap as createTextMap } from "@/lib/textTable";
 import fs from "node:fs";
 import path from "node:path";
 type JsonTable<T> = {
@@ -187,27 +188,6 @@ function readLocalJson<T>(fileName: string) {
     catch {
         return null;
     }
-}
-function createTextMap(table: TextTable | null) {
-    const textMap = new Map<string, string>();
-    if (!table) {
-        return textMap;
-    }
-    if (Array.isArray(table.data)) {
-        for (const row of table.data) {
-            if (Array.isArray(row) &&
-                typeof row[0] === "string" &&
-                typeof row[1] === "string") {
-                textMap.set(row[0], row[1]);
-            }
-        }
-    }
-    if (table.m_dicString) {
-        for (const [key, value] of Object.entries(table.m_dicString)) {
-            textMap.set(key, value);
-        }
-    }
-    return textMap;
 }
 function getText(textMap: Map<string, string>, key?: string) {
     if (!key || key === "SI_BLANK") {

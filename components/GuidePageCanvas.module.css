@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Guide Main";
+  src: url("/game-assets/common/fonts/MainFont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Guide Number";
+  src: url("/game-assets/common/fonts/Rajdhani-SemiBold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.viewport { position: relative; width: 100%; min-width: 0; overflow: hidden; }
+.canvas { position: absolute; left: 0; top: 0; transform: scale(var(--guide-scale, 0)); transform-origin: top left; }
+.node { position: absolute; scrollbar-width: thin; scrollbar-color: #8192bd #24314f; }
+.image { position: absolute; inset: 0; display: block; overflow: visible; pointer-events: none; }
+.textBox { position: absolute; inset: 0; display: flex; flex-direction: column; }
+.textValue { flex: none; width: 100%; overflow-wrap: break-word; }
+.measurements { position: fixed; left: -100000px; top: 0; visibility: hidden; pointer-events: none; contain: layout style; }
+.probe { width: max-content; overflow-wrap: break-word; }
+.variants { display: flex; justify-content: center; gap: 8px; padding: 10px; border-bottom: 1px solid #343844; }
+.variants button { padding: 6px 12px; border: 1px solid #343844; border-radius: 6px; color: #9ca3af; font-size: 13px; cursor: pointer; }
+.variants button[aria-pressed="true"] { color: white; border-color: white; background: #ffffff12; }
+.variants button:focus-visible { outline: 2px solid white; outline-offset: 2px; }

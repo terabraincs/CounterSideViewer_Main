@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { getShipStatValue } from "@/lib/shipStats";
+import { clampInteger, getSliderMarkerPosition, parseIntegerInput } from "@/lib/rangeControls";
 import type { ShipLimitBreakLevel, ShipStage, ShipStat } from "@/lib/ships";
 import styles from "./ShipStatsPanel.module.css";
 type ShipStatsPanelProps = {
@@ -10,14 +11,6 @@ type ShipStatsPanelProps = {
     limitBreakLevels: ShipLimitBreakLevel[];
 };
 const minimumLevel = 1;
-function clamp(value: number, minimum: number, maximum: number) {
-    return Math.min(Math.max(Math.round(value), minimum), maximum);
-}
-function getSliderMarkerPosition(value: number, minimum: number, maximum: number) {
-    const ratio = (value - minimum) / (maximum - minimum);
-    const pixelOffset = 10 - ratio * 20;
-    return `calc(${ratio * 100}% ${pixelOffset >= 0 ? "+" : "-"} ${Math.abs(pixelOffset)}px)`;
-}
 export default function ShipStatsPanel({ stats, stages, maxLevel, limitBreakLevels, }: ShipStatsPanelProps) {
     const sortedStages = [...stages].sort((first, second) => first.stage - second.stage);
     const minimumStage = sortedStages[0]?.stage ?? 1;
@@ -46,39 +39,38 @@ export default function ShipStatsPanel({ stats, stages, maxLevel, limitBreakLeve
         };
     }, [isConditionOpen]);
     function changeLevel(value: string) {
-        const nextLevel = Number(value);
-        if (Number.isFinite(nextLevel)) {
-            setLevel(clamp(nextLevel, minimumLevel, maximumLevel));
+        const nextLevel = parseIntegerInput(value, minimumLevel, maximumLevel);
+        if (nextLevel !== null) {
+            setLevel(nextLevel);
         }
     }
     function changeStage(value: string) {
-        const nextStage = Number(value);
-        if (!Number.isFinite(nextStage)) {
+        const nextStage = parseIntegerInput(value, minimumStage, maximumStage);
+        if (nextStage === null) {
             return;
         }
-        const nextStageInfo = sortedStages.find((item) => item.stage === clamp(nextStage, minimumStage, maximumStage));
+        const nextStageInfo = sortedStages.find((item) => item.stage === nextStage);
         if (!nextStageInfo) {
             return;
         }
         setStage(nextStageInfo.stage);
         if (nextStageInfo.stage < maximumStage) {
             setLimitBreakGrade(0);
-            setLevel((currentLevel) => clamp(currentLevel, minimumLevel, Number(nextStageInfo.maxLevel) || maxLevel));
+            setLevel((currentLevel) => clampInteger(currentLevel, minimumLevel, Number(nextStageInfo.maxLevel) || maxLevel));
         }
     }
     function changeLimitBreak(value: string) {
-        const nextGradeValue = Number(value);
-        if (!Number.isFinite(nextGradeValue)) {
+        const nextGrade = parseIntegerInput(value, 0, maximumLimitBreakGrade);
+        if (nextGrade === null) {
             return;
         }
-        const nextGrade = clamp(nextGradeValue, 0, maximumLimitBreakGrade);
         const nextMaximumLevel = limitBreakLevels.find((item) => item.grade === nextGrade)?.maxLevel ??
             baseMaximumLevel;
         setLimitBreakGrade(nextGrade);
         if (nextGrade > 0) {
             setStage(maximumStage);
         }
-        setLevel((currentLevel) => clamp(currentLevel, minimumLevel, nextMaximumLevel));
+        setLevel((currentLevel) => clampInteger(currentLevel, minimumLevel, nextMaximumLevel));
     }
     function resetConditions() {
         setStage(maximumStage);

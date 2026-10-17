@@ -1,3 +1,5 @@
+import { mainImageAssetUrl } from "@/lib/mainImageAssets";
+import { minigameAssetUrl } from "@/lib/minigameAssets";
 import Image from "@/components/DeploymentImage";
 import Link from "@/components/DeploymentLink";
 import type { CSSProperties } from "react";
@@ -10,7 +12,7 @@ type HubCardProps = {
 };
 export default function HubCard({ title, href, imagePath, imagePosition = "center", overlayImagePath, }: HubCardProps) {
     const backgroundStyle: CSSProperties = {
-        backgroundImage: `linear-gradient(135deg, rgba(34, 38, 49, 0.92), rgba(11, 13, 18, 0.68)), url("${imagePath}")`,
+        backgroundImage: `linear-gradient(135deg, rgba(34, 38, 49, 0.92), rgba(11, 13, 18, 0.68)), url("${mainImageAssetUrl(minigameAssetUrl(imagePath))}")`,
         backgroundPosition: imagePosition,
         transformOrigin: imagePosition,
     };

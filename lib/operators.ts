@@ -1,5 +1,6 @@
-import { publicFileExists } from "@/lib/publicAssets";
 import { deploymentUrl } from "@/lib/deployment";
+import { publicFileExists } from "@/lib/publicAssets";
+import { createDictionaryTextMap as createTextMap } from "@/lib/textTable";
 import fs from "node:fs";
 import path from "node:path";
 import { createVoiceAudioPath } from "@/lib/voice";
@@ -110,6 +111,7 @@ export type OperatorStat = {
 export type OperatorDialogue = {
     id: string;
     audioPath: string;
+    japaneseAudioPath: string;
     isExtra: boolean;
     label: string;
     text: string;
@@ -221,27 +223,6 @@ function readLocalJson<T>(fileName: string) {
     catch {
         return null;
     }
-}
-function createTextMap(table: TextTable | null) {
-    const textMap = new Map<string, string>();
-    if (!table) {
-        return textMap;
-    }
-    if (Array.isArray(table.data)) {
-        for (const row of table.data) {
-            if (Array.isArray(row) &&
-                typeof row[0] === "string" &&
-                typeof row[1] === "string") {
-                textMap.set(row[0], row[1]);
-            }
-        }
-    }
-    if (table.m_dicString) {
-        for (const [key, value] of Object.entries(table.m_dicString)) {
-            textMap.set(key, value);
-        }
-    }
-    return textMap;
 }
 function getText(textMap: Map<string, string>, key?: string) {
     if (!key || key === "SI_BLANK") {
@@ -520,6 +501,7 @@ function createOperatorDialogues(unitStrId: string) {
         return {
             id: soundId,
             audioPath: createVoiceAudioPath("operator", bundleId, soundId),
+            japaneseAudioPath: createVoiceAudioPath("operator", bundleId, soundId, "ja"),
             isExtra: labelInfo.isExtra,
             label: labelInfo.label,
             text,
@@ -535,7 +517,11 @@ function loadOperatorContext() {
     const buffRows = readLocalJson<JsonTable<BuffRow>>("202_LUA_BUFF_TEMPLET0_l.json")?.data ??
         [];
     const tacticalCommandRows = readLocalJson<JsonTable<TacticalCommandRow>>("255_LUA_TACTICAL_COMMAND_TEMPLET_z.json")?.data ?? [];
-    const unitTextMap = createTextMap(readLocalJson<TextTable>("096_LUA_SI_UNIT_OPR_KOREA_h.json"));
+    // Operator m_Title keys belong to the shared unit string table.
+    const unitTextMap = new Map([
+        ...createTextMap(readLocalJson<TextTable>("002_LUA_SI_UNIT_KOREA_l.json")),
+        ...createTextMap(readLocalJson<TextTable>("096_LUA_SI_UNIT_OPR_KOREA_h.json")),
+    ]);
     const skillTextMap = createTextMap(readLocalJson<TextTable>("015_LUA_SI_OPR_SKILL_KOREA_g.json"));
     return {
         operatorRows,

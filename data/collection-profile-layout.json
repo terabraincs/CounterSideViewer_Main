@@ -1,0 +1,906 @@
+{
+  "source": {
+    "bundle": "C:\\Users\\redbu\\Documents\\GitHub\\CS_asset\\tools\\CounterSide_decryption_tool-main\\1차 복호화\\Data\\StreamingAssets\\ab_ui_collection.asset",
+    "sha256": "3731534403f3ed6222a961050d1e819091706dd92158a8296a991907b7ee1bfb",
+    "unityVersion": "2022.3.62f2",
+    "prefabPathId": "-1365358730776805140",
+    "profileComponentPathId": "5821532248013014903"
+  },
+  "width": 874,
+  "top": -6.0,
+  "height": 889.0,
+  "profileX": 6.0,
+  "profileTop": 120.0,
+  "dynamic": {
+    "outerVerticalSpacing": 10,
+    "sectionWidth": 868,
+    "characterTitleHeight": 65.87879943847656,
+    "crfTitleHeight": 65.87879943847656,
+    "gridGroupPadding": {
+      "left": 44,
+      "top": 5,
+      "right": 0,
+      "bottom": 0
+    },
+    "gridGroupSpacing": -46,
+    "lineWidth": 4,
+    "gridLeft": 2,
+    "gridPaddingLeft": 52,
+    "character": {
+      "cellSize": [
+        378,
+        76
+      ],
+      "spacing": [
+        -2,
+        -2
+      ],
+      "columns": 2,
+      "firstCellRelativeToPaper": [
+        60,
+        190.87879943847656
+      ],
+      "rowStride": 74,
+      "columnStride": 376,
+      "gridHeightFormula": "ceil(activeProfileCount/2)*76 + max(0,ceil(activeProfileCount/2)-1)*(-2)",
+      "sectionHeightFormula": "65.87879943847656 + 5 + gridHeight"
+    },
+    "crf": {
+      "cellSize": [
+        378,
+        72
+      ],
+      "spacing": [
+        0,
+        0
+      ],
+      "columns": 2,
+      "firstCellXRelativeToPaper": 60,
+      "rowStride": 72,
+      "columnStride": 378,
+      "sectionYFormula": "120 + characterSectionHeight + 10",
+      "firstCellYFormula": "sectionY + 65.87879943847656 + 5",
+      "gridHeightFormula": "ceil(activeCRFCount/2)*72"
+    }
+  },
+  "nodes": {
+    "paper": {
+      "name": "bg",
+      "id": "7095418208238505244",
+      "active": true,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 874.0,
+        "height": 976.6824035644531,
+        "scaleX": 1.0,
+        "scaleY": 1.0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "image": {
+        "sprite": "AB_UI_COLLECTION_INFO_BG_2",
+        "type": 1,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      },
+      "children": [
+        {
+          "name": "UNIT_ID",
+          "id": "-6366734725615266559",
+          "active": true,
+          "rect": {
+            "x": -1.52587890625e-05,
+            "y": 0.000492095947265625,
+            "width": 312.9169006347656,
+            "height": 35.97460174560547,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "children": [
+            {
+              "name": "deco",
+              "id": "5015114341126766693",
+              "active": true,
+              "rect": {
+                "x": 17.65180206298828,
+                "y": -3.708200454711914,
+                "width": 35.63780212402344,
+                "height": 44.23699951171875,
+                "scaleX": 1.0,
+                "scaleY": 1.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "text": {
+                "id": "5479762798742421932",
+                "font": "id",
+                "fontSize": 26,
+                "minFontSize": 2,
+                "autoSize": false,
+                "bold": false,
+                "letterSpacingEm": 0,
+                "lineSpacing": 0,
+                "wrap": false,
+                "horizontal": 1,
+                "vertical": 512,
+                "color": [
+                  0.16862745583057404,
+                  0.16862745583057404,
+                  0.16862745583057404,
+                  1.0
+                ]
+              },
+              "children": []
+            },
+            {
+              "name": "ID_TEXT",
+              "id": "-4095581851472690305",
+              "active": true,
+              "rect": {
+                "x": 53.28894805908203,
+                "y": -3.708200454711914,
+                "width": 180.0142059326172,
+                "height": 44.23699951171875,
+                "scaleX": 1.0,
+                "scaleY": 1.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "text": {
+                "id": "3014900556033675151",
+                "font": "id",
+                "fontSize": 26,
+                "minFontSize": 2,
+                "autoSize": false,
+                "bold": false,
+                "letterSpacingEm": 0,
+                "lineSpacing": 0,
+                "wrap": false,
+                "horizontal": 1,
+                "vertical": 512,
+                "color": [
+                  0.16862745583057404,
+                  0.16862745583057404,
+                  0.16862745583057404,
+                  1.0
+                ]
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "profileTitle": {
+      "name": "INFO_CHARACTER_TITLE",
+      "id": "1027205553544347857",
+      "active": true,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 868.0,
+        "height": 65.8787841796875,
+        "scaleX": 1.0,
+        "scaleY": 1.0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "children": [
+        {
+          "name": "bg",
+          "id": "3811890760715357609",
+          "active": true,
+          "rect": {
+            "x": 15.1209716796875,
+            "y": 10.02008056640625,
+            "width": 300.0,
+            "height": 46.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "image": {
+            "sprite": "AB_UI_COLLECTION_SLOT_02",
+            "type": 0,
+            "color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "enabled": true
+          },
+          "children": [
+            {
+              "name": "text",
+              "id": "1362604348235575670",
+              "active": true,
+              "rect": {
+                "x": 36.5,
+                "y": 3.0,
+                "width": 235.0,
+                "height": 40.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "text": {
+                "id": "6895479936159652358",
+                "font": "main",
+                "fontSize": 26.0,
+                "minFontSize": 12.0,
+                "autoSize": true,
+                "bold": false,
+                "letterSpacingEm": 0.0,
+                "lineSpacing": -50.0,
+                "wrap": true,
+                "horizontal": 1,
+                "vertical": 512,
+                "color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "measureTitle": {
+      "name": "INFO_CRF_TITLE",
+      "id": "1739028133412371645",
+      "active": true,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 868.0,
+        "height": 65.8787841796875,
+        "scaleX": 1.0,
+        "scaleY": 1.0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "children": [
+        {
+          "name": "bg",
+          "id": "7701007189781250591",
+          "active": true,
+          "rect": {
+            "x": 16.1209716796875,
+            "y": 11.02008056640625,
+            "width": 298.0,
+            "height": 44.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "image": {
+            "sprite": "AB_UI_COLLECTION_SLOT_02",
+            "type": 0,
+            "color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "enabled": true
+          },
+          "children": [
+            {
+              "name": "text",
+              "id": "7852266156494432474",
+              "active": true,
+              "rect": {
+                "x": 36.5,
+                "y": 2.0,
+                "width": 235.0,
+                "height": 40.0,
+                "scaleX": 1.0,
+                "scaleY": 1.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "text": {
+                "id": "5434150573140720054",
+                "font": "main",
+                "fontSize": 26.0,
+                "minFontSize": 12.0,
+                "autoSize": true,
+                "bold": false,
+                "letterSpacingEm": 0.0,
+                "lineSpacing": -50.0,
+                "wrap": true,
+                "horizontal": 1,
+                "vertical": 512,
+                "color": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "profileSlot": {
+      "name": "AB_UI_COLLECTION_INFO_CHARACTER_SLOT",
+      "id": "-8998318951798704242",
+      "active": true,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 378.0,
+        "height": 76.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "image": {
+        "sprite": "AB_UI_COLLECTION_SLOT",
+        "type": 1,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      },
+      "children": [
+        {
+          "name": "text01",
+          "id": "-132577364541856729",
+          "active": true,
+          "rect": {
+            "x": 5.701042175292969,
+            "y": 3.8601000010967255,
+            "width": 147.31300354003906,
+            "height": 68.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "text": {
+            "id": "-377650851547727442",
+            "font": "main",
+            "fontSize": 26.0,
+            "minFontSize": 20.0,
+            "autoSize": true,
+            "bold": true,
+            "letterSpacingEm": -0.01,
+            "lineSpacing": -20.0,
+            "wrap": true,
+            "horizontal": 1,
+            "vertical": 512,
+            "color": [
+              0.27843138575553894,
+              0.27843138575553894,
+              0.27843138575553894,
+              1.0
+            ]
+          },
+          "children": []
+        },
+        {
+          "name": "text02",
+          "id": "-7465776035314455299",
+          "active": true,
+          "rect": {
+            "x": 164.31621551513672,
+            "y": 3.8601000010967255,
+            "width": 208.33680725097656,
+            "height": 68.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "text": {
+            "id": "-5246687186788280473",
+            "font": "main",
+            "fontSize": 26.0,
+            "minFontSize": 20.0,
+            "autoSize": true,
+            "bold": false,
+            "letterSpacingEm": 0.0,
+            "lineSpacing": -20.0,
+            "wrap": true,
+            "horizontal": 1,
+            "vertical": 512,
+            "color": [
+              0.27843138575553894,
+              0.27843138575553894,
+              0.27843138575553894,
+              1.0
+            ]
+          },
+          "children": []
+        }
+      ]
+    },
+    "measureSlot": {
+      "name": "AB_UI_COLLECTION_INFO_CRF_SLOT",
+      "id": "-7073070773367360861",
+      "active": true,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 378.0,
+        "height": 72.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "children": [
+        {
+          "name": "Line",
+          "id": "867941078192931138",
+          "active": true,
+          "rect": {
+            "x": 7.8680500984191895,
+            "y": 8.105149269104004,
+            "width": 2.957900047302246,
+            "height": 25.943700790405273,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "image": {
+            "sprite": "AB_UI_COLLECTION_DOT",
+            "type": 1,
+            "color": [
+              0.27843138575553894,
+              0.27843138575553894,
+              0.27843138575553894,
+              1.0
+            ],
+            "enabled": true
+          },
+          "children": []
+        },
+        {
+          "name": "text01",
+          "id": "-1244692670655588803",
+          "active": true,
+          "rect": {
+            "x": 13.982269287109375,
+            "y": 5.720799446105957,
+            "width": 206.50079345703125,
+            "height": 31.15839958190918,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "text": {
+            "id": "5399031407017181553",
+            "font": "main",
+            "fontSize": 24.0,
+            "minFontSize": 20.0,
+            "autoSize": true,
+            "bold": true,
+            "letterSpacingEm": 0.04,
+            "lineSpacing": -50.0,
+            "wrap": true,
+            "horizontal": 1,
+            "vertical": 512,
+            "color": [
+              0.27843138575553894,
+              0.27843138575553894,
+              0.27843138575553894,
+              1.0
+            ]
+          },
+          "children": []
+        },
+        {
+          "name": "text02",
+          "id": "-7547786825971671813",
+          "active": true,
+          "rect": {
+            "x": 230.14483642578125,
+            "y": 5.720787048339844,
+            "width": 139.5911865234375,
+            "height": 31.158401489257812,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "text": {
+            "id": "-5821665903126211735",
+            "font": "main",
+            "fontSize": 26.0,
+            "minFontSize": 20.0,
+            "autoSize": true,
+            "bold": false,
+            "letterSpacingEm": 0.0,
+            "lineSpacing": -20.0,
+            "wrap": true,
+            "horizontal": 4,
+            "vertical": 512,
+            "color": [
+              0.27843138575553894,
+              0.27843138575553894,
+              0.27843138575553894,
+              1.0
+            ]
+          },
+          "children": []
+        },
+        {
+          "name": "GAUGE_Root",
+          "id": "4039389393105289911",
+          "active": true,
+          "rect": {
+            "x": 7.8650054931640625,
+            "y": 42.23069953918457,
+            "width": 360.8699951171875,
+            "height": 20.338600158691406,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "children": [
+            {
+              "name": "GAUGE_Bg",
+              "id": "1366515174138807371",
+              "active": true,
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "width": 360.8699951171875,
+                "height": 20.338600158691406,
+                "scaleX": 1.0,
+                "scaleY": 1.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "image": {
+                "sprite": "AB_UI_COLLECTION_DOT",
+                "type": 1,
+                "color": [
+                  0.27843138575553894,
+                  0.27843138575553894,
+                  0.27843138575553894,
+                  0.34117648005485535
+                ],
+                "enabled": true
+              },
+              "children": []
+            },
+            {
+              "name": "GAUGE_Slider",
+              "id": "9162683168688385737",
+              "active": true,
+              "rect": {
+                "x": 0.0,
+                "y": 0.0,
+                "width": 360.8699951171875,
+                "height": 20.338600158691406,
+                "scaleX": 1.0,
+                "scaleY": 1.0
+              },
+              "pivot": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "children": [
+                {
+                  "name": "GAUGE_Slider_Bg",
+                  "id": "-1423545559334818925",
+                  "active": true,
+                  "rect": {
+                    "x": 0.0,
+                    "y": 20.338600158691406,
+                    "width": 0.0,
+                    "height": 0.0,
+                    "scaleX": 1.0,
+                    "scaleY": 1.0
+                  },
+                  "pivot": {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  "image": {
+                    "sprite": "AB_UI_COLLECTION_DOT",
+                    "type": 1,
+                    "color": [
+                      0.27843138575553894,
+                      0.27843138575553894,
+                      0.27843138575553894,
+                      1.0
+                    ],
+                    "enabled": true
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "profileLine": {
+      "name": "Line",
+      "id": "-7609539933028068432",
+      "active": true,
+      "rect": {
+        "x": 44.0,
+        "y": 5.0,
+        "width": 4.0,
+        "height": 76.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "image": {
+        "sprite": "AB_UI_COLLECTION_DOT",
+        "type": 1,
+        "color": [
+          0.5843137502670288,
+          0.5843137502670288,
+          0.5843137502670288,
+          1.0
+        ],
+        "enabled": true
+      },
+      "children": []
+    },
+    "measureLine": {
+      "name": "Line",
+      "id": "-8066026258404501734",
+      "active": true,
+      "rect": {
+        "x": 44.0,
+        "y": 5.0,
+        "width": 4.0,
+        "height": 72.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "image": {
+        "sprite": "AB_UI_COLLECTION_DOT",
+        "type": 1,
+        "color": [
+          0.5843137502670288,
+          0.5843137502670288,
+          0.5843137502670288,
+          1.0
+        ],
+        "enabled": true
+      },
+      "children": [
+        {
+          "name": "Deco_Line",
+          "id": "8034528027951870516",
+          "active": true,
+          "rect": {
+            "x": 10.0,
+            "y": 0.0,
+            "width": 754.0,
+            "height": 72.0,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "image": {
+            "sprite": "AB_UI_COLLECTION_LINE",
+            "type": 1,
+            "color": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "enabled": true
+          },
+          "children": []
+        }
+      ]
+    },
+    "team": {
+      "name": "TeamUp_Card",
+      "id": "2410263592987413860",
+      "active": true,
+      "rect": {
+        "x": 455.0,
+        "y": -6.0,
+        "width": 374.0,
+        "height": 176.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "image": {
+        "sprite": "AB_UI_COLLECTION_TEAM_CARD",
+        "type": 0,
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "enabled": true
+      },
+      "children": [
+        {
+          "name": "TeamUpMark_Res",
+          "id": "-4563456059926033655",
+          "active": true,
+          "rect": {
+            "x": -34.0,
+            "y": -40.0,
+            "width": 256.0,
+            "height": 256.0,
+            "scaleX": 0.5,
+            "scaleY": 0.5
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "image": {
+            "sprite": "UI_COMMON_TEAMUP_COMMON",
+            "type": 0,
+            "color": [
+              0.16862745583057404,
+              0.16862745583057404,
+              0.16862745583057404,
+              1.0
+            ],
+            "enabled": true
+          },
+          "children": []
+        },
+        {
+          "name": "Team_Name",
+          "id": "3522561785091632353",
+          "active": true,
+          "rect": {
+            "x": 170.55643463134766,
+            "y": 40.81744575500488,
+            "width": 192.1154022216797,
+            "height": 115.18049621582031,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "text": {
+            "id": "242267289465855473",
+            "font": "main",
+            "fontSize": 24.0,
+            "minFontSize": 16.0,
+            "autoSize": true,
+            "bold": false,
+            "letterSpacingEm": -0.05,
+            "lineSpacing": -20.0,
+            "wrap": true,
+            "horizontal": 1,
+            "vertical": 256,
+            "color": [
+              0.16862745583057404,
+              0.16862745583057404,
+              0.16862745583057404,
+              1.0
+            ]
+          },
+          "children": []
+        },
+        {
+          "name": "Team_Intelligence",
+          "id": "4745077258511578096",
+          "active": true,
+          "rect": {
+            "x": 170.55643463134766,
+            "y": 11.229299545288086,
+            "width": 192.1154022216797,
+            "height": 28.541400909423828,
+            "scaleX": 1.0,
+            "scaleY": 1.0
+          },
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "text": {
+            "id": "3213224896441773326",
+            "font": "main",
+            "fontSize": 18.0,
+            "minFontSize": 12.0,
+            "autoSize": true,
+            "bold": false,
+            "letterSpacingEm": -0.05,
+            "lineSpacing": -50.0,
+            "wrap": false,
+            "horizontal": 1,
+            "vertical": 1024,
+            "color": [
+              0.16862745583057404,
+              0.16862745583057404,
+              0.16862745583057404,
+              0.7843137383460999
+            ]
+          },
+          "children": []
+        }
+      ]
+    }
+  }
+}

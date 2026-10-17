@@ -1,0 +1,1857 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "VOICE_UNIT_BARCODE_C_CHILDREN_SUMMER_BATTLE_ATTACK_10",
+      "bundle": "ab_ui_skin_voice_nkm_unit_barcode_c_children_summer",
+      "category": "battle",
+      "groupId": "battle-attack",
+      "groupLabel": "공격",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_BARCODE_C_CHILDREN",
+          "skinId": "116709"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_barcode_c_children_summer.vkor/VOICE_UNIT_BARCODE_C_CHILDREN_SUMMER_BATTLE_ATTACK_10.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_C_DELTA_KYLE_AP_LOBBY_TOUCH_LIFETIME_5",
+      "bundle": "ab_ui_skin_voice_nkm_unit_c_delta_kyle_ap_summer",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_C_DELTA_KYLE_AP",
+          "skinId": "113909"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_skin_voice_nkm_unit_c_delta_kyle_ap_summer.vjpn/AB_UI_UNIT_VOICE_NKM_UNIT_C_DELTA_KYLE_AP_LOBBY_TOUCH_LIFETIME_5.ogg",
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_c_delta_kyle_ap_summer.vkor/AB_UI_UNIT_VOICE_NKM_UNIT_C_DELTA_KYLE_AP_LOBBY_TOUCH_LIFETIME_5.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_C_DELTA_KYLE_AP_LOBBY_TOUCH_LIFETIME_7",
+      "bundle": "ab_ui_skin_voice_nkm_unit_c_delta_kyle_ap_summer",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_C_DELTA_KYLE_AP",
+          "skinId": "113909"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_c_delta_kyle_ap_summer.vkor/AB_UI_UNIT_VOICE_NKM_UNIT_C_DELTA_KYLE_AP_LOBBY_TOUCH_LIFETIME_7.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_C_DELTA_KYLE_AP_LOBBY_TOUCH_LIFETIME_8",
+      "bundle": "ab_ui_skin_voice_nkm_unit_c_delta_kyle_ap_summer",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_C_DELTA_KYLE_AP",
+          "skinId": "113909"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_c_delta_kyle_ap_summer.vkor/AB_UI_UNIT_VOICE_NKM_UNIT_C_DELTA_KYLE_AP_LOBBY_TOUCH_LIFETIME_8.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_C_JOO_SHI_YOON_AP_LOBBY_CONNECT-4",
+      "bundle": "ab_ui_skin_voice_nkm_unit_c_joo_shi_yoon_ap_summer",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_C_JOO_SHI_YOON_AP",
+          "skinId": "113809"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_c_joo_shi_yoon_ap_summer.vkor/AB_UI_UNIT_VOICE_NKM_UNIT_C_JOO_SHI_YOON_AP_LOBBY_CONNECT-4.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_ATTACK_8",
+      "bundle": "ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer",
+      "category": "battle",
+      "groupId": "battle-attack",
+      "groupLabel": "공격",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_C_YOO_MI_NA",
+          "skinId": "100109"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vjpn/VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_ATTACK_8.ogg",
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vkor/VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_ATTACK_8.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DAMAGE_1",
+      "bundle": "ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer",
+      "category": "battle",
+      "groupId": "battle-damage",
+      "groupLabel": "피격",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_C_YOO_MI_NA",
+          "skinId": "100109"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vjpn/VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DAMAGE_1.ogg",
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vkor/VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DAMAGE_1.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DAMAGE_2",
+      "bundle": "ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer",
+      "category": "battle",
+      "groupId": "battle-damage",
+      "groupLabel": "피격",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_C_YOO_MI_NA",
+          "skinId": "100109"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vjpn/VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DAMAGE_2.ogg",
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vkor/VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DAMAGE_2.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DAMAGE_3",
+      "bundle": "ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer",
+      "category": "battle",
+      "groupId": "battle-damage",
+      "groupLabel": "피격",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_C_YOO_MI_NA",
+          "skinId": "100109"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vjpn/VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DAMAGE_3.ogg",
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vkor/VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DAMAGE_3.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DEATH_1",
+      "bundle": "ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer",
+      "category": "battle",
+      "groupId": "battle-die",
+      "groupLabel": "퇴각",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_C_YOO_MI_NA",
+          "skinId": "100109"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vjpn/VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DEATH_1.ogg",
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vkor/VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DEATH_1.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DEATH_2",
+      "bundle": "ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer",
+      "category": "battle",
+      "groupId": "battle-die",
+      "groupLabel": "퇴각",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_C_YOO_MI_NA",
+          "skinId": "100109"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vjpn/VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DEATH_2.ogg",
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vkor/VOICE_UNIT_C_YOO_MI_NA_SUMMER_BATTLE_DEATH_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_C_YOO_MI_NA_LOBBY_TOUCH_LIFETIME_5",
+      "bundle": "ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_C_YOO_MI_NA",
+          "skinId": "100109"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vjpn/AB_UI_UNIT_VOICE_NKM_UNIT_C_YOO_MI_NA_LOBBY_TOUCH_LIFETIME_5.ogg",
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_c_yoo_mi_na_summer.vkor/AB_UI_UNIT_VOICE_NKM_UNIT_C_YOO_MI_NA_LOBBY_TOUCH_LIFETIME_5.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_ESPR_C_SNIPER_NEGOTIATE_FAIL-2",
+      "bundle": "ab_ui_skin_voice_nkm_unit_espr_c_sniper_bunny",
+      "category": "unit",
+      "groupId": "unit-negotiate",
+      "groupLabel": "협상",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_ESPR_C_SNIPER",
+          "skinId": "123321"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_espr_c_sniper_bunny.vkor/AB_UI_UNIT_VOICE_NKM_UNIT_ESPR_C_SNIPER_NEGOTIATE_FAIL-2.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_HARMONY_C_BASS_SUMMER_BATTLE_ACTIVE_1",
+      "bundle": "ab_ui_skin_voice_nkm_unit_harmony_c_bass_summer",
+      "category": "battle",
+      "groupId": "battle-skill",
+      "groupLabel": "특수기",
+      "targets": [
+        {
+          "kind": "skin",
+          "id": "NKM_UNIT_HARMONY_C_BASS",
+          "skinId": "121609"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_skin_voice_nkm_unit_harmony_c_bass_summer.vjpn/VOICE_UNIT_HARMONY_C_BASS_SUMMER_BATTLE_ACTIVE_1.ogg",
+        "ko": "voice/unused/ab_ui_skin_voice_nkm_unit_harmony_c_bass_summer.vkor/VOICE_UNIT_HARMONY_C_BASS_SUMMER_BATTLE_ACTIVE_1.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_ADMIN_CA_ARTILLERY_BATTLE_ACTIVE_1",
+      "bundle": "ab_ui_unit_voice_nkm_unit_admin_ca_artillery",
+      "category": "battle",
+      "groupId": "battle-skill",
+      "groupLabel": "특수기",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_ADMIN_CA_ARTILLERY"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_admin_ca_artillery.vkor/VOICE_UNIT_ADMIN_CA_ARTILLERY_BATTLE_ACTIVE_1.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_ADMIN_CA_ARTILLERY_BATTLE_ACTIVE_1-2",
+      "bundle": "ab_ui_unit_voice_nkm_unit_admin_ca_artillery",
+      "category": "battle",
+      "groupId": "battle-skill",
+      "groupLabel": "특수기",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_ADMIN_CA_ARTILLERY"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_admin_ca_artillery.vkor/VOICE_UNIT_ADMIN_CA_ARTILLERY_BATTLE_ACTIVE_1-2.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_ADMIN_CA_ARTILLERY_BATTLE_ACTIVE_2-2",
+      "bundle": "ab_ui_unit_voice_nkm_unit_admin_ca_artillery",
+      "category": "battle",
+      "groupId": "battle-skill",
+      "groupLabel": "특수기",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_ADMIN_CA_ARTILLERY"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_admin_ca_artillery.vkor/VOICE_UNIT_ADMIN_CA_ARTILLERY_BATTLE_ACTIVE_2-2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_BAR_S_BARTENDER_LOBBY_TOUCH_NORMAL_4_a",
+      "bundle": "ab_ui_unit_voice_nkm_unit_bar_s_bartender",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_BAR_S_BARTENDER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_bar_s_bartender.vjpn/AB_UI_UNIT_VOICE_NKM_UNIT_BAR_S_BARTENDER_LOBBY_TOUCH_NORMAL_4_a.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_BAR_S_BARTENDER_LOBBY_TOUCH_NORMAL_4_b",
+      "bundle": "ab_ui_unit_voice_nkm_unit_bar_s_bartender",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_BAR_S_BARTENDER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_bar_s_bartender.vjpn/AB_UI_UNIT_VOICE_NKM_UNIT_BAR_S_BARTENDER_LOBBY_TOUCH_NORMAL_4_b.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_C_ADMIN_GREATSWORD_LOBBY_TOUCH_LIFETIME_2_B",
+      "bundle": "ab_ui_unit_voice_nkm_unit_c_admin_greatsword",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_C_ADMIN_GREATSWORD"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_c_admin_greatsword.vjpn/AB_UI_UNIT_VOICE_NKM_UNIT_C_ADMIN_GREATSWORD_LOBBY_TOUCH_LIFETIME_2_B.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_C_ADMIN_GREATSWORD_LOBBY_TOUCH_LIFETIME_5",
+      "bundle": "ab_ui_unit_voice_nkm_unit_c_admin_greatsword",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_C_ADMIN_GREATSWORD"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_c_admin_greatsword.vkor/AB_UI_UNIT_VOICE_NKM_UNIT_C_ADMIN_GREATSWORD_LOBBY_TOUCH_LIFETIME_5.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_C_ADMIN_GREATSWORD_LOBBY_TOUCH_LIFETIME_6-2",
+      "bundle": "ab_ui_unit_voice_nkm_unit_c_admin_greatsword",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_C_ADMIN_GREATSWORD"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_c_admin_greatsword.vkor/AB_UI_UNIT_VOICE_NKM_UNIT_C_ADMIN_GREATSWORD_LOBBY_TOUCH_LIFETIME_6-2.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_C_ADMIN_LEE_SUYEON_BATTLE_PASSIVE_1",
+      "bundle": "ab_ui_unit_voice_nkm_unit_c_admin_lee_suyeon",
+      "category": "battle",
+      "groupId": "battle-passive",
+      "groupLabel": "패시브",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_C_ADMIN_LEE_SUYEON"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_c_admin_lee_suyeon.vjpn/VOICE_UNIT_C_ADMIN_LEE_SUYEON_BATTLE_PASSIVE_1.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_C_ADMIN_LEE_SUYEON_BATTLE_PASSIVE_2",
+      "bundle": "ab_ui_unit_voice_nkm_unit_c_admin_lee_suyeon",
+      "category": "battle",
+      "groupId": "battle-passive",
+      "groupLabel": "패시브",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_C_ADMIN_LEE_SUYEON"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_c_admin_lee_suyeon.vjpn/VOICE_UNIT_C_ADMIN_LEE_SUYEON_BATTLE_PASSIVE_2.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_C_ADMIN_LEE_SUYEON_BATTLE_PASSIVE_3",
+      "bundle": "ab_ui_unit_voice_nkm_unit_c_admin_lee_suyeon",
+      "category": "battle",
+      "groupId": "battle-passive",
+      "groupLabel": "패시브",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_C_ADMIN_LEE_SUYEON"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_c_admin_lee_suyeon.vjpn/VOICE_UNIT_C_ADMIN_LEE_SUYEON_BATTLE_PASSIVE_3.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_C_FRONTIER_MAYA_LOBBY_TOUCH_NORMAL_4-2",
+      "bundle": "ab_ui_unit_voice_nkm_unit_c_frontier_maya",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_C_FRONTIER_MAYA"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_c_frontier_maya.vkor/AB_UI_UNIT_VOICE_NKM_UNIT_C_FRONTIER_MAYA_LOBBY_TOUCH_NORMAL_4-2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_C_SIXWING_LEE_JISOO_LOBBY_TOUCH_LIFETIME_5",
+      "bundle": "ab_ui_unit_voice_nkm_unit_c_sixwing_lee_jisoo",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_C_SIXWING_LEE_JISOO"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_c_sixwing_lee_jisoo.vkor/AB_UI_UNIT_VOICE_NKM_UNIT_C_SIXWING_LEE_JISOO_LOBBY_TOUCH_LIFETIME_5.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_C_STREGA_INGRID_LOBBY_TOUCH_LIFETIME_3-3",
+      "bundle": "ab_ui_unit_voice_nkm_unit_c_strega_ingrid",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_C_STREGA_INGRID"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_c_strega_ingrid.vkor/AB_UI_UNIT_VOICE_NKM_UNIT_C_STREGA_INGRID_LOBBY_TOUCH_LIFETIME_3-3.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_C_FENRIR_YOO_MI_NA_BATTLE_ATTACK_10",
+      "bundle": "ab_ui_unit_voice_nkm_unit_c_yoo_mi_na",
+      "category": "battle",
+      "groupId": "battle-attack",
+      "groupLabel": "공격",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_C_YOO_MI_NA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_c_yoo_mi_na.vjpn/VOICE_UNIT_C_FENRIR_YOO_MI_NA_BATTLE_ATTACK_10.ogg",
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_c_yoo_mi_na.vkor/VOICE_UNIT_C_FENRIR_YOO_MI_NA_BATTLE_ATTACK_10.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_C_FENRIR_YOO_MI_NA_BATTLE_ATTACK_5",
+      "bundle": "ab_ui_unit_voice_nkm_unit_c_yoo_mi_na",
+      "category": "battle",
+      "groupId": "battle-attack",
+      "groupLabel": "공격",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_C_YOO_MI_NA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_c_yoo_mi_na.vjpn/VOICE_UNIT_C_FENRIR_YOO_MI_NA_BATTLE_ATTACK_5.ogg",
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_c_yoo_mi_na.vkor/VOICE_UNIT_C_FENRIR_YOO_MI_NA_BATTLE_ATTACK_5.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_C_ZODIAC_YANG_HANSOL_GROWTH_SKIL",
+      "bundle": "ab_ui_unit_voice_nkm_unit_c_zodiac_yang_hansol",
+      "category": "unit",
+      "groupId": "unit-growth",
+      "groupLabel": "성장",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_C_ZODIAC_YANG_HANSOL"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_c_zodiac_yang_hansol.vkor/AB_UI_UNIT_VOICE_NKM_UNIT_C_ZODIAC_YANG_HANSOL_GROWTH_SKIL.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_CA_YOO_MI_NA_BATTLE_HYPER_3",
+      "bundle": "ab_ui_unit_voice_nkm_unit_ca_yoo_mi_na",
+      "category": "battle",
+      "groupId": "battle-hyper",
+      "groupLabel": "궁극기",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_CA_YOO_MI_NA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_ca_yoo_mi_na.vjpn/VOICE_UNIT_CA_YOO_MI_NA_BATTLE_HYPER_3.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_DELTA_CA_KYLE_AP_BATTLE_ACTIVE_3",
+      "bundle": "ab_ui_unit_voice_nkm_unit_delta_ca_kyle_ap",
+      "category": "battle",
+      "groupId": "battle-skill",
+      "groupLabel": "특수기",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_DELTA_CA_KYLE_AP"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_delta_ca_kyle_ap.vjpn/VOICE_UNIT_DELTA_CA_KYLE_AP_BATTLE_ACTIVE_3.ogg",
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_delta_ca_kyle_ap.vkor/VOICE_UNIT_DELTA_CA_KYLE_AP_BATTLE_ACTIVE_3.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_DELTA_CA_KYLE_AP_BATTLE_ACTIVE_4",
+      "bundle": "ab_ui_unit_voice_nkm_unit_delta_ca_kyle_ap",
+      "category": "battle",
+      "groupId": "battle-skill",
+      "groupLabel": "특수기",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_DELTA_CA_KYLE_AP"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_delta_ca_kyle_ap.vjpn/VOICE_UNIT_DELTA_CA_KYLE_AP_BATTLE_ACTIVE_4.ogg",
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_delta_ca_kyle_ap.vkor/VOICE_UNIT_DELTA_CA_KYLE_AP_BATTLE_ACTIVE_4.ogg"
+      }
+    },
+    {
+      "id": "VOICE_UNIT_DELTA_CA_KYLE_AP_BATTLE_ACTIVE_5",
+      "bundle": "ab_ui_unit_voice_nkm_unit_delta_ca_kyle_ap",
+      "category": "battle",
+      "groupId": "battle-skill",
+      "groupLabel": "특수기",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_DELTA_CA_KYLE_AP"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_delta_ca_kyle_ap.vjpn/VOICE_UNIT_DELTA_CA_KYLE_AP_BATTLE_ACTIVE_5.ogg",
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_delta_ca_kyle_ap.vkor/VOICE_UNIT_DELTA_CA_KYLE_AP_BATTLE_ACTIVE_5.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_M_FUTURE_HARPY_LOBBY_TOUCH_LIFETIME_5",
+      "bundle": "ab_ui_unit_voice_nkm_unit_m_future_harpy",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_M_FUTURE_HARPY"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_unit_voice_nkm_unit_m_future_harpy.vkor/AB_UI_UNIT_VOICE_NKM_UNIT_M_FUTURE_HARPY_LOBBY_TOUCH_LIFETIME_5.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_S_TIDE_SUBMACHINEGUN_LOBBY_TOUCH_LIFETIME4",
+      "bundle": "ab_ui_unit_voice_nkm_unit_s_tide_submachinegun",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_S_TIDE_SUBMACHINEGUN"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_s_tide_submachinegun.vjpn/AB_UI_UNIT_VOICE_NKM_UNIT_S_TIDE_SUBMACHINEGUN_LOBBY_TOUCH_LIFETIME4.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_NKM_UNIT_S_TIDE_SUBMACHINEGUN_LOBBY_TOUCH_NORMAL4",
+      "bundle": "ab_ui_unit_voice_nkm_unit_s_tide_submachinegun",
+      "category": "unit",
+      "groupId": "unit-lobby",
+      "groupLabel": "로비",
+      "targets": [
+        {
+          "kind": "unit",
+          "id": "NKM_UNIT_S_TIDE_SUBMACHINEGUN"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_nkm_unit_s_tide_submachinegun.vjpn/AB_UI_UNIT_VOICE_NKM_UNIT_S_TIDE_SUBMACHINEGUN_LOBBY_TOUCH_NORMAL4.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_AMAZE_1",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_AMAZE_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_AMAZE_2",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_AMAZE_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_ANGER_1",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_ANGER_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_ANSWER",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_ANSWER.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_AP",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_AP.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_CALL",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_CALL.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_DESPAIR_1",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_DESPAIR_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_LAUGH_1",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_LAUGH_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_LAUGH_2",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_LAUGH_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_NE",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_NE.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_PO",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_PO.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_QUESTION",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_QUESTION.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_RETURN",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_RETURN.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_SAD_1",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_SAD_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_THANKS_1",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_THANKS_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_THANKS_2",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_THANKS_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_TITLECALL",
+      "bundle": "ab_ui_unit_voice_opr_alicia",
+      "category": "operator",
+      "groupId": "operator-titlecall",
+      "groupLabel": "타이틀콜",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_ALICIA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_alicia.vjpn/AB_UI_UNIT_VOICE_OPR_ALICIA_STOCK_TITLECALL.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_DOGABI_STOCK_TITLECALL",
+      "bundle": "ab_ui_unit_voice_opr_dogabi",
+      "category": "operator",
+      "groupId": "operator-titlecall",
+      "groupLabel": "타이틀콜",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_DOGABI"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_unit_voice_opr_dogabi.vkor/AB_UI_UNIT_VOICE_OPR_DOGABI_STOCK_TITLECALL.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LEEJISOO_STOCK_TITLECALL",
+      "bundle": "ab_ui_unit_voice_opr_leejisoo",
+      "category": "operator",
+      "groupId": "operator-titlecall",
+      "groupLabel": "타이틀콜",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LEEJISOO"
+        }
+      ],
+      "files": {
+        "ko": "voice/unused/ab_ui_unit_voice_opr_leejisoo.vkor/AB_UI_UNIT_VOICE_OPR_LEEJISOO_STOCK_TITLECALL.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_AMAZE_1",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_AMAZE_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_AMAZE_2",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_AMAZE_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_ANGER_1",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_ANGER_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_ANSWER",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_ANSWER.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_AP",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_AP.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_CALL",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_CALL.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_DESPAIR_1",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_DESPAIR_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_DESPAIR_2",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_DESPAIR_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_LAUGH_1",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_LAUGH_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_LAUGH_2",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_LAUGH_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_NE",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_NE.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_PO",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_PO.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_QUESTION",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_QUESTION.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_RETURN",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_RETURN.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_SAD_1",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_SAD_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_THANKS_1",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_THANKS_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_THANKS_2",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_THANKS_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_LENA_STOCK_TITLECALL",
+      "bundle": "ab_ui_unit_voice_opr_lena",
+      "category": "operator",
+      "groupId": "operator-titlecall",
+      "groupLabel": "타이틀콜",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_LENA"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_lena.vjpn/AB_UI_UNIT_VOICE_OPR_LENA_STOCK_TITLECALL.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_AMAZE_1",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_AMAZE_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_AMAZE_2",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_AMAZE_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_ANGER_1",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_ANGER_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_ANSWER",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_ANSWER.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_AP",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_AP.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_CALL",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_CALL.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_DESPAIR_1",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_DESPAIR_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_DESPAIR_2",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_DESPAIR_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_LAUGH_1",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_LAUGH_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_LAUGH_2",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_LAUGH_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_NE",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_NE.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_PO",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_PO.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_QUESTION",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_QUESTION.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_RETURN",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_RETURN.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_SAD_1",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_SAD_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_THANKS_1",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_THANKS_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_THANKS_2",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_THANKS_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_TITLECALL",
+      "bundle": "ab_ui_unit_voice_opr_mark_finri",
+      "category": "operator",
+      "groupId": "operator-titlecall",
+      "groupLabel": "타이틀콜",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_MARK_FINRI"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_mark_finri.vjpn/AB_UI_UNIT_VOICE_OPR_MARK_FINRI_STOCK_TITLECALL.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_SHIP_ENEMY_AREA_1ST",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-battlefield",
+      "groupLabel": "출격 영역",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_SHIP_ENEMY_AREA_1ST.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_SHIP_OUR_AREA_1ST",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-battlefield",
+      "groupLabel": "출격 영역",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_SHIP_OUR_AREA_1ST.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_AMAZE_1",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_AMAZE_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_AMAZE_2",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_AMAZE_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_ANGER_1",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_ANGER_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_AP",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_AP.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_CALL",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_CALL.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_DESPAIR_1",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_DESPAIR_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_DESPAIR_2",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_DESPAIR_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_LAUGH_1",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_LAUGH_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_LAUGH_2",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_LAUGH_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_NE",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_NE.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_PO",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_PO.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_QUESTION",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_QUESTION.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_RETURN",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_RETURN.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_SAD_1",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_SAD_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_SERIOUS_1",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_SERIOUS_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_SERIOUS_1b",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_SERIOUS_1b.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_THANKS_1",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_THANKS_1.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_THANKS_2",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-other",
+      "groupLabel": "기타",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_THANKS_2.ogg"
+      }
+    },
+    {
+      "id": "AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_TITLECALL",
+      "bundle": "ab_ui_unit_voice_opr_ras_tower",
+      "category": "operator",
+      "groupId": "operator-titlecall",
+      "groupLabel": "타이틀콜",
+      "targets": [
+        {
+          "kind": "operator",
+          "id": "OPR_RAS_TOWER"
+        }
+      ],
+      "files": {
+        "ja": "voice/unused/ab_ui_unit_voice_opr_ras_tower.vjpn/AB_UI_UNIT_VOICE_OPR_RAS_TOWER_STOCK_TITLECALL.ogg"
+      }
+    }
+  ]
+}

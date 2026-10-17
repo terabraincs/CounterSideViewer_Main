@@ -1,10 +1,14 @@
 "use client";
+import { deploymentUrl } from "@/lib/deployment";
 import { useMemo, useState } from "react";
 import Image from "@/components/DeploymentImage";
 import Link from "@/components/DeploymentLink";
 import SearchInput from "@/components/SearchInput";
+import CollectionSortButtons from "@/components/CollectionSortButtons";
 import ListResultCount from "@/components/ListResultCount";
 import RarityIcon from "@/components/RarityIcon";
+import { FilterOptionButton, FilterSectionHeading } from "@/components/FilterControls";
+import { matchesOptionalSelectedFilter as matchesSelectedFilter, toggleSelectedValue } from "@/lib/listFilters";
 import type { ShipListItem } from "@/lib/ships";
 type ShipSearchListProps = {
     ships: ShipListItem[];
@@ -34,12 +38,6 @@ function getSearchText(ship: ShipListItem) {
         .join(" ")
         .toLowerCase();
 }
-function matchesSelectedFilter(selectedValues: string[], value?: string) {
-    if (selectedValues.length === 0) {
-        return true;
-    }
-    return Boolean(value && selectedValues.includes(value));
-}
 function getShipFilterValue(ship: ShipListItem, key: FilterKey) {
     switch (key) {
         case "shipTypes":
@@ -50,20 +48,12 @@ function getShipFilterValue(ship: ShipListItem, key: FilterKey) {
             return ship.grade;
     }
 }
-function getFilterButtonClass(isSelected: boolean) {
-    return [
-        "min-h-11 border px-3 py-2 text-sm font-bold transition",
-        "focus:outline-none focus:ring-2 focus:ring-[#9ca3af]",
-        isSelected
-            ? "border-white bg-white text-[#111318] shadow-[0_0_14px_rgba(255,255,255,0.22)]"
-            : "border-[#4b5563] bg-black/35 text-[#9ca3af] hover:border-white hover:text-white",
-    ].join(" ");
-}
 function getShipTitleIconPath(ships: ShipListItem[], title: string) {
     return ships.find((ship) => ship.title === title)?.shipTypeIconPath ?? "";
 }
 export default function ShipSearchList({ ships }: ShipSearchListProps) {
     const [searchKeyword, setSearchKeyword] = useState("");
+    const [sortMode, setSortMode] = useState<"order" | "name">("order");
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const [selectedFilters, setSelectedFilters] = useState<FilterState>(() => createEmptyFilters());
     const normalizedKeyword = searchKeyword.trim().toLowerCase();
@@ -93,20 +83,21 @@ export default function ShipSearchList({ ships }: ShipSearchListProps) {
     }, [ships]);
     const activeFilterCount = Object.values(selectedFilters).reduce((total, values) => total + values.length, 0);
     const filteredShips = useMemo(() => {
-        return ships.filter((ship) => {
+        const filtered = ships.filter((ship) => {
             const matchesKeyword = !normalizedKeyword || getSearchText(ship).includes(normalizedKeyword);
             const matchesShipTitle = matchesSelectedFilter(selectedFilters.shipTitles, ship.title);
             const matchesShipType = matchesSelectedFilter(selectedFilters.shipTypes, ship.shipType);
             const matchesGrade = matchesSelectedFilter(selectedFilters.grades, ship.grade);
             return matchesKeyword && matchesShipType && matchesShipTitle && matchesGrade;
         });
-    }, [normalizedKeyword, selectedFilters, ships]);
+        return sortMode === "name"
+            ? filtered.sort((first, second) => first.name.localeCompare(second.name, "ko-KR"))
+            : filtered;
+    }, [normalizedKeyword, selectedFilters, ships, sortMode]);
     function toggleFilterValue(key: FilterKey, value: string) {
         setSelectedFilters((currentFilters) => {
             const currentValues = currentFilters[key];
-            const nextValues = currentValues.includes(value)
-                ? currentValues.filter((currentValue) => currentValue !== value)
-                : [...currentValues, value];
+            const nextValues = toggleSelectedValue(currentValues, value);
             return {
                 ...currentFilters,
                 [key]: nextValues,
@@ -117,21 +108,24 @@ export default function ShipSearchList({ ships }: ShipSearchListProps) {
         setSelectedFilters(createEmptyFilters());
     }
     return (<div className="mt-8">
-      <div className="flex flex-col gap-3 rounded-md border border-[#343844] bg-[#171a21] p-4 sm:flex-row sm:items-end sm:justify-between">
+      <div className="flex flex-col gap-3 rounded-md border border-[#343844] bg-[#171a21] p-4 lg:flex-row lg:items-end lg:justify-between">
         <div className="flex min-w-0 flex-1 flex-col gap-3 sm:flex-row">
           <label className="flex min-w-0 flex-1 flex-col gap-2">
             <span className="text-sm font-bold text-white">함선 검색</span>
-            <SearchInput value={searchKeyword} onChange={(event) => setSearchKeyword(event.target.value)} ariaLabel="함선 검색" inputClassName="h-11 rounded border border-[#343844] bg-[#0b0d12] text-sm font-medium text-[#e5e7eb] outline-none transition placeholder:text-[#5b6270] focus:border-white focus:ring-2 focus:ring-[#9ca3af]/30"/>
+            <SearchInput value={searchKeyword} onChange={(event) => setSearchKeyword(event.target.value)} ariaLabel="함선 검색"/>
           </label>
           <div className="flex items-end gap-3 sm:shrink-0">
             <div className="flex min-w-0 flex-1 flex-col gap-2 sm:w-40 sm:flex-none">
               <span className="text-sm font-bold text-white">조건 필터</span>
-              <button type="button" onClick={() => setIsFilterOpen(true)} className="h-11 rounded border border-[#343844] bg-[#0b0d12] px-3 text-sm font-bold text-[#e5e7eb] transition hover:border-white hover:text-white focus:outline-none focus:ring-2 focus:ring-[#9ca3af]/30">
+              <button type="button" onClick={() => setIsFilterOpen(true)} className="h-11 rounded-md border border-[#343844] bg-[#0b0d12] px-3 text-sm font-bold text-[#e5e7eb] transition hover:border-white hover:text-white focus:outline-none focus:ring-2 focus:ring-[#9ca3af]/30">
                 필터{activeFilterCount > 0 ? ` ${activeFilterCount}개` : ""}
               </button>
             </div>
-            <ListResultCount label="함선" count={filteredShips.length} total={ships.length}/>
           </div>
+        </div>
+        <div className="flex items-end justify-between gap-3 lg:justify-end">
+          <CollectionSortButtons label="함선" value={sortMode} onChange={setSortMode}/>
+          <ListResultCount label="함선" count={filteredShips.length} total={ships.length}/>
         </div>
       </div>
 
@@ -148,24 +142,21 @@ export default function ShipSearchList({ ships }: ShipSearchListProps) {
 
             <div className="mt-5 space-y-5">
               {filterSections.map((section) => (<section key={section.key}>
-                  <h3 className="mb-3 flex items-center gap-2 text-base font-black text-[#e5e7eb]">
-                    <span className="h-4 w-[5px] bg-white shadow-[0_0_10px_rgba(255,255,255,0.75)]"/>
-                    {section.title}
-                  </h3>
+                  <FilterSectionHeading>{section.title}</FilterSectionHeading>
                   <div className={`grid grid-cols-2 gap-2 ${section.columns ?? ""}`}>
                     {section.options.map((option) => {
                     const isSelected = selectedFilters[section.key].includes(option);
                     const iconPath = section.key === "shipTitles"
                         ? getShipTitleIconPath(ships, option)
                         : "";
-                    return (<button key={`${section.key}-${option}`} type="button" aria-label={section.key === "grades"
+                    return (<FilterOptionButton key={`${section.key}-${option}`} aria-label={section.key === "grades"
                             ? `${option} 희귀도`
-                            : undefined} aria-pressed={isSelected} onClick={() => toggleFilterValue(section.key, option)} className={getFilterButtonClass(isSelected)}>
+                            : undefined} selected={isSelected} onClick={() => toggleFilterValue(section.key, option)}>
                           <span className="inline-flex items-center justify-center gap-2">
-                            {iconPath ? (<Image src={iconPath} alt="" width={18} height={18} className="h-[18px] w-[18px] object-contain"/>) : null}
+                            {iconPath ? (<Image src={deploymentUrl(iconPath)} alt="" width={18} height={18} className="h-[18px] w-[18px] object-contain"/>) : null}
                             {section.key === "grades" ? (<RarityIcon grade={option} size="sm"/>) : (<span>{option}</span>)}
                           </span>
-                        </button>);
+                        </FilterOptionButton>);
                 })}
                   </div>
                 </section>))}
@@ -214,9 +205,9 @@ export default function ShipSearchList({ ships }: ShipSearchListProps) {
       `}</style>
 
       {filteredShips.length > 0 ? (<div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {filteredShips.map((ship) => (<Link key={ship.id} href={ship.href} className="group overflow-hidden rounded-md border border-[#343844] bg-[#171a21] transition hover:-translate-y-1 hover:border-white hover:shadow-[0_18px_45px_rgba(0,0,0,0.35)]">
+          {filteredShips.map((ship) => (<Link key={ship.id} href={deploymentUrl(ship.href)} className="group overflow-hidden rounded-md border border-[#343844] bg-[#171a21] transition hover:-translate-y-1 hover:border-white hover:shadow-[0_18px_45px_rgba(0,0,0,0.35)]">
               <div className="relative flex aspect-[16/9] items-center justify-center overflow-hidden bg-[#0f1117]">
-                {ship.imagePath ? (<Image src={ship.imagePath} alt="" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-contain p-4 transition duration-200 group-hover:scale-105"/>) : (<div className="text-xs font-bold tracking-[0.25em] text-[#565c6b]">
+                {ship.imagePath ? (<Image src={deploymentUrl(ship.imagePath)} alt="" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-contain p-4 transition duration-200 group-hover:scale-105"/>) : (<div className="text-xs font-bold tracking-[0.25em] text-[#565c6b]">
                     NO IMAGE
                   </div>)}
 
@@ -232,7 +223,7 @@ export default function ShipSearchList({ ships }: ShipSearchListProps) {
                   {ship.name}
                 </h2>
                 <p className="mt-1 flex items-center gap-2 text-sm font-semibold text-white">
-                  {ship.shipTypeIconPath ? (<Image src={ship.shipTypeIconPath} alt="" width={18} height={18} className="h-[18px] w-[18px] object-contain"/>) : null}
+                  {ship.shipTypeIconPath ? (<Image src={deploymentUrl(ship.shipTypeIconPath)} alt="" width={18} height={18} className="h-[18px] w-[18px] object-contain"/>) : null}
                   <span>{ship.title}</span>
                 </p>
               </div>

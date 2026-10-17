@@ -1,0 +1,20 @@
+{
+  "id": 12279,
+  "name": "시그마&시솝 - 동생한테 양보해야지",
+  "imagePath": "/collection/trophy/thumbnails/12279.png",
+  "kind": "rendered",
+  "sourceModel": "illustration/ab_unit_illust_nkm_unit_sd_deco_activity_sgso_44/NKM_UNIT_SD_DECO_512_512/NKM_UNIT_SD_DECO_512_512",
+  "animation": "IDLE",
+  "skin": "default",
+  "time": 0.1,
+  "recipeSha256": "3365315aef5ece7920241de8869e7775920803fe385372d774c8775631ca9310",
+  "width": 543,
+  "height": 435,
+  "alphaBounds": [
+    24,
+    24,
+    519,
+    411
+  ],
+  "sha256": "0f9eab37ab3888fc26cd6df6e15540afdedfe62c16f86947f9ebaa7b7450817d"
+}

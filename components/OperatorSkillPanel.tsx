@@ -2,9 +2,14 @@
 import { deploymentUrl } from "@/lib/deployment";
 import { useState } from "react";
 import Image from "@/components/DeploymentImage";
+import DetailSection from "@/components/DetailSection";
+import LevelControl from "@/components/LevelControl";
+import SkillCard from "@/components/SkillCard";
 import type { OperatorSkill } from "@/lib/operators";
+import { parseIntegerInput } from "@/lib/rangeControls";
 type OperatorSkillPanelProps = {
     skill: OperatorSkill | null;
+    sectionNumber: number;
 };
 const activationConditionIconMap: Record<string, {
     label: string;
@@ -31,76 +36,57 @@ const activationConditionIconMap: Record<string, {
         path: deploymentUrl("/unit/unit_type/NKM_UI_COMMON_UNIT_CLASS_ICON_SUPPORTER.png"),
     },
 };
-function clampLevel(level: number, maximumLevel: number) {
-    return Math.min(Math.max(level, 1), maximumLevel);
-}
-export default function OperatorSkillPanel({ skill, }: OperatorSkillPanelProps) {
+export default function OperatorSkillPanel({ skill, sectionNumber, }: OperatorSkillPanelProps) {
     const maximumLevel = skill?.maxLevel ?? 1;
     const [level, setLevel] = useState(maximumLevel);
     function changeLevel(value: string) {
-        const nextLevel = Number(value);
-        if (!Number.isFinite(nextLevel)) {
+        const nextLevel = parseIntegerInput(value, 1, maximumLevel);
+        if (nextLevel === null) {
             return;
         }
-        setLevel(clampLevel(Math.round(nextLevel), maximumLevel));
+        setLevel(nextLevel);
     }
     const description = skill?.descriptionsByLevel[level - 1] ?? skill?.description ?? "";
-    return (<section className="rounded-md border border-[#343844] bg-[#171a21] p-5">
-      <div className="border-b border-[#343844] pb-3">
-        <h2 className="text-xl font-black text-white">
-          <span className="mr-2 text-white">■</span>
-          지휘 기술
-        </h2>
-
-        {skill ? (<label className="mt-3 flex w-fit items-center gap-2 text-sm font-bold text-[#9ca3af]">
-            <input type="number" min={1} max={maximumLevel} value={level} onChange={(event) => changeLevel(event.target.value)} className="h-9 w-20 border border-[#4b5160] bg-[#0b0d12] px-2 text-center font-black text-white outline-none transition focus:border-[#9ca3af]" aria-label="지휘 기술 기준 레벨"/>
-            레벨 기준
-          </label>) : null}
-      </div>
-
-      {skill ? (<div className="mt-4 grid grid-cols-[96px_minmax(0,1fr)] gap-4">
-          <div className="flex items-start justify-center pt-1">
-            {skill.iconPath ? (<Image src={skill.iconPath} alt="" width={80} height={80} className="h-20 w-20 object-contain"/>) : null}
+    return (<DetailSection id="skills" title="지휘 기술" number={sectionNumber}>
+      {skill ? (<SkillCard className="mt-5" icon={skill.iconPath ? (<Image src={deploymentUrl(skill.iconPath)} alt="" width={88} height={88} className="h-[88px] w-[88px] object-contain"/>) : null}>
+          <div className="flex flex-wrap items-center gap-2">
+            <h3 className="text-xl font-black text-[#e5e7eb]">{skill.name}</h3>
+            <span className="border border-[#4b5160] bg-[#222631] px-2 py-1 text-xs font-black text-[#cfd4dc]">
+              {skill.type}
+            </span>
+            <LevelControl value={level} min={1} max={maximumLevel} onChange={changeLevel} ariaLabel="지휘 기술 기준 레벨" className="ml-auto"/>
           </div>
-          <div className="min-w-0 py-1">
-            <div className="flex flex-wrap items-center gap-2">
-              <h3 className="text-base font-black text-white">{skill.name}</h3>
-              <span className="border border-[#343844] bg-[#222631] px-2 py-1 text-xs font-bold text-white">
-                {skill.type}
-              </span>
-            </div>
-            <div className="mt-3 flex flex-nowrap items-center gap-2 overflow-x-auto pb-1">
-              {skill.cooldown !== null ? (<div className="flex h-10 shrink-0 items-center gap-2 rounded-sm border border-[#343844] bg-[#0b0d12] px-3 text-sm font-bold text-[#cfd4dc]">
-                  <span>쿨타임</span>
-                  <Image src={deploymentUrl("/ui/AB_UI_NKM_UI_LEADER_BOARD_TIME_ICON.png")} alt="" width={18} height={18} className="h-[18px] w-[18px] object-contain"/>
-                  <span>{skill.cooldown}초</span>
-                </div>) : null}
-              {skill.activationConditions.length > 0 ? (<div className="flex h-10 shrink-0 items-center gap-3 rounded-sm border border-[#343844] bg-[#0b0d12] px-3 text-sm font-bold text-[#cfd4dc]">
-                  <span>발동 조건</span>
-                  <div className="flex items-center gap-2" aria-label="지휘 기술 발동 조건">
-                    {skill.activationConditions.map((condition, index) => {
+          <div className="mt-3 flex flex-wrap items-center gap-2 overflow-x-auto pb-1">
+            {skill.cooldown !== null ? (<div className="flex h-10 shrink-0 items-center gap-2 rounded-sm border border-[#343844] bg-[#0b0d12] px-3 text-sm font-bold text-[#cfd4dc]">
+                <span>쿨타임</span>
+                <Image src={deploymentUrl("/ui/AB_UI_NKM_UI_LEADER_BOARD_TIME_ICON.png")} alt="" width={18} height={18} className="h-[18px] w-[18px] object-contain"/>
+                <span>{skill.cooldown}초</span>
+              </div>) : null}
+            {skill.activationConditions.length > 0 ? (<div className="flex h-10 shrink-0 items-center gap-3 rounded-sm border border-[#343844] bg-[#0b0d12] px-3 text-sm font-bold text-[#cfd4dc]">
+                <span>발동 조건</span>
+                <div className="flex items-center gap-2" aria-label="지휘 기술 발동 조건">
+                  {skill.activationConditions.map((condition, index) => {
                     const icon = activationConditionIconMap[condition];
                     if (!icon) {
                         return null;
                     }
                     return (<div key={`${condition}-${index}`} className="flex items-center gap-2">
-                          <Image src={icon.path} alt={icon.label} title={icon.label} width={30} height={30} className="h-[30px] w-[30px] object-contain"/>
-                          {index < skill.activationConditions.length - 1 ? (<span className="text-lg font-black text-[#6b7280]" aria-hidden="true">
-                              →
-                            </span>) : null}
-                        </div>);
+                        <Image src={deploymentUrl(icon.path)} alt={icon.label} title={icon.label} width={30} height={30} className="h-[30px] w-[30px] object-contain"/>
+                        {index < skill.activationConditions.length - 1 ? (<span className="text-lg font-black text-[#6b7280]" aria-hidden="true">
+                            →
+                          </span>) : null}
+                      </div>);
                 })}
-                  </div>
-                </div>) : null}
-            </div>
-            <p className="mt-2 whitespace-pre-line text-sm leading-6 text-[#9ca3af]">
-              <SkillDescription text={description || "스킬 설명이 없습니다."}/>
-            </p>
+                </div>
+              </div>) : null}
           </div>
-        </div>) : (<div className="mt-4 border border-[#343844] bg-[#0b0d12] px-4 py-8 text-center text-sm font-semibold text-[#9ca3af]">
+          <p className="mt-2 whitespace-pre-line text-sm leading-7 text-[#c4c8d0]">
+            <SkillDescription text={description || "스킬 설명이 없습니다."}/>
+          </p>
+        </SkillCard>) : (<div className="mt-5 border border-[#343844] bg-[#171a21] px-4 py-8 text-center text-sm font-semibold text-[#9ca3af]">
           지휘 기술 데이터가 없습니다.
         </div>)}
-    </section>);
+    </DetailSection>);
 }
 function SkillDescription({ text }: {
     text: string;

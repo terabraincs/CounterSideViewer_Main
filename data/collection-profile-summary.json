@@ -1,0 +1,1567 @@
+{
+  "schemaVersion": 1,
+  "viewBox": [
+    129.24729015556488,
+    112.87815739933103,
+    643.4653806263702,
+    967.121842600669
+  ],
+  "cardRect": [
+    129.24729015556488,
+    112.87815739933103,
+    643.4653806263702,
+    889.7919716474025
+  ],
+  "scenes": {
+    "character": {
+      "name": "유미나",
+      "layers": [
+        {
+          "kind": "image",
+          "rect": [
+            -1176.6297607421875,
+            761.0257873535156,
+            4277.459716796875,
+            696.1267700195312
+          ],
+          "originalObject": "1479740026364068863",
+          "originalComponent": "-842328296783897618",
+          "spriteKey": "14:2378185173627211752",
+          "originalSprite": "NKM_UI_COLLECTION_ILLUST_SLOT_BOTTOM_GRADIENT",
+          "rotation": 0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "gradation",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/gradation",
+          "src": "/game-assets/common/profile-summary/summary-0ba99d4165415995547f.png"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            550.9613037109375,
+            -169.3618927001953,
+            2045.419921875,
+            1338.3185119628906
+          ],
+          "originalObject": "-1465150211594363274",
+          "originalComponent": "3944099935548162675",
+          "spriteKey": "14:2378185173627211752",
+          "originalSprite": "NKM_UI_COLLECTION_ILLUST_SLOT_BOTTOM_GRADIENT",
+          "rotation": -90.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "gradation (1)",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/gradation (1)",
+          "src": "/game-assets/common/profile-summary/summary-bf04741c01d99b4158e0.png"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            129.24729015556488,
+            828.4783878326416,
+            319.7326903131851,
+            50.0
+          ],
+          "originalObject": "-4826346004077546801",
+          "originalComponent": "2498363684980051298",
+          "spriteKey": "3:4468661437388406612",
+          "originalSprite": "AB_UI_COLLECTION_DOT",
+          "rotation": -0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "NKM_UI_UNIT_CLASS",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/LEVEL_TYPE_LAYOUT/NKM_UI_UNIT_TYPE/NKM_UI_UNIT_CLASS",
+          "src": "/game-assets/common/profile-summary/summary-57c909d61285300d7897.png"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            150.24729015556488,
+            836.5783882141113,
+            38.0,
+            38.0
+          ],
+          "originalObject": "-3209279497860678376",
+          "originalComponent": "-5809644138906185496",
+          "spriteKey": "15:7272817573012482450",
+          "originalSprite": "NKM_UI_COMMON_UNIT_CLASS_ICON_RANGER",
+          "rotation": 0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "UNIT_CLASS_ICON",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/LEVEL_TYPE_LAYOUT/NKM_UI_UNIT_TYPE/NKM_UI_UNIT_CLASS/UNIT_CLASS_ICON",
+          "src": "/game-assets/common/profile-summary/summary-08b1932c691e1d56b31a.png"
+        },
+        {
+          "kind": "text",
+          "text": "레인저",
+          "rect": [
+            197.23728801933441,
+            835.3904094696045,
+            227.74269244941559,
+            39.34612274169922
+          ],
+          "fontSize": 26,
+          "bestFit": true,
+          "minSize": 2,
+          "bold": false,
+          "horizontal": 1,
+          "vertical": 512,
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "-3336337656559171619",
+          "shadows": [
+            {
+              "type": "Outline",
+              "color": [
+                0,
+                0,
+                0,
+                184
+              ],
+              "offset": [
+                1.0,
+                1.0
+              ]
+            }
+          ],
+          "nodeName": "UNIT_CLASS_TEXT",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/LEVEL_TYPE_LAYOUT/NKM_UI_UNIT_TYPE/NKM_UI_UNIT_CLASS/UNIT_CLASS_TEXT"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            452.97998046875,
+            828.4783878326416,
+            319.7326903131851,
+            50.0
+          ],
+          "originalObject": "6859368898944047318",
+          "originalComponent": "7216927321945711145",
+          "spriteKey": "3:4468661437388406612",
+          "originalSprite": "AB_UI_COLLECTION_DOT",
+          "rotation": -0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "NKM_UI_UNIT_BATTLE_TYPE",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/LEVEL_TYPE_LAYOUT/NKM_UI_UNIT_TYPE/NKM_UI_UNIT_BATTLE_TYPE",
+          "src": "/game-assets/common/profile-summary/summary-57c909d61285300d7897.png"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            473.97998046875,
+            834.1784248352051,
+            38.0,
+            38.0
+          ],
+          "originalObject": "6407755601846327505",
+          "originalComponent": "3518446059173577681",
+          "spriteKey": "15:687184515284721892",
+          "originalSprite": "UI_COMMON_UNIT_TYPE_LAND",
+          "rotation": -0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "UNIT_BATTLE_TYPE_ICON",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/LEVEL_TYPE_LAYOUT/NKM_UI_UNIT_TYPE/NKM_UI_UNIT_BATTLE_TYPE/UNIT_BATTLE_TYPE_ICON",
+          "src": "/game-assets/common/profile-summary/summary-e37faeb8a47c6678438b.png"
+        },
+        {
+          "kind": "text",
+          "text": "지상 타입",
+          "rect": [
+            520.7699890136719,
+            824.4683856964111,
+            161.8300018310547,
+            57.02000427246094
+          ],
+          "fontSize": 26,
+          "bestFit": true,
+          "minSize": 2,
+          "bold": false,
+          "horizontal": 1,
+          "vertical": 512,
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "5961060006403990109",
+          "shadows": [
+            {
+              "type": "Outline",
+              "color": [
+                0,
+                0,
+                0,
+                184
+              ],
+              "offset": [
+                1.0,
+                1.0
+              ]
+            }
+          ],
+          "nodeName": "UNIT_BATTLE_TYPE_TEXT",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/LEVEL_TYPE_LAYOUT/NKM_UI_UNIT_TYPE/NKM_UI_UNIT_BATTLE_TYPE/UNIT_BATTLE_TYPE_TEXT"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            129.24729015556488,
+            882.4783878326416,
+            319.7326903131851,
+            50.0
+          ],
+          "originalObject": "-4239227607168327573",
+          "originalComponent": "-5118810530452426730",
+          "spriteKey": "3:4468661437388406612",
+          "originalSprite": "AB_UI_COLLECTION_DOT",
+          "rotation": -0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "NKM_UI_UNIT_BATTLE_TYPE_ATK",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/LEVEL_TYPE_LAYOUT/NKM_UI_UNIT_TYPE/NKM_UI_UNIT_BATTLE_TYPE_ATK",
+          "src": "/game-assets/common/profile-summary/summary-a2a608b1fcced5968d85.png"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            119.30229046074066,
+            853.8333873748779,
+            102.69000244140625,
+            102.69000244140625
+          ],
+          "originalObject": "-7561534776228440433",
+          "originalComponent": "7623660241523614277",
+          "spriteKey": "12:-352344883310268827",
+          "originalSprite": "NKM_UI_UNIT_INFO_LIGHT",
+          "rotation": 0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "GLOW",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/LEVEL_TYPE_LAYOUT/NKM_UI_UNIT_TYPE/NKM_UI_UNIT_BATTLE_TYPE_ATK/GLOW",
+          "src": "/game-assets/common/profile-summary/summary-80626ebdd728c78dd909.png"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            150.24729015556488,
+            886.678388595581,
+            38.0,
+            38.0
+          ],
+          "originalObject": "6396935889625693790",
+          "originalComponent": "-6432526249441125719",
+          "spriteKey": "15:-3450985250400261694",
+          "originalSprite": "UI_COMMON_UNIT_ATTACK_TYPE_ALL",
+          "rotation": -0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "UNIT_BATTLE_TYPE_ATK_ICON",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/LEVEL_TYPE_LAYOUT/NKM_UI_UNIT_TYPE/NKM_UI_UNIT_BATTLE_TYPE_ATK/UNIT_BATTLE_TYPE_ATK_ICON",
+          "src": "/game-assets/common/profile-summary/summary-f1d929a9c530e7eae763.png"
+        },
+        {
+          "kind": "text",
+          "text": "전천후 공격",
+          "rect": [
+            197.957281610643,
+            878.4683856964111,
+            227.022698858107,
+            57.02000427246094
+          ],
+          "fontSize": 26,
+          "bestFit": true,
+          "minSize": 2,
+          "bold": false,
+          "horizontal": 1,
+          "vertical": 512,
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "-7501051222151052749",
+          "shadows": [
+            {
+              "type": "Outline",
+              "color": [
+                0,
+                0,
+                0,
+                184
+              ],
+              "offset": [
+                1.0,
+                1.0
+              ]
+            }
+          ],
+          "nodeName": "UNIT_BATTLE_TYPE_ATK_TEXT",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/LEVEL_TYPE_LAYOUT/NKM_UI_UNIT_TYPE/NKM_UI_UNIT_BATTLE_TYPE_ATK/UNIT_BATTLE_TYPE_ATK_TEXT"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            58.18222477165375,
+            669.8317737579346,
+            291.6400146484375,
+            227.9199981689453
+          ],
+          "originalObject": "2082351812645314545",
+          "originalComponent": "3309803652242508223",
+          "spriteKey": "34:8421475115006955276",
+          "originalSprite": "NKM_UI_COMMON_RANK_SR",
+          "rotation": 0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "Rarity_icon",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_LAB_UNIT_SUMMARY_CLASS/NKM_UI_LAB_UNIT_SUMMARY_RANK/Rarity_icon",
+          "src": "/game-assets/common/profile-summary/summary-c47d18e6f4ffa6e1a780.png"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            51.497305414353946,
+            680.4768390655518,
+            296.6000061035156,
+            203.89999389648438
+          ],
+          "originalObject": "-7825035619652244812",
+          "originalComponent": "2179016363800923727",
+          "spriteKey": "17:4435130076339269506",
+          "originalSprite": "NKM_UI_ADDITIVE_LIGHT",
+          "rotation": 0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 2,
+            "m_PathID": "2070148696683848398"
+          },
+          "blend": "additive",
+          "nodeName": "FX - Light",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_LAB_UNIT_SUMMARY_CLASS/NKM_UI_LAB_UNIT_SUMMARY_RANK/SR/FX - Light",
+          "src": "/game-assets/common/profile-summary/summary-b1b3a2118d92e72871f7-native-additive.png"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            279.03478418168936,
+            741.7818246781826,
+            76.12499870359898,
+            66.49999886751175
+          ],
+          "originalObject": "7250442000221163711",
+          "originalComponent": "7842710721107801602",
+          "spriteKey": "25:7223832936448734423",
+          "originalSprite": "NKM_UI_UNIT_SELECT_LIST_COST_BG",
+          "rotation": 0.0,
+          "pivot": [
+            0.0,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "NKM_UI_UNIT_INFO_DESC_SUMMARY_COST_BG_Panel",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_UNIT_INFO_DESC_SUMMARY_COST_BG_Panel",
+          "src": "/game-assets/common/profile-summary/summary-8f06ff43f6ed196f2c9d.png"
+        },
+        {
+          "kind": "text",
+          "text": "4",
+          "rect": [
+            288.1732842396847,
+            748.9078247704506,
+            53.64799865913392,
+            53.64799865913392
+          ],
+          "fontSize": 50,
+          "bestFit": false,
+          "minSize": 0,
+          "bold": true,
+          "horizontal": 2,
+          "vertical": 512,
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "6806467313693231362",
+          "shadows": [],
+          "nodeName": "NKM_UI_UNIT_INFO_DESC_SUMMARY_COST_Text",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_UNIT_INFO_DESC_SUMMARY_COST_BG_Panel/NKM_UI_UNIT_INFO_DESC_SUMMARY_COST_Text"
+        },
+        {
+          "kind": "text",
+          "text": "[카운터]",
+          "rect": [
+            159.24729015556488,
+            703.0886383056641,
+            325.24725341796875,
+            37.48634719848633
+          ],
+          "fontSize": 26,
+          "bestFit": false,
+          "minSize": 2,
+          "bold": false,
+          "horizontal": 1,
+          "vertical": 512,
+          "color": [
+            192,
+            0,
+            255,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "2663002062893573245",
+          "shadows": [
+            {
+              "type": "Outline",
+              "color": [
+                0,
+                0,
+                0,
+                107
+              ],
+              "offset": [
+                2.0,
+                2.0
+              ]
+            }
+          ],
+          "nodeName": "NKM_UI_UNIT_INFO_DESC_SUMMARY_CLASS_MARK_COUNTER_TEXT",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_UNIT_INFO_DESC_SUMMARY_CLASS_MARK_COUNTER_TEXT"
+        },
+        {
+          "kind": "text",
+          "text": "유미나",
+          "rect": [
+            352.64728405204926,
+            761.131814956665,
+            396.06538672988586,
+            58.709999084472656
+          ],
+          "fontSize": 50,
+          "bestFit": true,
+          "minSize": 0,
+          "bold": true,
+          "horizontal": 1,
+          "vertical": 512,
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "3943522585502181215",
+          "shadows": [
+            {
+              "type": "Outline",
+              "color": [
+                0,
+                0,
+                0,
+                255
+              ],
+              "offset": [
+                1.0,
+                -1.0
+              ]
+            }
+          ],
+          "nodeName": "NKM_UI_UNIT_INFO_DESC_SUMMARY_NAME",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_UNIT_INFO_DESC_SUMMARY_NAME"
+        },
+        {
+          "kind": "text",
+          "text": "펜릴 소대",
+          "rect": [
+            354.44728710380707,
+            726.8724040985107,
+            102.0,
+            34.11882781982422
+          ],
+          "fontSize": 26,
+          "bestFit": false,
+          "minSize": 2,
+          "bold": false,
+          "horizontal": 1,
+          "vertical": 512,
+          "color": [
+            214,
+            214,
+            214,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "-1667367855285528964",
+          "shadows": [
+            {
+              "type": "Outline",
+              "color": [
+                0,
+                0,
+                0,
+                255
+              ],
+              "offset": [
+                1.0,
+                -1.0
+              ]
+            }
+          ],
+          "nodeName": "NKM_UI_UNIT_INFO_DESC_SUMMARY_TITLE",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_UNIT_INFO_DESC_SUMMARY_TITLE"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            129.24729015556488,
+            937.0788119584322,
+            319.7326903131851,
+            50.0
+          ],
+          "originalObject": "-301510947620580019",
+          "originalComponent": "-2039617567995008802",
+          "spriteKey": "3:4468661437388406612",
+          "originalSprite": "AB_UI_COLLECTION_DOT",
+          "rotation": 0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "Bg",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/TAG_LAYOUTGROUP/WEAK_TAG/MAIN/Bg",
+          "src": "/game-assets/common/profile-summary/summary-57c909d61285300d7897.png"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            154.69254924980316,
+            947.0788119584322,
+            30.0,
+            30.0
+          ],
+          "originalObject": "-4964162244894272319",
+          "originalComponent": "6079235082306793366",
+          "spriteKey": "15:2893583304709202305",
+          "originalSprite": "NKM_UI_COMMON_WEAK_TAG_SYMBOL_CONFLICT_SMALL",
+          "rotation": 0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "Icon",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/TAG_LAYOUTGROUP/WEAK_TAG/MAIN/Icon",
+          "src": "/game-assets/common/profile-summary/summary-676b7cd270b496ba98f2.png"
+        },
+        {
+          "kind": "text",
+          "text": "투쟁",
+          "rect": [
+            197.47257854667816,
+            943.0258124619722,
+            132.50999450683594,
+            38.10599899291992
+          ],
+          "fontSize": 26,
+          "bestFit": true,
+          "minSize": 18,
+          "bold": false,
+          "horizontal": 1,
+          "vertical": 512,
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "-5221340971546865430",
+          "shadows": [
+            {
+              "type": "Outline",
+              "color": [
+                0,
+                0,
+                0,
+                128
+              ],
+              "offset": [
+                1.0,
+                -1.0
+              ]
+            }
+          ],
+          "nodeName": "Text",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/TAG_LAYOUTGROUP/WEAK_TAG/MAIN/Text"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            129.24729015556488,
+            993.8318119049072,
+            643.4653806263702,
+            86.16818809509277
+          ],
+          "originalObject": "744023349808107400",
+          "originalComponent": "-2233852099052147354",
+          "spriteKey": "3:2849395774428033073",
+          "originalSprite": "AB_UI_COLLECTION_DOT_GRADIENT2",
+          "rotation": 0.0,
+          "pivot": [
+            0.0,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "LayoutGruop",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/UNIT_INFO_VOICE_ACTOR/LayoutGruop",
+          "src": "/game-assets/common/profile-summary/summary-73cfc54059b44d2508b2.png"
+        },
+        {
+          "kind": "text",
+          "text": "성우",
+          "rect": [
+            149.24729015556488,
+            1013.3318119049072,
+            56.0,
+            45.0
+          ],
+          "fontSize": 30,
+          "bestFit": false,
+          "minSize": 0,
+          "bold": false,
+          "horizontal": 1,
+          "vertical": 256,
+          "color": [
+            130,
+            130,
+            130,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "-4984105523850190580",
+          "shadows": [],
+          "nodeName": "VOICE_ACTOR_TEXT",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/UNIT_INFO_VOICE_ACTOR/LayoutGruop/VOICE_ACTOR_TEXT"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            213.24729015556488,
+            1022.8318119049072,
+            2.0,
+            26.0
+          ],
+          "originalObject": "981716172861357749",
+          "originalComponent": "3747696361013329336",
+          "spriteKey": "42:-5729428463375290704",
+          "originalSprite": "BANNER_COMMON_PREFAB_DOT",
+          "rotation": 0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "LINE",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/UNIT_INFO_VOICE_ACTOR/LayoutGruop/LINE",
+          "src": "/game-assets/common/profile-summary/summary-9a9c01b52da5d0c12222.png"
+        },
+        {
+          "kind": "text",
+          "text": "정유정",
+          "rect": [
+            223.24729015556488,
+            1013.3318119049072,
+            84.0,
+            45.0
+          ],
+          "fontSize": 30,
+          "bestFit": false,
+          "minSize": 0,
+          "bold": false,
+          "horizontal": 1,
+          "vertical": 256,
+          "color": [
+            130,
+            130,
+            130,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "4414080960944768406",
+          "shadows": [],
+          "nodeName": "VOICE_ACTOR_NAME",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/UNIT_INFO_VOICE_ACTOR/LayoutGruop/VOICE_ACTOR_NAME"
+        }
+      ]
+    },
+    "operator": {
+      "name": "이수연",
+      "layers": [
+        {
+          "kind": "image",
+          "rect": [
+            -1176.6297607421875,
+            761.0257873535156,
+            4277.459716796875,
+            696.1267700195312
+          ],
+          "originalObject": "1479740026364068863",
+          "originalComponent": "-842328296783897618",
+          "spriteKey": "14:2378185173627211752",
+          "originalSprite": "NKM_UI_COLLECTION_ILLUST_SLOT_BOTTOM_GRADIENT",
+          "rotation": 0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "gradation",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/gradation",
+          "src": "/game-assets/common/profile-summary/summary-0ba99d4165415995547f.png"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            550.9613037109375,
+            -169.3618927001953,
+            2045.419921875,
+            1338.3185119628906
+          ],
+          "originalObject": "-1465150211594363274",
+          "originalComponent": "3944099935548162675",
+          "spriteKey": "14:2378185173627211752",
+          "originalSprite": "NKM_UI_COLLECTION_ILLUST_SLOT_BOTTOM_GRADIENT",
+          "rotation": -90.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "gradation (1)",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/gradation (1)",
+          "src": "/game-assets/common/profile-summary/summary-bf04741c01d99b4158e0.png"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            129.24729015556488,
+            993.8318119049072,
+            643.4653806263702,
+            86.16818809509277
+          ],
+          "originalObject": "744023349808107400",
+          "originalComponent": "-2233852099052147354",
+          "spriteKey": "3:2849395774428033073",
+          "originalSprite": "AB_UI_COLLECTION_DOT_GRADIENT2",
+          "rotation": 0.0,
+          "pivot": [
+            0.0,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "LayoutGruop",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/UNIT_INFO_VOICE_ACTOR/LayoutGruop",
+          "src": "/game-assets/common/profile-summary/summary-73cfc54059b44d2508b2.png"
+        },
+        {
+          "kind": "text",
+          "text": "성우",
+          "rect": [
+            149.24729015556488,
+            1013.3318119049072,
+            56.0,
+            45.0
+          ],
+          "fontSize": 30,
+          "bestFit": false,
+          "minSize": 0,
+          "bold": false,
+          "horizontal": 1,
+          "vertical": 256,
+          "color": [
+            130,
+            130,
+            130,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "-4984105523850190580",
+          "shadows": [],
+          "nodeName": "VOICE_ACTOR_TEXT",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/UNIT_INFO_VOICE_ACTOR/LayoutGruop/VOICE_ACTOR_TEXT"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            213.24729015556488,
+            1022.8318119049072,
+            2.0,
+            26.0
+          ],
+          "originalObject": "981716172861357749",
+          "originalComponent": "3747696361013329336",
+          "spriteKey": "42:-5729428463375290704",
+          "originalSprite": "BANNER_COMMON_PREFAB_DOT",
+          "rotation": 0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "LINE",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/UNIT_INFO_VOICE_ACTOR/LayoutGruop/LINE",
+          "src": "/game-assets/common/profile-summary/summary-9a9c01b52da5d0c12222.png"
+        },
+        {
+          "kind": "text",
+          "text": "김현심",
+          "rect": [
+            223.24729015556488,
+            1013.3318119049072,
+            84.0,
+            45.0
+          ],
+          "fontSize": 30,
+          "bestFit": false,
+          "minSize": 0,
+          "bold": false,
+          "horizontal": 1,
+          "vertical": 256,
+          "color": [
+            130,
+            130,
+            130,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "4414080960944768406",
+          "shadows": [],
+          "nodeName": "VOICE_ACTOR_NAME",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/UNIT_INFO_VOICE_ACTOR/LayoutGruop/VOICE_ACTOR_NAME"
+        },
+        {
+          "kind": "image",
+          "rect": [
+            64.18219425407563,
+            750.3145065307617,
+            291.6400146484375,
+            227.9199981689453
+          ],
+          "originalObject": "-3302265127425835365",
+          "originalComponent": "-3239211951730525892",
+          "spriteKey": "34:886773922950790112",
+          "originalSprite": "NKM_UI_COMMON_RANK_SSR",
+          "rotation": 0.0,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "material": {
+            "m_FileID": 0,
+            "m_PathID": "0"
+          },
+          "blend": "",
+          "nodeName": "Rarity_icon",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/AB_UI_COLLECTION_OPERATOR_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_LAB_UNIT_SUMMARY_CLASS/NKM_UI_LAB_UNIT_SUMMARY_RANK/Rarity_icon",
+          "src": "/game-assets/common/profile-summary/summary-172629a82dc88d0f76f9.png"
+        },
+        {
+          "kind": "text",
+          "text": "이수연",
+          "rect": [
+            302.2472901555649,
+            853.4423942565918,
+            446.46538062637023,
+            58.709999084472656
+          ],
+          "fontSize": 50,
+          "bestFit": true,
+          "minSize": 0,
+          "bold": true,
+          "horizontal": 1,
+          "vertical": 512,
+          "color": [
+            255,
+            255,
+            255,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "7873405765991610920",
+          "shadows": [
+            {
+              "type": "Outline",
+              "color": [
+                0,
+                0,
+                0,
+                255
+              ],
+              "offset": [
+                1.0,
+                -1.0
+              ]
+            }
+          ],
+          "nodeName": "NKM_UI_UNIT_INFO_DESC_SUMMARY_NAME",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/AB_UI_COLLECTION_OPERATOR_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_UNIT_INFO_DESC_SUMMARY_NAME_LAYOUT/NKM_UI_UNIT_INFO_DESC_SUMMARY_NAME"
+        },
+        {
+          "kind": "text",
+          "text": "부사장",
+          "rect": [
+            301.5472932073227,
+            804.9223747253418,
+            84.0,
+            60.150001525878906
+          ],
+          "fontSize": 30,
+          "bestFit": false,
+          "minSize": 3,
+          "bold": false,
+          "horizontal": 1,
+          "vertical": 512,
+          "color": [
+            173,
+            173,
+            173,
+            255
+          ],
+          "font": "NativeMain",
+          "originalTextComponent": "8080419270376427168",
+          "shadows": [
+            {
+              "type": "Outline",
+              "color": [
+                0,
+                0,
+                0,
+                255
+              ],
+              "offset": [
+                1.0,
+                -1.0
+              ]
+            }
+          ],
+          "nodeName": "NKM_UI_UNIT_INFO_DESC_SUMMARY_TITLE",
+          "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/AB_UI_COLLECTION_OPERATOR_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_UNIT_INFO_DESC_SUMMARY_TITLE"
+        }
+      ]
+    }
+  },
+  "rarities": {
+    "N": {
+      "src": "/game-assets/common/profile-summary/rarity-n.png",
+      "width": 292,
+      "height": 228,
+      "nativeRect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 238.0,
+        "height": 186.0
+      },
+      "sourceSprite": "NKM_UI_COMMON_RANK_N",
+      "sourcePathId": "-223820156267035394",
+      "displaySize": [
+        291.6400146484375,
+        227.9199981689453
+      ]
+    },
+    "R": {
+      "src": "/game-assets/common/profile-summary/rarity-r.png",
+      "width": 292,
+      "height": 228,
+      "nativeRect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 238.0,
+        "height": 186.0
+      },
+      "sourceSprite": "NKM_UI_COMMON_RANK_R",
+      "sourcePathId": "-1223779803414452136",
+      "displaySize": [
+        291.6400146484375,
+        227.9199981689453
+      ]
+    },
+    "SR": {
+      "src": "/game-assets/common/profile-summary/rarity-sr.png",
+      "width": 292,
+      "height": 228,
+      "nativeRect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 238.0,
+        "height": 186.0
+      },
+      "sourceSprite": "NKM_UI_COMMON_RANK_SR",
+      "sourcePathId": "8421475115006955276",
+      "displaySize": [
+        291.6400146484375,
+        227.9199981689453
+      ]
+    },
+    "SSR": {
+      "src": "/game-assets/common/profile-summary/rarity-ssr.png",
+      "width": 292,
+      "height": 228,
+      "nativeRect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 238.0,
+        "height": 186.0
+      },
+      "sourceSprite": "NKM_UI_COMMON_RANK_SSR",
+      "sourcePathId": "886773922950790112",
+      "displaySize": [
+        291.6400146484375,
+        227.9199981689453
+      ]
+    }
+  },
+  "rarityGlows": {
+    "N": {
+      "src": "/game-assets/common/profile-summary/rarity-glow-n.png",
+      "rect": [
+        127.5723176213852,
+        700.2418460845947,
+        169.1999969482422,
+        169.1999969482422
+      ],
+      "blend": "additive",
+      "color": [
+        87,
+        87,
+        87,
+        26
+      ],
+      "sourceComponent": "-8061303918517933576",
+      "sourceObject": "-6755293729947084416",
+      "nodeName": "FX - Light",
+      "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_LAB_UNIT_SUMMARY_CLASS/NKM_UI_LAB_UNIT_SUMMARY_RANK/N/FX - Light",
+      "note": "Availability is not a visibility instruction. Enable only where the native runtime branch is verified; the approved operator template contains no glow."
+    },
+    "R": {
+      "src": "/game-assets/common/profile-summary/rarity-glow-r.png",
+      "rect": [
+        122.42732097831879,
+        691.1818332672119,
+        169.1999969482422,
+        169.1999969482422
+      ],
+      "blend": "additive",
+      "color": [
+        0,
+        23,
+        255,
+        45
+      ],
+      "sourceComponent": "-2466231471415673441",
+      "sourceObject": "-3474630861573776023",
+      "nodeName": "FX - Light",
+      "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_LAB_UNIT_SUMMARY_CLASS/NKM_UI_LAB_UNIT_SUMMARY_RANK/R/FX - Light",
+      "note": "Availability is not a visibility instruction. Enable only where the native runtime branch is verified; the approved operator template contains no glow."
+    },
+    "SR": {
+      "src": "/game-assets/common/profile-summary/rarity-glow-sr.png",
+      "rect": [
+        51.497305414353946,
+        680.4768390655518,
+        296.6000061035156,
+        203.89999389648438
+      ],
+      "blend": "additive",
+      "color": [
+        176,
+        0,
+        22,
+        14
+      ],
+      "sourceComponent": "2179016363800923727",
+      "sourceObject": "-7825035619652244812",
+      "nodeName": "FX - Light",
+      "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_LAB_UNIT_SUMMARY_CLASS/NKM_UI_LAB_UNIT_SUMMARY_RANK/SR/FX - Light",
+      "note": "Availability is not a visibility instruction. Enable only where the native runtime branch is verified; the approved operator template contains no glow."
+    },
+    "SSR": {
+      "src": "/game-assets/common/profile-summary/rarity-glow-ssr.png",
+      "rect": [
+        71.0673127385727,
+        670.0718402862549,
+        270.8999938964844,
+        186.1999969482422
+      ],
+      "blend": "additive",
+      "color": [
+        255,
+        55,
+        0,
+        39
+      ],
+      "sourceComponent": "4719855236222040369",
+      "sourceObject": "293029097303443960",
+      "nodeName": "FX - Light",
+      "hierarchy": "/AB_UI_COLLECTION_INFO/COLLECTION_INFO_CONTENT/UNIT_AREA/LayoutGroup_UnitSummary/AB_UI_COLLECTION_UNIT_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY/NKM_UI_UNIT_INFO_DESC_SUMMARY_Safearea/NKM_UI_LAB_UNIT_SUMMARY_CLASS/NKM_UI_LAB_UNIT_SUMMARY_RANK/SSR/FX - Light",
+      "note": "Availability is not a visibility instruction. Enable only where the native runtime branch is verified; the approved operator template contains no glow."
+    }
+  },
+  "assets": [
+    {
+      "src": "/game-assets/common/profile-summary/summary-0ba99d4165415995547f.png",
+      "sha256": "dfebd484196bcd02bce16ca810cb5cf9924a2da5221bf3c56044ac0617081fc8",
+      "bytes": 16895,
+      "width": 4277,
+      "height": 696,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/0ba99d4165415995547f.png",
+        "sha256": "dfebd484196bcd02bce16ca810cb5cf9924a2da5221bf3c56044ac0617081fc8"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-bf04741c01d99b4158e0.png",
+      "sha256": "b3e70d1ce225e73b9e76cd122d103bdebf721b100fa48cf6369ed2517546ccd6",
+      "bytes": 18579,
+      "width": 2045,
+      "height": 1338,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/bf04741c01d99b4158e0.png",
+        "sha256": "b3e70d1ce225e73b9e76cd122d103bdebf721b100fa48cf6369ed2517546ccd6"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-57c909d61285300d7897.png",
+      "sha256": "66f0ee55b4c0206e1426fc855a0b28e8809b20181d0058934daad3c83228fedc",
+      "bytes": 249,
+      "width": 320,
+      "height": 50,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/57c909d61285300d7897.png",
+        "sha256": "66f0ee55b4c0206e1426fc855a0b28e8809b20181d0058934daad3c83228fedc"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-08b1932c691e1d56b31a.png",
+      "sha256": "6758e211e1defe9ae3fbac04cc56e3e5c1c233d082af88facd2fb6d7b07573c6",
+      "bytes": 1861,
+      "width": 38,
+      "height": 38,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/08b1932c691e1d56b31a.png",
+        "sha256": "6758e211e1defe9ae3fbac04cc56e3e5c1c233d082af88facd2fb6d7b07573c6"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-e37faeb8a47c6678438b.png",
+      "sha256": "4934b42a34ffa6fc24a245bdf47f8c1db1bd562f5c769f4f04780d2712527d7a",
+      "bytes": 780,
+      "width": 38,
+      "height": 38,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/e37faeb8a47c6678438b.png",
+        "sha256": "4934b42a34ffa6fc24a245bdf47f8c1db1bd562f5c769f4f04780d2712527d7a"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-a2a608b1fcced5968d85.png",
+      "sha256": "f2c30706fade4eb3881dff463ac2b6fdc783df7932c07c8a28fdf88518e828c5",
+      "bytes": 251,
+      "width": 320,
+      "height": 50,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/a2a608b1fcced5968d85.png",
+        "sha256": "f2c30706fade4eb3881dff463ac2b6fdc783df7932c07c8a28fdf88518e828c5"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-80626ebdd728c78dd909.png",
+      "sha256": "9023ad2b1af297c8ef21c2a785c1214219eeb86a4c7f08432252d59e82a98a40",
+      "bytes": 3042,
+      "width": 103,
+      "height": 103,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/80626ebdd728c78dd909.png",
+        "sha256": "9023ad2b1af297c8ef21c2a785c1214219eeb86a4c7f08432252d59e82a98a40"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-f1d929a9c530e7eae763.png",
+      "sha256": "80e086e4efbca7fa9fe6fb3c2e7192f34e79686d10168bdced37d8660d358cf2",
+      "bytes": 1403,
+      "width": 38,
+      "height": 38,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/f1d929a9c530e7eae763.png",
+        "sha256": "80e086e4efbca7fa9fe6fb3c2e7192f34e79686d10168bdced37d8660d358cf2"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-c47d18e6f4ffa6e1a780.png",
+      "sha256": "8fd4a2fd00a0dcafcacd775076cce5e3c689618b34f120dd722e7f5c1ffb704d",
+      "bytes": 52291,
+      "width": 292,
+      "height": 228,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/c47d18e6f4ffa6e1a780.png",
+        "sha256": "8fd4a2fd00a0dcafcacd775076cce5e3c689618b34f120dd722e7f5c1ffb704d"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-b1b3a2118d92e72871f7-native-additive.png",
+      "sha256": "f31fcba2df72fc21354cfebe58e6717e80c58c8a2d239c554e14a87e57d28a7a",
+      "bytes": 2218,
+      "width": 297,
+      "height": 204,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/b1b3a2118d92e72871f7-native-additive.png",
+        "sha256": "f31fcba2df72fc21354cfebe58e6717e80c58c8a2d239c554e14a87e57d28a7a"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-8f06ff43f6ed196f2c9d.png",
+      "sha256": "9168a2521cb56cfa4abf5057660565613184b1518bb8eacad02c0d2eccee7254",
+      "bytes": 3341,
+      "width": 76,
+      "height": 66,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/8f06ff43f6ed196f2c9d.png",
+        "sha256": "9168a2521cb56cfa4abf5057660565613184b1518bb8eacad02c0d2eccee7254"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-676b7cd270b496ba98f2.png",
+      "sha256": "127c46a1d2e3394d22897b80d450d6f2cfa61cc1c3ccbf3375d4cf3b0d0cc2aa",
+      "bytes": 1678,
+      "width": 30,
+      "height": 30,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/676b7cd270b496ba98f2.png",
+        "sha256": "127c46a1d2e3394d22897b80d450d6f2cfa61cc1c3ccbf3375d4cf3b0d0cc2aa"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-73cfc54059b44d2508b2.png",
+      "sha256": "97fc2ca9d3185822ffaf54184d8aee6947601e0dd0208367674c9f429cab4e6a",
+      "bytes": 2661,
+      "width": 643,
+      "height": 86,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/73cfc54059b44d2508b2.png",
+        "sha256": "97fc2ca9d3185822ffaf54184d8aee6947601e0dd0208367674c9f429cab4e6a"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-9a9c01b52da5d0c12222.png",
+      "sha256": "e58c0e42d6729a3363a1969094fc77124d0fa545f9ca32aabe1ba69ae330ce46",
+      "bytes": 91,
+      "width": 2,
+      "height": 26,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/9a9c01b52da5d0c12222.png",
+        "sha256": "e58c0e42d6729a3363a1969094fc77124d0fa545f9ca32aabe1ba69ae330ce46"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/summary-172629a82dc88d0f76f9.png",
+      "sha256": "064006ecc480034e6161cb80073a237927900f7fb87b922e0233c887366f8b29",
+      "bytes": 67087,
+      "width": 292,
+      "height": 228,
+      "provenance": {
+        "kind": "approved-prototype-raster",
+        "file": "assets/generated/172629a82dc88d0f76f9.png",
+        "sha256": "064006ecc480034e6161cb80073a237927900f7fb87b922e0233c887366f8b29"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/rarity-n.png",
+      "sha256": "542a14b38d0cfd58864ba5b0db4648e9e9e80bcac6130f5357f809c5079dd0b8",
+      "bytes": 29146,
+      "width": 292,
+      "height": 228,
+      "provenance": {
+        "kind": "native-rarity-restored-trim",
+        "bundle": "C:\\Users\\redbu\\Documents\\GitHub\\CS_asset\\tools\\CounterSide_decryption_tool-main\\1차 복호화\\Data\\StreamingAssets\\ab_ui_nkm_ui_common_icon_loc.asset",
+        "pathId": "-223820156267035394",
+        "sprite": "NKM_UI_COMMON_RANK_N"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/rarity-r.png",
+      "sha256": "7f7bbdc0bcd3b96fef81abbf0849b6cfe178f913db21d248355512c250c8d0ad",
+      "bytes": 33547,
+      "width": 292,
+      "height": 228,
+      "provenance": {
+        "kind": "native-rarity-restored-trim",
+        "bundle": "C:\\Users\\redbu\\Documents\\GitHub\\CS_asset\\tools\\CounterSide_decryption_tool-main\\1차 복호화\\Data\\StreamingAssets\\ab_ui_nkm_ui_common_icon_loc.asset",
+        "pathId": "-1223779803414452136",
+        "sprite": "NKM_UI_COMMON_RANK_R"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/rarity-sr.png",
+      "sha256": "8fd4a2fd00a0dcafcacd775076cce5e3c689618b34f120dd722e7f5c1ffb704d",
+      "bytes": 52291,
+      "width": 292,
+      "height": 228,
+      "provenance": {
+        "kind": "native-rarity-restored-trim",
+        "bundle": "C:\\Users\\redbu\\Documents\\GitHub\\CS_asset\\tools\\CounterSide_decryption_tool-main\\1차 복호화\\Data\\StreamingAssets\\ab_ui_nkm_ui_common_icon_loc.asset",
+        "pathId": "8421475115006955276",
+        "sprite": "NKM_UI_COMMON_RANK_SR"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/rarity-ssr.png",
+      "sha256": "064006ecc480034e6161cb80073a237927900f7fb87b922e0233c887366f8b29",
+      "bytes": 67087,
+      "width": 292,
+      "height": 228,
+      "provenance": {
+        "kind": "native-rarity-restored-trim",
+        "bundle": "C:\\Users\\redbu\\Documents\\GitHub\\CS_asset\\tools\\CounterSide_decryption_tool-main\\1차 복호화\\Data\\StreamingAssets\\ab_ui_nkm_ui_common_icon_loc.asset",
+        "pathId": "886773922950790112",
+        "sprite": "NKM_UI_COMMON_RANK_SSR"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/rarity-glow-n.png",
+      "sha256": "dfa815bc2b4492f9151b347f87b9213f828c93c7a11bf93af7fa06dfea622d7d",
+      "bytes": 1643,
+      "width": 169,
+      "height": 169,
+      "provenance": {
+        "kind": "native-rarity-glow",
+        "component": "-8061303918517933576",
+        "color": {
+          "r": 0.3396226167678833,
+          "g": 0.3396226167678833,
+          "b": 0.3396226167678833,
+          "a": 0.10196078568696976
+        },
+        "blendEvidence": "prototypes/client-profile-left/evidence/materials.json"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/rarity-glow-r.png",
+      "sha256": "308d178d2756587b3a4117d3b18e9c786bcc895926735337013f8111d572b8e6",
+      "bytes": 3712,
+      "width": 169,
+      "height": 169,
+      "provenance": {
+        "kind": "native-rarity-glow",
+        "component": "-2466231471415673441",
+        "color": {
+          "r": 0.0,
+          "g": 0.08888912200927734,
+          "b": 1.0,
+          "a": 0.1764705926179886
+        },
+        "blendEvidence": "prototypes/client-profile-left/evidence/materials.json"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/rarity-glow-sr.png",
+      "sha256": "f31fcba2df72fc21354cfebe58e6717e80c58c8a2d239c554e14a87e57d28a7a",
+      "bytes": 2218,
+      "width": 297,
+      "height": 204,
+      "provenance": {
+        "kind": "native-rarity-glow",
+        "component": "2179016363800923727",
+        "color": {
+          "r": 0.6886792182922363,
+          "g": 0.0,
+          "b": 0.08681392669677734,
+          "a": 0.054901961237192154
+        },
+        "blendEvidence": "prototypes/client-profile-left/evidence/materials.json"
+      }
+    },
+    {
+      "src": "/game-assets/common/profile-summary/rarity-glow-ssr.png",
+      "sha256": "8bf22d662dfdab9729bcc7e03a60ec8f63c7865d18e20409748e384fee89b8bd",
+      "bytes": 5066,
+      "width": 271,
+      "height": 186,
+      "provenance": {
+        "kind": "native-rarity-glow",
+        "component": "4719855236222040369",
+        "color": {
+          "r": 1.0,
+          "g": 0.2154337763786316,
+          "b": 0.0,
+          "a": 0.15294118225574493
+        },
+        "blendEvidence": "prototypes/client-profile-left/evidence/materials.json"
+      }
+    }
+  ],
+  "sources": {
+    "renderedScenes": {
+      "file": "prototypes/client-profile-left/evidence/rendered-scenes.json",
+      "sha256": "dca1f2896bd44397fe41e100512165dbecded6683e6b7c2e5a7d3492cdb12ce5"
+    },
+    "runtimeLayout": {
+      "file": "prototypes/client-profile-left/evidence/scenes-layout.json",
+      "sha256": "b7052287b20a7042bc71f608c29e9635e4ccb4b63eaf54149577103067761007"
+    },
+    "originalLayout": {
+      "file": "prototypes/client-profile-left/evidence/layout.json",
+      "sha256": "f97e92b9416cfa9a18e9ac2fd0abb9b6114475577e4a58b5329e481ea1ecbf82"
+    },
+    "rarityBundle": {
+      "file": "C:\\Users\\redbu\\Documents\\GitHub\\CS_asset\\tools\\CounterSide_decryption_tool-main\\1차 복호화\\Data\\StreamingAssets\\ab_ui_nkm_ui_common_icon_loc.asset",
+      "sha256": "284c3dfdf641007a20a842e5a9ba16d1bf9a69df7b86d4699b5d4bfe181a5e70"
+    },
+    "material": {
+      "file": "prototypes/client-profile-left/evidence/materials.json",
+      "sha256": "9ee08fb64097bb157df6e127857ec1276792836842bfd659c87b701070311a7d"
+    }
+  },
+  "policy": {
+    "layout": "Final user-approved standalone prototype; preserves subsequent spacing, crop, hidden indicator, and cost-circle adjustments.",
+    "card": "Dynamic existing website card artwork replaces this shared slot; no sample card is shipped in the summary asset directory.",
+    "runtime": "All image URLs are local public assets; source-evidence paths are provenance only and are never fetched by the page.",
+    "additive": "Rarity glow rasters encode verified native RGB contribution for plus-lighter on the opaque summary backdrop; transparent render targets are unsupported."
+  }
+}

@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
+import { useSelectionDialog } from "@/lib/useDialogEffects";
+import { useMemo, useState } from "react";
 import CollectionAcquisitionList from "@/components/CollectionAcquisitionList";
 import CollectionFramePreview from "@/components/CollectionFramePreview";
 import CollectionSortButtons from "@/components/CollectionSortButtons";
@@ -39,31 +40,16 @@ export default function CollectionFrameList({ frames, }: {
                 first.id - second.id);
         });
     }, [frames, normalizedKeyword, sortMode]);
-    useEffect(() => {
-        if (!selectedFrame) {
-            return;
-        }
-        const previousOverflow = document.body.style.overflow;
-        function closeOnEscape(event: KeyboardEvent) {
-            if (event.key === "Escape") {
-                setSelectedFrame(null);
-            }
-        }
-        document.body.style.overflow = "hidden";
-        window.addEventListener("keydown", closeOnEscape);
-        return () => {
-            document.body.style.overflow = previousOverflow;
-            window.removeEventListener("keydown", closeOnEscape);
-        };
-    }, [selectedFrame]);
+    useSelectionDialog(selectedFrame, setSelectedFrame);
     return (<>
-      <section className="mt-8 border border-[#343844] bg-[#111318] p-4">
+      <section className="mt-8 rounded-md border border-[#343844] bg-[#171a21] p-4">
         <div className="flex flex-col gap-3 lg:flex-row lg:items-end">
-          <label className="flex h-11 min-w-0 flex-1 items-center gap-3 border border-[#4b5563] bg-[#0b0d12] px-4 focus-within:border-white">
-            <SearchInput value={keyword} onChange={(event) => setKeyword(event.target.value)} ariaLabel="프레임 검색" containerClassName="h-full flex-1" inputClassName="h-full bg-transparent text-sm text-[#e5e7eb] outline-none placeholder:text-[#565c6b]"/>
+          <label className="flex min-w-0 flex-1 flex-col gap-2">
+            <span className="text-sm font-bold text-white">프레임 검색</span>
+            <SearchInput value={keyword} onChange={(event) => setKeyword(event.target.value)} ariaLabel="프레임 검색"/>
           </label>
 
-          <div className="flex items-center justify-between gap-3 lg:justify-end">
+          <div className="flex items-end justify-between gap-3 lg:justify-end">
             <CollectionSortButtons label="프레임" value={sortMode} onChange={setSortMode}/>
             <ListResultCount label="프레임" count={visibleFrames.length} total={frames.length}/>
           </div>

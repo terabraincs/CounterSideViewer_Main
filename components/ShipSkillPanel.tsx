@@ -43,7 +43,7 @@ export default function ShipSkillPanel({ skillStages }: ShipSkillPanelProps) {
           {selectedStage.skills.map((skill) => (<div key={skill.id} className="grid grid-cols-[80px_1px_minmax(0,1fr)] overflow-hidden border border-[#343844] bg-[#0b0d12]">
               <div className="flex items-start justify-center p-3">
                 <div className="relative h-14 w-14 overflow-hidden border border-[#343844] bg-black">
-                  {skill.iconPath ? (<Image src={skill.iconPath} alt="" fill sizes="56px" className="object-contain"/>) : null}
+                  {skill.iconPath ? (<Image src={deploymentUrl(skill.iconPath)} alt="" fill sizes="56px" className="object-contain"/>) : null}
                 </div>
               </div>
               <div className="bg-[#343844]"/>
@@ -63,7 +63,7 @@ export default function ShipSkillPanel({ skillStages }: ShipSkillPanelProps) {
                       </span>) : null}
                     {skill.cooldown ? (<span className="flex items-center text-[#cfd4dc]">
                         쿨타임
-                        <Image src={skillTimeIconPath} alt="" width={18} height={18} className="ml-1 mr-1 h-[18px] w-[18px] object-contain"/>
+                        <Image src={deploymentUrl(skillTimeIconPath)} alt="" width={18} height={18} className="ml-1 mr-1 h-[18px] w-[18px] object-contain"/>
                         {skill.cooldown}
                       </span>) : null}
                   </div>) : null}

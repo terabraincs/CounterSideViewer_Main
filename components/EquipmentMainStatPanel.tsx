@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { parseIntegerInput } from "@/lib/rangeControls";
 type EquipmentMainStatPanelProps = {
     label: string;
     values: string[];
@@ -8,11 +9,11 @@ export default function EquipmentMainStatPanel({ label, values, }: EquipmentMain
     const maximumEnhanceLevel = Math.max(values.length - 1, 0);
     const [enhanceLevel, setEnhanceLevel] = useState(maximumEnhanceLevel);
     function changeEnhanceLevel(value: string) {
-        const nextLevel = Number(value);
-        if (!Number.isFinite(nextLevel)) {
+        const nextLevel = parseIntegerInput(value, 0, maximumEnhanceLevel);
+        if (nextLevel === null) {
             return;
         }
-        setEnhanceLevel(Math.min(Math.max(Math.round(nextLevel), 0), maximumEnhanceLevel));
+        setEnhanceLevel(nextLevel);
     }
     return (<div className="mt-4 border border-[#343844] bg-[#171a21] px-4 py-4">
       <div className="flex min-h-9 items-center justify-between gap-4">

@@ -8,26 +8,43 @@ type VoicePlayButtonProps = {
     src: string;
     japaneseSrc?: string;
     label: string;
+    number?: number;
 };
 let activeAudio: HTMLAudioElement | null = null;
-export default function VoicePlayButton({ src, japaneseSrc, label, }: VoicePlayButtonProps) {
+const numberedButtonClassName = "flex h-12 min-w-[72px] shrink-0 cursor-pointer items-center justify-center gap-2.5 rounded-md border px-3.5 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white disabled:cursor-not-allowed";
+function VoicePlaybackIcon({ isPlaying = false, isLoading = false, compact = false, }: {
+    isPlaying?: boolean;
+    isLoading?: boolean;
+    compact?: boolean;
+}) {
+    return (<Image src={deploymentUrl(isPlaying
+        ? deploymentUrl("/ui/AB_UI_COLLECTION_ICON_PLAY.png") : deploymentUrl("/ui/AB_UI_COLLECTION_ICON_PAUSE.png"))} alt="" width={compact ? 22 : isPlaying ? 31 : 34} height={compact ? 22 : 34} className={`${compact ? "h-[22px] w-[22px] object-contain" : ""} ${isLoading ? "animate-pulse" : ""}`}/>);
+}
+export default function VoicePlayButton({ src, japaneseSrc, label, number, }: VoicePlayButtonProps) {
     const language = useVoiceLanguage();
     const selectedSrc = language === "ja" ? japaneseSrc ?? "" : src;
     const languageLabel = language === "ja" ? "일본어" : "한국어";
     if (!selectedSrc) {
         const unavailableLabel = `${languageLabel} 음성 없음`;
+        if (number !== undefined) {
+            return (<button type="button" disabled aria-label={`${label} ${unavailableLabel}`} aria-pressed={false} data-voice-playing="false" title={unavailableLabel} className={`${numberedButtonClassName} border-[#4b5160] bg-[#222631] text-[#cfd4dc] opacity-30`}>
+          <span className="min-w-3 text-center text-base tabular-nums">{number}</span>
+          <VoicePlaybackIcon compact/>
+        </button>);
+        }
         return (<span className="flex shrink-0 items-center gap-2">
         <span className="text-xs text-[#9ca3af]">{unavailableLabel}</span>
         <button type="button" disabled aria-label={`${label} ${unavailableLabel}`} data-voice-playing="false" title={unavailableLabel} className="flex h-10 w-10 shrink-0 items-center justify-center opacity-30">
-          <Image src={deploymentUrl("/ui/AB_UI_COLLECTION_ICON_PAUSE.png")} alt="" width={34} height={34}/>
+          <VoicePlaybackIcon />
         </button>
       </span>);
     }
-    return (<VoicePlayer key={`${language ?? "ko"}:${selectedSrc}`} src={selectedSrc} label={language ? `${label} ${languageLabel}` : label}/>);
+    return (<VoicePlayer key={`${language ?? "ko"}:${selectedSrc}`} src={deploymentUrl(selectedSrc)} label={language ? `${label} ${languageLabel}` : label} number={number}/>);
 }
-function VoicePlayer({ src, label }: {
+function VoicePlayer({ src, label, number, }: {
     src: string;
     label: string;
+    number?: number;
 }) {
     const audioRef = useRef<HTMLAudioElement>(null);
     const mountedRef = useRef(false);
@@ -36,8 +53,6 @@ function VoicePlayer({ src, label }: {
     const isPlaying = playbackState === "playing";
     const isPlaybackActive = isPlaying || playbackState === "loading";
     const buttonLabel = isPlaying ? `${label} 일시정지` : `${label} 재생`;
-    const iconPath = isPlaying
-        ? deploymentUrl("/ui/AB_UI_COLLECTION_ICON_PLAY.png") : deploymentUrl("/ui/AB_UI_COLLECTION_ICON_PAUSE.png");
     useEffect(() => {
         mountedRef.current = true;
         const audio = audioRef.current;
@@ -105,10 +120,17 @@ function VoicePlayer({ src, label }: {
         setPlaybackState("playing");
     }
     return (<>
-      <button type="button" aria-label={buttonLabel} data-voice-playing={isPlaybackActive ? "true" : "false"} title={playbackState === "error" ? "음원을 재생할 수 없습니다" : buttonLabel} onClick={togglePlayback} className="flex h-10 w-10 shrink-0 items-center justify-center transition hover:brightness-125 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-        <Image src={iconPath} alt="" width={isPlaying ? 31 : 34} height={34} className={playbackState === "loading" ? "animate-pulse" : ""}/>
+      <button type="button" aria-label={buttonLabel} aria-pressed={number !== undefined ? isPlaybackActive : undefined} data-voice-playing={isPlaybackActive ? "true" : "false"} title={playbackState === "error" ? "음원을 재생할 수 없습니다" : buttonLabel} onClick={togglePlayback} className={number !== undefined
+            ? `${numberedButtonClassName} ${isPlaybackActive
+                ? "border-[#4f8fd6] bg-[#163e68] text-white"
+                : "border-[#4b5160] bg-[#222631] text-[#cfd4dc] hover:border-white hover:bg-[#2a2f3c] hover:text-white"}`
+            : "flex h-10 w-10 shrink-0 items-center justify-center transition hover:brightness-125 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"}>
+        {number !== undefined ? (<>
+            <span className="min-w-3 text-center text-base tabular-nums">{number}</span>
+            <VoicePlaybackIcon isPlaying={isPlaying} isLoading={playbackState === "loading"} compact/>
+          </>) : (<VoicePlaybackIcon isPlaying={isPlaying} isLoading={playbackState === "loading"}/>)}
       </button>
-      <audio ref={audioRef} src={src} preload="none" onPlay={handlePlaying} onPlaying={handlePlaying} onPause={() => {
+      <audio ref={audioRef} src={deploymentUrl(src)} preload="none" onPlay={handlePlaying} onPlaying={handlePlaying} onPause={() => {
             if (mountedRef.current && audioRef.current?.paused) {
                 setPlaybackState("paused");
             }

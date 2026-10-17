@@ -1,4 +1,6 @@
 import { deploymentUrl } from "@/lib/deployment";
+import { publicFileExists } from "@/lib/publicAssets";
+import { createRowTextMap as createTextMap } from "@/lib/textTable";
 import fs from "node:fs";
 import path from "node:path";
 import { getCollectionAcquisitionMap, type CollectionAcquisitionEntry, } from "@/lib/collectionAcquisition";
@@ -17,9 +19,6 @@ type FrameCollectionRow = {
     CollectionItemID?: number;
     SortIndex?: number;
 };
-type TextTable = {
-    data?: unknown[];
-};
 export type CollectionFrameItem = {
     id: number;
     order: number;
@@ -36,7 +35,7 @@ const collectionDataDirectory = path.join(process.cwd(), "json", "collection");
 let cachedFrameData: CollectionFrameData | null = null;
 function readJsonTable<T>(fileName: string) {
     const filePath = path.join(collectionDataDirectory, fileName);
-    if (!fs.existsSync(filePath)) {
+    if (!publicFileExists(filePath)) {
         return null;
     }
     try {
@@ -45,17 +44,6 @@ function readJsonTable<T>(fileName: string) {
     catch {
         return null;
     }
-}
-function createTextMap(table: TextTable | null) {
-    const textMap = new Map<string, string>();
-    for (const row of table?.data ?? []) {
-        if (Array.isArray(row) &&
-            typeof row[0] === "string" &&
-            typeof row[1] === "string") {
-            textMap.set(row[0], row[1]);
-        }
-    }
-    return textMap;
 }
 function stripUnityRichText(value: string) {
     return value

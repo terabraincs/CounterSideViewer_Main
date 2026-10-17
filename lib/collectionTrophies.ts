@@ -1,12 +1,25 @@
-import { publicFileExists } from "@/lib/publicAssets";
 import { deploymentUrl } from "@/lib/deployment";
+import { publicFileExists } from "@/lib/publicAssets";
 import fs from "node:fs";
 import path from "node:path";
+import type { SpineInitialState, SpineModel } from "@/components/SpineViewer";
 type JsonTable<T> = {
     data?: T[];
 };
 type TextTable = {
     data?: unknown[];
+};
+type TrophySpineSource = {
+    id: number;
+    modelId?: string;
+    animation?: string;
+    skin?: string;
+    flipX?: boolean;
+    flipY?: boolean;
+};
+export type CollectionTrophySpine = {
+    model: SpineModel;
+    initialState: SpineInitialState;
 };
 type TrophyUnitRow = {
     m_UnitID?: number;
@@ -32,6 +45,7 @@ export type CollectionTrophyItem = {
     category: CollectionTrophyCategory;
     categoryName: string;
     imagePath: string;
+    spine: CollectionTrophySpine | null;
     canSetAsRepresentative: boolean;
     isAwakened: boolean;
 };
@@ -150,6 +164,14 @@ export function getCollectionTrophyData(): CollectionTrophyData {
         path.join(rootJsonDirectory, "KR", "002_LUA_SI_UNIT_KOREA_l.json"),
         path.join(trophyDataDirectory, "010_LUA_SI_UNIT_SD_KOREA_i.json"),
     ]);
+    const spineSources = readJson<{
+        items?: TrophySpineSource[];
+    }>(path.join(process.cwd(), "docs", "collection", "trophy", "illustration-source-plan.json"))?.items ?? [];
+    const spineModels = readJson<{
+        models?: SpineModel[];
+    }>(path.join(process.cwd(), "public", "spine", "manifest.json"))?.models ?? [];
+    const sourcesById = new Map(spineSources.map((source) => [source.id, source]));
+    const modelsById = new Map(spineModels.map((model) => [model.id, model]));
     const trophyRows = [...oldRows, ...newRows].filter((row) => {
         return (isTrophyUnit(row) && row.m_FaceCardName !== sharedPlaceholderFaceCardName);
     });
@@ -158,6 +180,9 @@ export function getCollectionTrophyData(): CollectionTrophyData {
         const unitStrId = row.m_UnitStrID ?? "";
         const description = resolveText(row.m_UnitDesc, textMap) || "트로피 설명이 없습니다.";
         const { category, categoryName } = getTrophyCategory(unitStrId);
+        const imagePath = getTrophyImagePath(row.m_FaceCardName);
+        const source = sourcesById.get(id);
+        const model = source?.modelId ? modelsById.get(source.modelId) : undefined;
         return {
             id,
             order,
@@ -167,7 +192,17 @@ export function getCollectionTrophyData(): CollectionTrophyData {
             role: roleMap[row.m_NKM_UNIT_ROLE_TYPE ?? ""] ?? "",
             category,
             categoryName,
-            imagePath: getTrophyImagePath(row.m_FaceCardName),
+            imagePath,
+            spine: model?.kind === "spine" && source ? {
+                model,
+                initialState: {
+                    animation: source.animation,
+                    skin: source.skin,
+                    flipX: source.flipX,
+                    flipY: source.flipY,
+                    background: "dark",
+                },
+            } : null,
             canSetAsRepresentative: row.m_bProfileMainUnit === true || description.includes("대표 사원"),
             isAwakened: row.m_bAwaken === true,
         };

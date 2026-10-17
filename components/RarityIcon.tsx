@@ -37,5 +37,5 @@ export default function RarityIcon({ grade, size = "md", className = "", }: Rari
         {grade}
       </span>);
     }
-    return (<Image src={icon.src} alt={`${grade} 등급`} width={icon.width} height={64} className={`w-auto shrink-0 object-contain ${sizeClassMap[size]} ${className}`.trim()}/>);
+    return (<Image src={deploymentUrl(icon.src)} alt={`${grade} 등급`} width={icon.width} height={64} className={`w-auto shrink-0 object-contain ${sizeClassMap[size]} ${className}`.trim()}/>);
 }

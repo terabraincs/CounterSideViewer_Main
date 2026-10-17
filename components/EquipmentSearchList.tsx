@@ -1,9 +1,13 @@
 "use client";
+import { deploymentUrl } from "@/lib/deployment";
 import { useMemo, useState } from "react";
 import Image from "@/components/DeploymentImage";
 import Link from "@/components/DeploymentLink";
 import SearchInput from "@/components/SearchInput";
+import CollectionSortButtons from "@/components/CollectionSortButtons";
 import ListResultCount from "@/components/ListResultCount";
+import { FilterOptionButton, FilterSectionHeading } from "@/components/FilterControls";
+import { matchesSelectedFilter as matchesFilter, toggleSelectedValue } from "@/lib/listFilters";
 import type { EquipmentListItem } from "@/lib/equipment";
 type EquipmentSearchListProps = {
     equipment: EquipmentListItem[];
@@ -23,23 +27,11 @@ function createEmptyFilters(): FilterState {
         equipmentKinds: [],
     };
 }
-function matchesFilter(selectedValues: string[], value: string) {
-    return selectedValues.length === 0 || selectedValues.includes(value);
-}
 function matchesEquipmentKinds(selectedValues: string[], item: EquipmentListItem) {
     return (selectedValues.length === 0 ||
         selectedValues.some((value) => value === "전용장비"
             ? item.isExclusive
             : item.equipmentKind === value));
-}
-function getFilterButtonClass(isSelected: boolean) {
-    return [
-        "min-h-11 border px-3 py-2 text-sm font-bold transition",
-        "focus:outline-none focus:ring-2 focus:ring-[#9ca3af]",
-        isSelected
-            ? "border-white bg-white text-[#111318] shadow-[0_0_14px_rgba(255,255,255,0.22)]"
-            : "border-[#4b5563] bg-black/35 text-[#9ca3af] hover:border-white hover:text-white",
-    ].join(" ");
 }
 function getSearchText(item: EquipmentListItem) {
     return [
@@ -58,6 +50,7 @@ function getSearchText(item: EquipmentListItem) {
 }
 export default function EquipmentSearchList({ equipment, }: EquipmentSearchListProps) {
     const [searchKeyword, setSearchKeyword] = useState("");
+    const [sortMode, setSortMode] = useState<"order" | "name">("order");
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const [selectedFilters, setSelectedFilters] = useState<FilterState>(() => createEmptyFilters());
     const normalizedKeyword = searchKeyword.trim().toLowerCase();
@@ -85,22 +78,23 @@ export default function EquipmentSearchList({ equipment, }: EquipmentSearchListP
     }, []);
     const activeFilterCount = Object.values(selectedFilters).reduce((total, values) => total + values.length, 0);
     const filteredEquipment = useMemo(() => {
-        return equipment.filter((item) => {
+        const filtered = equipment.filter((item) => {
             const matchesKeyword = !normalizedKeyword || getSearchText(item).includes(normalizedKeyword);
             return (matchesKeyword &&
                 matchesFilter(selectedFilters.positions, item.position) &&
                 matchesFilter(selectedFilters.unitTypes, item.unitType) &&
                 matchesEquipmentKinds(selectedFilters.equipmentKinds, item));
         });
-    }, [equipment, normalizedKeyword, selectedFilters]);
+        return sortMode === "name"
+            ? filtered.sort((first, second) => first.name.localeCompare(second.name, "ko-KR"))
+            : filtered;
+    }, [equipment, normalizedKeyword, selectedFilters, sortMode]);
     function toggleFilterValue(key: FilterKey, value: string) {
         setSelectedFilters((currentFilters) => {
             const currentValues = currentFilters[key];
             return {
                 ...currentFilters,
-                [key]: currentValues.includes(value)
-                    ? currentValues.filter((currentValue) => currentValue !== value)
-                    : [...currentValues, value],
+                [key]: toggleSelectedValue(currentValues, value),
             };
         });
     }
@@ -108,19 +102,24 @@ export default function EquipmentSearchList({ equipment, }: EquipmentSearchListP
         setSelectedFilters(createEmptyFilters());
     }
     return (<div className="mt-8">
-      <div className="flex flex-col gap-3 rounded-md border border-[#343844] bg-[#171a21] p-4 sm:flex-row sm:items-end">
-        <label className="flex min-w-0 flex-1 flex-col gap-2">
-          <span className="text-sm font-bold text-white">장비 검색</span>
-          <SearchInput value={searchKeyword} onChange={(event) => setSearchKeyword(event.target.value)} ariaLabel="장비 검색" inputClassName="h-11 rounded border border-[#343844] bg-[#0b0d12] text-sm font-medium text-[#e5e7eb] outline-none transition placeholder:text-[#5b6270] focus:border-white focus:ring-2 focus:ring-[#9ca3af]/30"/>
-        </label>
+      <div className="flex flex-col gap-3 rounded-md border border-[#343844] bg-[#171a21] p-4 lg:flex-row lg:items-end lg:justify-between">
+        <div className="flex min-w-0 flex-1 flex-col gap-3 sm:flex-row">
+          <label className="flex min-w-0 flex-1 flex-col gap-2">
+            <span className="text-sm font-bold text-white">장비 검색</span>
+            <SearchInput value={searchKeyword} onChange={(event) => setSearchKeyword(event.target.value)} ariaLabel="장비 검색"/>
+          </label>
 
-        <div className="flex items-end gap-3 sm:shrink-0">
-          <div className="flex min-w-0 flex-1 flex-col gap-2 sm:w-40 sm:flex-none">
-            <span className="text-sm font-bold text-white">조건 필터</span>
-            <button type="button" onClick={() => setIsFilterOpen(true)} className="h-11 rounded border border-[#343844] bg-[#0b0d12] px-3 text-sm font-bold text-[#e5e7eb] transition hover:border-white hover:text-white focus:outline-none focus:ring-2 focus:ring-[#9ca3af]/30">
-              필터{activeFilterCount > 0 ? ` ${activeFilterCount}개` : ""}
-            </button>
+          <div className="flex items-end gap-3 sm:shrink-0">
+            <div className="flex min-w-0 flex-1 flex-col gap-2 sm:w-40 sm:flex-none">
+              <span className="text-sm font-bold text-white">조건 필터</span>
+              <button type="button" onClick={() => setIsFilterOpen(true)} className="h-11 rounded-md border border-[#343844] bg-[#0b0d12] px-3 text-sm font-bold text-[#e5e7eb] transition hover:border-white hover:text-white focus:outline-none focus:ring-2 focus:ring-[#9ca3af]/30">
+                필터{activeFilterCount > 0 ? ` ${activeFilterCount}개` : ""}
+              </button>
+            </div>
           </div>
+        </div>
+        <div className="flex items-end justify-between gap-3 lg:justify-end">
+          <CollectionSortButtons label="장비" value={sortMode} onChange={setSortMode}/>
           <ListResultCount label="장비" count={filteredEquipment.length} total={equipment.length}/>
         </div>
       </div>
@@ -138,16 +137,13 @@ export default function EquipmentSearchList({ equipment, }: EquipmentSearchListP
 
             <div className="mt-5 space-y-5">
               {filterSections.map((section) => (<section key={section.key}>
-                  <h3 className="mb-3 flex items-center gap-2 text-base font-black text-[#e5e7eb]">
-                    <span className="h-4 w-[5px] bg-white shadow-[0_0_10px_rgba(255,255,255,0.75)]"/>
-                    {section.title}
-                  </h3>
+                  <FilterSectionHeading>{section.title}</FilterSectionHeading>
                   <div className={`grid grid-cols-2 gap-2 ${section.columns ?? ""}`}>
                     {section.options.map((option) => {
                     const isSelected = selectedFilters[section.key].includes(option);
-                    return (<button key={`${section.key}-${option}`} type="button" aria-pressed={isSelected} onClick={() => toggleFilterValue(section.key, option)} className={getFilterButtonClass(isSelected)}>
+                    return (<FilterOptionButton key={`${section.key}-${option}`} selected={isSelected} onClick={() => toggleFilterValue(section.key, option)}>
                           {option}
-                        </button>);
+                        </FilterOptionButton>);
                 })}
                   </div>
                 </section>))}
@@ -196,10 +192,10 @@ export default function EquipmentSearchList({ equipment, }: EquipmentSearchListP
       `}</style>
 
       {filteredEquipment.length > 0 ? (<div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-          {filteredEquipment.map((item) => (<Link key={item.id} href={item.href} className="group overflow-hidden rounded-md border border-[#343844] bg-[#171a21] transition hover:-translate-y-1 hover:border-white hover:bg-[#1d2029] focus:outline-none focus:ring-2 focus:ring-[#9ca3af]">
+          {filteredEquipment.map((item) => (<Link key={item.id} href={deploymentUrl(item.href)} className="group overflow-hidden rounded-md border border-[#343844] bg-[#171a21] transition hover:-translate-y-1 hover:border-white hover:bg-[#1d2029] focus:outline-none focus:ring-2 focus:ring-[#9ca3af]">
               <div className="relative flex aspect-square items-center justify-center overflow-hidden bg-[#0f1117]">
-                {item.backgroundImagePath ? (<Image src={item.backgroundImagePath} alt="" fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" className="object-cover"/>) : null}
-                {item.imagePath ? (<Image src={item.imagePath} alt="" fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" className="z-10 object-contain p-3 transition duration-200 group-hover:scale-105"/>) : (<span className="relative z-10 text-xs font-bold tracking-[0.2em] text-[#565c6b]">
+                {item.backgroundImagePath ? (<Image src={deploymentUrl(item.backgroundImagePath)} alt="" fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" className="object-cover"/>) : null}
+                {item.imagePath ? (<Image src={deploymentUrl(item.imagePath)} alt="" fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" className="z-10 object-contain p-3 transition duration-200 group-hover:scale-105"/>) : (<span className="relative z-10 text-xs font-bold tracking-[0.2em] text-[#565c6b]">
                     NO IMAGE
                   </span>)}
               </div>

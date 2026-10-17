@@ -1,5 +1,7 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
+import { deploymentUrl } from "@/lib/deployment";
+import { useSelectionDialog } from "@/lib/useDialogEffects";
+import { useMemo, useState } from "react";
 import Image from "@/components/DeploymentImage";
 import CollectionAcquisitionList from "@/components/CollectionAcquisitionList";
 import CollectionSortButtons from "@/components/CollectionSortButtons";
@@ -42,31 +44,16 @@ export default function CollectionEmblemList({ emblems, }: CollectionEmblemListP
                 first.id - second.id);
         });
     }, [emblems, normalizedKeyword, sortMode]);
-    useEffect(() => {
-        if (!selectedEmblem) {
-            return;
-        }
-        const previousOverflow = document.body.style.overflow;
-        function closeOnEscape(event: KeyboardEvent) {
-            if (event.key === "Escape") {
-                setSelectedEmblem(null);
-            }
-        }
-        document.body.style.overflow = "hidden";
-        window.addEventListener("keydown", closeOnEscape);
-        return () => {
-            document.body.style.overflow = previousOverflow;
-            window.removeEventListener("keydown", closeOnEscape);
-        };
-    }, [selectedEmblem]);
+    useSelectionDialog(selectedEmblem, setSelectedEmblem);
     return (<>
-      <section className="mt-8 border border-[#343844] bg-[#111318] p-4">
+      <section className="mt-8 rounded-md border border-[#343844] bg-[#171a21] p-4">
         <div className="flex flex-col gap-3 lg:flex-row lg:items-end">
-          <label className="flex h-11 min-w-0 flex-1 items-center gap-3 border border-[#4b5563] bg-[#0b0d12] px-4 focus-within:border-white">
-            <SearchInput value={keyword} onChange={(event) => setKeyword(event.target.value)} ariaLabel="엠블럼 검색" containerClassName="h-full flex-1" inputClassName="h-full bg-transparent text-sm text-[#e5e7eb] outline-none placeholder:text-[#565c6b]"/>
+          <label className="flex min-w-0 flex-1 flex-col gap-2">
+            <span className="text-sm font-bold text-white">엠블럼 검색</span>
+            <SearchInput value={keyword} onChange={(event) => setKeyword(event.target.value)} ariaLabel="엠블럼 검색"/>
           </label>
 
-          <div className="flex items-center justify-between gap-3 lg:justify-end">
+          <div className="flex items-end justify-between gap-3 lg:justify-end">
             <CollectionSortButtons label="엠블럼" value={sortMode} onChange={setSortMode}/>
             <ListResultCount label="엠블럼" count={visibleEmblems.length} total={emblems.length}/>
           </div>
@@ -76,7 +63,7 @@ export default function CollectionEmblemList({ emblems, }: CollectionEmblemListP
       {visibleEmblems.length > 0 ? (<div className="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
           {visibleEmblems.map((emblem) => (<button key={emblem.id} type="button" aria-haspopup="dialog" onClick={() => setSelectedEmblem(emblem)} className="group min-w-0 overflow-hidden border border-[#343844] bg-[#171a21] text-left transition hover:-translate-y-1 hover:border-white hover:bg-[#222631] focus:outline-none focus:ring-2 focus:ring-[#9ca3af]">
               <div className="relative aspect-square w-full overflow-hidden border-b border-[#343844] bg-[#0b0d12]">
-                {emblem.imagePath ? (<Image src={emblem.imagePath} alt={`${emblem.name} 이미지`} fill sizes="(min-width: 1280px) 180px, (min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, 50vw" className="object-contain p-4 transition duration-300 group-hover:scale-105"/>) : (<span className="absolute inset-0 flex items-center justify-center text-xs font-bold tracking-[0.16em] text-[#565c6b]">
+                {emblem.imagePath ? (<Image src={deploymentUrl(emblem.imagePath)} alt={`${emblem.name} 이미지`} fill sizes="(min-width: 1280px) 180px, (min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, 50vw" className="object-contain p-4 transition duration-300 group-hover:scale-105"/>) : (<span className="absolute inset-0 flex items-center justify-center text-xs font-bold tracking-[0.16em] text-[#565c6b]">
                     NO IMAGE
                   </span>)}
               </div>
@@ -105,7 +92,7 @@ export default function CollectionEmblemList({ emblems, }: CollectionEmblemListP
 
             <div className="grid gap-6 p-5 sm:p-6 md:grid-cols-[240px_minmax(0,1fr)] md:items-start">
               <div className="relative mx-auto aspect-square w-full max-w-60 border border-[#343844] bg-[#0b0d12]">
-                {selectedEmblem.imagePath ? (<Image src={selectedEmblem.imagePath} alt={`${selectedEmblem.name} 이미지`} fill sizes="240px" className="object-contain p-5"/>) : (<span className="absolute inset-0 flex items-center justify-center text-xs font-bold tracking-[0.16em] text-[#565c6b]">
+                {selectedEmblem.imagePath ? (<Image src={deploymentUrl(selectedEmblem.imagePath)} alt={`${selectedEmblem.name} 이미지`} fill sizes="240px" className="object-contain p-5"/>) : (<span className="absolute inset-0 flex items-center justify-center text-xs font-bold tracking-[0.16em] text-[#565c6b]">
                     NO IMAGE
                   </span>)}
               </div>

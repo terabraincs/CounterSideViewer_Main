@@ -4,6 +4,7 @@ import Image from "@/components/DeploymentImage";
 import Link from "@/components/DeploymentLink";
 import { notFound } from "next/navigation";
 import EquipmentMainStatPanel from "@/components/EquipmentMainStatPanel";
+import FloatingSectionNav from "@/components/FloatingSectionNav";
 import RarityIcon from "@/components/RarityIcon";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
@@ -31,8 +32,25 @@ export default async function EquipmentDetailPage({ params, }: EquipmentDetailPa
     if (!equipment) {
         notFound();
     }
+    const sections = [
+        { id: "equipment-info", title: "장비 정보" },
+        { id: "equipment-description", title: "장비 설명" },
+        ...(equipment.seriesItems.length > 0
+            ? [{ id: "equipment-series", title: "장비 세트" }]
+            : []),
+        { id: "equipment-main-stat", title: "주 능력치" },
+        { id: "equipment-options", title: "보조 옵션" },
+        ...(equipment.potentialOptions.length > 0
+            ? [{ id: "equipment-potential", title: "잠재 옵션" }]
+            : []),
+        { id: "equipment-set-options", title: "세트 옵션" },
+        ...(equipment.sameImageVariants.length > 0
+            ? [{ id: "equipment-variants", title: "다른 티어·희귀도" }]
+            : []),
+    ];
     return (<div className="flex min-h-screen flex-col bg-[#0b0d12] text-[#e5e7eb]">
       <SiteHeader />
+      <FloatingSectionNav sections={sections} numbered={false}/>
 
       <main className="flex-1">
         <article className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
@@ -59,22 +77,11 @@ export default async function EquipmentDetailPage({ params, }: EquipmentDetailPa
             </div>
           </header>
 
-          <nav className="mt-6 flex flex-wrap gap-2 border-b border-[#343844] pb-6" aria-label="장비 상세 문단 이동">
-            <DetailSectionLink href="#equipment-info" label="장비 정보"/>
-            <DetailSectionLink href="#equipment-description" label="장비 설명"/>
-            {equipment.seriesItems.length > 0 ? (<DetailSectionLink href="#equipment-series" label="장비 세트"/>) : null}
-            <DetailSectionLink href="#equipment-main-stat" label="주 능력치"/>
-            <DetailSectionLink href="#equipment-options" label="보조 옵션"/>
-            {equipment.potentialOptions.length > 0 ? (<DetailSectionLink href="#equipment-potential" label="잠재 옵션"/>) : null}
-            <DetailSectionLink href="#equipment-set-options" label="세트 옵션"/>
-            {equipment.sameImageVariants.length > 0 ? (<DetailSectionLink href="#equipment-variants" label="다른 티어·희귀도"/>) : null}
-          </nav>
-
           <div className="mt-8 grid gap-6 lg:grid-cols-[360px_minmax(0,1fr)]">
-            <div className="overflow-hidden rounded-md border border-[#343844] bg-[#171a21]">
+            <div className="self-start overflow-hidden rounded-md border border-[#343844] bg-[#171a21]">
               <div className="relative flex aspect-square items-center justify-center bg-[#0f1117]">
-                {equipment.backgroundImagePath ? (<Image src={equipment.backgroundImagePath} alt="" fill sizes="(max-width: 1024px) 100vw, 360px" className="object-cover" priority/>) : null}
-                {equipment.imagePath ? (<Image src={equipment.imagePath} alt={`${equipment.name} 이미지`} fill sizes="(max-width: 1024px) 100vw, 360px" className="z-10 object-contain p-5" priority/>) : (<span className="relative z-10 text-xs font-bold tracking-[0.2em] text-[#565c6b]">
+                {equipment.backgroundImagePath ? (<Image src={deploymentUrl(equipment.backgroundImagePath)} alt="" fill sizes="(max-width: 1024px) 100vw, 360px" className="object-cover" priority/>) : null}
+                {equipment.imagePath ? (<Image src={deploymentUrl(equipment.imagePath)} alt={`${equipment.name} 이미지`} fill sizes="(max-width: 1024px) 100vw, 360px" className="z-10 object-contain p-5" priority/>) : (<span className="relative z-10 text-xs font-bold tracking-[0.2em] text-[#565c6b]">
                     NO IMAGE
                   </span>)}
               </div>
@@ -90,15 +97,13 @@ export default async function EquipmentDetailPage({ params, }: EquipmentDetailPa
                 </div>
               </section>
 
-              <div className={`mt-8 grid gap-6 ${equipment.privateUnits.length > 0
-            ? "lg:grid-cols-2"
-            : ""}`}>
+              <div className="mt-8 grid gap-6">
                 {equipment.privateUnits.length > 0 ? (<section id="equipment-private-unit" className="min-w-0 scroll-mt-24">
                     <SectionTitle title="전용 사원"/>
                     <div className="mt-4 flex flex-wrap gap-2">
-                      {equipment.privateUnits.map((unit) => (<Link key={unit.id} href={unit.href} className="flex min-h-20 min-w-[220px] items-center overflow-hidden border border-[#343844] bg-[#171a21] text-sm font-black text-[#e5e7eb] transition hover:border-white hover:bg-[#1d2029] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#9ca3af]">
+                      {equipment.privateUnits.map((unit) => (<Link key={unit.id} href={deploymentUrl(unit.href)} className="flex min-h-20 min-w-[220px] items-center overflow-hidden border border-[#343844] bg-[#171a21] text-sm font-black text-[#e5e7eb] transition hover:border-white hover:bg-[#1d2029] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#9ca3af]">
                           <span className="relative h-20 w-20 shrink-0 bg-[#0b0d12]">
-                            {unit.imagePath ? (<Image src={unit.imagePath} alt="" fill sizes="80px" className="object-contain"/>) : null}
+                            {unit.imagePath ? (<Image src={deploymentUrl(unit.imagePath)} alt="" fill sizes="80px" className="object-contain"/>) : null}
                           </span>
                           <span className="min-w-0 px-4 py-3">
                             {unit.title ? (<span className="block truncate text-xs font-bold text-[#9ca3af]">
@@ -112,15 +117,16 @@ export default async function EquipmentDetailPage({ params, }: EquipmentDetailPa
                     </div>
                   </section>) : null}
 
-                <section id="equipment-description" className="min-w-0 scroll-mt-24">
-                  <SectionTitle title="장비 설명"/>
-                  <p className="mt-4 border-l-4 border-white bg-[#171a21] px-4 py-4 whitespace-pre-line text-sm leading-7 text-[#c7cbd1]">
-                    {equipment.description}
-                  </p>
-                </section>
               </div>
             </div>
           </div>
+
+          <section id="equipment-description" className="mt-10 min-w-0 scroll-mt-24">
+            <SectionTitle title="장비 설명"/>
+            <p className="mt-4 border-l-4 border-white bg-[#171a21] px-4 py-4 whitespace-pre-line text-sm leading-7 text-[#c7cbd1]">
+              {equipment.description}
+            </p>
+          </section>
 
           {equipment.seriesItems.length > 0 ? (<section id="equipment-series" className="mt-10 scroll-mt-24">
               <SectionTitle title="장비 세트"/>
@@ -167,7 +173,7 @@ export default async function EquipmentDetailPage({ params, }: EquipmentDetailPa
             {equipment.setOptions.length > 0 ? (<div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {equipment.setOptions.map((setOption) => (<div key={setOption.id} className="grid min-h-28 grid-cols-[56px_minmax(0,1fr)] gap-3 rounded-md border border-[#343844] bg-[#171a21] p-4">
                     <div className="flex h-14 w-14 items-center justify-center bg-[#0b0d12]">
-                      {setOption.iconPath ? (<Image src={setOption.iconPath} alt="" width={44} height={44} className="h-11 w-11 object-contain"/>) : null}
+                      {setOption.iconPath ? (<Image src={deploymentUrl(setOption.iconPath)} alt="" width={44} height={44} className="h-11 w-11 object-contain"/>) : null}
                     </div>
                     <div className="min-w-0">
                       <h3 className="font-black text-white">
@@ -187,7 +193,7 @@ export default async function EquipmentDetailPage({ params, }: EquipmentDetailPa
           {equipment.sameImageVariants.length > 0 ? (<section id="equipment-variants" className="mt-10 scroll-mt-24">
               <SectionTitle title="다른 티어·희귀도"/>
               <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {equipment.sameImageVariants.map((variant) => (<Link key={variant.id} href={variant.href} className="flex min-h-16 items-center justify-between gap-4 border border-[#343844] bg-[#171a21] px-4 py-3 transition hover:border-white hover:bg-[#1d2029] focus:outline-none focus:ring-2 focus:ring-[#9ca3af]">
+                {equipment.sameImageVariants.map((variant) => (<Link key={variant.id} href={deploymentUrl(variant.href)} className="flex min-h-16 items-center justify-between gap-4 border border-[#343844] bg-[#171a21] px-4 py-3 transition hover:border-white hover:bg-[#1d2029] focus:outline-none focus:ring-2 focus:ring-[#9ca3af]">
                     <span className="min-w-0 truncate text-sm font-black text-white">
                       {variant.name}
                     </span>
@@ -216,8 +222,8 @@ function EquipmentSeriesCard({ item }: {
 }) {
     const content = (<>
       <span className="relative h-24 w-24 shrink-0 overflow-hidden bg-[#0f1117]">
-        {item.backgroundImagePath ? (<Image src={item.backgroundImagePath} alt="" fill sizes="96px" className="object-cover"/>) : null}
-        {item.imagePath ? (<Image src={item.imagePath} alt="" fill sizes="96px" className="z-10 object-contain p-2"/>) : null}
+        {item.backgroundImagePath ? (<Image src={deploymentUrl(item.backgroundImagePath)} alt="" fill sizes="96px" className="object-cover"/>) : null}
+        {item.imagePath ? (<Image src={deploymentUrl(item.imagePath)} alt="" fill sizes="96px" className="z-10 object-contain p-2"/>) : null}
       </span>
       <span className="min-w-0 px-3 py-3">
         <span className="flex flex-wrap items-center gap-2 text-xs font-black text-[#9ca3af]">
@@ -228,9 +234,6 @@ function EquipmentSeriesCard({ item }: {
         <span className="mt-2 line-clamp-2 block text-sm font-black leading-5 text-white">
           {item.name}
         </span>
-        {item.isCurrent ? (<span className="mt-2 block text-xs font-bold text-white">
-            현재 장비
-          </span>) : null}
       </span>
     </>);
     const className = [
@@ -241,17 +244,9 @@ function EquipmentSeriesCard({ item }: {
     ].join(" ");
     return item.isCurrent ? (<div className={className} aria-current="page">
       {content}
-    </div>) : (<Link href={item.href} className={className}>
+    </div>) : (<Link href={deploymentUrl(item.href)} className={className}>
       {content}
     </Link>);
-}
-function DetailSectionLink({ href, label }: {
-    href: string;
-    label: string;
-}) {
-    return (<a href={href} className="border border-[#343844] bg-[#171a21] px-3 py-2 text-sm font-black text-[#d1d5db] transition hover:border-white hover:text-white focus:outline-none focus:ring-2 focus:ring-[#9ca3af]">
-      {label}
-    </a>);
 }
 function InfoCell({ label, value }: {
     label: string;

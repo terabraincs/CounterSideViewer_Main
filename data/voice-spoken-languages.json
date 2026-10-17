@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "note": "Explicitly confirmed or user-specified spoken-language exceptions. Locale suffixes and identical PCM alone do not identify spoken language. Original audio is preserved.",
+  "overrides": [
+    {
+      "category": "operator",
+      "bundleId": "ab_ui_unit_voice_opr_hestia",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "OPR_HESTIA",
+      "evidence": {
+        "reason": "Hestia has Japanese dialogue in both locale bundles; confirmed from the reported spoken dialogue and original client assets.",
+        "voiceActor": "미나세 이노리",
+        "voiceActorTable": "json/KR/character/100_LUA_STRING_VOICE_ACTOR_NAME_KOR_w.json",
+        "voiceActorKey": "SI_VA_HESTIA_KOR",
+        "identicalOriginalRecordings": 36,
+        "bundleSha256": {
+          "ko": "13adb22659ee1ede748f3de8fa3e1d063fdd86c6de215b693852321c4199abf9",
+          "ja": "6e5a7f1399825ef59661e78510f695f3fec605cf3f0b82168f2a7441e1c90f7e"
+        }
+      }
+    },
+    {
+      "category": "unit",
+      "bundleId": "ab_ui_unit_voice_nkm_unit_danmachi_ca_ais",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_DANMACHI_CA_AIS",
+      "name": "아이즈 발렌슈타인",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "battle",
+      "bundleId": "ab_ui_unit_voice_nkm_unit_danmachi_ca_ais",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_DANMACHI_CA_AIS",
+      "name": "아이즈 발렌슈타인",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "unit",
+      "bundleId": "ab_ui_unit_voice_nkm_unit_danmachi_c_bell",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_DANMACHI_C_BELL_RA",
+      "name": "벨 크라넬",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "battle",
+      "bundleId": "ab_ui_unit_voice_nkm_unit_danmachi_c_bell",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_DANMACHI_C_BELL_RA",
+      "name": "벨 크라넬",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "unit",
+      "bundleId": "ab_ui_unit_voice_nkm_unit_danmachi_c_ryu",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_DANMACHI_C_RYU_RA",
+      "name": "류 리온",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "battle",
+      "bundleId": "ab_ui_unit_voice_nkm_unit_danmachi_c_ryu",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_DANMACHI_C_RYU_RA",
+      "name": "류 리온",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "unit",
+      "bundleId": "ab_ui_unit_voice_nkm_unit_geass_ma_seiten",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_GEASS_MA_SEITEN",
+      "name": "코우즈키 카렌",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "battle",
+      "bundleId": "ab_ui_unit_voice_nkm_unit_geass_ma_seiten",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_GEASS_MA_SEITEN",
+      "name": "코우즈키 카렌",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "unit",
+      "bundleId": "ab_ui_unit_voice_nkm_unit_geass_c_lelouch",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_GEASS_C_LELOUCH_RA",
+      "name": "를르슈 람페르지",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "battle",
+      "bundleId": "ab_ui_unit_voice_nkm_unit_geass_c_lelouch",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_GEASS_C_LELOUCH_RA",
+      "name": "를르슈 람페르지",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "unit",
+      "bundleId": "ab_ui_unit_voice_nkm_unit_geass_m_lancelot",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_GEASS_M_LANCELOT_RA",
+      "name": "C.C.",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "battle",
+      "bundleId": "ab_ui_unit_voice_nkm_unit_geass_m_lancelot",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_GEASS_M_LANCELOT_RA",
+      "name": "C.C.",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "unit",
+      "bundleId": "ab_ui_skin_voice_nkm_unit_geass_ma_seiten_limited",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_GEASS_MA_SEITEN",
+      "name": "코우즈키 카렌",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "battle",
+      "bundleId": "ab_ui_skin_voice_nkm_unit_geass_ma_seiten_limited",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_GEASS_MA_SEITEN",
+      "name": "코우즈키 카렌",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "unit",
+      "bundleId": "ab_ui_skin_voice_nkm_unit_geass_m_lancelot_limited",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_GEASS_M_LANCELOT_RA",
+      "name": "C.C.",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함.",
+        "sourceLocaleReason": "일본어 녹음을 보존 중인 기존 한국어 클라이언트 묶음의 웹 음성 경로를 명시적으로 사용함.",
+        "identicalOriginalCaptionRecordings": 32,
+        "originalLocalePairWavAndPcmHashesMatch": true
+      },
+      "sourceLocales": {
+        "ja": "ko"
+      }
+    },
+    {
+      "category": "battle",
+      "bundleId": "ab_ui_skin_voice_nkm_unit_geass_m_lancelot_limited",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "NKM_UNIT_GEASS_M_LANCELOT_RA",
+      "name": "C.C.",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상. 기본·스킨·전투 대사의 원본 묶음 연결을 확인함."
+      }
+    },
+    {
+      "category": "operator",
+      "bundleId": "ab_ui_unit_voice_opr_villetta",
+      "languages": [
+        "ja"
+      ],
+      "unitId": "OPR_VILLETTA",
+      "name": "비렛타 누",
+      "evidence": {
+        "source": "user-specified",
+        "reason": "사용자가 일본어 전용 예외로 명시한 대상."
+      }
+    }
+  ]
+}

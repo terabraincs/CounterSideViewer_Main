@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "basePath": "/game-assets/common/profile",
+  "sourceEvidence": "prototypes/client-profile/evidence/sprites.json",
+  "sourceBundles": [
+    {
+      "fileId": 3,
+      "name": "ab_ui_collection_sprite.asset",
+      "sha256": "1bfdf8305f31abd3751480dbae9b7cf7e4b174429c0b3e7f67f2f028638470fd"
+    },
+    {
+      "fileId": 29,
+      "name": "ab_ui_collection_texture.asset",
+      "sha256": "eb2c73ac9a863109a235d7d2c61764ff12098a4b9e180adc1443a43752653538"
+    },
+    {
+      "fileId": 38,
+      "name": "ab_ui_common_teamup.asset",
+      "sha256": "5e518f21b2a219b63f94b3a5e22d71d425e5910f14536d8e40346ab8fbc694c6"
+    }
+  ],
+  "sprites": {
+    "AB_UI_COLLECTION_SLOT_02": {
+      "src": "/game-assets/common/profile/AB_UI_COLLECTION_SLOT_02.png",
+      "imageWidth": 300,
+      "imageHeight": 46,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 300.0,
+        "height": 46.0
+      },
+      "border": {
+        "x": 180.0,
+        "y": 0.0,
+        "z": 97.0,
+        "w": 0.0
+      },
+      "pixelsPerUnit": 100.0,
+      "sha256": "04452bf26ab5e25d7ed24142eb4cf5a3d301bd35452516e7d8a2575d1d976ae8",
+      "fileId": 3,
+      "pathId": "-5531368275688013110",
+      "texturePathId": "6116063019914388345"
+    },
+    "AB_UI_COLLECTION_SLOT": {
+      "src": "/game-assets/common/profile/AB_UI_COLLECTION_SLOT.png",
+      "imageWidth": 170,
+      "imageHeight": 66,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 170.0,
+        "height": 66.0
+      },
+      "border": {
+        "x": 162.0,
+        "y": 0.0,
+        "z": 5.0,
+        "w": 0.0
+      },
+      "pixelsPerUnit": 100.0,
+      "sha256": "578d8be761bf3c9590441345c0026433449ca731be421dc3efe1ba2455893f27",
+      "fileId": 3,
+      "pathId": "-5489009812494774288",
+      "texturePathId": "-199991465611709947"
+    },
+    "AB_UI_COLLECTION_LIGHT": {
+      "src": "/game-assets/common/profile/AB_UI_COLLECTION_LIGHT.png",
+      "imageWidth": 212,
+      "imageHeight": 100,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 212.0,
+        "height": 100.0
+      },
+      "border": {
+        "x": 0.0,
+        "y": 44.0,
+        "z": 0.0,
+        "w": 42.0
+      },
+      "pixelsPerUnit": 100.0,
+      "sha256": "42cad7182e11e81a8af7a05becf55150e30b9f23870cc2d68d852b070f10e6eb",
+      "fileId": 3,
+      "pathId": "-4133049748192598721",
+      "texturePathId": "7999407530434664449"
+    },
+    "AB_UI_COLLECTION_LINE": {
+      "src": "/game-assets/common/profile/AB_UI_COLLECTION_LINE.png",
+      "imageWidth": 26,
+      "imageHeight": 26,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 26.0,
+        "height": 26.0
+      },
+      "border": {
+        "x": 10.0,
+        "y": 10.0,
+        "z": 10.0,
+        "w": 10.0
+      },
+      "pixelsPerUnit": 100.0,
+      "sha256": "81b5d1a6c7fa66e918cebdd7da9cbb4b90ad89cbc11e265ee4190d00b013e5ac",
+      "fileId": 3,
+      "pathId": "-3022369001616417613",
+      "texturePathId": "5578852609130059931"
+    },
+    "AB_UI_COLLECTION_DOT": {
+      "src": "/game-assets/common/profile/AB_UI_COLLECTION_DOT.png",
+      "imageWidth": 6,
+      "imageHeight": 6,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 6.0,
+        "height": 6.0
+      },
+      "border": {
+        "x": 2.0,
+        "y": 2.0,
+        "z": 2.0,
+        "w": 2.0
+      },
+      "pixelsPerUnit": 100.0,
+      "sha256": "5b9aa992eb94bf0716f1c2f25f3f44935aa962cebad40ed8bd0ec63127e79989",
+      "fileId": 3,
+      "pathId": "4468661437388406612",
+      "texturePathId": "-7525840466280913170"
+    },
+    "AB_UI_COLLECTION_DOT_02": {
+      "src": "/game-assets/common/profile/AB_UI_COLLECTION_DOT_02.png",
+      "imageWidth": 24,
+      "imageHeight": 30,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 24.0,
+        "height": 30.0
+      },
+      "border": {
+        "x": 11.0,
+        "y": 14.0,
+        "z": 12.0,
+        "w": 13.0
+      },
+      "pixelsPerUnit": 100.0,
+      "sha256": "0c92b0a250ee51d1ccd7630e12d5b4997a91a67b36c623ba1280247e23a6bf32",
+      "fileId": 3,
+      "pathId": "5220128361422913067",
+      "texturePathId": "255240046156668560"
+    },
+    "AB_UI_COLLECTION_INFO_BG_2": {
+      "src": "/game-assets/common/profile/AB_UI_COLLECTION_INFO_BG_2.png",
+      "imageWidth": 874,
+      "imageHeight": 899,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 874.0,
+        "height": 900.0
+      },
+      "border": {
+        "x": 0.0,
+        "y": 180.0,
+        "z": 0.0,
+        "w": 694.0
+      },
+      "pixelsPerUnit": 100.0,
+      "sha256": "0da8d97039d9f69395563d2be6f37b47930a44c7c6f17a820af365ae02129547",
+      "fileId": 29,
+      "pathId": "-132888290666807397",
+      "texturePathId": "6194657436614776062"
+    },
+    "AB_UI_COLLECTION_TEAM_CARD": {
+      "src": "/game-assets/common/profile/AB_UI_COLLECTION_TEAM_CARD.png",
+      "imageWidth": 374,
+      "imageHeight": 176,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 374.0,
+        "height": 176.0
+      },
+      "border": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+      },
+      "pixelsPerUnit": 100.0,
+      "sha256": "c7a3ded8c9701da1077804ee1551bb2a9d1948653c564eaff43bb651d0d25741",
+      "fileId": 29,
+      "pathId": "4287210110740778851",
+      "texturePathId": "-2424360698029481540"
+    },
+    "AB_UI_COLLECTION_INFO_BG": {
+      "src": "/game-assets/common/profile/AB_UI_COLLECTION_INFO_BG.png",
+      "imageWidth": 990,
+      "imageHeight": 1024,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 990.0,
+        "height": 1024.0
+      },
+      "border": {
+        "x": 0.0,
+        "y": 4.0,
+        "z": 0.0,
+        "w": 1015.0
+      },
+      "pixelsPerUnit": 100.0,
+      "sha256": "fdcb5f0fbab399550328c09d1fe1a7b26b91469b454f3ae35d9e27902eb4e12b",
+      "fileId": 29,
+      "pathId": "5213185712665092665",
+      "texturePathId": "-5584473236642772409"
+    },
+    "UI_COMMON_TEAMUP_FENRIR": {
+      "src": "/game-assets/common/profile/UI_COMMON_TEAMUP_FENRIR.png",
+      "imageWidth": 468,
+      "imageHeight": 455,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 512.0,
+        "height": 512.0
+      },
+      "border": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+      },
+      "pixelsPerUnit": 100.0,
+      "sha256": "2a55a4f4d710c396445bfe2884036813b4474f4e285bcea5fca82462630e5c1a",
+      "fileId": 38,
+      "pathId": "4158235086818156362",
+      "texturePathId": "2693857394535981726"
+    },
+    "UI_COMMON_TEAMUP_COMMON": {
+      "src": "/game-assets/common/profile/UI_COMMON_TEAMUP_COMMON.png",
+      "imageWidth": 338,
+      "imageHeight": 338,
+      "rect": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 512.0,
+        "height": 512.0
+      },
+      "border": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+      },
+      "pixelsPerUnit": 100.0,
+      "sha256": "4276211c9115c765a2bb8208fbd7a14082ae6486c73e96681384b5f511b02134",
+      "fileId": 38,
+      "pathId": "7980541424346338841",
+      "texturePathId": "6182413580064020445"
+    }
+  }
+}
