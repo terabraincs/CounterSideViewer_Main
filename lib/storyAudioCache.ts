@@ -36,7 +36,7 @@ function normalizeAudioUrl(path: string) {
     if (!path || typeof window === "undefined") {
         return "";
     }
-    return new URL(path, window.location.href).href;
+    return new URL(deploymentUrl(path), window.location.href).href;
 }
 function getStoryAudioCacheEntry(path: string) {
     const url = normalizeAudioUrl(path);

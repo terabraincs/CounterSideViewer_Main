@@ -1,5 +1,6 @@
 import { createStoryAudio } from "@/lib/storyAudioCache";
 import { getStoryClientAudioVolume } from "@/lib/storyAudioVolume";
+import { deploymentUrl } from "@/lib/deployment";
 type ActiveStoryTheme = {
     audio: HTMLAudioElement;
     url: string;
@@ -9,7 +10,7 @@ function normalizeAudioUrl(path: string) {
     if (!path || typeof window === "undefined") {
         return "";
     }
-    return new URL(path, window.location.href).href;
+    return new URL(deploymentUrl(path), window.location.href).href;
 }
 export function playStoryTheme(path: string, volume = 1, startTime?: number, restart = false) {
     const url = normalizeAudioUrl(path);
