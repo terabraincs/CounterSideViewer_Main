@@ -24,7 +24,7 @@ test('minigames navigation stays inside the integrated Main site',()=>{
   assert.deepEqual(siteLink(deploymentUrl('/equipment/ITEM')),{href:'/equipment/ITEM',external:false});
 });
 test('feature destinations stay internal to Main',()=>{
-  for(const route of ['/characters','/story','/spine-viewer','/illustrations','/guide'])assert.deepEqual(siteLink(route),{href:route,external:false});
+  for(const route of ['/characters','/story','/webtoons','/illustrations','/guide'])assert.deepEqual(siteLink(route),{href:route,external:false});
 });
 test('Main preview assets do not overlap the minigames project route',()=>{
   const url=deploymentUrl('/game-assets/match-ten/images/preview.png');

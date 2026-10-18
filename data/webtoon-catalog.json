@@ -1,0 +1,4555 @@
+{
+  "schemaVersion": 2,
+  "classification": {
+    "used": "Registered as CARTOON in both original loading image and loading selection tables; not proof of live service exposure.",
+    "unused": "Comic image without a matching CARTOON loading selection registration. No such images were confirmed in this snapshot.",
+    "runtimeVisibility": "Original rows depend on server-provided LOADING_GUIDE_N content tags and per-user unlock conditions. No server content-tag snapshot is available.",
+    "titles": "Neutral sequence labels derived from the original image suffix; the loading tables provide descriptions, not episode titles."
+  },
+  "sources": [
+    {
+      "path": "tools/CounterSide_decryption_tool-main/2차 복호화(TextAsset)/JSON/Data_StreamingAssets_ab_script/085_LUA_LOADING_IMG_TEMPLET_f.json",
+      "sha256": "2b7bf0e398b04b65486c99d35e0de1a88accd13d5b759ac69c4dea2ab7f7869a"
+    },
+    {
+      "path": "tools/CounterSide_decryption_tool-main/2차 복호화(TextAsset)/JSON/Data_StreamingAssets_ab_script/171_LUA_LOADING_TEMPLET_j.json",
+      "sha256": "7712896bd35c0c9e63060a9eb64d4609f58135d8cf23f7fa2cd90dd89d69da1a"
+    },
+    {
+      "path": "tools/CounterSide_decryption_tool-main/2차 복호화(TextAsset)/JSON/Data_StreamingAssets_ab_script_string_table/019_LUA_SI_DESC_TOOLTIP_KOREA_a.json",
+      "sha256": "15fcee155a01d754097136e7ac06e2ea641e4cfee4c45b20c3731a70e4f709b4"
+    },
+    {
+      "path": "tools/CounterSide_decryption_tool-main/2차 복호화(TextAsset)/JSON/Data_StreamingAssets_ab_script_string_table/048_LUA_STRING_ENG_o.json",
+      "sha256": "bcef9ab37c23c95138410ed48d17ba20460e56ffb11cae2addd2aecbabb2b76e"
+    },
+    {
+      "path": "tools/CounterSide_decryption_tool-main/2차 복호화(TextAsset)/JSON/Data_StreamingAssets_ab_script_string_table/050_LUA_STRING_JPN_o.json",
+      "sha256": "12319bc13b4392db6710a42cdac4b6b13dfbae346e3d147ded223aa4eb99d773"
+    },
+    {
+      "path": "tools/CounterSide_decryption_tool-main/2차 복호화(TextAsset)/JSON/Data_StreamingAssets_ab_script_string_table/054_LUA_STRING_TWN_o.json",
+      "sha256": "12bf07bb4c93cb9c74274d3ff0203031dce8d50c5f3cc7174eab7898d532cebf"
+    },
+    {
+      "path": "tools/CounterSide_decryption_tool-main/2차 복호화(TextAsset)/JSON/Data_StreamingAssets_ab_script_string_table/095_LUA_STRING_DEU_o.json",
+      "sha256": "9274a8dcc586a95eeb3542d505e4f51cc2a4e906d4ba11dc71d546fa5b305b32"
+    },
+    {
+      "path": "tools/CounterSide_decryption_tool-main/2차 복호화(TextAsset)/JSON/Data_StreamingAssets_ab_script_string_table/021_LUA_STRING_FRA_o.json",
+      "sha256": "b090e6389e5a4af4106ac5daa6cd5242a6bda50801e379430b7fd4c304894754"
+    }
+  ],
+  "languages": [
+    {
+      "code": "ko",
+      "label": "한국어"
+    },
+    {
+      "code": "en",
+      "label": "영어"
+    },
+    {
+      "code": "ja",
+      "label": "일본어"
+    },
+    {
+      "code": "zh-TW",
+      "label": "중국어 번체"
+    },
+    {
+      "code": "de",
+      "label": "독일어"
+    },
+    {
+      "code": "fr",
+      "label": "프랑스어"
+    }
+  ],
+  "assetManifest": {
+    "path": "data/webtoon-assets.json",
+    "sha256": "857b5ccbfe9a429f6f3000806184d527fb0d9eafedae501351c048c8e8a4acfd"
+  },
+  "entryCount": 120,
+  "episodeCount": 20,
+  "registeredCount": 120,
+  "unusedCount": 0,
+  "entries": [
+    {
+      "id": "Loading_Guide_img_01",
+      "episodeId": "Loading_Guide_img_01",
+      "language": "ko",
+      "title": "웹툰 01",
+      "order": 1,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_01.png",
+      "width": 1024,
+      "height": 520,
+      "description": "시그마는 관리자가 책임지고 교육해야 합니다.",
+      "searchText": "웹툰 01 Loading_Guide_img_01 1 한국어 ko 시그마는 관리자가 책임지고 교육해야 합니다.",
+      "source": {
+        "assetName": "Loading_Guide_img_01",
+        "descriptionStringId": "SI_DESC_TOOLTIP_49",
+        "imageId": 101,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_49",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_1"
+            ],
+            "m_UnlockReqType": "SURT_UNIT_GET",
+            "m_UnlockReqValue": 1160
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 6.076107025146484,
+        "right": 22.076101303100586,
+        "bottom": 9.01291275024414,
+        "left": 18.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_01:en",
+      "episodeId": "Loading_Guide_img_01",
+      "language": "en",
+      "title": "웹툰 01",
+      "order": 1,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_01.png",
+      "width": 1024,
+      "height": 520,
+      "description": "The Administrator is fully responsible for Sigma's education and training.",
+      "searchText": "웹툰 01 Loading_Guide_img_01 1 영어 en 시그마는 관리자가 책임지고 교육해야 합니다. The Administrator is fully responsible for Sigma's education and training.",
+      "source": {
+        "assetName": "Loading_Guide_img_01",
+        "descriptionStringId": "SI_DESC_TOOLTIP_49",
+        "imageId": 101,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_49",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_1"
+            ],
+            "m_UnlockReqType": "SURT_UNIT_GET",
+            "m_UnlockReqValue": 1160
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076107025146484,
+        "right": 22.07611083984375,
+        "bottom": 9.01291275024414,
+        "left": 17.04290771484375
+      }
+    },
+    {
+      "id": "Loading_Guide_img_01:ja",
+      "episodeId": "Loading_Guide_img_01",
+      "language": "ja",
+      "title": "웹툰 01",
+      "order": 1,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_01.png",
+      "width": 1024,
+      "height": 520,
+      "description": "シグマは管理者が責任を持って教育してください。",
+      "searchText": "웹툰 01 Loading_Guide_img_01 1 일본어 ja 시그마는 관리자가 책임지고 교육해야 합니다. シグマは管理者が責任を持って教育してください。",
+      "source": {
+        "assetName": "Loading_Guide_img_01",
+        "descriptionStringId": "SI_DESC_TOOLTIP_49",
+        "imageId": 101,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_49",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_1"
+            ],
+            "m_UnlockReqType": "SURT_UNIT_GET",
+            "m_UnlockReqValue": 1160
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076107025146484,
+        "right": 22.076101303100586,
+        "bottom": 9.01291275024414,
+        "left": 14.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_01:zh-TW",
+      "episodeId": "Loading_Guide_img_01",
+      "language": "zh-TW",
+      "title": "웹툰 01",
+      "order": 1,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_01.png",
+      "width": 1024,
+      "height": 520,
+      "description": "管理者需要負起教育西格瑪的責任。",
+      "searchText": "웹툰 01 Loading_Guide_img_01 1 중국어 번체 zh-TW 시그마는 관리자가 책임지고 교육해야 합니다. 管理者需要負起教育西格瑪的責任。",
+      "source": {
+        "assetName": "Loading_Guide_img_01",
+        "descriptionStringId": "SI_DESC_TOOLTIP_49",
+        "imageId": 101,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_49",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_1"
+            ],
+            "m_UnlockReqType": "SURT_UNIT_GET",
+            "m_UnlockReqValue": 1160
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 8.042903900146484,
+        "right": 22.076101303100586,
+        "bottom": 9.01291275024414,
+        "left": 19.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_01:de",
+      "episodeId": "Loading_Guide_img_01",
+      "language": "de",
+      "title": "웹툰 01",
+      "order": 1,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_01.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Der Administrator ist als einziger für die Bildung und das Training von Sigma verantwortlich.",
+      "searchText": "웹툰 01 Loading_Guide_img_01 1 독일어 de 시그마는 관리자가 책임지고 교육해야 합니다. Der Administrator ist als einziger für die Bildung und das Training von Sigma verantwortlich.",
+      "source": {
+        "assetName": "Loading_Guide_img_01",
+        "descriptionStringId": "SI_DESC_TOOLTIP_49",
+        "imageId": 101,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_49",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_1"
+            ],
+            "m_UnlockReqType": "SURT_UNIT_GET",
+            "m_UnlockReqValue": 1160
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.07611083984375,
+        "right": 22.076101303100586,
+        "bottom": 0.0,
+        "left": 9.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_01:fr",
+      "episodeId": "Loading_Guide_img_01",
+      "language": "fr",
+      "title": "웹툰 01",
+      "order": 1,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_01.png",
+      "width": 1024,
+      "height": 520,
+      "description": "L'Administrateur est entièrement responsable de l'éducation et de l'entraînement de Sigma.",
+      "searchText": "웹툰 01 Loading_Guide_img_01 1 프랑스어 fr 시그마는 관리자가 책임지고 교육해야 합니다. L'Administrateur est entièrement responsable de l'éducation et de l'entraînement de Sigma.",
+      "source": {
+        "assetName": "Loading_Guide_img_01",
+        "descriptionStringId": "SI_DESC_TOOLTIP_49",
+        "imageId": 101,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_49",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_1"
+            ],
+            "m_UnlockReqType": "SURT_UNIT_GET",
+            "m_UnlockReqValue": 1160
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 13.07611083984375,
+        "right": 22.076101303100586,
+        "bottom": 0.0,
+        "left": 9.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_02",
+      "episodeId": "Loading_Guide_img_02",
+      "language": "ko",
+      "title": "웹툰 02",
+      "order": 2,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_02.png",
+      "width": 1024,
+      "height": 520,
+      "description": "카운터, 솔저, 메카닉을 잘 조합하여 최적의 소대를 편성하세요.",
+      "searchText": "웹툰 02 Loading_Guide_img_02 2 한국어 ko 카운터, 솔저, 메카닉을 잘 조합하여 최적의 소대를 편성하세요.",
+      "source": {
+        "assetName": "Loading_Guide_img_02",
+        "descriptionStringId": "SI_DESC_TOOLTIP_50",
+        "imageId": 102,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_50",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_2"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 7.026723861694336,
+        "right": 23.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_02:en",
+      "episodeId": "Loading_Guide_img_02",
+      "language": "en",
+      "title": "웹툰 02",
+      "order": 2,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_02.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Combine Counters, Soldiers, and Mechs into effective squads.",
+      "searchText": "웹툰 02 Loading_Guide_img_02 2 영어 en 카운터, 솔저, 메카닉을 잘 조합하여 최적의 소대를 편성하세요. Combine Counters, Soldiers, and Mechs into effective squads.",
+      "source": {
+        "assetName": "Loading_Guide_img_02",
+        "descriptionStringId": "SI_DESC_TOOLTIP_50",
+        "imageId": 102,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_50",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_2"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 7.026723861694336,
+        "right": 23.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_02:ja",
+      "episodeId": "Loading_Guide_img_02",
+      "language": "ja",
+      "title": "웹툰 02",
+      "order": 2,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_02.png",
+      "width": 1024,
+      "height": 520,
+      "description": "カウンター、ソルジャー、メカニックを適切に組み合わせて最適な小隊を編成してください。",
+      "searchText": "웹툰 02 Loading_Guide_img_02 2 일본어 ja 카운터, 솔저, 메카닉을 잘 조합하여 최적의 소대를 편성하세요. カウンター、ソルジャー、メカニックを適切に組み合わせて最適な小隊を編成してください。",
+      "source": {
+        "assetName": "Loading_Guide_img_02",
+        "descriptionStringId": "SI_DESC_TOOLTIP_50",
+        "imageId": 102,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_50",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_2"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 7.026729583740234,
+        "right": 23.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_02:zh-TW",
+      "episodeId": "Loading_Guide_img_02",
+      "language": "zh-TW",
+      "title": "웹툰 02",
+      "order": 2,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_02.png",
+      "width": 1024,
+      "height": 520,
+      "description": "請將制裁者、士兵、裝甲部隊做適當的組合，編組最佳小隊。",
+      "searchText": "웹툰 02 Loading_Guide_img_02 2 중국어 번체 zh-TW 카운터, 솔저, 메카닉을 잘 조합하여 최적의 소대를 편성하세요. 請將制裁者、士兵、裝甲部隊做適當的組合，編組最佳小隊。",
+      "source": {
+        "assetName": "Loading_Guide_img_02",
+        "descriptionStringId": "SI_DESC_TOOLTIP_50",
+        "imageId": 102,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_50",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_2"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 7.026723861694336,
+        "right": 23.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_02:de",
+      "episodeId": "Loading_Guide_img_02",
+      "language": "de",
+      "title": "웹툰 02",
+      "order": 2,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_02.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Kombiniere Counter, Soldaten und Mechs zu effektiven Trupps.",
+      "searchText": "웹툰 02 Loading_Guide_img_02 2 독일어 de 카운터, 솔저, 메카닉을 잘 조합하여 최적의 소대를 편성하세요. Kombiniere Counter, Soldaten und Mechs zu effektiven Trupps.",
+      "source": {
+        "assetName": "Loading_Guide_img_02",
+        "descriptionStringId": "SI_DESC_TOOLTIP_50",
+        "imageId": 102,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_50",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_2"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 7.026723861694336,
+        "right": 23.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_02:fr",
+      "episodeId": "Loading_Guide_img_02",
+      "language": "fr",
+      "title": "웹툰 02",
+      "order": 2,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_02.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Associez Counters, soldats et mécas pour former de puissantes escouades.",
+      "searchText": "웹툰 02 Loading_Guide_img_02 2 프랑스어 fr 카운터, 솔저, 메카닉을 잘 조합하여 최적의 소대를 편성하세요. Associez Counters, soldats et mécas pour former de puissantes escouades.",
+      "source": {
+        "assetName": "Loading_Guide_img_02",
+        "descriptionStringId": "SI_DESC_TOOLTIP_50",
+        "imageId": 102,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_50",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_2"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 7.026723861694336,
+        "right": 23.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_03",
+      "episodeId": "Loading_Guide_img_03",
+      "language": "ko",
+      "title": "웹툰 03",
+      "order": 3,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_03.png",
+      "width": 1024,
+      "height": 520,
+      "description": "이터니움은 다양한 곳에 사용되는 중요한 재화입니다. 효율적으로 관리하세요.",
+      "searchText": "웹툰 03 Loading_Guide_img_03 3 한국어 ko 이터니움은 다양한 곳에 사용되는 중요한 재화입니다. 효율적으로 관리하세요.",
+      "source": {
+        "assetName": "Loading_Guide_img_03",
+        "descriptionStringId": "SI_DESC_TOOLTIP_51",
+        "imageId": 103,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_51",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_3"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 8.036275863647461,
+        "right": 23.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_03:en",
+      "episodeId": "Loading_Guide_img_03",
+      "language": "en",
+      "title": "웹툰 03",
+      "order": 3,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_03.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Eternium is an important currency resource used for many purposes. Manage your Eternium wisely.",
+      "searchText": "웹툰 03 Loading_Guide_img_03 3 영어 en 이터니움은 다양한 곳에 사용되는 중요한 재화입니다. 효율적으로 관리하세요. Eternium is an important currency resource used for many purposes. Manage your Eternium wisely.",
+      "source": {
+        "assetName": "Loading_Guide_img_03",
+        "descriptionStringId": "SI_DESC_TOOLTIP_51",
+        "imageId": 103,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_51",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_3"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076107025146484,
+        "right": 22.01296615600586,
+        "bottom": 9.01291275024414,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_03:ja",
+      "episodeId": "Loading_Guide_img_03",
+      "language": "ja",
+      "title": "웹툰 03",
+      "order": 3,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_03.png",
+      "width": 1024,
+      "height": 520,
+      "description": "エタニウムは様々なことに使われる重要な通貨です。効率的に管理しましょう。",
+      "searchText": "웹툰 03 Loading_Guide_img_03 3 일본어 ja 이터니움은 다양한 곳에 사용되는 중요한 재화입니다. 효율적으로 관리하세요. エタニウムは様々なことに使われる重要な通貨です。効率的に管理しましょう。",
+      "source": {
+        "assetName": "Loading_Guide_img_03",
+        "descriptionStringId": "SI_DESC_TOOLTIP_51",
+        "imageId": 103,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_51",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_3"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076101303100586,
+        "right": 23.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_03:zh-TW",
+      "episodeId": "Loading_Guide_img_03",
+      "language": "zh-TW",
+      "title": "웹툰 03",
+      "order": 3,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_03.png",
+      "width": 1024,
+      "height": 520,
+      "description": "永恆之金是在多方面使用的重要貨幣，請有效率地管理。",
+      "searchText": "웹툰 03 Loading_Guide_img_03 3 중국어 번체 zh-TW 이터니움은 다양한 곳에 사용되는 중요한 재화입니다. 효율적으로 관리하세요. 永恆之金是在多方面使用的重要貨幣，請有效率地管理。",
+      "source": {
+        "assetName": "Loading_Guide_img_03",
+        "descriptionStringId": "SI_DESC_TOOLTIP_51",
+        "imageId": 103,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_51",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_3"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 8.026754379272461,
+        "right": 23.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_03:de",
+      "episodeId": "Loading_Guide_img_03",
+      "language": "de",
+      "title": "웹툰 03",
+      "order": 3,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_03.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Eternium ist eine wichtige Währung, die für verschiedene Käufe eingesetzt wird. Behalte deinen Kontostand immer im Auge.",
+      "searchText": "웹툰 03 Loading_Guide_img_03 3 독일어 de 이터니움은 다양한 곳에 사용되는 중요한 재화입니다. 효율적으로 관리하세요. Eternium ist eine wichtige Währung, die für verschiedene Käufe eingesetzt wird. Behalte deinen Kontostand immer im Auge.",
+      "source": {
+        "assetName": "Loading_Guide_img_03",
+        "descriptionStringId": "SI_DESC_TOOLTIP_51",
+        "imageId": 103,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_51",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_3"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076107025146484,
+        "right": 22.01296615600586,
+        "bottom": 9.01291275024414,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_03:fr",
+      "episodeId": "Loading_Guide_img_03",
+      "language": "fr",
+      "title": "웹툰 03",
+      "order": 3,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_03.png",
+      "width": 1024,
+      "height": 520,
+      "description": "L'éternium est une ressource importante aux usages multiples. Gérez sagement votre réserve.",
+      "searchText": "웹툰 03 Loading_Guide_img_03 3 프랑스어 fr 이터니움은 다양한 곳에 사용되는 중요한 재화입니다. 효율적으로 관리하세요. L'éternium est une ressource importante aux usages multiples. Gérez sagement votre réserve.",
+      "source": {
+        "assetName": "Loading_Guide_img_03",
+        "descriptionStringId": "SI_DESC_TOOLTIP_51",
+        "imageId": 103,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_51",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_3"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 14.02676010131836,
+        "right": 22.01296615600586,
+        "bottom": 9.01291275024414,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_04",
+      "episodeId": "Loading_Guide_img_04",
+      "language": "ko",
+      "title": "웹툰 04",
+      "order": 4,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_04.png",
+      "width": 1024,
+      "height": 520,
+      "description": "출격 위치, 타이밍을 잘 고려하여 배치하면 전투를 유리하게 이끌어 갈 수 있습니다.",
+      "searchText": "웹툰 04 Loading_Guide_img_04 4 한국어 ko 출격 위치, 타이밍을 잘 고려하여 배치하면 전투를 유리하게 이끌어 갈 수 있습니다.",
+      "source": {
+        "assetName": "Loading_Guide_img_04",
+        "descriptionStringId": "SI_DESC_TOOLTIP_52",
+        "imageId": 104,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_52",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_4"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 8.03628158569336,
+        "right": 22.076093673706055,
+        "bottom": 8.01291275024414,
+        "left": 25.026750564575195
+      }
+    },
+    {
+      "id": "Loading_Guide_img_04:en",
+      "episodeId": "Loading_Guide_img_04",
+      "language": "en",
+      "title": "웹툰 04",
+      "order": 4,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_04.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Deploy your units to the right places at the right time to take the upper hand in battle.",
+      "searchText": "웹툰 04 Loading_Guide_img_04 4 영어 en 출격 위치, 타이밍을 잘 고려하여 배치하면 전투를 유리하게 이끌어 갈 수 있습니다. Deploy your units to the right places at the right time to take the upper hand in battle.",
+      "source": {
+        "assetName": "Loading_Guide_img_04",
+        "descriptionStringId": "SI_DESC_TOOLTIP_52",
+        "imageId": 104,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_52",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_4"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 8.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_04:ja",
+      "episodeId": "Loading_Guide_img_04",
+      "language": "ja",
+      "title": "웹툰 04",
+      "order": 4,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_04.png",
+      "width": 1024,
+      "height": 520,
+      "description": "出撃位置、タイミングを考慮して配置すると戦闘を有利に進められます。",
+      "searchText": "웹툰 04 Loading_Guide_img_04 4 일본어 ja 출격 위치, 타이밍을 잘 고려하여 배치하면 전투를 유리하게 이끌어 갈 수 있습니다. 出撃位置、タイミングを考慮して配置すると戦闘を有利に進められます。",
+      "source": {
+        "assetName": "Loading_Guide_img_04",
+        "descriptionStringId": "SI_DESC_TOOLTIP_52",
+        "imageId": 104,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_52",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_4"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.076107025146484,
+        "right": 22.076093673706055,
+        "bottom": 8.01291275024414,
+        "left": 25.026750564575195
+      }
+    },
+    {
+      "id": "Loading_Guide_img_04:zh-TW",
+      "episodeId": "Loading_Guide_img_04",
+      "language": "zh-TW",
+      "title": "웹툰 04",
+      "order": 4,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_04.png",
+      "width": 1024,
+      "height": 520,
+      "description": "慎重考慮出擊位置和時間進行部署，可以有利地進行戰鬥。",
+      "searchText": "웹툰 04 Loading_Guide_img_04 4 중국어 번체 zh-TW 출격 위치, 타이밍을 잘 고려하여 배치하면 전투를 유리하게 이끌어 갈 수 있습니다. 慎重考慮出擊位置和時間進行部署，可以有利地進行戰鬥。",
+      "source": {
+        "assetName": "Loading_Guide_img_04",
+        "descriptionStringId": "SI_DESC_TOOLTIP_52",
+        "imageId": 104,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_52",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_4"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 8.06728744506836,
+        "right": 22.07613754272461,
+        "bottom": 8.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_04:de",
+      "episodeId": "Loading_Guide_img_04",
+      "language": "de",
+      "title": "웹툰 04",
+      "order": 4,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_04.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Setze deine Einheiten zur richtigen Zeit und am richtigen Ort ein, um den Kampf für dich zu entscheiden.",
+      "searchText": "웹툰 04 Loading_Guide_img_04 4 독일어 de 출격 위치, 타이밍을 잘 고려하여 배치하면 전투를 유리하게 이끌어 갈 수 있습니다. Setze deine Einheiten zur richtigen Zeit und am richtigen Ort ein, um den Kampf für dich zu entscheiden.",
+      "source": {
+        "assetName": "Loading_Guide_img_04",
+        "descriptionStringId": "SI_DESC_TOOLTIP_52",
+        "imageId": 104,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_52",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_4"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.02676010131836,
+        "right": 22.07613754272461,
+        "bottom": 8.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_04:fr",
+      "episodeId": "Loading_Guide_img_04",
+      "language": "fr",
+      "title": "웹툰 04",
+      "order": 4,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_04.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Déployez vos unités au bon endroit et au bon moment pour prendre le dessus lors d'un combat.",
+      "searchText": "웹툰 04 Loading_Guide_img_04 4 프랑스어 fr 출격 위치, 타이밍을 잘 고려하여 배치하면 전투를 유리하게 이끌어 갈 수 있습니다. Déployez vos unités au bon endroit et au bon moment pour prendre le dessus lors d'un combat.",
+      "source": {
+        "assetName": "Loading_Guide_img_04",
+        "descriptionStringId": "SI_DESC_TOOLTIP_52",
+        "imageId": 104,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_52",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_4"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 14.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 8.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_05",
+      "episodeId": "Loading_Guide_img_05",
+      "language": "ko",
+      "title": "웹툰 05",
+      "order": 5,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_05.png",
+      "width": 1024,
+      "height": 520,
+      "description": "등급과 코스트가 낮은 유닛도 적절히 조합하여 효율적인 소대를 편성하세요.",
+      "searchText": "웹툰 05 Loading_Guide_img_05 5 한국어 ko 등급과 코스트가 낮은 유닛도 적절히 조합하여 효율적인 소대를 편성하세요.",
+      "source": {
+        "assetName": "Loading_Guide_img_05",
+        "descriptionStringId": "SI_DESC_TOOLTIP_53",
+        "imageId": 105,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_53",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_5"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 8.01290512084961,
+        "right": 22.076093673706055,
+        "bottom": 8.01291275024414,
+        "left": 25.026750564575195
+      }
+    },
+    {
+      "id": "Loading_Guide_img_05:en",
+      "episodeId": "Loading_Guide_img_05",
+      "language": "en",
+      "title": "웹툰 05",
+      "order": 5,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_05.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Even low-grade and low-cost units can create an effective squad.",
+      "searchText": "웹툰 05 Loading_Guide_img_05 5 영어 en 등급과 코스트가 낮은 유닛도 적절히 조합하여 효율적인 소대를 편성하세요. Even low-grade and low-cost units can create an effective squad.",
+      "source": {
+        "assetName": "Loading_Guide_img_05",
+        "descriptionStringId": "SI_DESC_TOOLTIP_53",
+        "imageId": 105,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_53",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_5"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.076107025146484,
+        "right": 22.076093673706055,
+        "bottom": 8.01291275024414,
+        "left": 25.026750564575195
+      }
+    },
+    {
+      "id": "Loading_Guide_img_05:ja",
+      "episodeId": "Loading_Guide_img_05",
+      "language": "ja",
+      "title": "웹툰 05",
+      "order": 5,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_05.png",
+      "width": 1024,
+      "height": 520,
+      "description": "ランクとコストが低いユニットも適切に組み合わせて、効率的な小隊を編成してください。",
+      "searchText": "웹툰 05 Loading_Guide_img_05 5 일본어 ja 등급과 코스트가 낮은 유닛도 적절히 조합하여 효율적인 소대를 편성하세요. ランクとコストが低いユニットも適切に組み合わせて、効率的な小隊を編成してください。",
+      "source": {
+        "assetName": "Loading_Guide_img_05",
+        "descriptionStringId": "SI_DESC_TOOLTIP_53",
+        "imageId": 105,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_53",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_5"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.02676010131836,
+        "right": 22.07613754272461,
+        "bottom": 8.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_05:zh-TW",
+      "episodeId": "Loading_Guide_img_05",
+      "language": "zh-TW",
+      "title": "웹툰 05",
+      "order": 5,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_05.png",
+      "width": 1024,
+      "height": 520,
+      "description": "請將等級和資源較低的單位也配成適當的組合，編組高效率的小隊。",
+      "searchText": "웹툰 05 Loading_Guide_img_05 5 중국어 번체 zh-TW 등급과 코스트가 낮은 유닛도 적절히 조합하여 효율적인 소대를 편성하세요. 請將等級和資源較低的單位也配成適當的組合，編組高效率的小隊。",
+      "source": {
+        "assetName": "Loading_Guide_img_05",
+        "descriptionStringId": "SI_DESC_TOOLTIP_53",
+        "imageId": 105,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_53",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_5"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 8.042903900146484,
+        "right": 22.07613754272461,
+        "bottom": 8.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_05:de",
+      "episodeId": "Loading_Guide_img_05",
+      "language": "de",
+      "title": "웹툰 05",
+      "order": 5,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_05.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Sogar aus Einheiten niedrigen Grades, die nur wenig kosten, kann man einen effektiven Trupp zusammenstellen.",
+      "searchText": "웹툰 05 Loading_Guide_img_05 5 독일어 de 등급과 코스트가 낮은 유닛도 적절히 조합하여 효율적인 소대를 편성하세요. Sogar aus Einheiten niedrigen Grades, die nur wenig kosten, kann man einen effektiven Trupp zusammenstellen.",
+      "source": {
+        "assetName": "Loading_Guide_img_05",
+        "descriptionStringId": "SI_DESC_TOOLTIP_53",
+        "imageId": 105,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_53",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_5"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 13.02676010131836,
+        "right": 22.07613754272461,
+        "bottom": 8.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_05:fr",
+      "episodeId": "Loading_Guide_img_05",
+      "language": "fr",
+      "title": "웹툰 05",
+      "order": 5,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_05.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Même des unités bas de gamme et peu coûteuses peuvent constituer une escouade efficace.",
+      "searchText": "웹툰 05 Loading_Guide_img_05 5 프랑스어 fr 등급과 코스트가 낮은 유닛도 적절히 조합하여 효율적인 소대를 편성하세요. Même des unités bas de gamme et peu coûteuses peuvent constituer une escouade efficace.",
+      "source": {
+        "assetName": "Loading_Guide_img_05",
+        "descriptionStringId": "SI_DESC_TOOLTIP_53",
+        "imageId": 105,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_53",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_5"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 15.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 8.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_06",
+      "episodeId": "Loading_Guide_img_06",
+      "language": "ko",
+      "title": "웹툰 06",
+      "order": 6,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_06.png",
+      "width": 1024,
+      "height": 520,
+      "description": "적의 특성을 잘 파악하면, 보다 수월한 공략이 가능합니다.",
+      "searchText": "웹툰 06 Loading_Guide_img_06 6 한국어 ko 적의 특성을 잘 파악하면, 보다 수월한 공략이 가능합니다.",
+      "source": {
+        "assetName": "Loading_Guide_img_06",
+        "descriptionStringId": "SI_DESC_TOOLTIP_54",
+        "imageId": 106,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_54",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_6"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 5.026729583740234,
+        "right": 22.076093673706055,
+        "bottom": 9.01291275024414,
+        "left": 25.026750564575195
+      }
+    },
+    {
+      "id": "Loading_Guide_img_06:en",
+      "episodeId": "Loading_Guide_img_06",
+      "language": "en",
+      "title": "웹툰 06",
+      "order": 6,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_06.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Assess your enemy before the battle in order to beat it easily.",
+      "searchText": "웹툰 06 Loading_Guide_img_06 6 영어 en 적의 특성을 잘 파악하면, 보다 수월한 공략이 가능합니다. Assess your enemy before the battle in order to beat it easily.",
+      "source": {
+        "assetName": "Loading_Guide_img_06",
+        "descriptionStringId": "SI_DESC_TOOLTIP_54",
+        "imageId": 106,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_54",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_6"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 10.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_06:ja",
+      "episodeId": "Loading_Guide_img_06",
+      "language": "ja",
+      "title": "웹툰 06",
+      "order": 6,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_06.png",
+      "width": 1024,
+      "height": 520,
+      "description": "敵の特性を把握すれば、より簡単に攻略できます。",
+      "searchText": "웹툰 06 Loading_Guide_img_06 6 일본어 ja 적의 특성을 잘 파악하면, 보다 수월한 공략이 가능합니다. 敵の特性を把握すれば、より簡単に攻略できます。",
+      "source": {
+        "assetName": "Loading_Guide_img_06",
+        "descriptionStringId": "SI_DESC_TOOLTIP_54",
+        "imageId": 106,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_54",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_6"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 10.076107025146484,
+        "right": 22.076093673706055,
+        "bottom": 9.01291275024414,
+        "left": 25.026750564575195
+      }
+    },
+    {
+      "id": "Loading_Guide_img_06:zh-TW",
+      "episodeId": "Loading_Guide_img_06",
+      "language": "zh-TW",
+      "title": "웹툰 06",
+      "order": 6,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_06.png",
+      "width": 1024,
+      "height": 520,
+      "description": "掌握好敵人的特性，就能更容易地發動進攻。",
+      "searchText": "웹툰 06 Loading_Guide_img_06 6 중국어 번체 zh-TW 적의 특성을 잘 파악하면, 보다 수월한 공략이 가능합니다. 掌握好敵人的特性，就能更容易地發動進攻。",
+      "source": {
+        "assetName": "Loading_Guide_img_06",
+        "descriptionStringId": "SI_DESC_TOOLTIP_54",
+        "imageId": 106,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_54",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_6"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 8.02676010131836,
+        "right": 22.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_06:de",
+      "episodeId": "Loading_Guide_img_06",
+      "language": "de",
+      "title": "웹툰 06",
+      "order": 6,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_06.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Analysiere deinen Gegner vor dem Kampf, damit du ihn leicht schlagen kannst.",
+      "searchText": "웹툰 06 Loading_Guide_img_06 6 독일어 de 적의 특성을 잘 파악하면, 보다 수월한 공략이 가능합니다. Analysiere deinen Gegner vor dem Kampf, damit du ihn leicht schlagen kannst.",
+      "source": {
+        "assetName": "Loading_Guide_img_06",
+        "descriptionStringId": "SI_DESC_TOOLTIP_54",
+        "imageId": 106,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_54",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_6"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 10.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_06:fr",
+      "episodeId": "Loading_Guide_img_06",
+      "language": "fr",
+      "title": "웹툰 06",
+      "order": 6,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_06.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Étudiez bien votre adversaire avant la bataille pour le vaincre aisément.",
+      "searchText": "웹툰 06 Loading_Guide_img_06 6 프랑스어 fr 적의 특성을 잘 파악하면, 보다 수월한 공략이 가능합니다. Étudiez bien votre adversaire avant la bataille pour le vaincre aisément.",
+      "source": {
+        "assetName": "Loading_Guide_img_06",
+        "descriptionStringId": "SI_DESC_TOOLTIP_54",
+        "imageId": 106,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_54",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_6"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 10.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_07",
+      "episodeId": "Loading_Guide_img_07",
+      "language": "ko",
+      "title": "웹툰 07",
+      "order": 7,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_07.png",
+      "width": 1024,
+      "height": 520,
+      "description": "디펜더는 레인저에게 취약하고 스나이퍼에게 강력합니다.",
+      "searchText": "웹툰 07 Loading_Guide_img_07 7 한국어 ko 디펜더는 레인저에게 취약하고 스나이퍼에게 강력합니다.",
+      "source": {
+        "assetName": "Loading_Guide_img_07",
+        "descriptionStringId": "SI_DESC_TOOLTIP_55",
+        "imageId": 107,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_55",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_7"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 5.076107025146484,
+        "right": 22.076093673706055,
+        "bottom": 9.01291275024414,
+        "left": 25.026750564575195
+      }
+    },
+    {
+      "id": "Loading_Guide_img_07:en",
+      "episodeId": "Loading_Guide_img_07",
+      "language": "en",
+      "title": "웹툰 07",
+      "order": 7,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_07.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Defenders are vulnerable to Rangers and superior to Snipers.",
+      "searchText": "웹툰 07 Loading_Guide_img_07 7 영어 en 디펜더는 레인저에게 취약하고 스나이퍼에게 강력합니다. Defenders are vulnerable to Rangers and superior to Snipers.",
+      "source": {
+        "assetName": "Loading_Guide_img_07",
+        "descriptionStringId": "SI_DESC_TOOLTIP_55",
+        "imageId": 107,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_55",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_7"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 6.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_07:ja",
+      "episodeId": "Loading_Guide_img_07",
+      "language": "ja",
+      "title": "웹툰 07",
+      "order": 7,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_07.png",
+      "width": 1024,
+      "height": 520,
+      "description": "ディフェンダーはレンジャーに対して弱く、スナイパーに対して強いです。",
+      "searchText": "웹툰 07 Loading_Guide_img_07 7 일본어 ja 디펜더는 레인저에게 취약하고 스나이퍼에게 강력합니다. ディフェンダーはレンジャーに対して弱く、スナイパーに対して強いです。",
+      "source": {
+        "assetName": "Loading_Guide_img_07",
+        "descriptionStringId": "SI_DESC_TOOLTIP_55",
+        "imageId": 107,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_55",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_7"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 6.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_07:zh-TW",
+      "episodeId": "Loading_Guide_img_07",
+      "language": "zh-TW",
+      "title": "웹툰 07",
+      "order": 7,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_07.png",
+      "width": 1024,
+      "height": 520,
+      "description": "護衛對突擊隊員的抵抗較弱，但對於狙擊手則會較強。",
+      "searchText": "웹툰 07 Loading_Guide_img_07 7 중국어 번체 zh-TW 디펜더는 레인저에게 취약하고 스나이퍼에게 강력합니다. 護衛對突擊隊員的抵抗較弱，但對於狙擊手則會較強。",
+      "source": {
+        "assetName": "Loading_Guide_img_07",
+        "descriptionStringId": "SI_DESC_TOOLTIP_55",
+        "imageId": 107,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_55",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_7"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 6.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_07:de",
+      "episodeId": "Loading_Guide_img_07",
+      "language": "de",
+      "title": "웹툰 07",
+      "order": 7,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_07.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Verteidiger sind anfällig für Ranger, aber Scharfschützen überlegen.",
+      "searchText": "웹툰 07 Loading_Guide_img_07 7 독일어 de 디펜더는 레인저에게 취약하고 스나이퍼에게 강력합니다. Verteidiger sind anfällig für Ranger, aber Scharfschützen überlegen.",
+      "source": {
+        "assetName": "Loading_Guide_img_07",
+        "descriptionStringId": "SI_DESC_TOOLTIP_55",
+        "imageId": 107,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_55",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_7"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 6.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_07:fr",
+      "episodeId": "Loading_Guide_img_07",
+      "language": "fr",
+      "title": "웹툰 07",
+      "order": 7,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_07.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Les défenseurs sont vulnérables aux rangers, mais ont l'avantage sur les snipers.",
+      "searchText": "웹툰 07 Loading_Guide_img_07 7 프랑스어 fr 디펜더는 레인저에게 취약하고 스나이퍼에게 강력합니다. Les défenseurs sont vulnérables aux rangers, mais ont l'avantage sur les snipers.",
+      "source": {
+        "assetName": "Loading_Guide_img_07",
+        "descriptionStringId": "SI_DESC_TOOLTIP_55",
+        "imageId": 107,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_55",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_7"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 6.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_08",
+      "episodeId": "Loading_Guide_img_08",
+      "language": "ko",
+      "title": "웹툰 08",
+      "order": 8,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_08.png",
+      "width": 1024,
+      "height": 520,
+      "description": "본사의 엘리트들을 마음껏 활용하세요.",
+      "searchText": "웹툰 08 Loading_Guide_img_08 8 한국어 ko 본사의 엘리트들을 마음껏 활용하세요.",
+      "source": {
+        "assetName": "Loading_Guide_img_08",
+        "descriptionStringId": "SI_DESC_TOOLTIP_56",
+        "imageId": 108,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_56",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_8"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10104
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 5.051321029663086,
+        "right": 22.076093673706055,
+        "bottom": 7.076120376586914,
+        "left": 25.026750564575195
+      }
+    },
+    {
+      "id": "Loading_Guide_img_08:en",
+      "episodeId": "Loading_Guide_img_08",
+      "language": "en",
+      "title": "웹툰 08",
+      "order": 8,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_08.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Take advantage of your elite employees at HQ.",
+      "searchText": "웹툰 08 Loading_Guide_img_08 8 영어 en 본사의 엘리트들을 마음껏 활용하세요. Take advantage of your elite employees at HQ.",
+      "source": {
+        "assetName": "Loading_Guide_img_08",
+        "descriptionStringId": "SI_DESC_TOOLTIP_56",
+        "imageId": 108,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_56",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_8"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10104
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076101303100586,
+        "right": 22.07613754272461,
+        "bottom": 8.076120376586914,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_08:ja",
+      "episodeId": "Loading_Guide_img_08",
+      "language": "ja",
+      "title": "웹툰 08",
+      "order": 8,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_08.png",
+      "width": 1024,
+      "height": 520,
+      "description": "本社のエリートたちを思う存分活用してください。",
+      "searchText": "웹툰 08 Loading_Guide_img_08 8 일본어 ja 본사의 엘리트들을 마음껏 활용하세요. 本社のエリートたちを思う存分活用してください。",
+      "source": {
+        "assetName": "Loading_Guide_img_08",
+        "descriptionStringId": "SI_DESC_TOOLTIP_56",
+        "imageId": 108,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_56",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_8"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10104
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.026763916015625,
+        "right": 22.07613754272461,
+        "bottom": 0.0,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_08:zh-TW",
+      "episodeId": "Loading_Guide_img_08",
+      "language": "zh-TW",
+      "title": "웹툰 08",
+      "order": 8,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_08.png",
+      "width": 1024,
+      "height": 520,
+      "description": "請盡情使用總公司的精英。",
+      "searchText": "웹툰 08 Loading_Guide_img_08 8 중국어 번체 zh-TW 본사의 엘리트들을 마음껏 활용하세요. 請盡情使用總公司的精英。",
+      "source": {
+        "assetName": "Loading_Guide_img_08",
+        "descriptionStringId": "SI_DESC_TOOLTIP_56",
+        "imageId": 108,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_56",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_8"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10104
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 8.067281723022461,
+        "right": 22.07613754272461,
+        "bottom": 8.076120376586914,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_08:de",
+      "episodeId": "Loading_Guide_img_08",
+      "language": "de",
+      "title": "웹툰 08",
+      "order": 8,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_08.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Nutze deine Elitemitarbeiter im Hauptquartier.",
+      "searchText": "웹툰 08 Loading_Guide_img_08 8 독일어 de 본사의 엘리트들을 마음껏 활용하세요. Nutze deine Elitemitarbeiter im Hauptquartier.",
+      "source": {
+        "assetName": "Loading_Guide_img_08",
+        "descriptionStringId": "SI_DESC_TOOLTIP_56",
+        "imageId": 108,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_56",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_8"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10104
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076101303100586,
+        "right": 22.07613754272461,
+        "bottom": 8.076120376586914,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_08:fr",
+      "episodeId": "Loading_Guide_img_08",
+      "language": "fr",
+      "title": "웹툰 08",
+      "order": 8,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_08.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Essayez de tirer parti des employés d'élite de votre QG.",
+      "searchText": "웹툰 08 Loading_Guide_img_08 8 프랑스어 fr 본사의 엘리트들을 마음껏 활용하세요. Essayez de tirer parti des employés d'élite de votre QG.",
+      "source": {
+        "assetName": "Loading_Guide_img_08",
+        "descriptionStringId": "SI_DESC_TOOLTIP_56",
+        "imageId": 108,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_56",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_8"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10104
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 14.076101303100586,
+        "right": 22.07613754272461,
+        "bottom": 8.076120376586914,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_09",
+      "episodeId": "Loading_Guide_img_09",
+      "language": "ko",
+      "title": "웹툰 09",
+      "order": 9,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_09.png",
+      "width": 1024,
+      "height": 520,
+      "description": "탄약이 없는 상태로 전투를 개시하는 함선은 퇴각됩니다.",
+      "searchText": "웹툰 09 Loading_Guide_img_09 9 한국어 ko 탄약이 없는 상태로 전투를 개시하는 함선은 퇴각됩니다.",
+      "source": {
+        "assetName": "Loading_Guide_img_09",
+        "descriptionStringId": "SI_DESC_TOOLTIP_57",
+        "imageId": 109,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_57",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_9"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 5.026729583740234,
+        "right": 22.076093673706055,
+        "bottom": 10.01291275024414,
+        "left": 25.026750564575195
+      }
+    },
+    {
+      "id": "Loading_Guide_img_09:en",
+      "episodeId": "Loading_Guide_img_09",
+      "language": "en",
+      "title": "웹툰 09",
+      "order": 9,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_09.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Your ship will retreat when engaged in battle without ammo.",
+      "searchText": "웹툰 09 Loading_Guide_img_09 9 영어 en 탄약이 없는 상태로 전투를 개시하는 함선은 퇴각됩니다. Your ship will retreat when engaged in battle without ammo.",
+      "source": {
+        "assetName": "Loading_Guide_img_09",
+        "descriptionStringId": "SI_DESC_TOOLTIP_57",
+        "imageId": 109,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_57",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_9"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 10.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_09:ja",
+      "episodeId": "Loading_Guide_img_09",
+      "language": "ja",
+      "title": "웹툰 09",
+      "order": 9,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_09.png",
+      "width": 1024,
+      "height": 520,
+      "description": "弾丸がない状態で戦闘を開始する艦船は退却します。",
+      "searchText": "웹툰 09 Loading_Guide_img_09 9 일본어 ja 탄약이 없는 상태로 전투를 개시하는 함선은 퇴각됩니다. 弾丸がない状態で戦闘を開始する艦船は退却します。",
+      "source": {
+        "assetName": "Loading_Guide_img_09",
+        "descriptionStringId": "SI_DESC_TOOLTIP_57",
+        "imageId": 109,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_57",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_9"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.076107025146484,
+        "right": 22.076093673706055,
+        "bottom": 10.01291275024414,
+        "left": 25.026750564575195
+      }
+    },
+    {
+      "id": "Loading_Guide_img_09:zh-TW",
+      "episodeId": "Loading_Guide_img_09",
+      "language": "zh-TW",
+      "title": "웹툰 09",
+      "order": 9,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_09.png",
+      "width": 1024,
+      "height": 520,
+      "description": "在沒有彈藥的情況下開始戰鬥的艦船將被撤退。",
+      "searchText": "웹툰 09 Loading_Guide_img_09 9 중국어 번체 zh-TW 탄약이 없는 상태로 전투를 개시하는 함선은 퇴각됩니다. 在沒有彈藥的情況下開始戰鬥的艦船將被撤退。",
+      "source": {
+        "assetName": "Loading_Guide_img_09",
+        "descriptionStringId": "SI_DESC_TOOLTIP_57",
+        "imageId": 109,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_57",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_9"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 8.02676010131836,
+        "right": 22.07613754272461,
+        "bottom": 10.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_09:de",
+      "episodeId": "Loading_Guide_img_09",
+      "language": "de",
+      "title": "웹툰 09",
+      "order": 9,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_09.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Ohne Munition wird sich dein Schiff aus dem Kampf zurückziehen.",
+      "searchText": "웹툰 09 Loading_Guide_img_09 9 독일어 de 탄약이 없는 상태로 전투를 개시하는 함선은 퇴각됩니다. Ohne Munition wird sich dein Schiff aus dem Kampf zurückziehen.",
+      "source": {
+        "assetName": "Loading_Guide_img_09",
+        "descriptionStringId": "SI_DESC_TOOLTIP_57",
+        "imageId": 109,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_57",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_9"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 10.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_09:fr",
+      "episodeId": "Loading_Guide_img_09",
+      "language": "fr",
+      "title": "웹툰 09",
+      "order": 9,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_09.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Votre vaisseau battra en retraite s'il est attaqué alors qu'il n'a plus de munitions.",
+      "searchText": "웹툰 09 Loading_Guide_img_09 9 프랑스어 fr 탄약이 없는 상태로 전투를 개시하는 함선은 퇴각됩니다. Votre vaisseau battra en retraite s'il est attaqué alors qu'il n'a plus de munitions.",
+      "source": {
+        "assetName": "Loading_Guide_img_09",
+        "descriptionStringId": "SI_DESC_TOOLTIP_57",
+        "imageId": 109,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_57",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_9"
+            ]
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 13.076107025146484,
+        "right": 22.07613754272461,
+        "bottom": 10.01291275024414,
+        "left": 25.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_10",
+      "episodeId": "Loading_Guide_img_10",
+      "language": "ko",
+      "title": "웹툰 10",
+      "order": 10,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_10.png",
+      "width": 1024,
+      "height": 520,
+      "description": "파견을 마친 사원들에게 많은 격려를 해줍시다.",
+      "searchText": "웹툰 10 Loading_Guide_img_10 10 한국어 ko 파견을 마친 사원들에게 많은 격려를 해줍시다.",
+      "source": {
+        "assetName": "Loading_Guide_img_10",
+        "descriptionStringId": "SI_DESC_TOOLTIP_58",
+        "imageId": 110,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_58",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_10"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10105
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.02676010131836,
+        "right": 18.07613754272461,
+        "bottom": 10.01291275024414,
+        "left": 23.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_10:en",
+      "episodeId": "Loading_Guide_img_10",
+      "language": "en",
+      "title": "웹툰 10",
+      "order": 10,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_10.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Give lots of praise to your employees when they return from Dispatch missions.",
+      "searchText": "웹툰 10 Loading_Guide_img_10 10 영어 en 파견을 마친 사원들에게 많은 격려를 해줍시다. Give lots of praise to your employees when they return from Dispatch missions.",
+      "source": {
+        "assetName": "Loading_Guide_img_10",
+        "descriptionStringId": "SI_DESC_TOOLTIP_58",
+        "imageId": 110,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_58",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_10"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10105
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076107025146484,
+        "right": 18.07613754272461,
+        "bottom": 10.01291275024414,
+        "left": 23.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_10:ja",
+      "episodeId": "Loading_Guide_img_10",
+      "language": "ja",
+      "title": "웹툰 10",
+      "order": 10,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_10.png",
+      "width": 1024,
+      "height": 520,
+      "description": "派遣を終えた社員を励ましてあげましょう。",
+      "searchText": "웹툰 10 Loading_Guide_img_10 10 일본어 ja 파견을 마친 사원들에게 많은 격려를 해줍시다. 派遣を終えた社員を励ましてあげましょう。",
+      "source": {
+        "assetName": "Loading_Guide_img_10",
+        "descriptionStringId": "SI_DESC_TOOLTIP_58",
+        "imageId": 110,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_58",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_10"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10105
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 10.07611083984375,
+        "right": 18.07613754272461,
+        "bottom": 10.036285400390625,
+        "left": 23.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_10:zh-TW",
+      "episodeId": "Loading_Guide_img_10",
+      "language": "zh-TW",
+      "title": "웹툰 10",
+      "order": 10,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_10.png",
+      "width": 1024,
+      "height": 520,
+      "description": "對結束派遣的員工們給予極大的鼓勵吧。",
+      "searchText": "웹툰 10 Loading_Guide_img_10 10 중국어 번체 zh-TW 파견을 마친 사원들에게 많은 격려를 해줍시다. 對結束派遣的員工們給予極大的鼓勵吧。",
+      "source": {
+        "assetName": "Loading_Guide_img_10",
+        "descriptionStringId": "SI_DESC_TOOLTIP_58",
+        "imageId": 110,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_58",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_10"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10105
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 9.01290512084961,
+        "right": 18.07613754272461,
+        "bottom": 10.01291275024414,
+        "left": 23.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_10:de",
+      "episodeId": "Loading_Guide_img_10",
+      "language": "de",
+      "title": "웹툰 10",
+      "order": 10,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_10.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Lobe deine Mitarbeiter ausgiebig, wenn sie von Entsendungsmissionen zurückkehren.",
+      "searchText": "웹툰 10 Loading_Guide_img_10 10 독일어 de 파견을 마친 사원들에게 많은 격려를 해줍시다. Lobe deine Mitarbeiter ausgiebig, wenn sie von Entsendungsmissionen zurückkehren.",
+      "source": {
+        "assetName": "Loading_Guide_img_10",
+        "descriptionStringId": "SI_DESC_TOOLTIP_58",
+        "imageId": 110,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_58",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_10"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10105
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076107025146484,
+        "right": 18.07613754272461,
+        "bottom": 10.01291275024414,
+        "left": 23.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_10:fr",
+      "episodeId": "Loading_Guide_img_10",
+      "language": "fr",
+      "title": "웹툰 10",
+      "order": 10,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_10.png",
+      "width": 1024,
+      "height": 520,
+      "description": "N'hésitez pas à féliciter vos employés lorsqu'ils reviennent d'une mission de déploiement.",
+      "searchText": "웹툰 10 Loading_Guide_img_10 10 프랑스어 fr 파견을 마친 사원들에게 많은 격려를 해줍시다. N'hésitez pas à féliciter vos employés lorsqu'ils reviennent d'une mission de déploiement.",
+      "source": {
+        "assetName": "Loading_Guide_img_10",
+        "descriptionStringId": "SI_DESC_TOOLTIP_58",
+        "imageId": 110,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_58",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_10"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10105
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 14.076107025146484,
+        "right": 18.07613754272461,
+        "bottom": 10.01291275024414,
+        "left": 23.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_11",
+      "episodeId": "Loading_Guide_img_11",
+      "language": "ko",
+      "title": "웹툰 11",
+      "order": 11,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_11.png",
+      "width": 1024,
+      "height": 520,
+      "description": "필요한 아이템이 있다면 상점을 확인해보세요.",
+      "searchText": "웹툰 11 Loading_Guide_img_11 11 한국어 ko 필요한 아이템이 있다면 상점을 확인해보세요.",
+      "source": {
+        "assetName": "Loading_Guide_img_11",
+        "descriptionStringId": "SI_DESC_TOOLTIP_59",
+        "imageId": 111,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_59",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_11"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1007
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": -3.814697265625e-06,
+        "right": 25.012943267822266,
+        "bottom": 10.01291275024414,
+        "left": 10.149349212646484
+      }
+    },
+    {
+      "id": "Loading_Guide_img_11:en",
+      "episodeId": "Loading_Guide_img_11",
+      "language": "en",
+      "title": "웹툰 11",
+      "order": 11,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_11.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Need some items? Check out the Shop!",
+      "searchText": "웹툰 11 Loading_Guide_img_11 11 영어 en 필요한 아이템이 있다면 상점을 확인해보세요. Need some items? Check out the Shop!",
+      "source": {
+        "assetName": "Loading_Guide_img_11",
+        "descriptionStringId": "SI_DESC_TOOLTIP_59",
+        "imageId": 111,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_59",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_11"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1007
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": -3.814697265625e-06,
+        "right": 25.012929916381836,
+        "bottom": 10.01291275024414,
+        "left": 21.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_11:ja",
+      "episodeId": "Loading_Guide_img_11",
+      "language": "ja",
+      "title": "웹툰 11",
+      "order": 11,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_11.png",
+      "width": 1024,
+      "height": 520,
+      "description": "必要なアイテムがある場合はショップを確認してみましょう。",
+      "searchText": "웹툰 11 Loading_Guide_img_11 11 일본어 ja 필요한 아이템이 있다면 상점을 확인해보세요. 必要なアイテムがある場合はショップを確認してみましょう。",
+      "source": {
+        "assetName": "Loading_Guide_img_11",
+        "descriptionStringId": "SI_DESC_TOOLTIP_59",
+        "imageId": 111,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_59",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_11"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1007
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": -3.814697265625e-06,
+        "right": 25.012929916381836,
+        "bottom": 10.01291275024414,
+        "left": 21.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_11:zh-TW",
+      "episodeId": "Loading_Guide_img_11",
+      "language": "zh-TW",
+      "title": "웹툰 11",
+      "order": 11,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_11.png",
+      "width": 1024,
+      "height": 520,
+      "description": "如有需要的道具，可到商店進行確認。",
+      "searchText": "웹툰 11 Loading_Guide_img_11 11 중국어 번체 zh-TW 필요한 아이템이 있다면 상점을 확인해보세요. 如有需要的道具，可到商店進行確認。",
+      "source": {
+        "assetName": "Loading_Guide_img_11",
+        "descriptionStringId": "SI_DESC_TOOLTIP_59",
+        "imageId": 111,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_59",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_11"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1007
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": -3.814697265625e-06,
+        "right": 25.012929916381836,
+        "bottom": 10.01291275024414,
+        "left": 21.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_11:de",
+      "episodeId": "Loading_Guide_img_11",
+      "language": "de",
+      "title": "웹툰 11",
+      "order": 11,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_11.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Du brauchst Gegenstände? Dann schau mal im Shop vorbei!",
+      "searchText": "웹툰 11 Loading_Guide_img_11 11 독일어 de 필요한 아이템이 있다면 상점을 확인해보세요. Du brauchst Gegenstände? Dann schau mal im Shop vorbei!",
+      "source": {
+        "assetName": "Loading_Guide_img_11",
+        "descriptionStringId": "SI_DESC_TOOLTIP_59",
+        "imageId": 111,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_59",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_11"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1007
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": -3.814697265625e-06,
+        "right": 25.012929916381836,
+        "bottom": 10.01291275024414,
+        "left": 21.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_11:fr",
+      "episodeId": "Loading_Guide_img_11",
+      "language": "fr",
+      "title": "웹툰 11",
+      "order": 11,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_11.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Besoin de quelque chose ? Faites donc un tour à la boutique !",
+      "searchText": "웹툰 11 Loading_Guide_img_11 11 프랑스어 fr 필요한 아이템이 있다면 상점을 확인해보세요. Besoin de quelque chose ? Faites donc un tour à la boutique !",
+      "source": {
+        "assetName": "Loading_Guide_img_11",
+        "descriptionStringId": "SI_DESC_TOOLTIP_59",
+        "imageId": 111,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_59",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_11"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1007
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": -3.814697265625e-06,
+        "right": 25.012929916381836,
+        "bottom": 10.01291275024414,
+        "left": 21.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_12",
+      "episodeId": "Loading_Guide_img_12",
+      "language": "ko",
+      "title": "웹툰 12",
+      "order": 12,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_12.png",
+      "width": 1024,
+      "height": 520,
+      "description": "회사 재정에 맞는 연봉협상을 진행합시다.",
+      "searchText": "웹툰 12 Loading_Guide_img_12 12 한국어 ko 회사 재정에 맞는 연봉협상을 진행합시다.",
+      "source": {
+        "assetName": "Loading_Guide_img_12",
+        "descriptionStringId": "SI_DESC_TOOLTIP_60",
+        "imageId": 112,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_60",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_12"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001241
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.02676010131836,
+        "right": 26.076101303100586,
+        "bottom": 11.01291275024414,
+        "left": 22.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_12:en",
+      "episodeId": "Loading_Guide_img_12",
+      "language": "en",
+      "title": "웹툰 12",
+      "order": 12,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_12.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Adjust your Salary Negotiations according to your financial situation.",
+      "searchText": "웹툰 12 Loading_Guide_img_12 12 영어 en 회사 재정에 맞는 연봉협상을 진행합시다. Adjust your Salary Negotiations according to your financial situation.",
+      "source": {
+        "assetName": "Loading_Guide_img_12",
+        "descriptionStringId": "SI_DESC_TOOLTIP_60",
+        "imageId": 112,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_60",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_12"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001241
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 13.076107025146484,
+        "right": 26.076101303100586,
+        "bottom": 11.01291275024414,
+        "left": 22.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_12:ja",
+      "episodeId": "Loading_Guide_img_12",
+      "language": "ja",
+      "title": "웹툰 12",
+      "order": 12,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_12.png",
+      "width": 1024,
+      "height": 520,
+      "description": "会社財政に合った年俸交渉を行いましょう。",
+      "searchText": "웹툰 12 Loading_Guide_img_12 12 일본어 ja 회사 재정에 맞는 연봉협상을 진행합시다. 会社財政に合った年俸交渉を行いましょう。",
+      "source": {
+        "assetName": "Loading_Guide_img_12",
+        "descriptionStringId": "SI_DESC_TOOLTIP_60",
+        "imageId": 112,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_60",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_12"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001241
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.042903900146484,
+        "right": 26.076101303100586,
+        "bottom": 11.01291275024414,
+        "left": 22.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_12:zh-TW",
+      "episodeId": "Loading_Guide_img_12",
+      "language": "zh-TW",
+      "title": "웹툰 12",
+      "order": 12,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_12.png",
+      "width": 1024,
+      "height": 520,
+      "description": "符合公司財政進行薪資協商吧。",
+      "searchText": "웹툰 12 Loading_Guide_img_12 12 중국어 번체 zh-TW 회사 재정에 맞는 연봉협상을 진행합시다. 符合公司財政進行薪資協商吧。",
+      "source": {
+        "assetName": "Loading_Guide_img_12",
+        "descriptionStringId": "SI_DESC_TOOLTIP_60",
+        "imageId": 112,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_60",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_12"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001241
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 9.076107025146484,
+        "right": 26.076101303100586,
+        "bottom": 11.01291275024414,
+        "left": 22.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_12:de",
+      "episodeId": "Loading_Guide_img_12",
+      "language": "de",
+      "title": "웹툰 12",
+      "order": 12,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_12.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Passe deine Gehaltsverhandlungen deiner finanziellen Lage an.",
+      "searchText": "웹툰 12 Loading_Guide_img_12 12 독일어 de 회사 재정에 맞는 연봉협상을 진행합시다. Passe deine Gehaltsverhandlungen deiner finanziellen Lage an.",
+      "source": {
+        "assetName": "Loading_Guide_img_12",
+        "descriptionStringId": "SI_DESC_TOOLTIP_60",
+        "imageId": 112,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_60",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_12"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001241
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.02676010131836,
+        "right": 26.076101303100586,
+        "bottom": 11.01291275024414,
+        "left": 22.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_12:fr",
+      "episodeId": "Loading_Guide_img_12",
+      "language": "fr",
+      "title": "웹툰 12",
+      "order": 12,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_12.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Adaptez vos négociations de salaire à votre situation financière du moment.",
+      "searchText": "웹툰 12 Loading_Guide_img_12 12 프랑스어 fr 회사 재정에 맞는 연봉협상을 진행합시다. Adaptez vos négociations de salaire à votre situation financière du moment.",
+      "source": {
+        "assetName": "Loading_Guide_img_12",
+        "descriptionStringId": "SI_DESC_TOOLTIP_60",
+        "imageId": 112,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_60",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_12"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001241
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 13.076107025146484,
+        "right": 26.076101303100586,
+        "bottom": 11.01291275024414,
+        "left": 22.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_13",
+      "episodeId": "Loading_Guide_img_13",
+      "language": "ko",
+      "title": "웹툰 13",
+      "order": 13,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_13.png",
+      "width": 1024,
+      "height": 520,
+      "description": "애사심이 가득 차면 모든 능력치가 2% 증가합니다.",
+      "searchText": "웹툰 13 Loading_Guide_img_13 13 한국어 ko 애사심이 가득 차면 모든 능력치가 2% 증가합니다.",
+      "source": {
+        "assetName": "Loading_Guide_img_13",
+        "descriptionStringId": "SI_DESC_TOOLTIP_61",
+        "imageId": 113,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_61",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_13"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.01290512084961,
+        "right": 25.07613754272461,
+        "bottom": 11.01291275024414,
+        "left": 22.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_13:en",
+      "episodeId": "Loading_Guide_img_13",
+      "language": "en",
+      "title": "웹툰 13",
+      "order": 13,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_13.png",
+      "width": 1024,
+      "height": 520,
+      "description": "The Administrator forms a Lifetime Contract with numerous employees of any gender at the CEO's Office.",
+      "searchText": "웹툰 13 Loading_Guide_img_13 13 영어 en 애사심이 가득 차면 모든 능력치가 2% 증가합니다. The Administrator forms a Lifetime Contract with numerous employees of any gender at the CEO's Office.",
+      "source": {
+        "assetName": "Loading_Guide_img_13",
+        "descriptionStringId": "SI_DESC_TOOLTIP_61",
+        "imageId": 113,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_61",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_13"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.076107025146484,
+        "right": 24.07613754272461,
+        "bottom": 11.01291275024414,
+        "left": 22.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_13:ja",
+      "episodeId": "Loading_Guide_img_13",
+      "language": "ja",
+      "title": "웹툰 13",
+      "order": 13,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_13.png",
+      "width": 1024,
+      "height": 520,
+      "description": "愛社心がいっぱいになると、すべてのステータスが2％増加します。",
+      "searchText": "웹툰 13 Loading_Guide_img_13 13 일본어 ja 애사심이 가득 차면 모든 능력치가 2% 증가합니다. 愛社心がいっぱいになると、すべてのステータスが2％増加します。",
+      "source": {
+        "assetName": "Loading_Guide_img_13",
+        "descriptionStringId": "SI_DESC_TOOLTIP_61",
+        "imageId": 113,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_61",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_13"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 10.02676010131836,
+        "right": 24.07613754272461,
+        "bottom": 11.01291275024414,
+        "left": 22.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_13:zh-TW",
+      "episodeId": "Loading_Guide_img_13",
+      "language": "zh-TW",
+      "title": "웹툰 13",
+      "order": 13,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_13.png",
+      "width": 1024,
+      "height": 520,
+      "description": "管理者在老闆辦公室和許多員工進行終身雇傭。",
+      "searchText": "웹툰 13 Loading_Guide_img_13 13 중국어 번체 zh-TW 애사심이 가득 차면 모든 능력치가 2% 증가합니다. 管理者在老闆辦公室和許多員工進行終身雇傭。",
+      "source": {
+        "assetName": "Loading_Guide_img_13",
+        "descriptionStringId": "SI_DESC_TOOLTIP_61",
+        "imageId": 113,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_61",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_13"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 7.036251068115234,
+        "right": 24.07613754272461,
+        "bottom": 11.01291275024414,
+        "left": 22.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_13:de",
+      "episodeId": "Loading_Guide_img_13",
+      "language": "de",
+      "title": "웹툰 13",
+      "order": 13,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_13.png",
+      "width": 1024,
+      "height": 520,
+      "description": "In der Geschäftsführung schließt der Administrator lebenslange Verträge mit diversen Mitarbeiterinnen und Mitarbeitern.",
+      "searchText": "웹툰 13 Loading_Guide_img_13 13 독일어 de 애사심이 가득 차면 모든 능력치가 2% 증가합니다. In der Geschäftsführung schließt der Administrator lebenslange Verträge mit diversen Mitarbeiterinnen und Mitarbeitern.",
+      "source": {
+        "assetName": "Loading_Guide_img_13",
+        "descriptionStringId": "SI_DESC_TOOLTIP_61",
+        "imageId": 113,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_61",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_13"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.02676010131836,
+        "right": 24.07613754272461,
+        "bottom": 11.01291275024414,
+        "left": 22.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_13:fr",
+      "episodeId": "Loading_Guide_img_13",
+      "language": "fr",
+      "title": "웹툰 13",
+      "order": 13,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_13.png",
+      "width": 1024,
+      "height": 520,
+      "description": "L'Administrateur signe des contrats à vie avec nombre d'employés de tous bords dans le bureau du PDG.",
+      "searchText": "웹툰 13 Loading_Guide_img_13 13 프랑스어 fr 애사심이 가득 차면 모든 능력치가 2% 증가합니다. L'Administrateur signe des contrats à vie avec nombre d'employés de tous bords dans le bureau du PDG.",
+      "source": {
+        "assetName": "Loading_Guide_img_13",
+        "descriptionStringId": "SI_DESC_TOOLTIP_61",
+        "imageId": 113,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_61",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_13"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 13.076107025146484,
+        "right": 24.07613754272461,
+        "bottom": 11.01291275024414,
+        "left": 22.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_14",
+      "episodeId": "Loading_Guide_img_14",
+      "language": "ko",
+      "title": "웹툰 14",
+      "order": 14,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_14.png",
+      "width": 1024,
+      "height": 520,
+      "description": "유닛의 빈 별 칸수만큼 한계 초월을 할 수 있습니다.",
+      "searchText": "웹툰 14 Loading_Guide_img_14 14 한국어 ko 유닛의 빈 별 칸수만큼 한계 초월을 할 수 있습니다.",
+      "source": {
+        "assetName": "Loading_Guide_img_14",
+        "descriptionStringId": "SI_DESC_TOOLTIP_62",
+        "imageId": 114,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_62",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_14"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.026754379272461,
+        "right": 26.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_14:en",
+      "episodeId": "Loading_Guide_img_14",
+      "language": "en",
+      "title": "웹툰 14",
+      "order": 14,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_14.png",
+      "width": 1024,
+      "height": 520,
+      "description": "You can Limit-Break a unit as many times as its empty stars.",
+      "searchText": "웹툰 14 Loading_Guide_img_14 14 영어 en 유닛의 빈 별 칸수만큼 한계 초월을 할 수 있습니다. You can Limit-Break a unit as many times as its empty stars.",
+      "source": {
+        "assetName": "Loading_Guide_img_14",
+        "descriptionStringId": "SI_DESC_TOOLTIP_62",
+        "imageId": 114,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_62",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_14"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 13.076101303100586,
+        "right": 26.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_14:ja",
+      "episodeId": "Loading_Guide_img_14",
+      "language": "ja",
+      "title": "웹툰 14",
+      "order": 14,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_14.png",
+      "width": 1024,
+      "height": 520,
+      "description": "ユニットの空欄の星の数だけ、限界突破ができます。",
+      "searchText": "웹툰 14 Loading_Guide_img_14 14 일본어 ja 유닛의 빈 별 칸수만큼 한계 초월을 할 수 있습니다. ユニットの空欄の星の数だけ、限界突破ができます。",
+      "source": {
+        "assetName": "Loading_Guide_img_14",
+        "descriptionStringId": "SI_DESC_TOOLTIP_62",
+        "imageId": 114,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_62",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_14"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076101303100586,
+        "right": 26.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_14:zh-TW",
+      "episodeId": "Loading_Guide_img_14",
+      "language": "zh-TW",
+      "title": "웹툰 14",
+      "order": 14,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_14.png",
+      "width": 1024,
+      "height": 520,
+      "description": "尚有星級空間可超越極限",
+      "searchText": "웹툰 14 Loading_Guide_img_14 14 중국어 번체 zh-TW 유닛의 빈 별 칸수만큼 한계 초월을 할 수 있습니다. 尚有星級空間可超越極限",
+      "source": {
+        "assetName": "Loading_Guide_img_14",
+        "descriptionStringId": "SI_DESC_TOOLTIP_62",
+        "imageId": 114,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_62",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_14"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 9.057607650756836,
+        "right": 26.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_14:de",
+      "episodeId": "Loading_Guide_img_14",
+      "language": "de",
+      "title": "웹툰 14",
+      "order": 14,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_14.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Eine Einheit kann so viele Durchbrüche haben wie leere Sterne.",
+      "searchText": "웹툰 14 Loading_Guide_img_14 14 독일어 de 유닛의 빈 별 칸수만큼 한계 초월을 할 수 있습니다. Eine Einheit kann so viele Durchbrüche haben wie leere Sterne.",
+      "source": {
+        "assetName": "Loading_Guide_img_14",
+        "descriptionStringId": "SI_DESC_TOOLTIP_62",
+        "imageId": 114,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_62",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_14"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 13.076101303100586,
+        "right": 26.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_14:fr",
+      "episodeId": "Loading_Guide_img_14",
+      "language": "fr",
+      "title": "웹툰 14",
+      "order": 14,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_14.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Vous pouvez surclasser une unité autant de fois qu'elle a d'étoiles vides.",
+      "searchText": "웹툰 14 Loading_Guide_img_14 14 프랑스어 fr 유닛의 빈 별 칸수만큼 한계 초월을 할 수 있습니다. Vous pouvez surclasser une unité autant de fois qu'elle a d'étoiles vides.",
+      "source": {
+        "assetName": "Loading_Guide_img_14",
+        "descriptionStringId": "SI_DESC_TOOLTIP_62",
+        "imageId": 114,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_62",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_14"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 15.076101303100586,
+        "right": 26.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_15",
+      "episodeId": "Loading_Guide_img_15",
+      "language": "ko",
+      "title": "웹툰 15",
+      "order": 15,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_15.png",
+      "width": 1024,
+      "height": 520,
+      "description": "스킬 레벨업에는 단계에 맞는 훈련 자료와, 정보 자원이 필요합니다.",
+      "searchText": "웹툰 15 Loading_Guide_img_15 15 한국어 ko 스킬 레벨업에는 단계에 맞는 훈련 자료와, 정보 자원이 필요합니다.",
+      "source": {
+        "assetName": "Loading_Guide_img_15",
+        "descriptionStringId": "SI_DESC_TOOLTIP_63",
+        "imageId": 115,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_63",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_15"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.054128646850586,
+        "right": 26.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_15:en",
+      "episodeId": "Loading_Guide_img_15",
+      "language": "en",
+      "title": "웹툰 15",
+      "order": 15,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_15.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Increasing skill levels require different Training Data and Info.",
+      "searchText": "웹툰 15 Loading_Guide_img_15 15 영어 en 스킬 레벨업에는 단계에 맞는 훈련 자료와, 정보 자원이 필요합니다. Increasing skill levels require different Training Data and Info.",
+      "source": {
+        "assetName": "Loading_Guide_img_15",
+        "descriptionStringId": "SI_DESC_TOOLTIP_63",
+        "imageId": 115,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_63",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_15"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 14.026754379272461,
+        "right": 26.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_15:ja",
+      "episodeId": "Loading_Guide_img_15",
+      "language": "ja",
+      "title": "웹툰 15",
+      "order": 15,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_15.png",
+      "width": 1024,
+      "height": 520,
+      "description": "スキルレベルアップには段階に見合った訓練資料と情報資源が必要です。",
+      "searchText": "웹툰 15 Loading_Guide_img_15 15 일본어 ja 스킬 레벨업에는 단계에 맞는 훈련 자료와, 정보 자원이 필요합니다. スキルレベルアップには段階に見合った訓練資料と情報資源が必要です。",
+      "source": {
+        "assetName": "Loading_Guide_img_15",
+        "descriptionStringId": "SI_DESC_TOOLTIP_63",
+        "imageId": 115,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_63",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_15"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.054128646850586,
+        "right": 26.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_15:zh-TW",
+      "episodeId": "Loading_Guide_img_15",
+      "language": "zh-TW",
+      "title": "웹툰 15",
+      "order": 15,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_15.png",
+      "width": 1024,
+      "height": 520,
+      "description": "技能升級需要符合階段的訓練資料和情報資源。",
+      "searchText": "웹툰 15 Loading_Guide_img_15 15 중국어 번체 zh-TW 스킬 레벨업에는 단계에 맞는 훈련 자료와, 정보 자원이 필요합니다. 技能升級需要符合階段的訓練資料和情報資源。",
+      "source": {
+        "assetName": "Loading_Guide_img_15",
+        "descriptionStringId": "SI_DESC_TOOLTIP_63",
+        "imageId": 115,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_63",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_15"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 10.036275863647461,
+        "right": 26.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_15:de",
+      "episodeId": "Loading_Guide_img_15",
+      "language": "de",
+      "title": "웹툰 15",
+      "order": 15,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_15.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Die Fähigkeitenstufe zu erhöhen, erfordert andere Ausbildungsdaten und Ausbildungsinfo.",
+      "searchText": "웹툰 15 Loading_Guide_img_15 15 독일어 de 스킬 레벨업에는 단계에 맞는 훈련 자료와, 정보 자원이 필요합니다. Die Fähigkeitenstufe zu erhöhen, erfordert andere Ausbildungsdaten und Ausbildungsinfo.",
+      "source": {
+        "assetName": "Loading_Guide_img_15",
+        "descriptionStringId": "SI_DESC_TOOLTIP_63",
+        "imageId": 115,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_63",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_15"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.026754379272461,
+        "right": 26.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_15:fr",
+      "episodeId": "Loading_Guide_img_15",
+      "language": "fr",
+      "title": "웹툰 15",
+      "order": 15,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_15.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Augmenter le niveau des compétences nécessite des données d'entraînement et des infos.",
+      "searchText": "웹툰 15 Loading_Guide_img_15 15 프랑스어 fr 스킬 레벨업에는 단계에 맞는 훈련 자료와, 정보 자원이 필요합니다. Augmenter le niveau des compétences nécessite des données d'entraînement et des infos.",
+      "source": {
+        "assetName": "Loading_Guide_img_15",
+        "descriptionStringId": "SI_DESC_TOOLTIP_63",
+        "imageId": 115,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_63",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_15"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 6.076101303100586,
+        "right": 26.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_16",
+      "episodeId": "Loading_Guide_img_16",
+      "language": "ko",
+      "title": "웹툰 16",
+      "order": 16,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_16.png",
+      "width": 1024,
+      "height": 520,
+      "description": "장비 프리셋을 이용하여, 원하는 세팅의 장비 그룹을 저장할 수 있습니다.",
+      "searchText": "웹툰 16 Loading_Guide_img_16 16 한국어 ko 장비 프리셋을 이용하여, 원하는 세팅의 장비 그룹을 저장할 수 있습니다.",
+      "source": {
+        "assetName": "Loading_Guide_img_16",
+        "descriptionStringId": "SI_DESC_TOOLTIP_64",
+        "imageId": 116,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_64",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_16"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10105
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 4.076107025146484,
+        "right": 26.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_16:en",
+      "episodeId": "Loading_Guide_img_16",
+      "language": "en",
+      "title": "웹툰 16",
+      "order": 16,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_16.png",
+      "width": 1024,
+      "height": 520,
+      "description": "You can save frequently used gear sets as presets and switch between them quickly.",
+      "searchText": "웹툰 16 Loading_Guide_img_16 16 영어 en 장비 프리셋을 이용하여, 원하는 세팅의 장비 그룹을 저장할 수 있습니다. You can save frequently used gear sets as presets and switch between them quickly.",
+      "source": {
+        "assetName": "Loading_Guide_img_16",
+        "descriptionStringId": "SI_DESC_TOOLTIP_64",
+        "imageId": 116,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_64",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_16"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10105
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 4.076107025146484,
+        "right": 26.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_16:ja",
+      "episodeId": "Loading_Guide_img_16",
+      "language": "ja",
+      "title": "웹툰 16",
+      "order": 16,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_16.png",
+      "width": 1024,
+      "height": 520,
+      "description": "装備プリセットを利用して好きな装備グループを保存できます。",
+      "searchText": "웹툰 16 Loading_Guide_img_16 16 일본어 ja 장비 프리셋을 이용하여, 원하는 세팅의 장비 그룹을 저장할 수 있습니다. 装備プリセットを利用して好きな装備グループを保存できます。",
+      "source": {
+        "assetName": "Loading_Guide_img_16",
+        "descriptionStringId": "SI_DESC_TOOLTIP_64",
+        "imageId": 116,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_64",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_16"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10105
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 4.076107025146484,
+        "right": 26.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_16:zh-TW",
+      "episodeId": "Loading_Guide_img_16",
+      "language": "zh-TW",
+      "title": "웹툰 16",
+      "order": 16,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_16.png",
+      "width": 1024,
+      "height": 520,
+      "description": "使用裝備切換組合可保存所需配置的裝備組。",
+      "searchText": "웹툰 16 Loading_Guide_img_16 16 중국어 번체 zh-TW 장비 프리셋을 이용하여, 원하는 세팅의 장비 그룹을 저장할 수 있습니다. 使用裝備切換組合可保存所需配置的裝備組。",
+      "source": {
+        "assetName": "Loading_Guide_img_16",
+        "descriptionStringId": "SI_DESC_TOOLTIP_64",
+        "imageId": 116,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_64",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_16"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10105
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 4.076107025146484,
+        "right": 26.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_16:de",
+      "episodeId": "Loading_Guide_img_16",
+      "language": "de",
+      "title": "웹툰 16",
+      "order": 16,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_16.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Häufig genutzte Ausrüstungssets lassen sich als Vorlagen speichern, sodass du sie schnell wechseln kannst.",
+      "searchText": "웹툰 16 Loading_Guide_img_16 16 독일어 de 장비 프리셋을 이용하여, 원하는 세팅의 장비 그룹을 저장할 수 있습니다. Häufig genutzte Ausrüstungssets lassen sich als Vorlagen speichern, sodass du sie schnell wechseln kannst.",
+      "source": {
+        "assetName": "Loading_Guide_img_16",
+        "descriptionStringId": "SI_DESC_TOOLTIP_64",
+        "imageId": 116,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_64",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_16"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10105
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 4.076107025146484,
+        "right": 26.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_16:fr",
+      "episodeId": "Loading_Guide_img_16",
+      "language": "fr",
+      "title": "웹툰 16",
+      "order": 16,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_16.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Vous pouvez enregistrer sous forme d'ensemble les pièces d'équipement dont vous vous servez souvent pour rapidement passer d'un ensemble à l'autre.",
+      "searchText": "웹툰 16 Loading_Guide_img_16 16 프랑스어 fr 장비 프리셋을 이용하여, 원하는 세팅의 장비 그룹을 저장할 수 있습니다. Vous pouvez enregistrer sous forme d'ensemble les pièces d'équipement dont vous vous servez souvent pour rapidement passer d'un ensemble à l'autre.",
+      "source": {
+        "assetName": "Loading_Guide_img_16",
+        "descriptionStringId": "SI_DESC_TOOLTIP_64",
+        "imageId": 116,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_64",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_16"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10105
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 4.076107025146484,
+        "right": 26.07613754272461,
+        "bottom": 9.01291275024414,
+        "left": 24.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_17",
+      "episodeId": "Loading_Guide_img_17",
+      "language": "ko",
+      "title": "웹툰 17",
+      "order": 17,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_17.png",
+      "width": 1024,
+      "height": 520,
+      "description": "레이드 지원 요청을 통해, 협력사나 컨소시엄 멤버들의 레이드를 함께 공략할 수 있습니다.",
+      "searchText": "웹툰 17 Loading_Guide_img_17 17 한국어 ko 레이드 지원 요청을 통해, 협력사나 컨소시엄 멤버들의 레이드를 함께 공략할 수 있습니다.",
+      "source": {
+        "assetName": "Loading_Guide_img_17",
+        "descriptionStringId": "SI_DESC_TOOLTIP_47",
+        "imageId": 117,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_47",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_17"
+            ],
+            "m_UnlockReqType": "SURT_PLAYER_LEVEL",
+            "m_UnlockReqValue": 15
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.042898178100586,
+        "right": 26.076101303100586,
+        "bottom": 10.076120376586914,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_17:en",
+      "episodeId": "Loading_Guide_img_17",
+      "language": "en",
+      "title": "웹툰 17",
+      "order": 17,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_17.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Use Raid Support Request to clear Raids with your Partners and Consortium members.",
+      "searchText": "웹툰 17 Loading_Guide_img_17 17 영어 en 레이드 지원 요청을 통해, 협력사나 컨소시엄 멤버들의 레이드를 함께 공략할 수 있습니다. Use Raid Support Request to clear Raids with your Partners and Consortium members.",
+      "source": {
+        "assetName": "Loading_Guide_img_17",
+        "descriptionStringId": "SI_DESC_TOOLTIP_47",
+        "imageId": 117,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_47",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_17"
+            ],
+            "m_UnlockReqType": "SURT_PLAYER_LEVEL",
+            "m_UnlockReqValue": 15
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076101303100586,
+        "right": 26.076101303100586,
+        "bottom": 10.076120376586914,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_17:ja",
+      "episodeId": "Loading_Guide_img_17",
+      "language": "ja",
+      "title": "웹툰 17",
+      "order": 17,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_17.png",
+      "width": 1024,
+      "height": 520,
+      "description": "レイド支援要請で協力会社やコンソーシアムのメンバーとレイドを一緒に攻略できます。",
+      "searchText": "웹툰 17 Loading_Guide_img_17 17 일본어 ja 레이드 지원 요청을 통해, 협력사나 컨소시엄 멤버들의 레이드를 함께 공략할 수 있습니다. レイド支援要請で協力会社やコンソーシアムのメンバーとレイドを一緒に攻略できます。",
+      "source": {
+        "assetName": "Loading_Guide_img_17",
+        "descriptionStringId": "SI_DESC_TOOLTIP_47",
+        "imageId": 117,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_47",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_17"
+            ],
+            "m_UnlockReqType": "SURT_PLAYER_LEVEL",
+            "m_UnlockReqValue": 15
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076101303100586,
+        "right": 26.076101303100586,
+        "bottom": 10.076120376586914,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_17:zh-TW",
+      "episodeId": "Loading_Guide_img_17",
+      "language": "zh-TW",
+      "title": "웹툰 17",
+      "order": 17,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_17.png",
+      "width": 1024,
+      "height": 520,
+      "description": "透過團隊副本的支援請求，合作公司或公會成員可以一起攻略團隊副本。     ",
+      "searchText": "웹툰 17 Loading_Guide_img_17 17 중국어 번체 zh-TW 레이드 지원 요청을 통해, 협력사나 컨소시엄 멤버들의 레이드를 함께 공략할 수 있습니다. 透過團隊副本的支援請求，合作公司或公會成員可以一起攻略團隊副本。     ",
+      "source": {
+        "assetName": "Loading_Guide_img_17",
+        "descriptionStringId": "SI_DESC_TOOLTIP_47",
+        "imageId": 117,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_47",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_17"
+            ],
+            "m_UnlockReqType": "SURT_PLAYER_LEVEL",
+            "m_UnlockReqValue": 15
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 8.042898178100586,
+        "right": 26.076101303100586,
+        "bottom": 10.076120376586914,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_17:de",
+      "episodeId": "Loading_Guide_img_17",
+      "language": "de",
+      "title": "웹툰 17",
+      "order": 17,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_17.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Frage Raidunterstützung an, um Raids mit deinen Partnern und Konsortium-Mitgliedern abzuschließen.",
+      "searchText": "웹툰 17 Loading_Guide_img_17 17 독일어 de 레이드 지원 요청을 통해, 협력사나 컨소시엄 멤버들의 레이드를 함께 공략할 수 있습니다. Frage Raidunterstützung an, um Raids mit deinen Partnern und Konsortium-Mitgliedern abzuschließen.",
+      "source": {
+        "assetName": "Loading_Guide_img_17",
+        "descriptionStringId": "SI_DESC_TOOLTIP_47",
+        "imageId": 117,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_47",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_17"
+            ],
+            "m_UnlockReqType": "SURT_PLAYER_LEVEL",
+            "m_UnlockReqValue": 15
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076101303100586,
+        "right": 26.076101303100586,
+        "bottom": 10.076120376586914,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_17:fr",
+      "episodeId": "Loading_Guide_img_17",
+      "language": "fr",
+      "title": "웹툰 17",
+      "order": 17,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_17.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Servez-vous des demandes de soutien en raid pour terminer des raids avec vos partenaires et membres de Consortium.",
+      "searchText": "웹툰 17 Loading_Guide_img_17 17 프랑스어 fr 레이드 지원 요청을 통해, 협력사나 컨소시엄 멤버들의 레이드를 함께 공략할 수 있습니다. Servez-vous des demandes de soutien en raid pour terminer des raids avec vos partenaires et membres de Consortium.",
+      "source": {
+        "assetName": "Loading_Guide_img_17",
+        "descriptionStringId": "SI_DESC_TOOLTIP_47",
+        "imageId": 117,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_47",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_17"
+            ],
+            "m_UnlockReqType": "SURT_PLAYER_LEVEL",
+            "m_UnlockReqValue": 15
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 14.076101303100586,
+        "right": 26.076101303100586,
+        "bottom": 10.076120376586914,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_18",
+      "episodeId": "Loading_Guide_img_18",
+      "language": "ko",
+      "title": "웹툰 18",
+      "order": 18,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_18.png",
+      "width": 1024,
+      "height": 520,
+      "description": "다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다.",
+      "searchText": "웹툰 18 Loading_Guide_img_18 18 한국어 ko 다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다.",
+      "source": {
+        "assetName": "Loading_Guide_img_18",
+        "descriptionStringId": "SI_DESC_TOOLTIP_65",
+        "imageId": 118,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_65",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_18"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10202
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.04290771484375,
+        "right": 26.076101303100586,
+        "bottom": 10.04290771484375,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_18:en",
+      "episodeId": "Loading_Guide_img_18",
+      "language": "en",
+      "title": "웹툰 18",
+      "order": 18,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_18.png",
+      "width": 1024,
+      "height": 520,
+      "description": "You can obtain Imaginary Cores by destroying the Corruption Core in the Dive.",
+      "searchText": "웹툰 18 Loading_Guide_img_18 18 영어 en 다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다. You can obtain Imaginary Cores by destroying the Corruption Core in the Dive.",
+      "source": {
+        "assetName": "Loading_Guide_img_18",
+        "descriptionStringId": "SI_DESC_TOOLTIP_65",
+        "imageId": 118,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_65",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_18"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10202
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 14.07611083984375,
+        "right": 26.076101303100586,
+        "bottom": 10.04290771484375,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_18:ja",
+      "episodeId": "Loading_Guide_img_18",
+      "language": "ja",
+      "title": "웹툰 18",
+      "order": 18,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_18.png",
+      "width": 1024,
+      "height": 520,
+      "description": "ダイブの侵食コアを破壊すると、虚数コアを獲得できます。",
+      "searchText": "웹툰 18 Loading_Guide_img_18 18 일본어 ja 다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다. ダイブの侵食コアを破壊すると、虚数コアを獲得できます。",
+      "source": {
+        "assetName": "Loading_Guide_img_18",
+        "descriptionStringId": "SI_DESC_TOOLTIP_65",
+        "imageId": 118,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_65",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_18"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10202
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 13.07611083984375,
+        "right": 26.076101303100586,
+        "bottom": 10.04290771484375,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_18:zh-TW",
+      "episodeId": "Loading_Guide_img_18",
+      "language": "zh-TW",
+      "title": "웹툰 18",
+      "order": 18,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_18.png",
+      "width": 1024,
+      "height": 520,
+      "description": "破壞躍入的侵蝕核心可獲得能量核。",
+      "searchText": "웹툰 18 Loading_Guide_img_18 18 중국어 번체 zh-TW 다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다. 破壞躍入的侵蝕核心可獲得能量核。",
+      "source": {
+        "assetName": "Loading_Guide_img_18",
+        "descriptionStringId": "SI_DESC_TOOLTIP_65",
+        "imageId": 118,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_65",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_18"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10202
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.07611083984375,
+        "right": 26.076101303100586,
+        "bottom": 10.04290771484375,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_18:de",
+      "episodeId": "Loading_Guide_img_18",
+      "language": "de",
+      "title": "웹툰 18",
+      "order": 18,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_18.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Scheinkerne erhältst du durch die Zerstörung von Verderbniskernen beim Tauchgang.",
+      "searchText": "웹툰 18 Loading_Guide_img_18 18 독일어 de 다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다. Scheinkerne erhältst du durch die Zerstörung von Verderbniskernen beim Tauchgang.",
+      "source": {
+        "assetName": "Loading_Guide_img_18",
+        "descriptionStringId": "SI_DESC_TOOLTIP_65",
+        "imageId": 118,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_65",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_18"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10202
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 14.07611083984375,
+        "right": 26.076101303100586,
+        "bottom": 10.04290771484375,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_18:fr",
+      "episodeId": "Loading_Guide_img_18",
+      "language": "fr",
+      "title": "웹툰 18",
+      "order": 18,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_18.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Vous pouvez obtenir des noyaux d'imagination en détruisant le noyau de corruption durant la plongée.",
+      "searchText": "웹툰 18 Loading_Guide_img_18 18 프랑스어 fr 다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다. Vous pouvez obtenir des noyaux d'imagination en détruisant le noyau de corruption durant la plongée.",
+      "source": {
+        "assetName": "Loading_Guide_img_18",
+        "descriptionStringId": "SI_DESC_TOOLTIP_65",
+        "imageId": 118,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_65",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_18"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 10202
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 15.07611083984375,
+        "right": 26.076101303100586,
+        "bottom": 10.04290771484375,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_19",
+      "episodeId": "Loading_Guide_img_19",
+      "language": "ko",
+      "title": "웹툰 19",
+      "order": 19,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_19.png",
+      "width": 1024,
+      "height": 520,
+      "description": "다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다.",
+      "searchText": "웹툰 19 Loading_Guide_img_19 19 한국어 ko 다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다.",
+      "source": {
+        "assetName": "Loading_Guide_img_19",
+        "descriptionStringId": "SI_DESC_TOOLTIP_65",
+        "imageId": 119,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_65",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_19"
+            ],
+            "m_UnlockReqType": "SURT_PLAYER_LEVEL",
+            "m_UnlockReqValue": 15
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.00885009765625,
+        "right": 26.076101303100586,
+        "bottom": 10.04290771484375,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_19:en",
+      "episodeId": "Loading_Guide_img_19",
+      "language": "en",
+      "title": "웹툰 19",
+      "order": 19,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_19.png",
+      "width": 1024,
+      "height": 520,
+      "description": "You can obtain Imaginary Cores by destroying the Corruption Core in the Dive.",
+      "searchText": "웹툰 19 Loading_Guide_img_19 19 영어 en 다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다. You can obtain Imaginary Cores by destroying the Corruption Core in the Dive.",
+      "source": {
+        "assetName": "Loading_Guide_img_19",
+        "descriptionStringId": "SI_DESC_TOOLTIP_65",
+        "imageId": 119,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_65",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_19"
+            ],
+            "m_UnlockReqType": "SURT_PLAYER_LEVEL",
+            "m_UnlockReqValue": 15
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 14.07612419128418,
+        "right": 26.076101303100586,
+        "bottom": 10.026750564575195,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_19:ja",
+      "episodeId": "Loading_Guide_img_19",
+      "language": "ja",
+      "title": "웹툰 19",
+      "order": 19,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_19.png",
+      "width": 1024,
+      "height": 520,
+      "description": "ダイブの侵食コアを破壊すると、虚数コアを獲得できます。",
+      "searchText": "웹툰 19 Loading_Guide_img_19 19 일본어 ja 다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다. ダイブの侵食コアを破壊すると、虚数コアを獲得できます。",
+      "source": {
+        "assetName": "Loading_Guide_img_19",
+        "descriptionStringId": "SI_DESC_TOOLTIP_65",
+        "imageId": 119,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_65",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_19"
+            ],
+            "m_UnlockReqType": "SURT_PLAYER_LEVEL",
+            "m_UnlockReqValue": 15
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.04292106628418,
+        "right": 26.076101303100586,
+        "bottom": 10.026750564575195,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_19:zh-TW",
+      "episodeId": "Loading_Guide_img_19",
+      "language": "zh-TW",
+      "title": "웹툰 19",
+      "order": 19,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_19.png",
+      "width": 1024,
+      "height": 520,
+      "description": "破壞躍入的侵蝕核心可獲得能量核。",
+      "searchText": "웹툰 19 Loading_Guide_img_19 19 중국어 번체 zh-TW 다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다. 破壞躍入的侵蝕核心可獲得能量核。",
+      "source": {
+        "assetName": "Loading_Guide_img_19",
+        "descriptionStringId": "SI_DESC_TOOLTIP_65",
+        "imageId": 119,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_65",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_19"
+            ],
+            "m_UnlockReqType": "SURT_PLAYER_LEVEL",
+            "m_UnlockReqValue": 15
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 10.07612419128418,
+        "right": 26.076101303100586,
+        "bottom": 10.026750564575195,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_19:de",
+      "episodeId": "Loading_Guide_img_19",
+      "language": "de",
+      "title": "웹툰 19",
+      "order": 19,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_19.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Scheinkerne erhältst du durch die Zerstörung von Verderbniskernen beim Tauchgang.",
+      "searchText": "웹툰 19 Loading_Guide_img_19 19 독일어 de 다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다. Scheinkerne erhältst du durch die Zerstörung von Verderbniskernen beim Tauchgang.",
+      "source": {
+        "assetName": "Loading_Guide_img_19",
+        "descriptionStringId": "SI_DESC_TOOLTIP_65",
+        "imageId": 119,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_65",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_19"
+            ],
+            "m_UnlockReqType": "SURT_PLAYER_LEVEL",
+            "m_UnlockReqValue": 15
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 14.07612419128418,
+        "right": 26.076101303100586,
+        "bottom": 10.026750564575195,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_19:fr",
+      "episodeId": "Loading_Guide_img_19",
+      "language": "fr",
+      "title": "웹툰 19",
+      "order": 19,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_19.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Vous pouvez obtenir des noyaux d'imagination en détruisant le noyau de corruption durant la plongée.",
+      "searchText": "웹툰 19 Loading_Guide_img_19 19 프랑스어 fr 다이브의 침식코어를 파괴하면, 허수코어를 획득할 수 있습니다. Vous pouvez obtenir des noyaux d'imagination en détruisant le noyau de corruption durant la plongée.",
+      "source": {
+        "assetName": "Loading_Guide_img_19",
+        "descriptionStringId": "SI_DESC_TOOLTIP_65",
+        "imageId": 119,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_65",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_19"
+            ],
+            "m_UnlockReqType": "SURT_PLAYER_LEVEL",
+            "m_UnlockReqValue": 15
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 15.07612419128418,
+        "right": 26.076101303100586,
+        "bottom": 10.026750564575195,
+        "left": 26.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_20",
+      "episodeId": "Loading_Guide_img_20",
+      "language": "ko",
+      "title": "웹툰 20",
+      "order": 20,
+      "category": "used",
+      "imagePath": "/webtoons/Loading_Guide_img_20.png",
+      "width": 1024,
+      "height": 520,
+      "description": "채용 기록이 있는 사원의 경우 추가 채용에 필요한 인물 데이터가 감소합니다.",
+      "searchText": "웹툰 20 Loading_Guide_img_20 20 한국어 ko 채용 기록이 있는 사원의 경우 추가 채용에 필요한 인물 데이터가 감소합니다.",
+      "source": {
+        "assetName": "Loading_Guide_img_20",
+        "descriptionStringId": "SI_DESC_TOOLTIP_66",
+        "imageId": 120,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_66",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_20"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.026754379272461,
+        "right": 26.076093196868896,
+        "bottom": 9.076120376586914,
+        "left": 1.0267510414123535
+      }
+    },
+    {
+      "id": "Loading_Guide_img_20:en",
+      "episodeId": "Loading_Guide_img_20",
+      "language": "en",
+      "title": "웹툰 20",
+      "order": 20,
+      "category": "used",
+      "imagePath": "/webtoons/en/Loading_Guide_img_20.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Units that you employed before require fewer Unit Data for their additional recruitment.",
+      "searchText": "웹툰 20 Loading_Guide_img_20 20 영어 en 채용 기록이 있는 사원의 경우 추가 채용에 필요한 인물 데이터가 감소합니다. Units that you employed before require fewer Unit Data for their additional recruitment.",
+      "source": {
+        "assetName": "Loading_Guide_img_20",
+        "descriptionStringId": "SI_DESC_TOOLTIP_66",
+        "imageId": 120,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_66",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_20"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 13.026754379272461,
+        "right": 26.07613754272461,
+        "bottom": 9.076120376586914,
+        "left": 22.01291275024414
+      }
+    },
+    {
+      "id": "Loading_Guide_img_20:ja",
+      "episodeId": "Loading_Guide_img_20",
+      "language": "ja",
+      "title": "웹툰 20",
+      "order": 20,
+      "category": "used",
+      "imagePath": "/webtoons/ja/Loading_Guide_img_20.png",
+      "width": 1024,
+      "height": 520,
+      "description": "採用記録がある社員の場合、追加採用に必要な人物データが減少します。",
+      "searchText": "웹툰 20 Loading_Guide_img_20 20 일본어 ja 채용 기록이 있는 사원의 경우 추가 채용에 필요한 인물 데이터가 감소합니다. 採用記録がある社員の場合、追加採用に必要な人物データが減少します。",
+      "source": {
+        "assetName": "Loading_Guide_img_20",
+        "descriptionStringId": "SI_DESC_TOOLTIP_66",
+        "imageId": 120,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_66",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_20"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 11.076101303100586,
+        "right": 26.076093673706055,
+        "bottom": 9.076120376586914,
+        "left": 10.026750564575195
+      }
+    },
+    {
+      "id": "Loading_Guide_img_20:zh-TW",
+      "episodeId": "Loading_Guide_img_20",
+      "language": "zh-TW",
+      "title": "웹툰 20",
+      "order": 20,
+      "category": "used",
+      "imagePath": "/webtoons/zh-TW/Loading_Guide_img_20.png",
+      "width": 1024,
+      "height": 520,
+      "description": "有雇傭記錄的員工，將減少追加雇傭所需的人物檔案。",
+      "searchText": "웹툰 20 Loading_Guide_img_20 20 중국어 번체 zh-TW 채용 기록이 있는 사원의 경우 추가 채용에 필요한 인물 데이터가 감소합니다. 有雇傭記錄的員工，將減少追加雇傭所需的人物檔案。",
+      "source": {
+        "assetName": "Loading_Guide_img_20",
+        "descriptionStringId": "SI_DESC_TOOLTIP_66",
+        "imageId": 120,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_66",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_20"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 8.076101303100586,
+        "right": 26.076093673706055,
+        "bottom": 9.076120376586914,
+        "left": 14.026750564575195
+      }
+    },
+    {
+      "id": "Loading_Guide_img_20:de",
+      "episodeId": "Loading_Guide_img_20",
+      "language": "de",
+      "title": "웹툰 20",
+      "order": 20,
+      "category": "used",
+      "imagePath": "/webtoons/de/Loading_Guide_img_20.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Einheiten, die du bereits zuvor eingesetzt hast, benötigen weniger Einheitendaten für ihre zusätzliche Rekrutierung.",
+      "searchText": "웹툰 20 Loading_Guide_img_20 20 독일어 de 채용 기록이 있는 사원의 경우 추가 채용에 필요한 인물 데이터가 감소합니다. Einheiten, die du bereits zuvor eingesetzt hast, benötigen weniger Einheitendaten für ihre zusätzliche Rekrutierung.",
+      "source": {
+        "assetName": "Loading_Guide_img_20",
+        "descriptionStringId": "SI_DESC_TOOLTIP_66",
+        "imageId": 120,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_66",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_20"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 12.076101303100586,
+        "right": 26.076101303100586,
+        "bottom": 9.076120376586914,
+        "left": 22.076120376586914
+      }
+    },
+    {
+      "id": "Loading_Guide_img_20:fr",
+      "episodeId": "Loading_Guide_img_20",
+      "language": "fr",
+      "title": "웹툰 20",
+      "order": 20,
+      "category": "used",
+      "imagePath": "/webtoons/fr/Loading_Guide_img_20.png",
+      "width": 1024,
+      "height": 520,
+      "description": "Les unités que vous avez déjà employées par le passé nécessitent moins de données d'unité pour leur nouveau recrutement.",
+      "searchText": "웹툰 20 Loading_Guide_img_20 20 프랑스어 fr 채용 기록이 있는 사원의 경우 추가 채용에 필요한 인물 데이터가 감소합니다. Les unités que vous avez déjà employées par le passé nécessitent moins de données d'unité pour leur nouveau recrutement.",
+      "source": {
+        "assetName": "Loading_Guide_img_20",
+        "descriptionStringId": "SI_DESC_TOOLTIP_66",
+        "imageId": 120,
+        "imageType": "CARTOON",
+        "registration": "registered",
+        "runtimeVisibility": "not-established-without-server-content-tags",
+        "loadingRows": [
+          {
+            "m_eContentType": "DEFAULT",
+            "m_DescStrID": "SI_DESC_TOOLTIP_66",
+            "listContentsTagAllow": [
+              "LOADING_GUIDE_20"
+            ],
+            "m_UnlockReqType": "SURT_CLEAR_DUNGEON",
+            "m_UnlockReqValue": 1001421
+          }
+        ]
+      },
+      "clipInsets": {
+        "top": 14.076101303100586,
+        "right": 26.076101303100586,
+        "bottom": 9.076120376586914,
+        "left": 22.076120376586914
+      }
+    }
+  ]
+}

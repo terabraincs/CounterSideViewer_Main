@@ -39,8 +39,11 @@ test('migrated media and Spine files resolve to Raw without local media copies',
 });
 
 test('operator voices use CS_Voice and explicit spoken language mappings while missing or unsafe clips stay unavailable',()=>{
-  assert.equal(operatorCatalog.paths.length,2084);
+  assert.equal(operatorCatalog.paths.length,3080,'Operator voice index must include the uploaded Japanese clips');
+  assert.equal(operatorCatalog.paths.filter(asset=>asset.includes('.vkor/')).length,2084);
+  assert.equal(operatorCatalog.paths.filter(asset=>asset.includes('.vjpn/')).length,996);
   const paths=new Set(operatorCatalog.paths);
+  assert.equal(paths.size,3080,'Duplicate operator voice paths');
   for(const asset of operatorCatalog.paths){
     const [,bundle,file]=asset.split('/');
     for(const language of ['ko','ja']){

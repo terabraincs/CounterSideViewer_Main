@@ -2,6 +2,7 @@ import { deploymentUrl } from "@/lib/deployment";
 import HubCard from "@/components/HubCard";
 import SitePage from "@/components/SitePage";
 import { getCutsceneCoverImagePath } from "@/lib/cutscenes";
+import { getWebtoonCoverImagePath } from "@/lib/webtoons";
 const hubCards = [
     {
         title: "사원",
@@ -35,10 +36,9 @@ const hubCards = [
         imagePosition: "center 30%",
     },
     {
-        title: "스토리 뷰어",
-        href: deploymentUrl("/story"),
-        imagePath: deploymentUrl("/story/detail-thumbnails/BG_SUB_FAILURE.png"),
-        imagePosition: "center 30%",
+        title: "공식 웹툰",
+        href: deploymentUrl("/webtoons"),
+        imagePath: getWebtoonCoverImagePath(),
     },
     {
         title: "일러스트",
@@ -46,9 +46,15 @@ const hubCards = [
         imagePath: getCutsceneCoverImagePath(),
     },
     {
-        title: "가이드",
+        title: "인게임 가이드",
         href: deploymentUrl("/guide"),
         imagePath: deploymentUrl("/guide/images/NKM_UI_TUTORIAL_PF_SYSTEM_LOBBY_1_BG-e80e183644.png"),
+    },
+    {
+        title: "스토리 뷰어",
+        href: deploymentUrl("/story"),
+        imagePath: deploymentUrl("/story/detail-thumbnails/BG_SUB_FAILURE.png"),
+        imagePosition: "center 30%",
     },
     {
         title: "미니게임",

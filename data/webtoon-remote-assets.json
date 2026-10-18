@@ -1,0 +1,13 @@
+{
+  "repository": "terabraincs/CounterSide_Comics",
+  "commit": "110179af577c86cd0d28b6122ac51a23ed037808",
+  "baseUrl": "https://raw.githubusercontent.com/terabraincs/CounterSide_Comics/110179af577c86cd0d28b6122ac51a23ed037808",
+  "languageFolders": {
+    "ko": "KOR",
+    "en": "ENG",
+    "ja": "JPN",
+    "zh-TW": "TWN",
+    "de": "DEU",
+    "fr": "FRA"
+  }
+}
