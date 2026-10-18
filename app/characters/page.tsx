@@ -1,4 +1,5 @@
 import { deploymentData } from "@/lib/deployment";
+import { publicFileExists } from "@/lib/publicAssets";
 import fs from "node:fs";
 import path from "node:path";
 import type { Metadata } from "next";
@@ -187,7 +188,7 @@ function getUnitFaceImagePath(unitStrId: string) {
     const unitFaceUnitStrId = getUnitFaceUnitStrId(unitStrId);
     const fileName = `AB_UNIT_FACE_CARD_${unitFaceUnitStrId}.png`;
     const filePath = path.join(process.cwd(), "public", "unit", "unit_face", fileName);
-    if (fs.existsSync(filePath)) {
+    if (publicFileExists(filePath)) {
         return `/unit/unit_face/${fileName}`;
     }
     const usesCollaborationImageName = unitStrId.includes("DANMACHI") || unitStrId.includes("GEASS");
@@ -195,7 +196,7 @@ function getUnitFaceImagePath(unitStrId: string) {
         const collaborationUnitStrId = unitStrId.slice(0, -3);
         const collaborationFileName = `AB_UNIT_FACE_CARD_${collaborationUnitStrId}.png`;
         const collaborationFilePath = path.join(process.cwd(), "public", "unit", "unit_face", collaborationFileName);
-        if (fs.existsSync(collaborationFilePath)) {
+        if (publicFileExists(collaborationFilePath)) {
             return `/unit/unit_face/${collaborationFileName}`;
         }
     }

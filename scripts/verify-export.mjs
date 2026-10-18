@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {loadTypeScript} from '../tests/load-typescript.mjs';
+import {expectedCharacters,assertCharacterTiles,assertCharacterDetailImages} from '../tests/character-image-assertions.mjs';
 const out=path.resolve('out');
 const base=(process.env.NEXT_PUBLIC_BASE_PATH??'').replace(/\/$/,'');
 const {deploymentData,deploymentUrl}=loadTypeScript('lib/deployment.ts');
@@ -38,6 +39,15 @@ assert.ok(bytes<1_000_000_000,'GitHub Pages output exceeds 1 GB');
 assert.ok(fs.existsSync(path.join(out,'.nojekyll')),'Static export preparation did not complete');
 const requiredRoutes=['','characters','story','story/reader','music','equipment','ships','operators','collection','collection/titles','collection/frames','collection/emblems','collection/trophies','minigames','minigames/match-ten','minigames/cafe-strega','minigames/cafe-strega/rebuild-v2','minigames/sword-training','minigames/sword-training/rebuild','illustrations','guide','webtoons'];
 for(const route of requiredRoutes)assert.ok(fs.existsSync(path.join(out,route,'index.html')),'Missing route '+route);
+const characterTileImages=assertCharacterTiles(fs.readFileSync(path.join(out,'characters/index.html'),'utf8'));
+let characterProfileImages=0,characterPersonaImages=0;
+for(const unit of expectedCharacters){
+  const file=path.join(out,'characters',unit.id,'index.html');
+  assert.ok(fs.existsSync(file),'Missing employee detail route '+unit.id);
+  const counts=assertCharacterDetailImages(fs.readFileSync(file,'utf8'),unit);
+  characterProfileImages+=counts.profileImages;
+  characterPersonaImages+=counts.personaImages;
+}
 assert.ok(fs.existsSync(path.join(out,'404.html')),'The unpublished routes need the static 404 page');
 for(const route of ['spine-viewer','api','actor-buffer-compare-test','_actor-buffer-compare']){
   assert.ok(!fs.existsSync(path.join(out,route)),'Excluded route or development runtime exported: '+route);
@@ -150,7 +160,7 @@ for(const file of all){
 if(process.env.EXPORT_VERIFY_REPORT){
   const reportFile=path.resolve(process.env.EXPORT_VERIFY_REPORT);
   fs.mkdirSync(path.dirname(reportFile),{recursive:true});
-  fs.writeFileSync(reportFile,JSON.stringify({missing:[...missing],runtimeAssetKeys,inactiveStandaloneSpineKeys,verifiedPublicJson,checkedAssetURLs,externalAssets,externalOperatorVoices,externalOtherVoices,externalMusic,externalWebtoons,webtoonImages:webtoonUrls.size,files:all.length,bytes},null,2),'utf8');
+  fs.writeFileSync(reportFile,JSON.stringify({missing:[...missing],runtimeAssetKeys,inactiveStandaloneSpineKeys,verifiedPublicJson,checkedAssetURLs,externalAssets,externalOperatorVoices,externalOtherVoices,externalMusic,externalWebtoons,webtoonImages:webtoonUrls.size,characterTileImages,characterProfileImages,characterPersonaImages,files:all.length,bytes},null,2),'utf8');
 }
 assert.deepEqual([...missing].slice(0,30),[],'Missing exported asset references');
 assert.ok(verifiedPublicJson>0,'No published JSON rewrite was verified');
@@ -204,4 +214,4 @@ for(const track of musicCatalog.tracks){
   assert.ok(music.includes(track.audioPath),'Missing deployed track '+track.id);
   assert.ok(assetPaths.has(track.coverPath),'Missing external album cover');
 }
-console.log(JSON.stringify({files:all.length,bytes,MiB:+(bytes/1048576).toFixed(2),checkedAssetURLs,verifiedPublicJson,verifiedRawStoryJson,runtimeAssetKeys,inactiveStandaloneSpineKeys,embeddedTrophyModels:trophyModels.length,retainedMinigameSpineFiles:retainedMinigameSpines.length,externalImageReferences:externalAssets,externalSpineReferences:externalSpine,externalStoryDataReferences:externalStoryData,externalOperatorVoiceReferences:externalOperatorVoices,externalOtherVoiceReferences:externalOtherVoices,externalMusicReferences:externalMusic,externalWebtoonReferences:externalWebtoons,webtoonEntries:webtoonEntries.length,webtoonImages:webtoonUrls.size,jukeboxTracks:musicCatalog.tracks.length,missingAssets:missing.size,scopeVerified:true}));
+console.log(JSON.stringify({files:all.length,bytes,MiB:+(bytes/1048576).toFixed(2),checkedAssetURLs,verifiedPublicJson,verifiedRawStoryJson,runtimeAssetKeys,inactiveStandaloneSpineKeys,characterTileImages,characterProfileImages,characterPersonaImages,embeddedTrophyModels:trophyModels.length,retainedMinigameSpineFiles:retainedMinigameSpines.length,externalImageReferences:externalAssets,externalSpineReferences:externalSpine,externalStoryDataReferences:externalStoryData,externalOperatorVoiceReferences:externalOperatorVoices,externalOtherVoiceReferences:externalOtherVoices,externalMusicReferences:externalMusic,externalWebtoonReferences:externalWebtoons,webtoonEntries:webtoonEntries.length,webtoonImages:webtoonUrls.size,jukeboxTracks:musicCatalog.tracks.length,missingAssets:missing.size,scopeVerified:true}));
