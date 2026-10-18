@@ -1,0 +1,3909 @@
+@font-face {
+  font-family: "CounterSide Story";
+  src: url("/story/reader/fonts/MainFont.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* The shared NKM_UI_HOTKEY surface keeps the same MainFont family name used
+ * by the Chronicle shell even when the Reader route is opened directly. */
+@font-face {
+  font-family: "CounterSide Chronicle";
+  src: url("/story/reader/fonts/MainFont.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CounterSide CounterCase Number";
+  src: url("/story/reader/fonts/Rajdhani-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+.loadingScreen,
+.operationScreen,
+.theater {
+  width: 100%;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #05070a;
+  color: #f4f6f8;
+  font-family: Arial, "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+.loadingScreen {
+  display: grid;
+  place-content: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.loadingScreen span {
+  color: #e62f40;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.34em;
+}
+
+.loadingScreen strong {
+  font-size: clamp(18px, 2vw, 30px);
+  letter-spacing: 0.08em;
+}
+
+.cutsceneHotkeyOverlay {
+  display: contents;
+}
+
+.cutsceneHotkeyDisplay {
+  position: fixed;
+  top: var(--story-cutscene-hotkey-target-y);
+  left: var(--story-cutscene-hotkey-target-x);
+  transform: translate(-50%, -50%)
+    scale(var(--story-cutscene-hotkey-scale));
+  transform-origin: center;
+}
+
+.operationScreen {
+  position: relative;
+  height: 100dvh;
+  isolation: isolate;
+  --operation-canvas-top: calc(
+    (100dvh - min(1080px, 56.25vw, 100dvh)) / 2
+  );
+}
+
+/* STV-MAP-054: NKCUIOperationNodeViewer.Open -> FadeIn(.3, null, false). */
+.operationScreen:not(.counterCaseScreen)[data-story-operation-entry-fade][data-story-operation-entry-fade-active="true"]::after,
+.operationScreen:not(.counterCaseScreen)[data-story-operation-exit-fade]::after {
+  position: absolute;
+  z-index: 120;
+  inset: 0;
+  background: #000;
+  content: "";
+  pointer-events: auto;
+}
+
+.operationScreen:not(.counterCaseScreen)[data-story-operation-entry-fade][data-story-operation-entry-fade-active="true"]::after {
+  animation: operationScreenFadeIn 300ms linear both;
+}
+
+/* STV-MAP-061: serialized NodeViewer m_FadeTime=.2, not ctor default .3. */
+.operationScreen:not(.counterCaseScreen)[data-story-operation-exit-fade]::after {
+  animation: operationScreenFadeOut 200ms linear both;
+}
+
+.operationBackgroundSurface {
+  position: absolute;
+  z-index: -4;
+  top: 50%;
+  left: 50%;
+  width: max(100%, calc(100dvh * 16 / 9));
+  height: max(100dvh, calc(100vw * 9 / 16));
+  transform: translate(-50%, -50%);
+}
+
+.operationBackground {
+  object-fit: fill;
+  filter: none;
+}
+
+/* STV-MAP-029: NKM_UI_UPSIDE_MENU root and its BACK/HOME design Rects. */
+/* STV-MAP-031: replace the temporary gradient with the original sliced Bg. */
+.operationHeader {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  height: min(110px, 5.7292vw, 10.1852dvh);
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 0;
+  background: none;
+}
+
+.operationHeader::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0 min(2px, 0.104167vw, 0.185185dvh);
+  border-image-source: var(--operation-header-bg, none);
+  border-image-slice: 0 2 0 2 fill;
+  border-image-repeat: stretch;
+  content: "";
+  filter: brightness(0);
+  pointer-events: none;
+}
+
+.operationBack,
+.operationHome,
+/* STV-MAP-032: original UpsideMenu SUB/Hamburger button and Icon. */
+.episodeListButton {
+  display: flex;
+  align-items: center;
+  border: 0;
+  color: #fff;
+  background: rgb(6 9 13 / 72%);
+}
+
+.operationBack {
+  width: min(220px, 11.4583vw, 20.3704dvh);
+  height: min(80px, 4.1667vw, 7.4074dvh);
+  margin-left: min(33px, 1.7188vw, 3.0556dvh);
+  padding: 0;
+  flex: 0 0 auto;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+  text-decoration: none;
+  transition: transform 100ms ease;
+}
+
+.operationBack img {
+  width: min(232px, 12.0833vw, 21.4815dvh);
+  height: min(70px, 3.6458vw, 6.4815dvh);
+  max-width: none;
+  object-fit: fill;
+}
+
+.operationHome {
+  display: grid;
+  width: min(90px, 4.6875vw, 8.3333dvh);
+  height: min(80px, 4.1667vw, 7.4074dvh);
+  margin-left: min(20px, 1.0417vw, 1.8519dvh);
+  flex: 0 0 auto;
+  place-items: center;
+  justify-content: center;
+  color: #d8dde3;
+  background: transparent;
+  text-decoration: none;
+  transition: transform 100ms ease;
+}
+
+.operationHome img {
+  width: min(102px, 5.3125vw, 9.4444dvh);
+  height: min(70px, 3.6458vw, 6.4815dvh);
+  max-width: none;
+  object-fit: fill;
+}
+
+.episodeListButton {
+  width: min(80px, 4.166667vw, 7.407407dvh);
+  height: min(70px, 3.645833vw, 6.481481dvh);
+  margin-left: auto;
+  margin-right: min(11.280029px, 0.587501vw, 1.044447dvh);
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 100ms ease;
+}
+
+.episodeListButton img {
+  width: min(50px, 2.604167vw, 4.62963dvh);
+  height: min(50px, 2.604167vw, 4.62963dvh);
+  max-width: none;
+  object-fit: fill;
+}
+
+.operationBack:focus-visible,
+.operationHome:focus-visible {
+  outline: none;
+}
+
+/* STV-MAP-048: Back/Home NKCUIComButton touchSize .9 / trackingTime .1. */
+.operationBack:active,
+.operationHome:active {
+  transform: scale(0.9);
+}
+
+.episodeListButton:focus-visible {
+  outline: none;
+}
+
+.episodeListButton:active {
+  transform: scale(0.9);
+}
+
+/* STV-MAP-002: episode 50 is the dedicated Counter Case viewer, not a map. */
+.counterCaseScreen {
+  background: #101216;
+}
+
+/* STV-MAP-013: NKCUIEpisodeViewerCC.Open -> FadeIn(.1, null, false). */
+.counterCaseScreen::after {
+  position: absolute;
+  z-index: 120;
+  inset: 0;
+  background: #000;
+  content: "";
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.counterCaseScreen[data-story-countercase-entry-fade-active="true"]::after {
+  visibility: visible;
+  pointer-events: auto;
+  animation: counterCaseScreenFadeIn 100ms linear both;
+}
+
+.counterCaseBackdrop {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  overflow: hidden;
+  background: rgb(21 21 21);
+}
+
+.counterCaseBackdrop::before,
+.counterCaseBackdrop::after {
+  position: absolute;
+  content: "";
+  pointer-events: none;
+}
+
+.counterCaseBackdrop::before {
+  /* STV-MAP-022: exact stretch inset from anchoredY -38.099609 / sizeDeltaY -106.5. */
+  top: min(91.35px, 4.7578vw, 8.4583dvh);
+  right: min(13px, 0.6771vw, 1.2037dvh);
+  bottom: min(15.15px, 0.7891vw, 1.4028dvh);
+  left: min(9.6px, 0.5vw, 0.8889dvh);
+  box-sizing: border-box;
+  border-style: solid;
+  /* STV-MAP-024: Unity Image.Type.Sliced, border L/B/R/T = 90/20/35/509. */
+  border-width:
+    min(509px, 26.5104vw, 47.1296dvh)
+    min(35px, 1.8229vw, 3.2407dvh)
+    min(20px, 1.0417vw, 1.8519dvh)
+    min(90px, 4.6875vw, 8.3333dvh);
+  border-image-source: var(--countercase-bg);
+  border-image-slice: 509 35 20 90 fill;
+  border-image-repeat: stretch;
+}
+
+.counterCaseBackdrop::after {
+  /* STV-MAP-021: FILE_BG inset (91.35/13) + this child's local top/right. */
+  top: min(201.85px, 10.513vw, 18.6898dvh);
+  right: min(44.2px, 2.3021vw, 4.0926dvh);
+  width: min(523.52px, 27.2667vw, 48.4741dvh);
+  height: min(33px, 1.7188vw, 3.0556dvh);
+  background: var(--countercase-bg-text-1) center / 100% 100% no-repeat;
+}
+
+.counterCaseViewer {
+  --story-countercase-scroll-rubber-y: 0px;
+  position: absolute;
+  /* STV-MAP-008: NKM_UI_COUNTER_CASE_UNIT_LIST_Panel stretch RectTransform. */
+  top: min(202.3px, 10.5365vw, 18.7315dvh);
+  right: min(36.6px, 1.9063vw, 3.3889dvh);
+  bottom: min(38.1px, 1.9844vw, 3.5278dvh);
+  left: min(99.4px, 5.1771vw, 9.2037dvh);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  overscroll-behavior: none;
+  scrollbar-width: none;
+  touch-action: none;
+  user-select: none;
+}
+
+.counterCaseViewer::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.counterCaseActGrid {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  /* A sub-pixel epsilon prevents Chromium from wrapping the fifth float-rounded slot. */
+  width: calc(min(1739.52px, 90.6vw, 161.0667dvh) + 0.1px);
+  margin: 0 auto;
+  row-gap: min(10.3px, 0.5365vw, 0.9537dvh);
+  transform: translateY(var(--story-countercase-scroll-rubber-y));
+  will-change: transform;
+}
+
+.counterCaseActSlot,
+.counterCaseSelectedUnit {
+  /* STV-MAP-011: the prefab has no Shadow or Outline component; keep Sprite shading only. */
+  position: relative;
+  /* STV-MAP-016: audited name width is 353×0.9=317.7px, so this clips no visible child. */
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  color: #fff;
+  background: transparent;
+}
+
+.counterCaseActSlot {
+  flex: 0 0 auto;
+  width: min(350px, 18.2292vw, 32.4074dvh);
+  height: min(500px, 26.0417vw, 46.2963dvh);
+  cursor: pointer;
+  transition: transform 100ms ease;
+}
+
+/* Unity GridLayoutGroup accepts the original -2.62px spacing; CSS gap does not. */
+.counterCaseActSlot:not(:nth-child(5n + 1)) {
+  margin-left: calc(-1 * min(2.62px, 0.1365vw, 0.2426dvh));
+}
+
+.counterCaseActSlot:focus-visible {
+  outline: none;
+}
+
+/* STV-MAP-010: NKCUIComButton touchSize .9 / trackingTime .1, with no hover transform. */
+.counterCaseActSlot:active {
+  transform: scale(0.9);
+}
+
+.counterCaseActSlotBackground {
+  position: absolute;
+  z-index: 0;
+  top: 2.267%;
+  left: 0.3886%;
+  width: 98.08%;
+  height: 96.666%;
+  background: var(--countercase-unit-slot) center / 100% 100% no-repeat;
+  content: "";
+  pointer-events: none;
+}
+
+.counterCaseUnitFace {
+  z-index: 1;
+  top: 7.8% !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: 6.8857% !important;
+  width: 79.4286% !important;
+  height: 76.4% !important;
+  /* STV-MAP-015: Unity Simple Image has preserveAspect=false. */
+  object-fit: fill;
+}
+
+.counterCaseUnitClip {
+  position: absolute;
+  z-index: 2;
+  top: 6.42%;
+  left: 10.6%;
+  width: 14.5714%;
+  height: 25.4%;
+  background: var(--countercase-unit-clip) center / 100% 100% no-repeat;
+  content: "";
+  pointer-events: none;
+}
+
+/* STV-MAP-004: original centered unit affiliation/name Text rectangles. */
+.counterCaseUnitCopy {
+  position: static;
+  display: contents;
+}
+
+.counterCaseUnitCopy small {
+  position: absolute;
+  z-index: 3;
+  top: 75.555%;
+  left: 8.1743%;
+  display: flex;
+  width: 83.36%;
+  height: 7.21%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: rgb(195 195 195);
+  /* STV-MAP-012: legacy Text points to MainFont with lineSpacing 1. */
+  font-family: "CounterSide Story", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: min(26px, 1.3542vw, 2.4074dvh);
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  /* STV-MAP-019: the client shrinks this legacy Text instead of adding ellipsis. */
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.counterCaseUnitCopy strong {
+  position: absolute;
+  z-index: 3;
+  top: 82.12%;
+  left: -0.4226%;
+  display: flex;
+  width: 100.8571%;
+  height: 9.76%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  font-family: "CounterSide Story", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: min(40px, 2.0833vw, 3.7037dvh);
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  text-overflow: clip;
+  /* STV-MAP-017: this Text RectTransform alone has localScale .9/.9/1. */
+  transform: scale(0.9);
+  transform-origin: center;
+  white-space: nowrap;
+}
+
+.counterCaseNormal {
+  position: absolute;
+  top: min(68px, 3.5417vw, 6.2963dvh);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.counterCaseNormal::before,
+.counterCaseNormal::after {
+  position: absolute;
+  z-index: 0;
+  content: "";
+  pointer-events: none;
+}
+
+.counterCaseNormal::before {
+  /* STV-MAP-023: FILE_BG world inset minus this container's 68px top. */
+  top: min(78.85px, 4.1068vw, 7.3009dvh);
+  right: min(44.2px, 2.3021vw, 4.0926dvh);
+  width: min(523.52px, 27.2667vw, 48.4741dvh);
+  height: min(33px, 1.7188vw, 3.0556dvh);
+  background: var(--countercase-bg-text-1) center / 100% 100% no-repeat;
+}
+
+.counterCaseNormal::after {
+  top: min(146.849px, 7.6484vw, 13.5972dvh);
+  bottom: min(45.251px, 2.3568vw, 4.1899dvh);
+  left: min(95.35px, 4.9661vw, 8.8287dvh);
+  width: calc(27.8391% - min(96.792px, 5.0412vw, 8.9622dvh));
+  background: var(--countercase-bg-text-2) left center / 100% 100% no-repeat;
+}
+
+.counterCaseSelectedUnit {
+  position: absolute;
+  /* STV-MAP-009: full-canvas anchorY .5 / anchoredY -58.8, adjusted for the 68px web header inset. */
+  top: calc(50% + min(24.8px, 1.2917vw, 2.2963dvh));
+  left: min(103.4px, 5.3854vw, 9.5741dvh);
+  width: min(420px, 21.875vw, 38.8889dvh);
+  height: min(588.4px, 30.6458vw, 54.4815dvh);
+  transform: translateY(-50%);
+  animation: counterCaseUnitIn 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+/* STV-MAP-005: original 350×500 child slot inside the 420×588.4 selected-unit container. */
+.counterCaseSelectedSlot {
+  position: absolute;
+  top: min(40px, 2.0833vw, 3.7037dvh);
+  left: min(35px, 1.8229vw, 3.2407dvh);
+  width: min(350px, 18.2292vw, 32.4074dvh);
+  height: min(500px, 26.0417vw, 46.2963dvh);
+}
+
+.counterCaseNormalList {
+  --story-countercase-scroll-rubber-y: 0px;
+  position: absolute;
+  top: min(128.2px, 6.6771vw, 11.8704dvh);
+  right: min(36.65px, 1.9089vw, 3.3935dvh);
+  bottom: min(42.8px, 2.2292vw, 3.4444dvh);
+  width: min(1344.9px, 70.0469vw, 124.5278dvh);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  overscroll-behavior: none;
+  scrollbar-width: none;
+  touch-action: none;
+  user-select: none;
+}
+
+.counterCaseNormalList::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.counterCaseNormalListContent {
+  /* STV-MAP-066: the client VerticalLayoutGroup starts at top padding 20
+     and lays out the fixed-height record slots with zero spacing. */
+  box-sizing: border-box;
+  display: flow-root;
+  padding-top: min(20px, 1.041667vw, 1.851852dvh);
+  transform: translateY(var(--story-countercase-scroll-rubber-y));
+  will-change: transform;
+}
+
+/* STV-MAP-003: NKCUICCNormalSlot prefab geometry and unlocked button. */
+.counterCaseNormalSlot {
+  position: relative;
+  width: min(1340px, 69.7917vw, 124.0741dvh);
+  height: min(232.6px, 12.1146vw, 21.537dvh);
+  margin: 0;
+  overflow: visible;
+  background: transparent;
+  /* STV-MAP-006: SetAlphaAni(index) waits index×0.125s, then Update adds deltaTime×2.5. */
+  animation: counterCaseStageFade 400ms linear both;
+  animation-delay: calc(var(--countercase-stage-index, 0) * 125ms);
+}
+
+.counterCaseNormalSlot::before {
+  position: absolute;
+  z-index: 0;
+  top: min(0.5px, 0.026vw, 0.0463dvh);
+  right: 0;
+  bottom: min(0.5px, 0.026vw, 0.0463dvh);
+  left: 0;
+  box-sizing: border-box;
+  border-style: solid;
+  /* STV-MAP-025: Sliced Image border L/R=12, with the original 1px shorter BG Rect. */
+  border-width: 0 min(12px, 0.625vw, 1.1111dvh);
+  border-image-source: var(--countercase-normal-slot);
+  border-image-slice: 0 12 0 12 fill;
+  border-image-repeat: stretch;
+  content: "";
+  pointer-events: none;
+}
+
+.counterCaseStageGradation,
+.counterCaseStageGradation2,
+.counterCaseStageLight,
+.counterCaseStageLight2 {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  content: "";
+  pointer-events: none;
+}
+
+.counterCaseStageGradation {
+  top: min(5.4825px, 0.2855vw, 0.5076dvh);
+  left: min(6.77px, 0.3526vw, 0.6269dvh);
+  width: min(372.3px, 19.3906vw, 34.4722dvh);
+  height: min(213.02px, 11.0948vw, 19.7241dvh);
+  background: rgb(10 19 91);
+  -webkit-mask: var(--countercase-gradient-2) center / 100% 100% no-repeat;
+  mask: var(--countercase-gradient-2) center / 100% 100% no-repeat;
+}
+
+.counterCaseStageGradation2 {
+  top: min(84.7px, 4.4115vw, 7.8426dvh);
+  left: min(6.77px, 0.3526vw, 0.6269dvh);
+  width: min(963.02px, 50.1573vw, 89.1685dvh);
+  height: min(133.8px, 6.9688vw, 12.3889dvh);
+  background: rgb(200 200 200 / 12.549%);
+  -webkit-mask: var(--countercase-gradient-2) center / 100% 100% no-repeat;
+  mask: var(--countercase-gradient-2) center / 100% 100% no-repeat;
+}
+
+.counterCaseStageLight {
+  top: calc(-1 * min(59.35px, 3.0911vw, 5.4954dvh));
+  left: calc(-1 * min(44.05px, 2.2943vw, 4.0787dvh));
+  width: min(272.7px, 14.2031vw, 25.25dvh);
+  height: min(339.3px, 17.6719vw, 31.4167dvh);
+  background: rgb(34 55 231 / 69.804%);
+  -webkit-mask: var(--countercase-normal-light) center / 100% 100% no-repeat;
+  mask: var(--countercase-normal-light) center / 100% 100% no-repeat;
+}
+
+.counterCaseStageLight2 {
+  top: min(5.48px, 0.2854vw, 0.5074dvh);
+  left: min(981.855px, 51.1383vw, 90.9125dvh);
+  width: min(6.29px, 0.3276vw, 0.5824dvh);
+  height: min(230.8px, 12.0208vw, 21.3704dvh);
+  background: rgb(214 214 214 / 40.392%);
+  -webkit-mask: var(--countercase-normal-light) center / 100% 100% no-repeat;
+  mask: var(--countercase-normal-light) center / 100% 100% no-repeat;
+}
+
+.counterCaseStageNumber {
+  position: absolute;
+  z-index: 2;
+  top: min(70.275px, 3.6602vw, 6.5069dvh);
+  left: min(19.53px, 1.0172vw, 1.8083dvh);
+  display: flex;
+  width: min(131.94px, 6.8719vw, 12.2167dvh);
+  height: min(141.65px, 7.3776vw, 13.1157dvh);
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  /* STV-MAP-012: this Text alone points to Rajdhani-SemiBold. */
+  font-family: "CounterSide CounterCase Number", sans-serif;
+  font-size: min(130px, 6.7708vw, 12.037dvh);
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
+.counterCaseStageCopy {
+  position: static;
+  text-align: left;
+}
+
+.counterCaseStageCopy h2 {
+  position: absolute;
+  z-index: 2;
+  top: min(14.4px, 0.75vw, 1.3333dvh);
+  left: min(163px, 8.4896vw, 15.0926dvh);
+  display: flex;
+  width: min(612.15px, 31.8828vw, 56.6806dvh);
+  height: min(79.2px, 4.125vw, 7.3333dvh);
+  align-items: center;
+  margin: 0;
+  color: #fff;
+  font-family: "CounterSide Story", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: min(40px, 2.0833vw, 3.7037dvh);
+  font-weight: 400;
+  line-height: 1.65;
+  /* STV-MAP-018: title Text RectTransform is .9 scale with a left-center pivot. */
+  transform: scale(0.9);
+  transform-origin: left center;
+}
+
+.counterCaseStageCopy p {
+  position: absolute;
+  z-index: 2;
+  top: min(93.6px, 4.875vw, 8.6667dvh);
+  left: min(166.344px, 8.6638vw, 15.4022dvh);
+  display: block;
+  width: min(614.512px, 32.0058vw, 56.8993dvh);
+  height: min(119.9px, 6.2448vw, 11.1019dvh);
+  overflow: hidden;
+  margin: 0;
+  color: rgb(166 166 166);
+  font-family: "CounterSide Story", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: min(30px, 1.5625vw, 2.7778dvh);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.counterCaseStageActions {
+  position: static;
+}
+
+.counterCaseStageActions button {
+  position: absolute;
+  z-index: 2;
+  top: min(67.35px, 3.5078vw, 6.2361dvh);
+  left: min(1006.21px, 52.4068vw, 93.1676dvh);
+  display: flex;
+  width: min(318.38px, 16.5823vw, 29.4796dvh);
+  height: min(115.5px, 6.0156vw, 10.6944dvh);
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  color: rgb(88 40 23);
+  background: transparent;
+  cursor: pointer;
+  transition: transform 100ms ease;
+}
+
+.counterCaseStageActions button::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  box-sizing: border-box;
+  border-style: solid;
+  /* STV-MAP-026: NKM_UI_POPUP_BUTTON_01 border L/B/R/T = 16/20/16/10. */
+  border-width:
+    min(10px, 0.5208vw, 0.9259dvh)
+    min(16px, 0.8333vw, 1.4815dvh)
+    min(20px, 1.0417vw, 1.8519dvh);
+  border-image-source: var(--countercase-normal-button);
+  border-image-slice: 10 16 20 16 fill;
+  border-image-repeat: stretch;
+  content: "";
+  pointer-events: none;
+}
+
+.counterCaseStageActions button:focus-visible {
+  outline: none;
+}
+
+.counterCaseStageActions button:active {
+  transform: scale(0.9);
+}
+
+.counterCaseStageActions strong {
+  position: relative;
+  z-index: 1;
+  font-family: "CounterSide Story", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: min(36px, 1.875vw, 3.3333dvh);
+  font-weight: 400;
+  line-height: 1.5;
+  /* STV-MAP-027: BUTTON_LAYOUT anchoredY +3.5 moves its centered Text upward. */
+  transform: translateY(calc(-1 * min(3.5px, 0.1823vw, 0.3241dvh)));
+}
+
+@keyframes counterCaseUnitIn {
+  from {
+    /* STV-MAP-006: DOLocalMove((-500,150), .35).From from final (72,-58.8). */
+    transform: translate(
+      calc(-1 * min(572px, 29.7917vw, 52.963dvh)),
+      calc(-50% - min(208.8px, 10.875vw, 19.3333dvh))
+    );
+  }
+
+  to {
+    transform: translate(0, -50%);
+  }
+}
+
+@keyframes counterCaseStageFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes counterCaseScreenFadeIn {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes operationScreenFadeIn {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes operationScreenFadeOut {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .counterCaseSelectedUnit,
+  .counterCaseNormalSlot {
+    animation: none;
+  }
+}
+
+/* STV-MAP-030: AB_UI_OPERATION_MAIN TOP episode identity TMP hierarchy. */
+.episodeIdentity {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  color: #f8f9fa;
+  pointer-events: none;
+}
+
+.episodeIdentity h1 {
+  position: absolute;
+  top: min(130.682495px, 6.80638vw, 12.100231dvh);
+  left: min(100px, 5.208333vw, 9.259259dvh);
+  display: flex;
+  width: min(1254.933594px, 65.361125vw, 116.197555dvh);
+  height: min(60px, 3.125vw, 5.555556dvh);
+  margin: 0;
+  align-items: center;
+  font-family: "CounterSide CounterCase Number", "CounterSide Story", sans-serif;
+  font-size: min(70px, 3.645833vw, 6.481481dvh);
+  font-weight: 600;
+  letter-spacing: max(-3px, -0.15625vw, -0.277778dvh);
+  line-height: 1;
+  text-shadow: min(6px, 0.3125vw, 0.555556dvh) min(6px, 0.3125vw, 0.555556dvh)
+    min(6px, 0.3125vw, 0.555556dvh) rgb(0 0 0 / 74.5098%);
+}
+
+.episodeIdentity h2 {
+  position: absolute;
+  top: min(199.144106px, 10.372089vw, 18.439269dvh);
+  left: min(101px, 5.260417vw, 9.351852dvh);
+  width: min(1253.900024px, 65.307293vw, 116.101854dvh);
+  height: min(43.592098px, 2.270422vw, 4.036305dvh);
+  margin: 0;
+  color: #fff;
+  font-family: "CounterSide Story", sans-serif;
+  font-size: min(40px, 2.083333vw, 3.703704dvh);
+  font-weight: 400;
+  letter-spacing: max(-3px, -0.15625vw, -0.277778dvh);
+  line-height: 1.08980245;
+  text-shadow: min(4px, 0.208333vw, 0.37037dvh) min(4px, 0.208333vw, 0.37037dvh)
+    min(6px, 0.3125vw, 0.555556dvh) #000;
+}
+
+/* STV-MAP-033/STV-MAP-065: AB_UI_OPERATION_MAIN_BOTTOM is independent from
+ * the masked ACT_LIST_ScrollRect, so its gradient must not be clipped by nav. */
+.actBottom {
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: min(140px, 7.291667vw, 12.962963dvh);
+  pointer-events: none;
+}
+
+.actBottomBackground {
+  position: absolute;
+  z-index: 0;
+  right: max(-200px, -10.416667vw, -18.518519dvh);
+  bottom: max(-84.676758px, -4.410248vw, -7.840441dvh);
+  left: max(-200px, -10.416667vw, -18.518519dvh);
+  height: min(274.676788px, 14.306083vw, 25.432668dvh);
+  background: var(--operation-act-bar-bg, none) center / 100% 100% no-repeat;
+  content: "";
+  filter: brightness(0);
+  opacity: 0.843137;
+  pointer-events: none;
+}
+
+.actNavigation {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: min(100px, 5.208333vw, 9.259259dvh);
+  display: flex;
+  align-items: center;
+  gap: min(6px, 0.3125vw, 0.555556dvh);
+  box-sizing: border-box;
+  width: min(1230px, 64.0625vw, 113.888889dvh);
+  height: min(140px, 7.291667vw, 12.962963dvh);
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0;
+  background: none;
+  pointer-events: auto;
+  scrollbar-width: none;
+}
+
+.actNavigation::-webkit-scrollbar {
+  display: none;
+}
+
+.actNavigation button {
+  position: relative;
+  flex: 0 0 min(230px, 11.979167vw, 21.296296dvh);
+  height: min(60px, 3.125vw, 5.555556dvh);
+  border: 0;
+  padding: 0;
+  color: #717171;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 100ms ease;
+}
+
+.actNavigation button::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  box-sizing: border-box;
+  border: min(4px, 0.208333vw, 0.37037dvh) solid transparent;
+  border-image-source: var(--operation-act-slot-off, none);
+  border-image-slice: 4 fill;
+  content: "";
+  filter: brightness(0);
+  opacity: 0.27451;
+  pointer-events: none;
+}
+
+.actNavigation strong {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: calc(100% - min(40px, 2.083333vw, 3.703704dvh));
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "CounterSide CounterCase Number", sans-serif;
+  font-size: min(30px, 1.5625vw, 2.777778dvh);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.actNavigation button[data-active="true"] {
+  color: #141414;
+}
+
+.actNavigation button[data-active="true"]::before {
+  border: 0;
+  background: var(--operation-act-slot-on, none) center / 100% 100% no-repeat;
+  filter: none;
+  opacity: 1;
+}
+
+.actNavigation button:active {
+  transform: scale(0.9);
+}
+
+.actNavigation button:focus-visible {
+  outline: none;
+}
+
+.stageRoute {
+  position: absolute;
+  /* AB_UI_OPERATION_MAIN sibling order: Bg, ScrollRect, SafeArea. */
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  touch-action: none;
+  user-select: none;
+}
+
+.stageRoute::-webkit-scrollbar {
+  display: none;
+}
+
+.stageMapCanvas {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: auto;
+  /* STV-MAP-042: NKCUIManager.SetAspect uses the 1920×1080 CanvasScaler's
+   * width scale below 16:9 and height scale at/above 16:9. */
+  height: min(
+    var(--stage-map-reference-height),
+    var(--stage-map-width-scaled-height),
+    var(--stage-map-height-scaled-height)
+  );
+  min-width: 0;
+  container-type: size;
+  /* STV-MAP-079: UI_EVENT_CLB_002_R first centers its 830-high viewer root,
+   * then UpperLeft-aligns the 1080-high ACT inside it. The resulting ACT-local
+   * content starts 125 logical pixels below the ordinary centered canvas. */
+  transform: translateY(
+    calc(-50% + var(--story-stage-act-offset-y, 0%))
+  );
+}
+
+.stageMapVisual {
+  position: absolute;
+  inset: 0;
+  transform: translateX(var(--story-stage-rubber-x, 0px));
+}
+
+/* STV-MAP-077: UI_EVENT_CLB_002_R keeps these five Images below SLOT_AREA
+ * inside the selected ACT. Unity clips them only at the outer ScrollRect
+ * Viewport, so the ACT-local container itself must not clip overflow. */
+.stageActVisualClip {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  contain: layout;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.stageActVisualBackground,
+.stageActVisualLayer {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  pointer-events: none;
+  transform-origin: center;
+}
+
+.stageActVisualBackground {
+  overflow: visible;
+  transform: translate(-50%, -50%);
+}
+
+.stageActVisualLayer {
+  background-image: var(--story-stage-act-visual-sprite);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: translate(-50%, -50%)
+    scale(
+      var(--story-stage-act-visual-scale-x),
+      var(--story-stage-act-visual-scale-y)
+    );
+}
+
+.stageActVisualLayer[data-tint-mask="true"] {
+  background-color: var(--story-stage-act-visual-tint);
+  background-image: none;
+  mask-image: var(--story-stage-act-visual-sprite);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  -webkit-mask-image: var(--story-stage-act-visual-sprite);
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+}
+
+.stageActVisualLayer[data-image-type="sliced"] {
+  border-style: solid;
+  border-width: var(--story-stage-act-visual-border-top)
+    var(--story-stage-act-visual-border-right)
+    var(--story-stage-act-visual-border-bottom)
+    var(--story-stage-act-visual-border-left);
+  border-image-source: var(--story-stage-act-visual-sprite);
+  border-image-slice: var(--story-stage-act-visual-border-slice);
+  border-image-repeat: stretch;
+  background: none;
+}
+
+.stageActVisualLayer[data-image-type="sliced"][data-sliced-tint="true"] {
+  filter: brightness(var(--story-stage-act-visual-brightness))
+    opacity(var(--story-stage-act-visual-opacity));
+}
+
+.stageConnector {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.stageConnector::before {
+  /*
+   * STV-MAP-036: the exported PNG trims 15px left and 14px top from the
+   * original 84×50 Sprite. Apply that trim to the prefab Rect, then keep the
+   * remaining 21/0/36/0 effective 9-slice border.
+   */
+  position: absolute;
+  top: min(14px, 1.2963cqh);
+  right: 0;
+  bottom: 0;
+  left: min(15px, 1.3889cqh);
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0 min(36px, 3.3333cqh) 0 min(21px, 1.9444cqh);
+  border-image-source: var(--story-stage-line);
+  border-image-slice: 0 36 0 21 fill;
+  border-image-repeat: stretch;
+  content: "";
+}
+
+.stageNode {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  overflow: visible;
+  border: 0;
+  color: #111318;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition: transform 100ms ease;
+}
+
+.stageNode::after {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  width: var(--stage-node-visual-width);
+  height: var(--stage-node-visual-height);
+  background-image: var(--story-stage-battle-node);
+  /* STV-MAP-041: preserve the Sprite textureRectOffset inside its full Rect. */
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 95.710233% 91.194682%;
+  content: "";
+  transform: translate(-50%, -50%);
+}
+
+.stageNode[data-kind="story"]::after {
+  background-image: var(--story-stage-story-node);
+  background-size: 92.508908% 91.194682%;
+}
+
+.stageNumber {
+  position: absolute;
+  z-index: 2;
+  top: calc(50% + min(15px, 1.388889cqh));
+  left: min(26px, 2.407407cqh);
+  width: min(80px, 7.407407cqh);
+  height: min(60px, 5.555556cqh);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgb(20 20 20);
+  font-family: "CounterSide CounterCase Number", sans-serif;
+  font-size: min(40px, 3.703704cqh);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
+  text-align: left;
+  transform: translateY(-50%);
+}
+
+.stageNode::before {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  width: calc(100% + min(8px, 0.740741cqh));
+  height: calc(100% + min(8px, 0.740741cqh));
+  border: min(6px, 0.555556cqh) solid transparent;
+  border-image-source: var(--story-stage-selection, none);
+  border-image-slice: 6 fill;
+  border-image-repeat: stretch;
+  mix-blend-mode: plus-lighter;
+  opacity: 0;
+  content: "";
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.stageNodeSelectionFx {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  width: calc(100% + min(18px, 1.666667cqh));
+  height: calc(100% + min(18px, 1.666667cqh));
+  border: min(6px, 0.555556cqh) solid transparent;
+  border-image-source: var(--story-stage-selection-fx, none);
+  border-image-slice: 6 fill;
+  border-image-repeat: stretch;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.stageNode[data-kind="story"] .stageNodeSelectionFx {
+  width: calc(100% + min(15px, 1.388889cqh));
+}
+
+.stageNode[data-kind="story"] .stageNumber {
+  top: 50%;
+  left: calc(50% + min(14.1337px, 1.308676cqh));
+  width: min(108.267502px, 10.024769cqh);
+  justify-content: center;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.stageNode:focus-visible {
+  outline: none;
+}
+
+.stageNode:disabled {
+  cursor: default;
+}
+
+.stageNode:active:not(:disabled) {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.stageNode[data-active="true"]::before {
+  opacity: 1;
+}
+
+.stageNode[data-active="true"] .stageNodeSelectionFx {
+  animation: stageNodeSelectionPulse 2s infinite;
+}
+
+@keyframes stageNodeSelectionPulse {
+  0% {
+    opacity: 0.2028198242;
+    animation-timing-function: cubic-bezier(0.333333, 0.333333, 0.666667, 1.000063);
+  }
+
+  25.402978% {
+    opacity: 0.5802022219;
+    animation-timing-function: cubic-bezier(0.333333, 0.000101, 0.666667, 0.666667);
+  }
+
+  87.7819% {
+    opacity: 0;
+  }
+
+  87.782% {
+    opacity: 0.2028198242;
+    animation-timing-function: cubic-bezier(0.333333, 0.2666, 0.666667, 0.662);
+  }
+
+  100% {
+    opacity: 0.4297;
+  }
+}
+
+.stageInformation {
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  right: min(37.644836px, 1.960669vw, 3.485633dvh);
+  bottom: 0;
+  width: min(604.710327px, 31.49533vw, 55.991697dvh);
+  overflow: visible;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  /* STV-MAP-072: MAIN_INFO_INTRO animates the shared Story/Stage root from
+   * anchored X 150 to -340 and alpha 0 to 1 over exactly 20 frames at 60fps. */
+  animation: stagePanelIn 333.333343ms
+    cubic-bezier(0.3333333333, 0, 0.6666666667, 1) both;
+}
+
+.stageInformation::before {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  right: max(-257.44458px, -13.408572vw, -23.837461dvh);
+  box-sizing: border-box;
+  width: min(1078.074951px, 56.149737vw, 99.821755dvh);
+  height: min(1540.210449px, 80.219294vw, 142.612079dvh);
+  border-style: solid;
+  border-color: transparent;
+  border-width:
+    min(4px, 0.208333vw, 0.37037dvh)
+    min(6px, 0.3125vw, 0.555556dvh)
+    min(4px, 0.208333vw, 0.37037dvh)
+    min(240px, 12.5vw, 22.222222dvh);
+  border-image-source: var(--story-main-info-bg, none);
+  border-image-slice: 4 6 4 240 fill;
+  content: "";
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.stageCopy {
+  position: absolute;
+  z-index: 4;
+  inset: 0;
+  pointer-events: none;
+}
+
+.stageCopy > span {
+  position: absolute;
+  top: calc(
+    var(--operation-canvas-top) + min(511.0811px, 26.618807vw, 47.322324dvh)
+  );
+  left: min(22.910324px, 1.193246vw, 2.121326dvh);
+  display: flex;
+  width: min(375.160004px, 19.539584vw, 34.737037dvh);
+  height: min(55.238px, 2.876979vw, 5.11463dvh);
+  align-items: center;
+  color: #fff;
+  font-family: "CounterSide CounterCase Number", sans-serif;
+  font-size: min(56px, 2.916667vw, 5.185185dvh);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
+  text-shadow:
+    min(6px, 0.3125vw, 0.555556dvh)
+    min(6px, 0.3125vw, 0.555556dvh)
+    min(6px, 0.3125vw, 0.555556dvh)
+    rgb(0 0 0 / 74.5098%);
+}
+
+.stageCopy h3 {
+  position: absolute;
+  top: calc(
+    var(--operation-canvas-top) + min(559.3811px, 29.134432vw, 51.794546dvh)
+  );
+  left: min(21.110321px, 1.099496vw, 1.954659dvh);
+  display: flex;
+  width: min(450.570007px, 23.467188vw, 41.719445dvh);
+  height: min(55.237801px, 2.876969vw, 5.114611dvh);
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  color: #fff;
+  font-family: "CounterSide Story", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: min(40px, 2.083333vw, 3.703704dvh);
+  font-weight: 700;
+  /* STV-MAP-069: TMP Bold advances by
+   * (characterSpacing -8 + fontAsset.boldSpacing 7) × fontSize × .01. */
+  letter-spacing: -0.01em;
+  line-height: 1;
+  text-shadow:
+    min(4px, 0.208333vw, 0.37037dvh)
+    min(4px, 0.208333vw, 0.37037dvh)
+    min(6px, 0.3125vw, 0.555556dvh)
+    #000;
+  white-space: nowrap;
+}
+
+.stageCopy p {
+  position: absolute;
+  top: calc(
+    var(--operation-canvas-top) + min(632.733307px, 32.95486vw, 58.586417dvh)
+  );
+  left: min(44.710327px, 2.328663vw, 4.139845dvh);
+  box-sizing: border-box;
+  width: min(440px, 22.916667vw, 40.740741dvh);
+  height: min(163.270706px, 8.503683vw, 15.117658dvh);
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #909090;
+  font-family: "CounterSide Story", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: min(26px, 1.354167vw, 2.407407dvh);
+  font-weight: 400;
+  line-height: min(35px, 1.822917vw, 3.240741dvh);
+  text-shadow:
+    min(4px, 0.208333vw, 0.37037dvh)
+    min(4px, 0.208333vw, 0.37037dvh)
+    min(6px, 0.3125vw, 0.555556dvh)
+    #000;
+  white-space: pre-line;
+  scrollbar-width: none;
+}
+
+.stageCopy p::-webkit-scrollbar {
+  display: none;
+}
+
+/* STV-MAP-071: Story/DESC_ScrollRect의 460px rect 안에서 440px
+ * Viewport는 왼쪽 정렬이다. TMP의 -4 lineSpacing은 px가 아니라
+ * currentEmScale(26×.01)을 사용하므로 실제 line advance는 37.96px다. */
+.stageInformation[data-story-operation-stage-info-kind="story"] .stageCopy p {
+  left: min(34.710327px, 1.807829vw, 3.213919dvh);
+  line-height: min(37.96px, 1.977083vw, 3.514815dvh);
+}
+
+/* STV-MAP-074: Story/DESC_ScrollRect is a 460×163.270706 vertical
+ * ScrollRect whose 440×163.270004 left-aligned Viewport owns input and
+ * clipping. Battle remains on the separate STV-MAP-060 approximation. */
+.stageDescriptionScrollRect {
+  position: absolute;
+  top: calc(
+    var(--operation-canvas-top) + min(632.733307px, 32.95486vw, 58.586417dvh)
+  );
+  left: min(34.710327px, 1.807829vw, 3.213919dvh);
+  width: min(460px, 23.958333vw, 42.592593dvh);
+  height: min(163.270706px, 8.503683vw, 15.117658dvh);
+  overflow: visible;
+  pointer-events: none;
+}
+
+.stageDescriptionViewport {
+  --story-stage-description-rubber-y: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: min(440px, 22.916667vw, 40.740741dvh);
+  height: min(163.270004px, 8.503646vw, 15.117593dvh);
+  overflow: hidden;
+  overscroll-behavior: none;
+  pointer-events: auto;
+  scrollbar-width: none;
+  touch-action: none;
+  user-select: none;
+}
+
+.stageDescriptionViewport::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.stageDescriptionContent {
+  min-height: 100%;
+  transform: translateY(var(--story-stage-description-rubber-y));
+  will-change: transform;
+}
+
+.stageInformation[data-story-operation-stage-info-kind="story"]
+  .stageCopy
+  .stageDescriptionText {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+}
+
+.stageCharacter {
+  position: absolute;
+  z-index: 1;
+  top: calc(
+    var(--operation-canvas-top) - min(47.5px, 2.473958vw, 4.398148dvh)
+  );
+  left: min(57.710327px, 3.005746vw, 5.343549dvh);
+  width: min(414px, 21.5625vw, 38.333333dvh);
+  height: min(819px, 42.65625vw, 75.833333dvh);
+  overflow: hidden;
+  opacity: 1;
+  pointer-events: none;
+  mask-image: none;
+}
+
+.stageCharacter > div,
+.stageCharacter canvas,
+.stageCharacter > img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.stageCharacter > img {
+  display: block;
+}
+
+.stageCharacterGradient {
+  position: absolute;
+  background: var(--story-main-info-gradient, none) center / 100% 100% no-repeat;
+  filter: brightness(0);
+  pointer-events: none;
+}
+
+.stageCharacterGradient[data-gradient="lower"] {
+  z-index: 2;
+  top: calc(
+    var(--operation-canvas-top) + min(376.25px, 19.596354vw, 34.837963dvh)
+  );
+  left: min(76.460373px, 3.982311vw, 7.079664dvh);
+  width: min(376.499908px, 19.60937vw, 34.861103dvh);
+  height: min(420px, 21.875vw, 38.888889dvh);
+  transform: rotate(-90deg);
+}
+
+.stageCharacterGradient[data-gradient="upper"] {
+  z-index: 7;
+  top: calc(
+    var(--operation-canvas-top) - min(105.138901px, 5.475984vw, 9.735083dvh)
+  );
+  left: max(-124.709687px, -6.495296vw, -11.547193dvh);
+  width: min(778.840027px, 40.564585vw, 72.114817dvh);
+  height: min(420.000214px, 21.875011vw, 38.888909dvh);
+  transform: rotate(-90deg) scaleX(-1);
+}
+
+.stageActions {
+  position: absolute;
+  z-index: 6;
+  right: min(100px, 5.208333vw, 9.259259dvh);
+  bottom: calc(
+    var(--operation-canvas-top) + min(40px, 2.083333vw, 3.703704dvh)
+  );
+  left: min(24.710327px, 1.286996vw, 2.288dvh);
+  display: flex;
+  flex-direction: column;
+  gap: min(5px, 0.260417vw, 0.462963dvh);
+}
+
+.stageActions button {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: min(80px, 4.166667vw, 7.407407dvh);
+  border: 0;
+  padding: 0;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 100ms ease;
+}
+
+.stageActions button::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  box-sizing: border-box;
+  border: min(8px, 0.416667vw, 0.740741dvh) solid transparent;
+  border-image-source: var(--story-stage-button-bg, none);
+  border-image-slice: 8 fill;
+  border-image-repeat: stretch;
+  content: "";
+  filter: url("#story-operation-stage-button-tint");
+  pointer-events: none;
+}
+
+.stageActions strong {
+  position: absolute;
+  z-index: 1;
+  top: min(10px, 0.520833vw, 0.925926dvh);
+  left: min(23.80896px, 1.24005vw, 2.204533dvh);
+  display: flex;
+  width: min(374.154785px, 19.487229vw, 34.643962dvh);
+  height: min(60px, 3.125vw, 5.555556dvh);
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+  font-family: "CounterSide Story", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: min(36px, 1.875vw, 3.333333dvh);
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.stageActions i {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: min(30.6px, 1.59375vw, 2.833333dvh);
+  width: min(19.5px, 1.015625vw, 1.805556dvh);
+  height: min(27px, 1.40625vw, 2.5dvh);
+  background: var(--story-stage-button-icon, none) center / 100% 100% no-repeat;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.stageActions button:focus-visible {
+  outline: none;
+}
+
+.stageActions button:active {
+  transform: scale(0.9);
+}
+
+.operationColorFilters {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.episodeDrawerBackdrop,
+.confirmBackdrop,
+.logBackdrop {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  background: rgb(0 0 0 / 68%);
+  backdrop-filter: blur(5px);
+}
+
+.episodeDrawerBackdrop {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.episodeDrawer {
+  width: min(520px, 92vw);
+  height: 100%;
+  border-left: 1px solid #4a5059;
+  background: #0c1016;
+  box-shadow: -30px 0 80px #000;
+  animation: drawerIn 180ms ease-out;
+}
+
+.episodeDrawer > header,
+.logPanel > header {
+  display: flex;
+  min-height: 88px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #383e47;
+  padding: 0 26px;
+  background: #151a21;
+}
+
+.episodeDrawer header span,
+.logPanel header span {
+  display: block;
+  color: #e72f42;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.24em;
+}
+
+.episodeDrawer header strong,
+.logPanel header strong {
+  font-size: 22px;
+  letter-spacing: 0.05em;
+}
+
+.episodeDrawer header button,
+.logPanel header button {
+  border: 0;
+  color: #fff;
+  background: transparent;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.episodeDrawerList {
+  height: calc(100% - 88px);
+  overflow-y: auto;
+  padding: 14px;
+}
+
+.episodeDrawerList button {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #303640;
+  padding: 18px 20px;
+  color: #d6dae0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.episodeDrawerList small,
+.episodeDrawerList strong,
+.episodeDrawerList span {
+  display: block;
+}
+
+.episodeDrawerList small {
+  color: #e73244;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.episodeDrawerList strong {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.episodeDrawerList span {
+  margin-top: 3px;
+  color: #89919d;
+  font-size: 12px;
+}
+
+.episodeDrawerList button[data-active="true"],
+.episodeDrawerList button:hover,
+.episodeDrawerList button:focus-visible {
+  padding-left: 27px;
+  color: #fff;
+  background: linear-gradient(90deg, #d92e40, rgb(217 46 64 / 8%));
+  outline: none;
+}
+
+.sceneLoadError {
+  position: fixed;
+  z-index: 90;
+  right: min(2.0833vw, 3.7037vh);
+  bottom: min(2.0833vw, 3.7037vh);
+  max-width: min(41.6667vw, 74.0741vh);
+  margin: 0;
+  padding: min(0.7813vw, 1.3889vh) min(1.0417vw, 1.8519vh);
+  color: #fff;
+  background: rgb(0 0 0 / 78%);
+  font-size: min(1.0417vw, 1.8519vh);
+}
+
+.storyWaitBox {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  overflow: hidden;
+  background: rgb(0 0 0 / 19.6078%);
+  cursor: wait;
+  pointer-events: auto;
+  user-select: none;
+}
+
+.storyWaitCogs,
+.storyWaitAnimation,
+.storyWaitBoxFill {
+  position: absolute;
+  inset: 0;
+}
+
+.storyWaitCogs {
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: min(5.2083vw, 9.2593vh);
+  height: min(5.2083vw, 9.2593vh);
+  transform: translate(-50%, -50%);
+}
+
+.storyWaitCogs > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.storyWaitCogs > span[data-cog="1"] {
+  width: min(4.1667vw, 7.4074vh);
+  height: min(4.1667vw, 7.4074vh);
+  transform: translate(
+    calc(-50% + min(2.0833vw, 3.7037vh)),
+    calc(-50% - min(1.5625vw, 2.7778vh))
+  );
+}
+
+.storyWaitCogs > span[data-cog="2"] {
+  width: min(5.2083vw, 9.2593vh);
+  height: min(5.2083vw, 9.2593vh);
+  transform: translate(
+    calc(-50% - min(1.7188vw, 3.0556vh)),
+    calc(-50% + min(0.1563vw, 0.2778vh))
+  );
+}
+
+.storyWaitCogs > span[data-cog="3"] {
+  width: min(3.125vw, 5.5556vh);
+  height: min(3.125vw, 5.5556vh);
+  transform: translate(
+    calc(-50% + min(4.2188vw, 7.5vh)),
+    calc(-50% + min(0.7292vw, 1.2963vh))
+  );
+}
+
+.storyWaitCogs img {
+  object-fit: fill;
+  transform-origin: center;
+}
+
+.storyWaitCogs > span[data-cog="1"] img {
+  animation: storyWaitCogClockwise 4.5s linear infinite;
+}
+
+.storyWaitCogs > span[data-cog="2"] img,
+.storyWaitCogs > span[data-cog="3"] img {
+  animation: storyWaitCogCounterClockwise 4.5s linear infinite;
+}
+
+.storyWaitAnimation {
+  z-index: 2;
+}
+
+.storyWaitBoxFill {
+  z-index: 0;
+  background: var(--story-wait-box) center / 100% 100% no-repeat;
+  opacity: 0.588235;
+}
+
+.storyWaitText {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  width: min(10.6688vw, 18.9667vh);
+  height: min(5.2083vw, 9.2593vh);
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "CounterSide Story", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: min(2.0833vw, 3.7037vh);
+  font-weight: 700;
+  line-height: 0.73;
+  text-align: center;
+  white-space: pre;
+  animation: storyWaitTextPulse 1s linear infinite;
+  transform: translate(-50%, -50%);
+}
+
+.storyWaitRing {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: min(20.8333vw, 37.037vh);
+  height: min(20.8333vw, 37.037vh);
+  animation: storyWaitRing 1s linear infinite;
+  transform-origin: center;
+}
+
+.storyWaitArrow {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  width: min(0.5208vw, 0.9259vh);
+  height: min(0.8854vw, 1.5741vh);
+  opacity: 0;
+}
+
+.storyWaitArrow img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.storyWaitArrow[data-side="left"] {
+  --story-wait-arrow-start: max(-9.375vw, -16.6667vh);
+  --story-wait-arrow-end: max(-4.6875vw, -8.3333vh);
+}
+
+.storyWaitArrow[data-side="right"] {
+  --story-wait-arrow-start: min(9.375vw, 16.6667vh);
+  --story-wait-arrow-end: min(4.6875vw, 8.3333vh);
+}
+
+.storyWaitArrow[data-side="right"] img {
+  transform: scaleX(-1);
+}
+
+.storyWaitArrow[data-step="1"] {
+  animation: storyWaitArrowOne 1s linear infinite;
+}
+
+.storyWaitArrow[data-step="2"] {
+  animation: storyWaitArrowTwo 1s linear infinite;
+}
+
+.storyWaitArrow[data-step="3"] {
+  animation: storyWaitArrowThree 1s linear infinite;
+}
+
+@keyframes storyWaitCogClockwise {
+  from { transform: rotate(25deg); }
+  to { transform: rotate(385deg); }
+}
+
+@keyframes storyWaitCogCounterClockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes storyWaitRing {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+
+@keyframes storyWaitArrowOne {
+  0%, 6.6667% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateX(var(--story-wait-arrow-start));
+  }
+  10% { opacity: 1; }
+  40% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateX(var(--story-wait-arrow-end));
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateX(var(--story-wait-arrow-end));
+  }
+}
+
+@keyframes storyWaitArrowTwo {
+  0%, 20% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateX(var(--story-wait-arrow-start));
+  }
+  23.3333% { opacity: 1; }
+  53.3333% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateX(var(--story-wait-arrow-end));
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateX(var(--story-wait-arrow-end));
+  }
+}
+
+@keyframes storyWaitArrowThree {
+  0%, 30% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateX(var(--story-wait-arrow-start));
+  }
+  33.3333% { opacity: 1; }
+  63.3333% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateX(var(--story-wait-arrow-end));
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateX(var(--story-wait-arrow-end));
+  }
+}
+
+@keyframes storyWaitTextPulse {
+  0%, 33.3333% { opacity: 1; }
+  36.6667% { opacity: 0.5; }
+  40% { opacity: 1; }
+  43.3333% { opacity: 0.5; }
+  86.6667%, 100% { opacity: 1; }
+}
+
+.theater {
+  font-family: "CounterSide Story", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --story-ease-out-quad: cubic-bezier(0.333333, 0.666667, 0.666667, 1);
+  --story-ease-out-sine: linear(
+    0,
+    0.049068 3.125%,
+    0.098017 6.25%,
+    0.14673 9.375%,
+    0.19509 12.5%,
+    0.24298 15.625%,
+    0.290285 18.75%,
+    0.33689 21.875%,
+    0.382683 25%,
+    0.427555 28.125%,
+    0.471397 31.25%,
+    0.514103 34.375%,
+    0.55557 37.5%,
+    0.595699 40.625%,
+    0.634393 43.75%,
+    0.671559 46.875%,
+    0.707107 50%,
+    0.740951 53.125%,
+    0.77301 56.25%,
+    0.803208 59.375%,
+    0.83147 62.5%,
+    0.857729 65.625%,
+    0.881921 68.75%,
+    0.903989 71.875%,
+    0.92388 75%,
+    0.941544 78.125%,
+    0.95694 81.25%,
+    0.970031 84.375%,
+    0.980785 87.5%,
+    0.989177 90.625%,
+    0.995185 93.75%,
+    0.998795 96.875%,
+    1
+  );
+  position: relative;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  background: #000;
+  cursor: default;
+  isolation: isolate;
+  user-select: none;
+}
+
+.cutsceneViewport {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.looseShakeWorld {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  isolation: isolate;
+}
+
+.backgroundManager {
+  position: absolute;
+  z-index: -3;
+  inset: 0;
+  isolation: isolate;
+  transform: scale(1.1);
+  transform-origin: center;
+}
+
+.backgroundPosition,
+.backgroundScale,
+.backgroundCrash,
+.backgroundGraphic,
+.backgroundImage,
+.cutsceneImageLayer,
+.cutsceneImage {
+  pointer-events: none;
+  user-select: none;
+}
+
+.backgroundPosition {
+  position: absolute;
+  z-index: -5;
+  inset: 0;
+  transform-origin: center;
+  transition-property: transform;
+  transition-timing-function: linear;
+}
+
+.previousBackground {
+  z-index: -6;
+}
+
+.backgroundScale,
+.backgroundCrash,
+.backgroundGraphic,
+.backgroundTintGraphic {
+  position: absolute;
+  inset: 0;
+  transform-origin: center;
+}
+
+.backgroundScale {
+  transition-property: transform;
+  transition-timing-function: linear;
+}
+
+.backgroundTintGraphic {
+  opacity: var(--story-bg-opacity-end, 1);
+  animation: backgroundOpacity var(--story-bg-tint-time, 0ms)
+    var(--story-bg-tint-ease, linear) both;
+}
+
+/* STV-GO-001: 원본 ProcessGameObjectBG가 1920×1080에 폭·높이 중 큰
+   배율을 적용하는 표면이다. 전체 안전영역 루트인 SCREEN_FILM과 일반
+   Sprite/CG/캐릭터에는 이 클래스를 붙이지 않는다. */
+.gameObjectCoverSurface {
+  inset: auto;
+  top: 50%;
+  left: 50%;
+  width: max(100%, calc(100dvh * 1.7778297663));
+  height: max(100%, calc(100dvw / 1.7778297663));
+  transform: translate(-50%, -50%);
+}
+
+.backgroundImage {
+  object-fit: cover;
+  object-position: center;
+}
+
+.backgroundSpine {
+  position: absolute;
+  inset: 0;
+}
+
+.backgroundColor {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: var(--story-bg-tint-end, #fff);
+  mix-blend-mode: multiply;
+  animation: backgroundTint var(--story-bg-tint-time, 0ms)
+    var(--story-bg-tint-ease, linear) both;
+}
+
+.backgroundCrash,
+.actorCrash {
+  will-change: transform;
+}
+
+.backgroundFallback {
+  position: absolute;
+  z-index: -5;
+  inset: 0;
+  background: #000;
+}
+
+.cutsceneImageLayer {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: min(26.6667vw, 47.4074vh);
+  height: min(26.6667vw, 47.4074vh);
+  transform-origin: center;
+  animation: cutsceneImageFadeIn var(--story-image-fade-time, 333.333ms)
+    linear both;
+}
+
+.cutsceneImage {
+  object-fit: fill;
+}
+
+.cutsceneMovie {
+  position: absolute;
+  z-index: 18;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  object-fit: contain;
+}
+
+.actorStage {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  overflow: hidden;
+}
+
+.actor {
+  --story-actor-scale-x: 1;
+  --story-actor-scale-y: 1;
+  --story-actor-scale-from-x: 1;
+  --story-actor-scale-from-y: 1;
+  --story-actor-offset-x: 0px;
+  --story-actor-offset-y: 0px;
+  --story-actor-from-x: var(--story-actor-offset-x);
+  --story-actor-from-y: var(--story-actor-offset-y);
+  --story-slot-offset-x: 0px;
+  --story-actor-movement-time: 0ms;
+  --story-actor-scale-time: 0ms;
+  --story-actor-bounce-time: 0ms;
+  --story-actor-bounce-count: 0;
+  --story-actor-opacity: 1;
+  --story-actor-color-time: 0ms;
+  --story-actor-color-from: 1;
+  --story-actor-color-to: 1;
+  --story-hologram-from-width: 0px;
+  --story-hologram-to-width: 0px;
+  --story-hologram-time: 0ms;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100dvh;
+  transform:
+    translate(-50%, -50%)
+    translateX(var(--story-slot-offset-x))
+    translate(var(--story-actor-offset-x), var(--story-actor-offset-y));
+}
+
+.actor[data-slot="left"] {
+  --story-slot-offset-x: calc(-1 * min(26.9166437785vw, 47.8518111617vh));
+}
+
+.actor[data-slot="right"] {
+  --story-slot-offset-x: min(26.5208562215vw, 47.1481888383vh);
+}
+
+.actor[data-moving="true"] {
+  animation: actorMove var(--story-actor-movement-time)
+    cubic-bezier(0.333333, 1, 0.666667, 1) both;
+}
+
+/* 클라이언트는 이동과 Crash를 같은 RectTransform에 순서대로 기록한다.
+   Crash의 절대 위치가 마지막에 적용되므로 활성 중에는 이동 transform을
+   합산하지 않는다. 밑의 이동 애니메이션 시간은 계속 흐르게 둔다. */
+.actor[data-crash-overrides-movement="true"] {
+  transform:
+    translate(-50%, -50%)
+    translateX(var(--story-slot-offset-x))
+    translate(var(--story-actor-offset-x), var(--story-actor-offset-y)) !important;
+}
+
+.actorFade,
+.actorColor,
+.actorBounce,
+.actorCrash,
+.actorHologramMask,
+.actorPinupMask,
+.actorScale {
+  width: 100%;
+  height: 100%;
+}
+
+.actorFade {
+  opacity: var(--story-actor-opacity);
+  transition: opacity var(--story-actor-color-time) linear;
+}
+
+.actorColor {
+  filter: brightness(1);
+}
+
+.actor[data-dark="true"] .actorColor {
+  filter: brightness(0.25);
+}
+
+.actor[data-whitening="true"] .actorColor {
+  animation: actorWhiten 200ms linear both;
+}
+
+.actor[data-color-tracking="true"][data-color-phase="0"] .actorColor {
+  animation: actorColorTrackingEven var(--story-actor-color-time) linear both;
+}
+
+.actor[data-color-tracking="true"][data-color-phase="1"] .actorColor {
+  animation: actorColorTrackingOdd var(--story-actor-color-time) linear both;
+}
+
+.actor[data-fade-in="true"] .actorFade {
+  animation: actorFadeIn 1500ms linear both;
+}
+
+.actor[data-fade-out="true"] .actorFade {
+  animation: actorFadeOut 1500ms linear both;
+}
+
+.actor[data-hidden="true"] .actorFade {
+  opacity: 0;
+}
+
+.actor[data-hologram="true"] .actorColor {
+  filter: drop-shadow(0 0 min(0.4167vw, 0.7407vh) rgb(27 153 255 / 65%));
+}
+
+.actor[data-dark="true"][data-hologram="true"] .actorColor {
+  filter: brightness(0.25) drop-shadow(0 0 min(0.4167vw, 0.7407vh) rgb(27 153 255 / 65%));
+}
+
+.actor[data-whitening="true"][data-hologram="true"] .actorColor {
+  animation: actorWhitenHologram 200ms linear both;
+}
+
+.actor[data-color-tracking="true"][data-color-phase="0"][data-hologram="true"] .actorColor {
+  animation: actorColorTrackingHologramEven var(--story-actor-color-time) linear both;
+}
+
+.actor[data-color-tracking="true"][data-color-phase="1"][data-hologram="true"] .actorColor {
+  animation: actorColorTrackingHologramOdd var(--story-actor-color-time) linear both;
+}
+
+.actorHologramMask {
+  position: relative;
+}
+
+.actor[data-hologram-mask="true"] .actorHologramMask {
+  clip-path: inset(
+    0 calc((100% - var(--story-hologram-to-width)) / 2)
+  );
+}
+
+.actor[data-hologram-animating="true"][data-hologram-phase="0"] .actorHologramMask {
+  animation: actorHologramMaskEven var(--story-hologram-time)
+    cubic-bezier(0.333333, 0.666667, 0.666667, 1) both;
+}
+
+.actor[data-hologram-animating="true"][data-hologram-phase="1"] .actorHologramMask {
+  animation: actorHologramMaskOdd var(--story-hologram-time)
+    cubic-bezier(0.333333, 0.666667, 0.666667, 1) both;
+}
+
+.hologramEffect {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hologramEffect[data-opening="true"] {
+  animation: hologramEffectReveal 350ms linear both;
+}
+
+.hologramTexture,
+.hologramScanline,
+.hologramGlitch {
+  position: absolute;
+  display: block;
+  background-color: rgb(73 178 255 / 25.8824%);
+  mix-blend-mode: screen;
+}
+
+.hologramTexture {
+  top: calc(50% + min(10.4688vw, 18.6111vh));
+  left: 50%;
+  width: min(50.1979vw, 89.2407vh);
+  height: min(77.1875vw, 137.2222vh);
+  background-color: transparent;
+  background-image: var(--story-hologram-texture);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: brightness(0.3490566);
+  transform: translate(-50%, -50%);
+}
+
+.hologramScanline {
+  top: 50%;
+  left: 50%;
+  width: min(39.6667vw, 70.5185vh);
+  height: min(0.475vw, 0.8444vh);
+  animation: hologramScanline 9983.334ms linear infinite;
+}
+
+.hologramScanline[data-line="2"] {
+  animation-delay: -4991.667ms;
+}
+
+.hologramGlitch {
+  animation: hologramGlitch 1333.333ms steps(1, end) infinite;
+}
+
+.hologramGlitch[data-glitch="1"] {
+  top: 50%;
+  left: 50%;
+  width: min(39.6667vw, 70.5185vh);
+  height: min(2.7448vw, 4.8796vh);
+  transform: translate(-50%, -50%);
+}
+
+.hologramGlitch[data-glitch="2"] {
+  top: calc(50% - min(12.0833vw, 21.4815vh));
+  left: calc(50% - min(13.125vw, 23.3333vh));
+  width: min(14.1302vw, 25.1204vh);
+  height: min(2.7448vw, 4.8796vh);
+  animation-delay: -166.667ms;
+}
+
+.hologramGlitch[data-glitch="3"] {
+  top: calc(50% + min(18.6979vw, 33.2407vh));
+  left: calc(50% + min(12.3958vw, 22.037vh));
+  width: min(25.3958vw, 45.1481vh);
+  height: min(7.4479vw, 13.2407vh);
+  animation-delay: -333.333ms;
+}
+
+.hologramGlitch[data-glitch="4"] {
+  top: calc(50% + min(14.3229vw, 25.463vh));
+  left: calc(50% - min(13.125vw, 23.3333vh));
+  width: min(6.5781vw, 11.6944vh);
+  height: min(3.4167vw, 6.0741vh);
+  animation-delay: -500ms;
+}
+
+.hologramGlitch[data-glitch="5"] {
+  top: calc(50% - min(7.9688vw, 14.1667vh));
+  left: calc(50% + min(12.5vw, 22.2222vh));
+  width: min(11.2813vw, 20.0556vh);
+  height: min(1.1771vw, 2.0926vh);
+  animation-delay: -666.667ms;
+}
+
+.hologramGlitch[data-glitch="6"] {
+  inset-block: 0;
+  left: calc(50% + min(0.8633vw, 1.5347vh));
+  width: min(34.5573vw, 61.4352vh);
+  animation-delay: -833.333ms;
+}
+
+.actorPinupMask {
+  position: relative;
+  isolation: isolate;
+}
+
+.actorPinupBackground {
+  display: none;
+  position: absolute;
+  z-index: 0;
+  inset: -100%;
+  background: #000;
+}
+
+.actor[data-pinup-mask="true"] {
+  z-index: 4;
+  opacity: 1;
+}
+
+.actor[data-pinup-mask="true"] .actorPinupMask {
+  clip-path: inset(
+    0 calc((100% - var(--story-pinup-to-width)) / 2)
+  );
+}
+
+.actor[data-pinup-mask="true"] .actorPinupBackground {
+  display: block;
+}
+
+.actor[data-pinup-animating="true"] .actorPinupMask {
+  animation: actorPinupMask var(--story-pinup-time)
+    var(--story-pinup-ease) both;
+}
+
+.actorScale > div,
+.actorScale canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.actorScale {
+  position: relative;
+  z-index: 1;
+  transform: scale(var(--story-actor-scale-x), var(--story-actor-scale-y));
+  transform-origin: center bottom;
+}
+
+/* NKCASUISpineIllust는 이름이 SPINE_BG인 SkeletonGraphic을 본체보다
+   먼저 그린다. 두 Spine은 같은 CharacterView 변형·마스크·색상을
+   공유하지만 각 프리팹 좌표와 애니메이션은 독립적으로 유지한다. */
+  .actorSpineStack,
+  .actorSpineBackground,
+  .actorSpineExceptionalBackEffect,
+  .actorSpineExceptionalFrontEffect,
+  .actorSpineMain {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.actorSpineBackground {
+  z-index: 0;
+}
+
+.actorSpineExceptionalBackEffect {
+  z-index: 1;
+  pointer-events: none;
+}
+
+.actorSpineExceptionalFrontEffect {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.actorSpineMain {
+  z-index: 2;
+}
+
+.actorExceptionalComposite,
+.actorExceptionalRenderStageSpine,
+.actorExceptionalRenderStageGlow,
+.actorExceptionalRenderStageMesh,
+.actorExceptionalFxmLayers {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.actorExceptionalRenderStageSpine {
+  z-index: 0;
+}
+
+.actorExceptionalRenderStageGlow {
+  z-index: 1;
+}
+
+.actorExceptionalRenderStageMesh {
+  z-index: 2;
+}
+
+.actorExceptionalFxmLayers {
+  z-index: 3;
+}
+
+.actorSpineEventEffect {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.actor[data-scaling="true"][data-scale-phase="0"] .actorScale {
+  animation: actorScaleEven var(--story-actor-scale-time) linear both;
+}
+
+.actor[data-scaling="true"][data-scale-phase="1"] .actorScale {
+  animation: actorScaleOdd var(--story-actor-scale-time) linear both;
+}
+
+.actorBounce[data-bouncing="true"] {
+  animation: actorBounce var(--story-actor-bounce-time)
+    cubic-bezier(0.333333, 0.666667, 0.666667, 1)
+    var(--story-actor-bounce-count);
+}
+
+.bloodSpreadEffect {
+  position: absolute;
+  z-index: 6;
+  inset: 0;
+  overflow: hidden;
+  isolation: isolate;
+  pointer-events: none;
+}
+
+.fireAmbientEffect {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.fireAmbientLayer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  mix-blend-mode: plus-lighter;
+  animation: fireAmbientSheet var(--story-fire-frame-period) linear infinite;
+  will-change: background-position;
+}
+
+.fireParticleFxmEffect {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* NKC_FXM_UI_RAW_IMAGE_PMA.AnimateTextureSheet는 4x4 시트를 위쪽 행부터
+   읽고, (int)Mathf.Lerp(0, 15, curve)로 프레임을 내림한다. 끝 프레임 15는
+   루프 경계에서만 순간적으로 표시되므로 앞의 15구간을 각각 유지한다. */
+@keyframes fireAmbientSheet {
+  0%, 6.6665% { background-position: 0 0; }
+  6.6667%, 13.3332% { background-position: 33.333333% 0; }
+  13.3334%, 19.9999% { background-position: 66.666667% 0; }
+  20%, 26.6665% { background-position: 100% 0; }
+  26.6667%, 33.3332% { background-position: 0 33.333333%; }
+  33.3334%, 39.9999% { background-position: 33.333333% 33.333333%; }
+  40%, 46.6665% { background-position: 66.666667% 33.333333%; }
+  46.6667%, 53.3332% { background-position: 100% 33.333333%; }
+  53.3334%, 59.9999% { background-position: 0 66.666667%; }
+  60%, 66.6665% { background-position: 33.333333% 66.666667%; }
+  66.6667%, 73.3332% { background-position: 66.666667% 66.666667%; }
+  73.3334%, 79.9999% { background-position: 100% 66.666667%; }
+  80%, 86.6665% { background-position: 0 100%; }
+  86.6667%, 93.3332% { background-position: 33.333333% 100%; }
+  93.3334%, 99.9999% { background-position: 66.666667% 100%; }
+  100% { background-position: 100% 100%; }
+}
+
+.slashClankEffect {
+  position: absolute;
+  z-index: 6;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: plus-lighter;
+  pointer-events: none;
+}
+
+.gunshotSpriteFxmEffect {
+  position: absolute;
+  z-index: 6;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.mainstream134011BackEffect,
+.mainstream134011FrontEffect {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.mainstream134011BackAura,
+.mainstream134011FrontAura {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: plus-lighter;
+  pointer-events: none;
+}
+
+.waveSpriteFxmEffect {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.waveAuraFxmEffect {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.memoryUiImageFxmEffect {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.breakUiImageFxmEffect {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.waveDistortionFxmEffect,
+.waveRenderStageMeshFxmEffect,
+.rewindSpriteFxmEffect {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.cameraSpriteFxmEffect {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.circuitBoardRenderTexture,
+.circuitBoardSpriteFxmEffect,
+.chainUiMeshFxmEffect {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.circuitBoardRenderTexture {
+  z-index: 0;
+}
+
+.circuitBoardSpriteFxmEffect {
+  z-index: 1;
+}
+
+.chainUiMeshFxmEffect {
+  z-index: 1;
+}
+
+.iceMaterialFxmEffect {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.slashTraceMaterialFxmEffect {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.inkEffect,
+.screenFilmEffect {
+  position: absolute;
+  z-index: 6;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.bloodSplat,
+.bloodVignetteMask {
+  position: absolute;
+  display: block;
+  background: #000;
+  mask-image: var(--story-blood-mask);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  transform-origin: center;
+  -webkit-mask-image: var(--story-blood-mask);
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+}
+
+.bloodWhiteFlash,
+.bloodInvertFlicker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(106.6667vw, 189.6296vh);
+  height: min(63.3333vw, 112.5926vh);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+.bloodWhiteFlash {
+  z-index: 0;
+  background: #fff;
+  animation: bloodWhiteFlash 3s linear forwards;
+  animation-delay: var(--story-blood-trigger-delay, 0s);
+}
+
+.bloodSplat {
+  z-index: 1;
+  opacity: 0;
+  transform-origin: center;
+}
+
+.bloodSplat[data-effect-part="0"] {
+  top: calc(50% + min(18.3854vw, 32.6852vh));
+  left: calc(50% - min(19.0104vw, 33.7963vh));
+  width: min(12.2917vw, 21.8519vh);
+  height: min(12.2396vw, 21.7593vh);
+  animation:
+    bloodSplatOneScale 2.5s linear forwards,
+    bloodSplatFade 2.5s linear forwards;
+  animation-delay:
+    var(--story-blood-trigger-delay, 0s),
+    var(--story-blood-trigger-delay, 0s);
+}
+
+.bloodSplat[data-effect-part="1"] {
+  top: calc(50% + min(12.3438vw, 21.9444vh));
+  left: calc(50% + min(31.5104vw, 56.0185vh));
+  width: min(12.9167vw, 22.963vh);
+  height: min(13.3333vw, 23.7037vh);
+  animation:
+    bloodSplatTwoScale 2.5s linear forwards,
+    bloodSplatFade 2.5s linear forwards;
+  animation-delay:
+    calc(var(--story-blood-trigger-delay, 0s) + 30ms),
+    calc(var(--story-blood-trigger-delay, 0s) + 30ms);
+}
+
+.bloodSplat[data-effect-part="2"] {
+  top: calc(50% - min(12.7604vw, 22.6852vh));
+  left: calc(50% + min(6.25vw, 11.1111vh));
+  width: min(13.3333vw, 23.7037vh);
+  height: min(13.2813vw, 23.6111vh);
+  animation:
+    bloodSplatThreeScale 2.5s linear forwards,
+    bloodSplatFade 2.5s linear forwards;
+  animation-delay:
+    calc(var(--story-blood-trigger-delay, 0s) + 60ms),
+    calc(var(--story-blood-trigger-delay, 0s) + 60ms);
+}
+
+.bloodVignetteGradient {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: min(155.2993vw, 276.0876vh);
+  height: min(86.747vw, 154.2169vh);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: bloodVignetteGradient 2.5s linear forwards;
+  animation-delay: var(--story-blood-trigger-delay, 0s);
+}
+
+.bloodVignetteMask {
+  inset: 0;
+  opacity: 0;
+  mask-size: 100% 100%;
+  animation: bloodVignetteAlpha 2.5s linear forwards;
+  animation-delay: var(--story-blood-trigger-delay, 0s);
+  -webkit-mask-size: 100% 100%;
+}
+
+.bloodInvertFlicker {
+  z-index: 3;
+  background: transparent;
+  animation: bloodInvertFlicker 300ms linear forwards;
+}
+
+.bloodInvertFlicker[data-effect-flicker="0"] {
+  animation-delay: calc(var(--story-blood-trigger-delay, 0s) + 30ms);
+}
+
+.bloodInvertFlicker[data-effect-flicker="1"] {
+  animation-delay: calc(var(--story-blood-trigger-delay, 0s) + 130ms);
+}
+
+.cutsceneColorFilters {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.theater[data-filter="NCFT_SEPIA"] .backgroundGraphic,
+.theater[data-filter="NCFT_SEPIA"] .actorStage,
+.theater[data-filter="NCFT_SEPIA"] .bloodSpreadEffect {
+  filter: url("#story-sepia-tone");
+}
+
+.fadeLayer,
+.flashLayer {
+  position: absolute;
+  z-index: 20;
+  inset: 0;
+  pointer-events: none;
+}
+
+.gameObjectOverlayEffects {
+  display: contents;
+}
+
+.fadeLayer {
+  background: #000;
+  animation: fadeReveal var(--story-fade-time, 900ms) linear both;
+}
+
+.fadeLayer[data-white="true"] {
+  background: #fff;
+}
+
+.fadeLayer[data-fade-in="false"] {
+  animation-name: fadeCover;
+}
+
+.fadeLayer[data-active="false"][data-covered="true"] {
+  opacity: var(--story-fade-opacity, 1);
+  animation: none;
+}
+
+.flashLayer {
+  background: #fff;
+  animation: flash var(--story-flash-time, 0ms) linear both;
+}
+
+.cutsceneTopMenu {
+  position: absolute;
+  z-index: 30;
+  inset: 0;
+  pointer-events: none;
+}
+
+.cutsceneTopMenu button,
+.hideUiButton,
+.restoreUiButton {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+  transform: scale(1);
+  transform-origin: center;
+  transition: transform 100ms cubic-bezier(0.333333, 1, 0.666667, 1);
+}
+
+.cutsceneTopMenu button img,
+.hideUiButton img,
+.restoreUiButton img {
+  display: block;
+  height: auto;
+  object-fit: contain;
+}
+
+.cutsceneTopMenu button:hover,
+.cutsceneTopMenu button:focus-visible,
+.hideUiButton:hover,
+.hideUiButton:focus-visible,
+.restoreUiButton:hover,
+.restoreUiButton:focus-visible {
+  outline: none;
+}
+
+.autoButton[data-active="true"] {
+  transform: scale(1.05);
+}
+
+.cutsceneTopMenu button:active,
+.hideUiButton:active,
+.restoreUiButton:active {
+  animation: cutsceneButtonPress 100ms
+    cubic-bezier(0.333333, 1, 0.666667, 1) both;
+}
+
+.logButton,
+.hideUiButton,
+.autoButton,
+.skipButton,
+.restoreUiButton {
+  position: absolute;
+  top: 0;
+  display: grid;
+  place-items: center;
+}
+
+.logButton {
+  left: min(2.375vw, 4.2222vh);
+  width: min(10.8229vw, 19.2407vh);
+  height: min(8.4375vw, 15vh);
+}
+
+.logButton img {
+  width: min(8.0729vw, 14.3519vh);
+}
+
+.hideUiButton,
+.restoreUiButton {
+  left: min(13.0052vw, 23.1204vh);
+  width: min(7.2917vw, 12.963vh);
+  height: min(8.4375vw, 15vh);
+}
+
+.hideUiButton img,
+.restoreUiButton img {
+  width: min(3.6302vw, 6.4537vh);
+}
+
+.autoButton {
+  right: min(13.3073vw, 23.6574vh);
+  width: min(10.4167vw, 18.5185vh);
+  height: min(8.4375vw, 15vh);
+}
+
+.autoButton img {
+  width: min(8.5938vw, 15.2778vh);
+}
+
+.autoButtonLight {
+  position: absolute;
+  width: min(15.1042vw, 26.8519vh);
+  height: min(5.7292vw, 10.1852vh);
+  background: rgb(108.2661 110.3352 113.066 / 15.6863%);
+  mask-image: var(--story-auto-light);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 100% 100%;
+  mix-blend-mode: plus-lighter;
+  pointer-events: none;
+  -webkit-mask-image: var(--story-auto-light);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 100% 100%;
+}
+
+.skipButton {
+  right: min(2.7292vw, 4.8519vh);
+  width: min(10.4167vw, 18.5185vh);
+  height: min(8.4375vw, 15vh);
+}
+
+.skipButton img {
+  width: min(8.4375vw, 15vh);
+}
+
+.centerCaption {
+  position: absolute;
+  z-index: 26;
+  inset: 0;
+  pointer-events: none;
+  text-shadow:
+    1px 1px 0 rgb(0 0 0 / 50%),
+    1px -1px 0 rgb(0 0 0 / 50%),
+    -1px 1px 0 rgb(0 0 0 / 50%),
+    -1px -1px 0 rgb(0 0 0 / 50%);
+}
+
+.centerCaption[data-story-text-hidden="true"],
+.centerDialogue[data-story-text-hidden="true"],
+.dialoguePanel[data-story-text-hidden="true"] {
+  visibility: hidden;
+}
+
+/* LOG는 대사 매니저 GameObject를 비활성화한다. 수동 Fade와 진행 아이콘
+   Animator는 멈추지만, 별도 DOTween인 중앙 배경 Fade는 계속 진행한다. */
+.cutsceneViewport
+  [data-story-log-animation-paused="true"]:not([data-story-passive-animation]),
+.cutsceneViewport
+  [data-story-log-animation-paused="true"]
+  :not([data-story-passive-animation]) {
+  animation-play-state: paused !important;
+}
+
+.centerCaption[data-closing="true"] {
+  animation: centerTalkOut var(--story-title-fade-duration, 0ms)
+    var(--story-ease-out-quad)
+    var(--story-title-fade-delay, 0ms) both;
+}
+
+.centerCaption span {
+  position: absolute;
+  bottom: min(7.5839vw, 13.4824vh);
+  left: min(3.7633vw, 6.6912vh);
+  display: flex;
+  width: min(77.9486vw, 138.5753vh);
+  height: min(3.5938vw, 6.3889vh);
+  align-items: flex-end;
+  color: #fff;
+  font-size: min(2.0833vw, 3.7037vh);
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  white-space: pre;
+}
+
+.centerCaption p {
+  position: absolute;
+  bottom: min(1.2219vw, 2.1722vh);
+  left: min(3.7633vw, 6.6912vh);
+  width: min(77.9412vw, 138.5621vh);
+  height: min(6.3594vw, 11.3056vh);
+  margin: 0;
+  white-space: pre;
+  color: #fff;
+  font-size: min(2.6042vw, 4.6296vh);
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.centerDialogue {
+  position: absolute;
+  z-index: 25;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.centerDialogueBackground {
+  position: absolute;
+  z-index: 0;
+  inset:
+    calc(-1 * min(6.8906vw, 12.25vh))
+    calc(-1 * min(0.3203vw, 0.5694vh))
+    calc(-1 * min(4.9115vw, 8.7315vh))
+    calc(-1 * min(0.4766vw, 0.8472vh));
+  display: block;
+  background: #000;
+  opacity: var(--story-center-background-alpha, 0.627451);
+}
+
+.centerDialogueText {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: min(79.1667vw, 140.7407vh);
+  height: min(17.1291vw, 30.4518vh);
+  align-items: center;
+  justify-content: center;
+  color: rgb(166 166 166);
+  font-size: min(2.3438vw, 4.1667vh);
+  font-weight: 400;
+  line-height: 1.65;
+  overflow: hidden;
+  text-align: center;
+  transform: translateY(min(0.1042vw, 0.1852vh));
+  white-space: pre-wrap;
+}
+
+.centerDialogue[data-fade-in="true"] .centerDialogueBackground {
+  animation: centerBackdropIn var(--story-center-fade-time, 0ms)
+    var(--story-ease-out-sine) 100ms both;
+}
+
+.centerDialogue[data-fade-out="true"] .centerDialogueBackground {
+  animation: centerTalkOut var(--story-center-fade-time, 0ms)
+    var(--story-ease-out-sine) both;
+}
+
+.dialoguePanel {
+  position: absolute;
+  z-index: 25;
+  inset: 0;
+  pointer-events: none;
+}
+
+.dialoguePanel[data-opening="true"] {
+  animation: centerTalkIn var(--story-dialogue-open-time, 333.333ms) linear
+    both;
+}
+
+.dialoguePanel::before {
+  position: absolute;
+  bottom: calc(-1 * min(3.6094vw, 6.4167vh));
+  left: 50%;
+  width: calc(100% + min(20.8333vw, 37.037vh));
+  height: min(24.1979vw, 43.0185vh);
+  background: url("/story/reader/ui/nkm_ui_cutscen_gradation_bg.png") center / 100% 100% no-repeat;
+  content: "";
+  opacity: 0.784314;
+  transform: translateX(-50%);
+}
+
+.speakerName {
+  position: absolute;
+  bottom: min(12.2396vw, 21.7593vh);
+  left: min(15.625vw, 27.7778vh);
+  display: flex;
+  width: min(52.0833vw, 92.5926vh);
+  height: min(2.0833vw, 3.7037vh);
+  align-items: center;
+  color: #fff;
+  font-size: min(2.3958vw, 4.2593vh);
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+  white-space: pre;
+}
+
+.speakerName::before {
+  width: min(0.46875vw, 0.833334vh);
+  height: 100%;
+  flex: 0 0 auto;
+  margin-right: min(0.520833vw, 0.925926vh);
+  background: #e7e7e7;
+  content: "";
+}
+
+.speakerName,
+.dialogueText {
+  font-kerning: normal;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+
+.dialogueText,
+.loadingText {
+  position: absolute;
+  right: min(15.625vw, 27.7778vh);
+  bottom: min(1.4741vw, 2.6206vh);
+  left: min(15.625vw, 27.7778vh);
+  height: min(9.4019vw, 16.7156vh);
+  margin: 0;
+  color: #a6a6a6;
+  font-size: min(1.875vw, 3.3333vh);
+  font-weight: 400;
+  text-align: left;
+  white-space: pre-wrap;
+  line-break: strict;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.dialogueText {
+  /* TMP adds 1.1 em-units to its 54px face line height; it is not a 1.1x multiplier. */
+  line-height: min(2.833125vw, 5.036667vh);
+  overflow: hidden;
+}
+
+.loadingText { color: #b8bec6; line-height: 1.1; text-align: center; }
+
+.nextIndicator {
+  position: absolute;
+}
+
+.nextIndicatorCenter {
+  right: min(2.0833vw, 3.7037vh);
+  bottom: min(1.6053vw, 2.8539vh);
+  width: min(2.3438vw, 4.1667vh);
+  height: min(2.3438vw, 4.1667vh);
+}
+
+.nextIndicatorDialogue {
+  right: min(3.1823vw, 5.6574vh);
+  bottom: min(1.7604vw, 3.1296vh);
+  width: min(1.9688vw, 3.5vh);
+  height: min(1.0625vw, 1.8889vh);
+  animation: story-dialogue-next 1s var(--story-ease-out-quad)
+    infinite alternate;
+}
+
+@keyframes story-dialogue-next {
+  from { transform: translateY(0); }
+  to { transform: translateY(max(-0.5729vw, -1.0185vh)); }
+}
+
+.choiceList {
+  position: absolute;
+  z-index: 27;
+  bottom: min(24.1979vw, 43.0185vh);
+  left: 50%;
+  display: grid;
+  width: min(166.6667vw, 296.2963vh);
+  height: min(19.2708vw, 34.2593vh);
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr;
+  place-items: center;
+  pointer-events: auto;
+  transform: translateX(-50%);
+}
+
+.choiceList button {
+  position: relative;
+  width: min(80.9318vw, 143.8787vh);
+  height: min(4.8078vw, 8.5472vh);
+  border: 0;
+  padding: 0;
+  color: #fff;
+  background: transparent;
+  font-size: min(1.5625vw, 2.7778vh);
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  cursor: pointer;
+  transition: transform 100ms cubic-bezier(0.333333, 1, 0.666667, 1);
+}
+
+.choiceList button::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  box-sizing: border-box;
+  border: min(0.4688vw, 0.8333vh) solid transparent;
+  border-image: url("/story/reader/ui/nkm_ui_popup_button_06.png") 9 fill stretch;
+  content: "";
+  pointer-events: none;
+}
+
+.choiceText {
+  position: absolute;
+  z-index: 1;
+  top: max(-0.0521vw, -0.0926vh);
+  right: 0;
+  bottom: max(-0.0521vw, -0.0926vh);
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.choiceList button:active {
+  transform: scale(0.95);
+}
+
+.restoreUiButton {
+  z-index: 35;
+}
+
+.storyStart {
+  position: absolute;
+  z-index: 90;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  border: 0;
+  color: #fff;
+  background: rgb(0 0 0 / 72%);
+  text-align: center;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+
+.storyStart span,
+.storyStart strong,
+.storyStart small { display: block; }
+
+.storyStart span {
+  color: #e93244;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.4em;
+}
+
+.storyStart strong { margin-top: 13px; font-size: clamp(22px, 2.4vw, 42px); }
+.storyStart small { margin-top: 10px; color: #acb2ba; font-size: 13px; }
+
+.confirmBackdrop {
+  display: block;
+  background: transparent;
+  backdrop-filter: none;
+}
+
+.confirmBackdrop::before {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 62.745%);
+  content: "";
+  mask-image: var(--story-popup-box);
+  mask-size: 100% 100%;
+  pointer-events: none;
+  -webkit-mask-image: var(--story-popup-box);
+  -webkit-mask-size: 100% 100%;
+}
+
+.logBackdrop {
+  display: block;
+  background: transparent;
+  backdrop-filter: none;
+}
+
+.confirmPanel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + min(8.1354vw, 14.463vh));
+  height: min(34.0572vw, 60.5462vh);
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  background: rgb(42 48 58);
+  box-shadow: none;
+  mask-image: var(--story-popup-box);
+  mask-size: 100% 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -webkit-mask-image: var(--story-popup-box);
+  -webkit-mask-size: 100% 100%;
+}
+
+.confirmPanel::after {
+  position: absolute;
+  z-index: 0;
+  right: min(0.1094vw, 0.1944vh);
+  bottom: 0;
+  left: min(0.1094vw, 0.1944vh);
+  height: min(6.4219vw, 11.4167vh);
+  background: rgb(20 23 28);
+  content: "";
+  pointer-events: none;
+}
+
+.confirmPanel > strong {
+  position: absolute;
+  z-index: 1;
+  top: min(0.7005vw, 1.2454vh);
+  left: 50%;
+  display: grid;
+  width: min(53.5885vw, 95.2593vh);
+  height: min(3.5573vw, 6.3241vh);
+  place-items: center;
+  color: #fff;
+  font-size: min(2.0833vw, 3.7037vh);
+  font-weight: 400;
+  line-height: 1.5;
+  text-shadow:
+    min(0.1042vw, 0.1852vh) min(0.1042vw, 0.1852vh) rgb(0 0 0 / 50%),
+    min(0.1042vw, 0.1852vh) max(-0.1042vw, -0.1852vh) rgb(0 0 0 / 50%),
+    max(-0.1042vw, -0.1852vh) min(0.1042vw, 0.1852vh) rgb(0 0 0 / 50%),
+    max(-0.1042vw, -0.1852vh) max(-0.1042vw, -0.1852vh) rgb(0 0 0 / 50%);
+  transform: translateX(-50%);
+}
+
+.confirmPanel > p {
+  position: absolute;
+  z-index: 1;
+  top: min(6.0609vw, 10.7759vh);
+  left: 50%;
+  display: grid;
+  width: min(49.2708vw, 87.5926vh);
+  height: min(17.4479vw, 31.0185vh);
+  margin: 0;
+  place-items: center;
+  color: rgb(237 237 237);
+  font-size: min(1.5625vw, 2.7778vh);
+  line-height: 1.5;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.confirmActions {
+  position: absolute;
+  z-index: 2;
+  top: min(28.7917vw, 51.1852vh);
+  left: 50%;
+  display: flex;
+  width: min(31.5104vw, 56.0185vh);
+  height: min(4.9479vw, 8.7963vh);
+  gap: min(0.2604vw, 0.463vh);
+  transform: translateX(-50%);
+}
+
+.confirmPanel button {
+  box-sizing: border-box;
+  width: min(15.625vw, 27.7778vh);
+  height: min(4.9479vw, 8.7963vh);
+  border-style: solid;
+  border-width:
+    min(1.0417vw, 1.8519vh)
+    min(0.8333vw, 1.4815vh)
+    min(0.5208vw, 0.9259vh);
+  /*
+   * Unity 원본은 39x99, border=(16,20,16,10)이지만 AssetStudio가
+   * SpriteAtlas의 잘린 textureRect(31x91)만 내보낸다. 잘린 여백을
+   * 제외한 19/12/3/12를 사용해야 원본의 7x69 중앙 영역이 유지된다.
+   */
+  border-image-slice: 19 12 3 12 fill;
+  border-image-repeat: stretch;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: min(1.6667vw, 2.963vh);
+  font-weight: 400;
+  line-height: 1.5;
+  text-shadow:
+    min(0.1042vw, 0.1852vh) min(0.1042vw, 0.1852vh) rgb(0 0 0 / 50%),
+    min(0.1042vw, 0.1852vh) max(-0.1042vw, -0.1852vh) rgb(0 0 0 / 50%),
+    max(-0.1042vw, -0.1852vh) min(0.1042vw, 0.1852vh) rgb(0 0 0 / 50%),
+    max(-0.1042vw, -0.1852vh) max(-0.1042vw, -0.1852vh) rgb(0 0 0 / 50%);
+  transition: transform 100ms cubic-bezier(0.333333, 1, 0.666667, 1);
+}
+
+.confirmPanel button:first-child {
+  border-image-source: var(--story-popup-cancel);
+  color: #fff;
+}
+
+.confirmPanel button:last-child {
+  border-image-source: var(--story-popup-confirm);
+  color: rgb(88 40 23);
+}
+
+.confirmPanel button:active {
+  transform: scale(0.9);
+}
+
+.logPanel {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.logPanel::before,
+.logPanel::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+}
+
+.logPanel::before {
+  z-index: 0;
+  background: rgb(0 0 0 / 78.431%);
+  mask-image: var(--story-log-popup-box);
+  mask-size: 100% 100%;
+  -webkit-mask-image: var(--story-log-popup-box);
+  -webkit-mask-size: 100% 100%;
+}
+
+.logPanel::after {
+  z-index: 1;
+  background-color: rgb(42 48 58);
+  mask-image: var(--story-log-gradient);
+  mask-size: 100% 100%;
+  -webkit-mask-image: var(--story-log-gradient);
+  -webkit-mask-size: 100% 100%;
+  transform: scaleY(-1);
+}
+
+.logCloseButton {
+  position: absolute;
+  z-index: 3;
+  top: max(-0.1615vw, -0.2871vh);
+  left: min(1.4453vw, 2.5694vh);
+  width: min(10.7552vw, 19.1204vh);
+  height: min(8.4375vw, 15vh);
+  overflow: visible;
+  border: 0;
+  padding: 0;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  transform: scale(1);
+  transform-origin: center;
+  transition: transform 100ms cubic-bezier(0.333333, 1, 0.666667, 1);
+}
+
+.logCloseButton img {
+  position: absolute;
+  top: min(2.5469vw, 4.5278vh);
+  left: max(-0.0057vw, -0.0102vh);
+  display: block;
+  width: min(12.0833vw, 21.4815vh);
+  max-width: none;
+  height: min(3.6458vw, 6.4815vh);
+  object-fit: fill;
+}
+
+.logCloseButton > span {
+  font-size: min(2.6042vw, 4.6296vh);
+}
+
+.logCloseButton:active {
+  animation: cutsceneButtonPress 100ms
+    cubic-bezier(0.333333, 1, 0.666667, 1) both;
+}
+
+.logStageTitle {
+  position: absolute;
+  z-index: 3;
+  top: min(3.1198vw, 5.5463vh);
+  left: min(14.9479vw, 26.5741vh);
+  display: flex;
+  height: min(2.0833vw, 3.7037vh);
+  align-items: center;
+  gap: min(0.75vw, 1.3333vh);
+  color: #fff;
+  font-size: min(1.875vw, 3.3333vh);
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.logStageTitle span,
+.logStageTitle strong {
+  font: inherit;
+  font-weight: 400;
+}
+
+.logStageTitle span {
+  color: rgb(255 255 255 / 50.1961%);
+}
+
+.logList {
+  position: absolute;
+  z-index: 2;
+  inset: min(6.7656vw, 12.0278vh) 0 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: none;
+  scrollbar-width: none;
+  touch-action: none;
+  user-select: none;
+}
+
+.logList::-webkit-scrollbar {
+  display: none;
+}
+
+.logContent {
+  box-sizing: border-box;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: min(1.0417vw, 1.8519vh);
+  padding: min(5.2083vw, 9.2593vh);
+  transform: translateY(
+    var(--story-cutscene-log-scroll-rubber-y, 0px)
+  );
+  will-change: transform;
+}
+
+.logContent > div {
+  position: relative;
+  display: flex;
+  width: min(88.5417vw, 157.4074vh);
+  min-height: min(2.8646vw, 5.0926vh);
+  align-items: flex-start;
+  gap: min(0.2604vw, 0.463vh);
+  padding-left: min(2.8646vw, 5.0926vh);
+  color: #fff;
+  font-size: min(1.875vw, 3.3333vh);
+  line-height: 1.35;
+  text-align: left;
+}
+
+.logContent > div > span {
+  min-width: 0;
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.logVoiceButton {
+  position: absolute;
+  top: min(0.1563vw, 0.2778vh);
+  left: min(0.0251vw, 0.0446vh);
+  width: min(2.6042vw, 4.6296vh);
+  height: min(2.6042vw, 4.6296vh);
+  flex: 0 0 auto;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  color: #ffd229;
+  background: transparent;
+  cursor: pointer;
+  transform: scale(1);
+  transform-origin: center;
+  transition: transform 100ms cubic-bezier(0.333333, 1, 0.666667, 1);
+}
+
+.logVoiceButton img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.logVoiceButton > span {
+  font-size: min(1.5625vw, 2.7778vh);
+  line-height: 1;
+}
+
+.logVoiceButton:active {
+  animation: cutsceneButtonPress 100ms
+    cubic-bezier(0.333333, 1, 0.666667, 1) both;
+}
+
+@keyframes drawerIn { from { transform: translateX(100%); } }
+@keyframes stagePanelIn {
+  from {
+    opacity: 0;
+    transform: translateX(min(490px, 25.520833vw, 45.37037dvh));
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes actorMove {
+  from {
+    transform:
+      translate(-50%, -50%)
+      translateX(var(--story-slot-offset-x))
+      translate(var(--story-actor-from-x), var(--story-actor-from-y));
+  }
+}
+@keyframes actorFadeIn { from { opacity: 0; } }
+@keyframes actorFadeOut { to { opacity: 0; } }
+@keyframes actorScaleEven {
+  from {
+    transform: scale(
+      var(--story-actor-scale-from-x),
+      var(--story-actor-scale-from-y)
+    );
+  }
+  to {
+    transform: scale(
+      var(--story-actor-scale-x),
+      var(--story-actor-scale-y)
+    );
+  }
+}
+@keyframes actorScaleOdd {
+  from {
+    transform: scale(
+      var(--story-actor-scale-from-x),
+      var(--story-actor-scale-from-y)
+    );
+  }
+  to {
+    transform: scale(
+      var(--story-actor-scale-x),
+      var(--story-actor-scale-y)
+    );
+  }
+}
+@keyframes actorWhiten {
+  from { filter: brightness(0); }
+  to { filter: brightness(1); }
+}
+@keyframes actorWhitenHologram {
+  from {
+    filter: brightness(0) drop-shadow(0 0 min(0.4167vw, 0.7407vh) rgb(27 153 255 / 65%));
+  }
+  to {
+    filter: brightness(1) drop-shadow(0 0 min(0.4167vw, 0.7407vh) rgb(27 153 255 / 65%));
+  }
+}
+@keyframes actorColorTrackingEven {
+  from { filter: brightness(var(--story-actor-color-from)); }
+  to { filter: brightness(var(--story-actor-color-to)); }
+}
+@keyframes actorColorTrackingOdd {
+  from { filter: brightness(var(--story-actor-color-from)); }
+  to { filter: brightness(var(--story-actor-color-to)); }
+}
+@keyframes actorColorTrackingHologramEven {
+  from {
+    filter: brightness(var(--story-actor-color-from)) drop-shadow(0 0 min(0.4167vw, 0.7407vh) rgb(27 153 255 / 65%));
+  }
+  to {
+    filter: brightness(var(--story-actor-color-to)) drop-shadow(0 0 min(0.4167vw, 0.7407vh) rgb(27 153 255 / 65%));
+  }
+}
+@keyframes actorColorTrackingHologramOdd {
+  from {
+    filter: brightness(var(--story-actor-color-from)) drop-shadow(0 0 min(0.4167vw, 0.7407vh) rgb(27 153 255 / 65%));
+  }
+  to {
+    filter: brightness(var(--story-actor-color-to)) drop-shadow(0 0 min(0.4167vw, 0.7407vh) rgb(27 153 255 / 65%));
+  }
+}
+@keyframes actorPinupMask {
+  from {
+    clip-path: inset(
+      0 calc((100% - var(--story-pinup-from-width)) / 2)
+    );
+  }
+  to {
+    clip-path: inset(
+      0 calc((100% - var(--story-pinup-to-width)) / 2)
+    );
+  }
+}
+@keyframes actorHologramMaskEven {
+  0% {
+    clip-path: inset(
+      0 calc((100% - var(--story-hologram-from-width)) / 2)
+    );
+  }
+  99.99% {
+    clip-path: inset(
+      0 calc((100% - var(--story-hologram-to-width)) / 2)
+    );
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
+@keyframes actorHologramMaskOdd {
+  0% {
+    clip-path: inset(
+      0 calc((100% - var(--story-hologram-from-width)) / 2)
+    );
+  }
+  99.99% {
+    clip-path: inset(
+      0 calc((100% - var(--story-hologram-to-width)) / 2)
+    );
+  }
+  100% {
+    clip-path: inset(0);
+  }
+}
+@keyframes hologramEffectReveal {
+  from {
+    clip-path: inset(
+      0 calc((100% - min(1.1823vw, 2.1019vh)) / 2)
+    );
+    opacity: 0;
+  }
+  to {
+    clip-path: inset(0);
+    opacity: 1;
+  }
+}
+@keyframes hologramScanline {
+  from {
+    transform: translate(-50%, min(27.9167vw, 49.6296vh));
+  }
+  to {
+    transform: translate(-50%, calc(-1 * min(27.8646vw, 49.537vh)));
+  }
+}
+@keyframes hologramGlitch {
+  0%, 11%, 23%, 48%, 71%, 100% { opacity: 0; }
+  12%, 18%, 49%, 57%, 72%, 79% { opacity: 1; }
+  19%, 58%, 80% { opacity: 0.25; }
+}
+@keyframes actorBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(calc(-1 * min(2.6042vw, 4.6296vh))); }
+}
+@keyframes fadeReveal { from { opacity: 1; } to { opacity: 0; } }
+@keyframes fadeCover { from { opacity: 0; } to { opacity: 1; } }
+@keyframes flash { from { opacity: 1; } to { opacity: 0; } }
+@keyframes cutsceneButtonPress {
+  from { transform: scale(1); }
+  to { transform: scale(0.9); }
+}
+@keyframes cutsceneImageFadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes centerTalkIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes centerTalkOut { from { opacity: 1; } to { opacity: 0; } }
+@keyframes centerBackdropIn { from { opacity: 0; } to { opacity: 0.7; } }
+@keyframes backgroundTint {
+  from { background: var(--story-bg-tint-start, transparent); }
+  to { background: var(--story-bg-tint-end, transparent); }
+}
+@keyframes backgroundOpacity {
+  from { opacity: var(--story-bg-opacity-start, 1); }
+  to { opacity: var(--story-bg-opacity-end, 1); }
+}
+@keyframes bloodWhiteFlash {
+  from { opacity: 0.3; }
+  to { opacity: 0; }
+}
+
+@keyframes bloodSplatFade {
+  0%, 37.444114% { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+@keyframes bloodSplatOneScale {
+  0% {
+    transform: translate(-50%, -50%)
+      rotate(calc(var(--story-blood-rotation-0, 0deg) + 64.755688deg))
+      scale(2.04158);
+    animation-timing-function: cubic-bezier(0.333333, 0, 0.666667, 1);
+  }
+  4.557823% {
+    transform: translate(-50%, -50%)
+      rotate(calc(var(--story-blood-rotation-0, 0deg) + 64.755688deg))
+      scale(4.375461);
+    animation-timing-function: cubic-bezier(0.333333, 0.587, 0.666667, 1);
+  }
+  100% {
+    transform: translate(-50%, -50%)
+      rotate(calc(var(--story-blood-rotation-0, 0deg) + 64.755688deg))
+      scale(4.569157);
+  }
+}
+
+@keyframes bloodSplatTwoScale {
+  0% {
+    transform: translate(-50%, -50%)
+      rotate(var(--story-blood-rotation-1, 0deg)) scale(2.04158);
+    animation-timing-function: cubic-bezier(0.333333, 0, 0.666667, 1);
+  }
+  4.557823% {
+    transform: translate(-50%, -50%)
+      rotate(var(--story-blood-rotation-1, 0deg)) scale(4.375462);
+    animation-timing-function: cubic-bezier(0.333333, 0.587, 0.666667, 1);
+  }
+  100% {
+    transform: translate(-50%, -50%)
+      rotate(var(--story-blood-rotation-1, 0deg)) scale(4.569158);
+  }
+}
+
+@keyframes bloodSplatThreeScale {
+  0% {
+    transform: translate(-50%, -50%)
+      rotate(var(--story-blood-rotation-2, 0deg)) scale(2.560425);
+    animation-timing-function: cubic-bezier(0.333333, 0, 0.666667, 1);
+  }
+  4.557823% {
+    transform: translate(-50%, -50%)
+      rotate(var(--story-blood-rotation-2, 0deg)) scale(5.487437);
+    animation-timing-function: cubic-bezier(0.333333, 0.587, 0.666667, 1);
+  }
+  100% {
+    transform: translate(-50%, -50%)
+      rotate(var(--story-blood-rotation-2, 0deg)) scale(5.730358);
+  }
+}
+
+@keyframes bloodVignetteGradient {
+  from { opacity: 0.509804; }
+  to { opacity: 0; }
+}
+
+@keyframes bloodVignetteAlpha {
+  0%, 22.515407% {
+    opacity: 0.370821;
+    animation-timing-function: cubic-bezier(0.333333, 0, 0.666667, 1);
+  }
+  45.831862% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.333333, 0, 0.666667, 1);
+  }
+  70.653325% {
+    opacity: 0.355617;
+    animation-timing-function: cubic-bezier(0.333333, 0, 0.666667, 1);
+  }
+  100% { opacity: 0; }
+}
+
+@keyframes bloodInvertFlicker {
+  0% { background: rgb(0 0 0 / 0%); opacity: 1; }
+  1.80972% { background: rgb(0 0 0 / 29.8236%); opacity: 1; }
+  3.959716% { background: rgb(194 0 0 / 65.2549%); opacity: 1; }
+  4.072633% { background: rgb(204 0 0 / 64.5732%); opacity: 1; }
+  5.882353% { background: rgb(90 0 0 / 53.6471%); opacity: 1; }
+  5.99527% { background: rgb(83 0 0 / 53.1773%); opacity: 1; }
+  13.348592% { background: rgb(83 0 0 / 22.5882%); opacity: 1; }
+  100% { background: rgb(83 0 0 / 0%); opacity: 1; }
+}
+
+@media (max-width: 560px) {
+  .logList {
+    scrollbar-width: none;
+  }
+
+  .logList::-webkit-scrollbar {
+    display: none;
+  }
+}

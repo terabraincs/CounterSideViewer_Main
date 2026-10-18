@@ -12,6 +12,12 @@ const imageCatalog=readJson('data/main-image-assets.json');
 const minigameCatalog=readJson('data/minigame-assets.json');
 const operatorCatalog=readJson('data/operator-voice-assets.json');
 const musicCatalog=readJson('data/music-tracks.json');
+const spineCatalog=readJson('data/spine-assets.json');
+const storyDataCatalog=readJson('data/story-data-assets.json');
+const voiceCatalog=readJson('data/voice-assets.json');
+const spinePaths=new Set(spineCatalog.paths);
+const storyDataPaths=new Set(storyDataCatalog.paths);
+const voicePaths=new Set(voiceCatalog.paths);
 const assetPaths=new Set([...imageCatalog.paths,...minigameCatalog.paths]);
 const operatorPaths=new Set(operatorCatalog.paths);
 const musicPaths=new Set(musicCatalog.tracks.map(track=>track.audioPath));
@@ -21,10 +27,10 @@ walk(out);
 const bytes=all.reduce((total,file)=>total+fs.statSync(file).size,0);
 assert.ok(bytes<1_000_000_000,'GitHub Pages output exceeds 1 GB');
 assert.ok(fs.existsSync(path.join(out,'.nojekyll')),'Static export preparation did not complete');
-const requiredRoutes=['','music','equipment','ships','operators','collection','collection/titles','collection/frames','collection/emblems','collection/trophies','minigames','minigames/match-ten','minigames/cafe-strega','minigames/cafe-strega/rebuild-v2','minigames/sword-training','minigames/sword-training/rebuild','illustrations','guide'];
+const requiredRoutes=['','characters','story','story/reader','music','equipment','ships','operators','collection','collection/titles','collection/frames','collection/emblems','collection/trophies','minigames','minigames/match-ten','minigames/cafe-strega','minigames/cafe-strega/rebuild-v2','minigames/sword-training','minigames/sword-training/rebuild','illustrations','guide'];
 for(const route of requiredRoutes)assert.ok(fs.existsSync(path.join(out,route,'index.html')),'Missing route '+route);
 assert.ok(fs.existsSync(path.join(out,'404.html')),'The unpublished routes need the static 404 page');
-for(const route of ['characters','story','spine-viewer','api','actor-buffer-compare-test','_actor-buffer-compare']){
+for(const route of ['spine-viewer','api','actor-buffer-compare-test','_actor-buffer-compare']){
   assert.ok(!fs.existsSync(path.join(out,route)),'Excluded route or development runtime exported: '+route);
   assert.ok(!fs.existsSync(path.join('app',route)),'Excluded source route copied: '+route);
 }
@@ -37,11 +43,12 @@ const retainedMinigameSpineSet=new Set(retainedMinigameSpines);
 assert.equal(retainedMinigameSpines.length,16,'The preserved minigame Spine file set changed');
 assert.ok(!all.some(file=>/\.(?:png|webp|jpe?g|gif|svg|ico|avif|ogg|wav|mp3|m4a|mp4|webm|skel|atlas)$/i.test(file)&&!retainedMinigameSpineSet.has(file)),'Migrated image/audio/video/Spine files remain in Pages output');
 for(const asset of assetPaths)assert.ok(!fs.existsSync(path.join(out,asset.replace(/^\//,''))),'Externally indexed asset duplicated in Pages: '+asset);
+for(const asset of [...spinePaths,...storyDataPaths])assert.ok(!fs.existsSync(path.join(out,asset.replace(/^\//,''))),'Raw-served Spine or Story data duplicated in Pages: '+asset);
 const missing=new Map();
-let checkedAssetURLs=0,externalAssets=0,externalOperatorVoices=0,externalOtherVoices=0,externalMusic=0,runtimeAssetKeys=0,inactiveStandaloneSpineKeys=0;
+let checkedAssetURLs=0,externalAssets=0,externalSpine=0,externalStoryData=0,externalOperatorVoices=0,externalOtherVoices=0,externalMusic=0,runtimeAssetKeys=0,inactiveStandaloneSpineKeys=0;
 // The shared trophy renderer receives an embedded model and no employee ID.
 // Its standalone model-list/effect loaders return before issuing these requests.
-const inactiveStandaloneSpinePaths=new Set(['/spine/manifest.json','/spine/effects/skin-contracts.json','/spine/effects/prefabs/scene.json','/spine/effects/animation-durations.json']);
+const inactiveStandaloneSpinePaths=new Set(['/spine/manifest.json']);
 const localExtensions=/\.(?:js|mjs|css|json|png|webp|jpe?g|gif|svg|ico|avif|ogg|wav|mp3|m4a|mp4|webm|skel|atlas|ttf|otf|woff2?|html)$/i;
 function clean(url){return url.replaceAll('&amp;','&').replaceAll('&quot;','"').replaceAll('&#x27;',"'").replaceAll('\\/','/').replaceAll('\\u0026','&');}
 function check(value,ref){
@@ -53,12 +60,26 @@ function check(value,ref){
     assert.ok(assetPaths.has(rel),'Missing Asset_main indexed asset in '+ref+': '+url);
     externalAssets++;return;
   }
+  if(url.startsWith(spineCatalog.baseUrl+'/')){
+    const rel=decodeURI(url.slice(spineCatalog.baseUrl.length).split(/[?#]/,1)[0]);
+    assert.ok(spinePaths.has(rel),'Missing Asset_spine indexed asset in '+ref+': '+url);
+    externalSpine++;return;
+  }
+  if(url.startsWith(storyDataCatalog.baseUrl+'/')){
+    const rel=decodeURI(url.slice(storyDataCatalog.baseUrl.length).split(/[?#]/,1)[0]);
+    assert.ok(storyDataPaths.has(rel),'Missing Raw Story JSON in '+ref+': '+url);
+    externalStoryData++;return;
+  }
   if(url.startsWith(operatorCatalog.baseUrl+'/operator_voice/')){
     const rel=decodeURI(url.slice(operatorCatalog.baseUrl.length+1).split(/[?#]/,1)[0]);
     assert.ok(operatorPaths.has(rel),'Missing CS_Voice operator audio in '+ref+': '+url);
     externalOperatorVoices++;return;
   }
-  if(url.startsWith(operatorCatalog.baseUrl+'/')){externalOtherVoices++;return;}
+  if(url.startsWith(operatorCatalog.baseUrl+'/')){
+    const rel=decodeURI(url.slice(operatorCatalog.baseUrl.length+1).split(/[?#]/,1)[0]);
+    assert.ok(voicePaths.has(rel),'Missing CS_Voice indexed audio in '+ref+': '+url);
+    externalOtherVoices++;return;
+  }
   if(url.startsWith('https://raw.githubusercontent.com/terabraincs/CS_Music/main/audio/')){
     assert.ok(musicPaths.has(url.split(/[?#]/,1)[0]),'Missing CS_Music catalog entry in '+ref+': '+url);
     externalMusic++;return;
@@ -119,6 +140,16 @@ if(process.env.EXPORT_VERIFY_REPORT){
 }
 assert.deepEqual([...missing].slice(0,30),[],'Missing exported asset references');
 assert.ok(verifiedPublicJson>0,'No published JSON rewrite was verified');
+let verifiedRawStoryJson=0;
+for(const asset of storyDataPaths){
+  const source=path.join('public',asset.slice(1));
+  assert.ok(fs.existsSync(source),'Story JSON absent from source upload: '+asset);
+  const data=readJson(source);
+  assert.equal(JSON.stringify(deploymentData(data)),JSON.stringify(data),'Raw Story JSON still contains unmapped indexed URLs: '+asset);
+  assert.equal(deploymentUrl(asset),storyDataCatalog.baseUrl+asset.split('/').map(encodeURIComponent).join('/'));
+  verifiedRawStoryJson++;
+}
+assert.equal(verifiedRawStoryJson,3036,'Unexpected Story runtime data closure');
 assert.ok(all.some(file=>path.relative(out,file).startsWith('guide'+path.sep)&&file.endsWith('.json')),'Missing published guide data');
 for(const manifest of ['spine/manifest.json','story/reader/manifest.json','story/reader/manifest.v1.json'])assert.ok(!fs.existsSync(path.join(out,manifest)),'Build-only manifest was published: '+manifest);
 assert.ok(!all.some(file=>path.relative(out,file).startsWith('spine'+path.sep)),'Standalone Spine runtime data was published');
@@ -149,4 +180,4 @@ for(const track of musicCatalog.tracks){
   assert.ok(music.includes(track.audioPath),'Missing deployed track '+track.id);
   assert.ok(assetPaths.has(track.coverPath),'Missing external album cover');
 }
-console.log(JSON.stringify({files:all.length,bytes,MiB:+(bytes/1048576).toFixed(2),checkedAssetURLs,verifiedPublicJson,runtimeAssetKeys,inactiveStandaloneSpineKeys,embeddedTrophyModels:trophyModels.length,retainedMinigameSpineFiles:retainedMinigameSpines.length,externalImageReferences:externalAssets,externalOperatorVoiceReferences:externalOperatorVoices,externalOtherVoiceReferences:externalOtherVoices,externalMusicReferences:externalMusic,jukeboxTracks:musicCatalog.tracks.length,missingAssets:missing.size,scopeVerified:true}));
+console.log(JSON.stringify({files:all.length,bytes,MiB:+(bytes/1048576).toFixed(2),checkedAssetURLs,verifiedPublicJson,verifiedRawStoryJson,runtimeAssetKeys,inactiveStandaloneSpineKeys,embeddedTrophyModels:trophyModels.length,retainedMinigameSpineFiles:retainedMinigameSpines.length,externalImageReferences:externalAssets,externalSpineReferences:externalSpine,externalStoryDataReferences:externalStoryData,externalOperatorVoiceReferences:externalOperatorVoices,externalOtherVoiceReferences:externalOtherVoices,externalMusicReferences:externalMusic,jukeboxTracks:musicCatalog.tracks.length,missingAssets:missing.size,scopeVerified:true}));

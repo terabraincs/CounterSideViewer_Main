@@ -23,7 +23,7 @@ test('minigames navigation stays inside the integrated Main site',()=>{
   assert.deepEqual(siteLink('/'),{href:'/',external:false});
   assert.deepEqual(siteLink(deploymentUrl('/equipment/ITEM')),{href:'/equipment/ITEM',external:false});
 });
-test('unpublished employee, story and standalone Spine destinations remain placeholders while gallery and guide are internal',()=>{
+test('feature destinations stay internal to Main',()=>{
   for(const route of ['/characters','/story','/spine-viewer','/illustrations','/guide'])assert.deepEqual(siteLink(route),{href:route,external:false});
 });
 test('Main preview assets do not overlap the minigames project route',()=>{

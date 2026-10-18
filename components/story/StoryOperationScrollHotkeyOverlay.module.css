@@ -1,0 +1,8 @@
+.display {
+  position: fixed;
+  top: var(--story-operation-scroll-hotkey-target-y);
+  left: var(--story-operation-scroll-hotkey-target-x);
+  transform: translate(-50%, -50%)
+    scale(var(--story-operation-scroll-hotkey-scale));
+  transform-origin: center;
+}

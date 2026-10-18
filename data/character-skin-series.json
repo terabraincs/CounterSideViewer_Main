@@ -1,0 +1,490 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "generator": "scripts/generate-character-skin-series.mjs",
+    "region": "KOR",
+    "tabId": "TAB_SKIN",
+    "enabledAndVisibleOnly": true,
+    "additionalSeries": [
+      {
+        "id": "COLLAB:CLB_003",
+        "title": "hololive",
+        "skinStrIdSuffix": "_CLB_003",
+        "excludedSkinStrIdPart": "_SUMMON_",
+        "enabledOnly": true,
+        "collaborationOnly": true
+      },
+      {
+        "id": "REWARD:PRESTIGE",
+        "title": "프레스티지",
+        "table": "Assetbundles_ab_script/204_LUA_EVENT_PAYBACK_TEMPLET_a.json",
+        "skinIdField": "SkinID",
+        "orderField": "PaybackEventID"
+      },
+      {
+        "id": "COLLAB:CLB_002",
+        "title": "코드 기아스",
+        "tabId": "TAB_PACKAGE_CLB_002",
+        "subIndex": 4,
+        "enabledAndVisibleOnly": true
+      },
+      {
+        "id": "REWARD:GAUNTLET",
+        "title": "건틀렛",
+        "tabId": "TAB_SEASON_GAUNTLET",
+        "subIndex": 6,
+        "enabledAndVisibleOnly": true,
+        "seasonRewardTable": "Assetbundles_ab_script/096_LUA_PVP_RANK_q.json"
+      },
+      {
+        "id": "EVENT:CAFE_STREGA",
+        "title": "카페 스트레가",
+        "tabId": "TAB_EVENT",
+        "subIndex": 76,
+        "enabledAndVisibleOnly": true
+      }
+    ],
+    "files": [
+      {
+        "path": "Assetbundles_ab_script/172_LUA_SHOP_TAB_TEMPLET_56_f.json",
+        "sha256": "b7ca8db949aa317b8f6d77a4fcb4f42eb25aefe5281a90e20bb938948d090817"
+      },
+      {
+        "path": "Assetbundles_ab_script/053_LUA_SHOP_TAB_TEMPLET_57_f.json",
+        "sha256": "27a64504360a60e7b5f469c304a93c413e3ccdfcd35bbce568aacde92bad2cbf"
+      },
+      {
+        "path": "Assetbundles_ab_script/233_LUA_SHOP_TEMPLET_12_j.json",
+        "sha256": "0d447f25e61413cb12077fc59e6be4a7cca88a7c5a2319e84bab0c990ba0e333"
+      },
+      {
+        "path": "Assetbundles_ab_script/094_LUA_SHOP_TEMPLET_13_j.json",
+        "sha256": "8a4a969fd8bb1b8cd48b8226c212bef77d2b2766e9082d38be039bad1aa73e21"
+      },
+      {
+        "path": "Assetbundles_ab_script/064_LUA_SKIN_TEMPLET_m.json",
+        "sha256": "e1567e03c2c73dfd88be805fdaa8047cb5872e93b8f55252c18294d877ffaf90"
+      },
+      {
+        "path": "Assetbundles_ab_script_string_table/006_LUA_SI_SHOP_TAB_SUB_NAME_KOREA_x.json",
+        "sha256": "ecdf4d91f41704c1219a29bdf8421c869e01bc5ce46dbe65cd0069ca49131507"
+      },
+      {
+        "path": "Assetbundles_ab_script/204_LUA_EVENT_PAYBACK_TEMPLET_a.json",
+        "sha256": "091e421a07f846f4e85f6c75f7d97df86efcc9396ae84a19c0eb51b57f976d26"
+      },
+      {
+        "path": "Assetbundles_ab_script/096_LUA_PVP_RANK_q.json",
+        "sha256": "476da631adf85b5e2e732ff7130f4dde40777e10fe0df2a193ba736cbc4aac28"
+      }
+    ]
+  },
+  "series": [
+    {
+      "id": "TAB_SKIN:61",
+      "title": "용사 파티",
+      "tabId": "TAB_SKIN",
+      "subIndex": 61,
+      "skinIds": [
+        123835,
+        124135
+      ]
+    },
+    {
+      "id": "TAB_SKIN:62",
+      "title": "크리에이터 콘테스트",
+      "tabId": "TAB_SKIN",
+      "subIndex": 62,
+      "skinIds": [
+        124621,
+        120221,
+        117621
+      ]
+    },
+    {
+      "id": "TAB_SKIN:63",
+      "title": "웰컴 마스터",
+      "tabId": "TAB_SKIN",
+      "subIndex": 63,
+      "skinIds": [
+        119932,
+        123732
+      ]
+    },
+    {
+      "id": "TAB_SKIN:64",
+      "title": "봄토끼 라운지",
+      "tabId": "TAB_SKIN",
+      "subIndex": 64,
+      "skinIds": [
+        122621,
+        124121,
+        122221,
+        123321,
+        120821
+      ]
+    },
+    {
+      "id": "TAB_SKIN:65",
+      "title": "잠옷 파티",
+      "tabId": "TAB_SKIN",
+      "subIndex": 65,
+      "skinIds": [
+        123427,
+        121527
+      ]
+    },
+    {
+      "id": "TAB_SKIN:66",
+      "title": "엘레강스 리파인드",
+      "tabId": "TAB_SKIN",
+      "subIndex": 66,
+      "skinIds": [
+        117225,
+        120225
+      ]
+    },
+    {
+      "id": "TAB_SKIN:67",
+      "title": "스쿨 라이프",
+      "tabId": "TAB_SKIN",
+      "subIndex": 67,
+      "skinIds": [
+        106324,
+        120324
+      ]
+    },
+    {
+      "id": "TAB_SKIN:68",
+      "title": "만약의 이야기",
+      "tabId": "TAB_SKIN",
+      "subIndex": 68,
+      "skinIds": [
+        124823,
+        125223,
+        107123,
+        111723,
+        117823,
+        111223
+      ]
+    },
+    {
+      "id": "TAB_SKIN:69",
+      "title": "바니걸 파이낸스",
+      "tabId": "TAB_SKIN",
+      "subIndex": 69,
+      "skinIds": [
+        118021,
+        117921,
+        119621
+      ]
+    },
+    {
+      "id": "TAB_SKIN:70",
+      "title": "리사이틀",
+      "tabId": "TAB_SKIN",
+      "subIndex": 70,
+      "skinIds": [
+        116619,
+        115919,
+        100519,
+        116019
+      ]
+    },
+    {
+      "id": "TAB_SKIN:71",
+      "title": "아카데미 운동회",
+      "tabId": "TAB_SKIN",
+      "subIndex": 71,
+      "skinIds": [
+        113516,
+        117816,
+        115816,
+        110016,
+        116616
+      ]
+    },
+    {
+      "id": "TAB_SKIN:72",
+      "title": "새해맞이",
+      "tabId": "TAB_SKIN",
+      "subIndex": 72,
+      "skinIds": [
+        104213,
+        100613,
+        109720
+      ]
+    },
+    {
+      "id": "TAB_SKIN:73",
+      "title": "취임 1주년",
+      "tabId": "TAB_SKIN",
+      "subIndex": 73,
+      "skinIds": [
+        101812,
+        112112,
+        115012,
+        115412,
+        115712,
+        109612
+      ]
+    },
+    {
+      "id": "TAB_SKIN:74",
+      "title": "산장 연회",
+      "tabId": "TAB_SKIN",
+      "subIndex": 74,
+      "skinIds": [
+        129504,
+        128004,
+        104804,
+        117804,
+        118104,
+        106204,
+        115804,
+        100404,
+        116204,
+        113604,
+        100304,
+        116404
+      ]
+    },
+    {
+      "id": "TAB_SKIN:75",
+      "title": "펌프킨 나이트",
+      "tabId": "TAB_SKIN",
+      "subIndex": 75,
+      "skinIds": [
+        124411,
+        111811,
+        116111,
+        109211,
+        117011,
+        114911,
+        113911,
+        104711
+      ]
+    },
+    {
+      "id": "TAB_SKIN:76",
+      "title": "웨딩 마치",
+      "tabId": "TAB_SKIN",
+      "subIndex": 76,
+      "skinIds": [
+        121410,
+        109110,
+        116910,
+        110910,
+        116210,
+        116010,
+        113310,
+        104410,
+        100610
+      ]
+    },
+    {
+      "id": "TAB_SKIN:77",
+      "title": "바캉스",
+      "tabId": "TAB_SKIN",
+      "subIndex": 77,
+      "skinIds": [
+        127709,
+        127809,
+        125109,
+        125409,
+        126009,
+        124309,
+        120509,
+        120709,
+        120409,
+        109809,
+        121609,
+        119809,
+        122009,
+        116709,
+        116009,
+        116509,
+        111309,
+        100109,
+        115109,
+        113909,
+        113809,
+        110909,
+        105509,
+        111809,
+        114709,
+        107209,
+        109909,
+        115209,
+        116409,
+        116309,
+        111209,
+        108909
+      ]
+    },
+    {
+      "id": "TAB_SKIN:78",
+      "title": "어린이의 마음",
+      "tabId": "TAB_SKIN",
+      "subIndex": 78,
+      "skinIds": [
+        114208,
+        109908,
+        106208,
+        109708
+      ]
+    },
+    {
+      "id": "TAB_SKIN:79",
+      "title": "레이싱",
+      "tabId": "TAB_SKIN",
+      "subIndex": 79,
+      "skinIds": [
+        112107,
+        109807,
+        108707,
+        104307,
+        112207
+      ]
+    },
+    {
+      "id": "TAB_SKIN:80",
+      "title": "스위트 프로모션",
+      "tabId": "TAB_SKIN",
+      "subIndex": 80,
+      "skinIds": [
+        104206,
+        104203,
+        100203,
+        111803,
+        113603,
+        113503,
+        104403,
+        100103
+      ]
+    },
+    {
+      "id": "TAB_SKIN:81",
+      "title": "메모리얼",
+      "tabId": "TAB_SKIN",
+      "subIndex": 81,
+      "skinIds": [
+        116537,
+        123633,
+        119533
+      ]
+    },
+    {
+      "id": "TAB_SKIN:98",
+      "title": "만우절",
+      "tabId": "TAB_SKIN",
+      "subIndex": 98,
+      "skinIds": [
+        121234,
+        122534,
+        124334,
+        121134,
+        118922,
+        117322,
+        120122,
+        107222,
+        107322,
+        108522,
+        109915,
+        109815,
+        104215,
+        104315,
+        113515,
+        113615,
+        114715,
+        110915,
+        113815,
+        100115,
+        100215,
+        100315
+      ]
+    },
+    {
+      "id": "TAB_SKIN:99",
+      "title": "일반",
+      "tabId": "TAB_SKIN",
+      "subIndex": 99,
+      "skinIds": [
+        105505,
+        101802,
+        111318,
+        109318,
+        100505,
+        108818,
+        108718,
+        104818,
+        113405,
+        108505,
+        106105,
+        100405,
+        100702,
+        100602,
+        100102
+      ]
+    },
+    {
+      "id": "COLLAB:CLB_003",
+      "title": "hololive",
+      "skinIds": [
+        116128,
+        119528,
+        114728,
+        110128,
+        113528,
+        117028
+      ]
+    },
+    {
+      "id": "REWARD:PRESTIGE",
+      "title": "프레스티지",
+      "skinIds": [
+        120629,
+        123529,
+        123929,
+        125629,
+        116129,
+        115429,
+        127429,
+        122729
+      ]
+    },
+    {
+      "id": "COLLAB:CLB_002",
+      "title": "코드 기아스",
+      "skinIds": [
+        122826,
+        123026
+      ]
+    },
+    {
+      "id": "REWARD:GAUNTLET",
+      "title": "건틀렛",
+      "skinIds": [
+        100202,
+        117130,
+        107330,
+        119430,
+        117330,
+        117430,
+        117230,
+        119730,
+        130630
+      ]
+    },
+    {
+      "id": "EVENT:CAFE_STREGA",
+      "title": "카페 스트레가",
+      "skinIds": [
+        109331,
+        109031,
+        109236,
+        109131
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4128 @@
+{
+  "source": {
+    "generator": "scripts/extract-character-profile-icon-layouts.py",
+    "coordinateSystem": "Unity Sprite pixels; offsetX/offsetY originate at the logical rect's bottom left",
+    "bundles": [
+      {
+        "role": "portraits",
+        "bundle": "Assetbundles/ab_inven_icon_unit.asset",
+        "sha256": "35f4d335ffeb25783cd4f5dd761531dbdc91931587442d83ab79d2ff056b5dbf"
+      },
+      {
+        "role": "localizedPortraits",
+        "bundle": "Data/StreamingAssets/ab_inven_icon_unit_loc.asset",
+        "sha256": "fd48280766bbd28df36f906c7d729440b7c2ae108e8ffb94c8f8fd0576a61fdd"
+      },
+      {
+        "role": "rarityBackgrounds",
+        "bundle": "Data/StreamingAssets/ab_inven_icon_common.asset",
+        "sha256": "cefe5728c1cd2c5f22e0d8ac59ec015ad079be146c80aab3f723596b13d6343e"
+      }
+    ],
+    "employeeCount": 311,
+    "employeePortraitCount": 311,
+    "skinCount": 197,
+    "skinRouteCount": 236,
+    "skinPortraitCount": 197,
+    "portraitCount": 508
+  },
+  "sprites": {
+    "AB_INVEN_ICON_FRAME_N": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 225.89736938476562,
+      "textureHeight": 225.89736938476562,
+      "offsetX": 15.051316261291504,
+      "offsetY": 15.051316261291504
+    },
+    "AB_INVEN_ICON_FRAME_R": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 225.89736938476562,
+      "textureHeight": 225.89736938476562,
+      "offsetX": 15.051316261291504,
+      "offsetY": 15.051316261291504
+    },
+    "AB_INVEN_ICON_FRAME_SR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 225.89736938476562,
+      "textureHeight": 225.89736938476562,
+      "offsetX": 15.051316261291504,
+      "offsetY": 15.051316261291504
+    },
+    "AB_INVEN_ICON_FRAME_SSR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 225.94650268554688,
+      "textureHeight": 225.94650268554688,
+      "offsetX": 15.026750564575195,
+      "offsetY": 15.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_MONSTER_BOSS_BASIC_BISHOP": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004,
+      "imageIsCanvas": true
+    },
+    "AB_INVEN_ICON_NKM_MONSTER_BOSS_BASIC_KING_MOVE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 239.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_MONSTER_BOSS_BASIC_KNIGHT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 235.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 20.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_NPC_PUPPET": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ACADEMY_CA_TWINTAIL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ACADEMY_C_TWINTAIL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ACADEMY_C_TWINTAIL_CHANGE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ACADEMY_C_TWINTAIL_SPORTS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ACADEMY_C_TWINTAIL_X_MAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ACADEMY_S_HANDGUN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ADMIN_CA_ARTILLERY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ADMIN_CA_BIRDCAGE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 248.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ADMIN_CA_CAT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ADMIN_CA_CLOUD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 249.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 6.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ADMIN_C_AURA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 242.97325134277344,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 13.026750564575195,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ADMIN_C_AURA_X_MAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ADMIN_C_RABBIT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ADMIN_C_RAT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ALPHA_CA_JIA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ALPHA_CA_JIA_SPECIAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ALPHA_C_CHESS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ALPHA_C_CHOWON_PR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 247.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 8.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ALPHA_C_CHOWON_PR_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ALPHA_C_SPEAR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ALPHA_C_SPEAR_BUNNY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ALT_CA_SEO_YOON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ALT_CA_SEO_YOON_RECITAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ALT_CA_SEO_YOON_SPORTS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ALT_C_SEO_YOON_PR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ANAPILIS_CA_SCYTHE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ATELIER_C_JWIBUL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ATELIER_C_TIMEBLADE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BARCODE_C_CHILDREN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 236.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BARCODE_C_CHILDREN_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 239.84774780273438,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BARCODE_C_SISTER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BAR_C_CEO": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.97325134277344,
+      "offsetX": 0.0,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BAR_C_CEO_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BAR_S_BARTENDER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 227.9109649658203,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 19.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BAR_S_BARTENDER_PR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BAR_S_BARTENDER_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 245.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 10.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BD_C_ROI_PR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BETA_S_REPLICA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BORDER_C_BOWGUN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BORDER_C_BOWGUN_BUNNY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BORDER_SA_HORSE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_BORDER_S_HUNTER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CANARY_S_ASSAULT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CANARY_S_ASSAULT_PR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 227.9331512451172,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 28.066850662231445,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CANARY_S_SHIELD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CANARY_S_SHIELD_HALLOWEEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CANARY_S_SHIELD_PR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CA_ADMIN_LEE_SUYEON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CA_ADMIN_LEE_SUYEON_RECITAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 250.94363403320312,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 5.056371688842773,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CA_HILDE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CA_HILDE_1BIRTHDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 250.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CA_JOO_SHI_YOON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CA_JOO_SHI_YOON_GAUNTLET": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CA_STREGA_YOO_NA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CA_STREGA_YOO_NA_CLB_003": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CA_STREGA_YOO_NA_HALLOWEEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CA_STREGA_YOO_NA_SPECIAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CA_YOO_MI_NA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CA_YOO_MI_NA_1BIRTHDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 255.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.07612049579620361,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CA_YOO_MI_NA_SPECIAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 247.7630157470703,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 8.236980438232422,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CHAMBER_S_ENGINEER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 231.97325134277344,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 24.026750564575195,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CHARADE_C_CRIMSON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CHARADE_C_CRIMSON_CHANGE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CORRUPTED_CA_MINISTRA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CORRUPTED_CA_MINISTRA_CONTEST": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CORRUPTED_C_MIMIC": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CORRUPTED_C_SHADOW": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 241.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 14.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_CORRUPTED_M_ARMOR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 240.65579223632812,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ADMIN_ARTILLERY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ADMIN_ARTILLERY_1BIRTHDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 254.98709106445312,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ADMIN_GREATSWORD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ADMIN_GREATSWORD_RB": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ADMIN_GREATSWORD_SPORTS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ADMIN_GREATSWORD_X_MAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ADMIN_LEE_SUYEON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ADMIN_LEE_SUYEON_SCHOOL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 250.97325134277344,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 5.0267510414123535,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ADMIN_NA_YUBIN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 221.93577575683594,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 13.051316261291504,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALPHA_CHOI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALPHA_CHOWON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 242.97325134277344,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 13.026750564575195,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALPHA_CHOWON_RACING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALPHA_JIA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALPHA_JIA_1BIRTHDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALPHA_JIA_RACING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALPHA_LEEJIN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALPHA_SEAROM": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_KIM_SOBIN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.97325134277344,
+      "offsetX": 0.0,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_KIM_SOBIN_WINTER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_SEO_YOON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_SEO_YOON_SPRING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 240.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 15.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_SEO_YOON_X_MAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_XIAOLIN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_XIAOLIN_NEWYEAR2021": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_XIAOLIN_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_XIAOLIN_RB": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_XIAOLIN_WEDDING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_XIAOLIN_WINTER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_YOO_JIN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 249.93609619140625,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 6.063897132873535,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_YOO_JIN_RB": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_YOO_JIN_RECITAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ALT_YOO_JIN_SPRING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.97325134277344,
+      "offsetX": 0.0,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_AMY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_BD_ELIZABETH": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_BD_ELIZABETH_HALLOWEEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.97325134277344,
+      "offsetX": 0.0,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_BD_ELIZABETH_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.95709228515625,
+      "offsetX": 0.0,
+      "offsetY": 12.04290771484375
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_BD_ELIZABETH_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.97325134277344,
+      "offsetX": 0.0,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_BD_ELIZABETH_VALEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 248.9238739013672,
+      "textureHeight": 243.97325134277344,
+      "offsetX": 7.076120376586914,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_BD_ROI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_BD_ROI_CHANGE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 251.97325134277344,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_BD_RYAN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_BD_THADDEUS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_CIVIL_CATHY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_CIVIL_CATHY_WEDDING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 247.95709228515625,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_CIVIL_IRIE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 236.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 19.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_CIVIL_IRIE_PANDA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_CIVIL_IRIE_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_CIVIL_IRIE_SPRING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 240.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 15.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_CIVIL_ZENA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DAYMINE_GANGSAN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DAYMINE_HYUNSOO": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DAYMINE_SOMI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 242.84774780273438,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DELTA_JAKE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DELTA_JAKE_CASUAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DELTA_KING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DELTA_KYLE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 227.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DELTA_KYLE_AP": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DELTA_KYLE_AP_HALLOWEEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 246.97958374023438,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 9.020421981811523,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DELTA_KYLE_AP_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DELTA_KYLE_SPRING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 240.8816680908203,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 15.118325233459473,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DELTA_MARIA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DELTA_SYLVIA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 254.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DELTA_SYLVIA_CHILD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DELTA_SYLVIA_RB": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_DELTA_SYLVIA_X_MAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 254.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ESPR_FROZEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ESPR_FROZEN_HALLOWEEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ESPR_SHADOW": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 235.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 20.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ESPR_SHADOW_CLB_003": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ESPR_SHADOW_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 237.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ESPR_SHADOW_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FALLEN_DOMA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FALLEN_ROSARIA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FALLEN_ROSARIA_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 240.9238739013672,
+      "textureHeight": 240.84774780273438,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FALLEN_ROSARIA_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FALLEN_ROSARIA_WEDDING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FALLEN_YUMA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FREEDOM_KASUMI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 229.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 26.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FREEDOM_LEE_MINSEO": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FREEDOM_LIN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FREEDOM_LIN_SPRING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FREEDOM_LIN_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FRONTIER_LEE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FRONTIER_MAYA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 240.89712524414062,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_FRONTIER_NINA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 234.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 21.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_BOMI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_GAEUN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_GAEUN_CASUAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 249.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 6.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_GAEUN_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 239.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_GAEUN_NEWYEAR2021": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_GAEUN_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_GAEUN_VALEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_GAEUN_VALEN_BLACK": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_MIYA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_MIYA_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_MIYA_VALEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_MIYA_WEDDING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_RUMI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_RUMI_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HB_RUMI_RACING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HILDE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HILDE_ADMIN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 237.95709228515625,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 18.04290771484375,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HILDE_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 232.9238739013672,
+      "textureHeight": 236.84774780273438,
+      "offsetX": 23.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_HILDE_VALEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JAPAN_CHIHIRO": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 248.9238739013672,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 7.076120376586914,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JAPAN_RYOHEI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JAPAN_SENHIME": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JAPAN_SENHIME_ALWAYS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JAPAN_SENHIME_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JAPAN_SETSUNA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JAPAN_SETSUNA_CHANGE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JAPAN_SETSUNA_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JAPAN_SETSUNA_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JAPAN_ZENJIROU": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JOO_SHI_YOON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JOO_SHI_YOON_AP": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 253.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 2.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JOO_SHI_YOON_AP_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 234.9486846923828,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 21.05131721496582,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JOO_SHI_YOON_AP_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JOO_SHI_YOON_AP_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JOO_SHI_YOON_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 211.94329833984375,
+      "textureHeight": 237.84774780273438,
+      "offsetX": 29.036285400390625,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_JOO_SHI_YOON_X_MAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_KIM_CHEOLSU": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_KIM_CHEOLSU_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 236.68035888671875,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ORCA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ORCA_1BIRTHDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 245.93536376953125,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 10.064628601074219,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ORCA_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ORCA_WINTER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_POLICE_LEE_YUMI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_POLICE_LEE_YUMI_CHILD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 254.96371459960938,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 1.0362850427627563,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_POLICE_LEE_YUMI_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 232.97325134277344,
+      "textureHeight": 240.89712524414062,
+      "offsetX": 23.026750564575195,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_POLICE_LEE_YUMI_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_SCHOOL_CHAIR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_SCHOOL_CHAIR_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_SCHOOL_CHAIR_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_SCHOOL_PRESIDENT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.84774780273438,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_SCHOOL_PRESIDENT_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_SIXWING_AMY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 247.97325134277344,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 8.026750564575195,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_SIXWING_AMY_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_SIXWING_AMY_GAUNTLET": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 251.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 4.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_SIXWING_LEE_JISOO": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_SIXWING_LEE_JISOO_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 239.89712524414062,
+      "textureHeight": 243.97325134277344,
+      "offsetX": 10.026750564575195,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_SIXWING_LEE_JISOO_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 249.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 6.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_SIXWING_NA_YUBIN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 254.9238739013672,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 1.0761204957962036,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_SIXWING_NA_YUBIN_CHANGE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_STREGA_EVELYN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_STREGA_EVELYN_ALWAYS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_STREGA_EVELYN_CAFFE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_STREGA_INGRID": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_STREGA_INGRID_CAFFE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_STREGA_INGRID_HALLOWEEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_STREGA_LAURA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.97325134277344,
+      "offsetX": 0.0,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_STREGA_LAURA_CAFFE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 255.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_STREGA_LAURA_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_STREGA_LAURA_WEDDING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_STREGA_YOO_NA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_STREGA_YOO_NA_CAFFE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_VATICAN_BENEDICT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 225.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 30.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_VATICAN_CINDY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_VATICAN_CINDY_HALLOWEEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_VATICAN_CLOUDIA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_VATICAN_CLOUDIA_ALWAYS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_VATICAN_CLOUDIA_X_MAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_YG_HARIM": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 241.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_YG_HARIM_CLB_003": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_YG_HARIM_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_YG_HARIM_SPORTS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 252.97325134277344,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 3.0267510414123535,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_YG_HARIM_VALEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_YG_HOJIN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_YOO_MI_NA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_YOO_MI_NA_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_YOO_MI_NA_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_YOO_MI_NA_RA_OLD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_YOO_MI_NA_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_YOO_MI_NA_VALEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_YOO_MI_NA_WINTER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ZODIAC_ARIUS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 241.68035888671875,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ZODIAC_ARIUS_ALWAYS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ZODIAC_ARIUS_RACING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ZODIAC_CHARLOTTE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ZODIAC_CHARLOTTE_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 251.97325134277344,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ZODIAC_CHARLOTTE_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ZODIAC_CHARLOTTE_SPRING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ZODIAC_LIV": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.97325134277344,
+      "offsetX": 0.0,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ZODIAC_LIV_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 252.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 3.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ZODIAC_PIONE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 247.9486846923828,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 8.051316261291504,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ZODIAC_PIONE_ALWAYS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 245.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 10.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_C_ZODIAC_YANG_HANSOL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.84774780273438,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DANMACHI_CA_AIS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 225.89712524414062,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DANMACHI_C_BELL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 239.9238739013672,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 16.076120376586914,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DANMACHI_C_RYU": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DELTA_CA_JAKE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DELTA_CA_JAKE_CHUSEOK": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DELTA_CA_JAKE_CONTEST": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.97325134277344,
+      "offsetX": 0.0,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DELTA_CA_KYLE_AP": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DELTA_CA_KYLE_AP_CONTEST": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 240.97325134277344,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 15.026750564575195,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DELTA_CA_MARIA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 242.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DELTA_C_QUEEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DELTA_C_QUEEN_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 249.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 6.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DREAM_C_NIGHTMARE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.95709228515625,
+      "offsetX": 0.0,
+      "offsetY": 12.04290771484375
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DREAM_C_NIGHTMARE_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_DREAM_C_WRITER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ESPR_CA_BLUE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ESPR_CA_FROZEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ESPR_CA_FROZEN_SPECIAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ESPR_CA_KNIGHT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ESPR_CA_SHADOW": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ESPR_CA_SHADOW_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ESPR_C_GOETIA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ESPR_C_SNIPER_BUNNY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.96649169921875,
+      "offsetX": 0.0,
+      "offsetY": 12.033500671386719
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ESPR_C_SWORD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ESPR_S_DOCTOR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 232.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ESPR_S_SNIPER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ETC_S_DOCTOR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ETC_S_DOCTOR_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_EXPRESS_C_LALA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_FALLEN_CA_ROSARIA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_FALLEN_CA_ROSARIA_SPECIAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_FENRIR_CA_HILDE_PR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_FENRIR_CA_HILDE_PR_GAUNTLET": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 242.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 13.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_FENRIR_CA_INTERN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_FENRIR_C_INTERN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 240.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_FENRIR_C_INTERN_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_FENRIR_C_INTERN_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_FRONTBAY_C_HARPOON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_FUTURE_MA_LOAN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_FUTURE_MA_LOAN_GAUNTLET": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_FUTURE_M_TITAN_PR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_G1_C_TAOIST": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GAMECIRCLE_C_STAR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 251.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GAMECIRCLE_C_STAR_PARTY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GAMECIRCLE_C_STAR_PR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 253.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 2.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GAMECIRCLE_C_VIOLET": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 244.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 11.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GAMECIRCLE_C_VIOLET_BUNNY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GAMECIRCLE_C_VIOLET_PARTY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GEASS_C_LELOUCH": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GEASS_MA_SEITEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 254.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 1.0761204957962036,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GEASS_MA_SEITEN_LIMITED": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 223.88511657714844,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 22.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GEASS_M_LANCELOT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GEASS_M_LANCELOT_LIMITED": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GUILTY_CA_JACKO": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GUILTY_C_RAMLETHAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GUILTY_C_SOL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GUILTY_M_INO": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GUILTY_S_MAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_GUILTY_S_MILLIA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HARMONY_CA_ARMOR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HARMONY_CA_ARMOR_SPECIAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.95709228515625,
+      "offsetX": 0.0,
+      "offsetY": 12.04290771484375
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HARMONY_CA_CONDUCT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HARMONY_CA_CONDUCT_WEDDING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.84774780273438,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HARMONY_C_BASS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HARMONY_C_BASSOON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 250.9486846923828,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 5.051316738128662,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HARMONY_C_BASSOON_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HARMONY_C_BASS_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.94363403320312,
+      "offsetX": 0.0,
+      "offsetY": 12.056371688842773
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HARMONY_C_TRUMPET": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HARMONY_C_TRUMPET_MAID": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HARMONY_C_VIOLIN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 247.9238739013672,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 8.076120376586914,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HARMONY_C_VIOLIN_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HORIZON_C_SCYTHE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.97325134277344,
+      "offsetX": 0.0,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HORIZON_C_SCYTHE_BUNNY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HORIZON_C_STAND": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HORIZON_C_STAND_BUNNY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HORIZON_M_LOAN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_HORIZON_M_LOAN_BUNNY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_JAPAN_CA_SENHIME": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_JAPAN_CA_SENHIME_MEMORIAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_JAPAN_C_CHIHIRO_PR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 224.84774780273438,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 30.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_JAPAN_C_CRAFTER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_JAPAN_C_OROCHI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_JAPAN_C_OROCHI_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_JAPAN_S_KUNOICHI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_JUNIOR_C_POLEARM": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_JUNIOR_C_POLEARM_CLB_003": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 255.9238739013672,
+      "textureHeight": 235.89712524414062,
+      "offsetX": 0.07612049579620361,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_JUNIOR_C_POLEARM_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 252.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 3.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_JUNIOR_C_RULER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_JUNIOR_C_RULER_SPORTS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_JUNIOR_C_SPEAKER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_KNIGHT_CA_SAVIOR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_KNIGHT_C_EMPEROR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 243.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_KNIGHT_C_FLAG": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_KNIGHT_C_FLAG_SCHOOL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 239.9238739013672,
+      "textureHeight": 238.88096618652344,
+      "offsetX": 16.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_KNIGHT_C_HOLY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_KNIGHT_C_HOLY_CLB_003": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_KNIGHT_C_HOLY_MEMORIAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 236.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 19.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_LOTUS_C_KNUCKLE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.94363403320312,
+      "offsetX": 0.0,
+      "offsetY": 12.056371688842773
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MAID_C_MASK": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MAID_C_MASK_NEWYEAR2025": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 232.98709106445312,
+      "textureHeight": 243.89442443847656,
+      "offsetX": 23.01291275024414,
+      "offsetY": 12.105572700500488
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MAID_C_MASK_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MAID_C_SPEAR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 232.9369659423828,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 16.026750564575195,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MAID_C_SPEAR_PR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MAID_C_SPEAR_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 250.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 5.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MAID_C_TONFA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MAID_C_TONFA_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MAID_C_TONFA_X_MAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MAID_S_LEADER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MAID_S_LEADER_WEDDING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MAID_S_LEADER_X_MAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MILITIA_C_SCISSOR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 245.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 10.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_MILITIA_C_SCISSOR_BUNNY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_ADMIN_CANNON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 239.89712524414062,
+      "offsetX": 0.0,
+      "offsetY": 15.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_ADMIN_MACHINEGUN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 251.9238739013672,
+      "textureHeight": 235.92080688476562,
+      "offsetX": 4.076120376586914,
+      "offsetY": 19.036285400390625
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_ADMIN_TANK": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 229.97325134277344,
+      "offsetX": 0.0,
+      "offsetY": 26.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_FOX_ANTIAIR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 233.84774780273438,
+      "offsetX": 0.0,
+      "offsetY": 22.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_FOX_HOWITZER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 235.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 20.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_FOX_ROCKET": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 255.9238739013672,
+      "textureHeight": 208.84774780273438,
+      "offsetX": 0.07612049579620361,
+      "offsetY": 30.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_FOX_VEHICLE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 234.97325134277344,
+      "offsetX": 0.0,
+      "offsetY": 21.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_FUTURE_BALLISTA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 241.87255859375,
+      "textureHeight": 243.84774780273438,
+      "offsetX": 12.051316261291504,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_FUTURE_HARPY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 253.9238739013672,
+      "textureHeight": 243.8816680908203,
+      "offsetX": 2.076120376586914,
+      "offsetY": 12.118325233459473
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_FUTURE_SPIDER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_FUTURE_TITAN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.94363403320312,
+      "offsetX": 0.0,
+      "offsetY": 12.056371688842773
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_FUTURE_TITAN_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 236.89712524414062,
+      "offsetX": 0.0,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_RAS_TOWER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_RAS_TOWER_RECITAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_RAS_TOWER_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_RAS_TOWER_WEDDING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_SL_AIR_BOMBER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 228.89712524414062,
+      "offsetX": 0.0,
+      "offsetY": 22.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_SL_AIR_FIGHTER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 240.8675079345703,
+      "offsetX": 0.0,
+      "offsetY": 15.056371688842773
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_SL_AIR_HELI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 253.97325134277344,
+      "textureHeight": 227.89712524414062,
+      "offsetX": 2.0267510414123535,
+      "offsetY": 25.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_SL_CARGO": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 252.97325134277344,
+      "textureHeight": 205.87255859375,
+      "offsetX": 3.0267510414123535,
+      "offsetY": 30.05131721496582
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_SL_HEAVY_TANK": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 215.89712524414062,
+      "offsetX": 0.0,
+      "offsetY": 31.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_SL_TANK": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 212.9303436279297,
+      "offsetX": 0.0,
+      "offsetY": 26.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_STATE_AIRCRAFT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 247.9238739013672,
+      "textureHeight": 226.9238739013672,
+      "offsetX": 8.076120376586914,
+      "offsetY": 29.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_STATE_BOMBER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 247.9238739013672,
+      "textureHeight": 237.95709228515625,
+      "offsetX": 8.076120376586914,
+      "offsetY": 18.04290771484375
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_STATE_GUNSHIP": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 228.77452087402344,
+      "offsetX": 0.0,
+      "offsetY": 20.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_STATE_HELI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 236.84774780273438,
+      "offsetX": 0.0,
+      "offsetY": 19.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_STATE_TANK": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 235.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 20.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_TIDE_DRONE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 237.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 18.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_TIDE_HELI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 240.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 15.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_M_TIDE_VEHICLE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 232.89712524414062,
+      "offsetX": 0.0,
+      "offsetY": 23.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_OZ_C_SWORD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_OZ_C_SWORD_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_OZ_M_PUPPET_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 231.9238739013672,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 24.076120376586914,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_OZ_S_RUNNER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 252.97325134277344,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 3.0267510414123535,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_OZ_S_RUNNER_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_PUPPET_C_BLIND": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_PUPPET_C_BLIND_CLB_003": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_PUPPET_C_BLIND_HALLOWEEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_PUPPET_C_WHIP": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_PUPPET_C_WHIP_WEDDING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_RAS_C_RIBBON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_RAS_MA_DINO": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_RAS_MA_TOWER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_RAS_MA_TOWER_SPECIAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REAPER_C_SAW": {
+      "width": 256.0,
+      "height": 242.0,
+      "textureWidth": 256.0,
+      "textureHeight": 242.0,
+      "offsetX": 0.0,
+      "offsetY": 0.0
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REAPER_M_CYBORG": {
+      "width": 253.0,
+      "height": 242.0,
+      "textureWidth": 253.0,
+      "textureHeight": 242.0,
+      "offsetX": 0.0,
+      "offsetY": 0.0
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REAPER_M_RAILGUN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.97325134277344,
+      "offsetX": 0.0,
+      "offsetY": 12.026750564575195
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REAPER_M_SIEGE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 237.89712524414062,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REAPER_SA_COMMANDER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REAPER_SA_COMMANDER_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REPLACER_CA_KING_GAUNTLET": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REPLACER_CA_QUEEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.8816680908203,
+      "offsetX": 0.0,
+      "offsetY": 12.118325233459473
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REPLACER_CA_QUEEN_CHUSEOK": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REPLACER_CA_QUEEN_GAUNTLET": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REPLACER_C_BISHOP_GAUNTLET": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REPLACER_C_KNIGHT_AP": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REPLACER_C_KNIGHT_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 248.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 7.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_REPLACER_C_KNIGHT_GAUNTLET": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 248.98709106445312,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 7.012912750244141,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ROOT_CA_HUNTRESS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 240.9238739013672,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 15.076120376586914,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ROOT_C_DEMON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 253.9238739013672,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 2.076120376586914,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SABOTAGE_CA_SWORD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 237.84774780273438,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SCAVENGER_C_COLLECT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SCAVENGER_C_COLLECT_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SCAVENGER_C_COLLECT_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SCAVENGER_MA_EVOLVE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SCAVENGER_S_CUTLASS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SCAVENGER_S_HAMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SCHOOL_C_PENCIL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SCHOOL_C_PENCIL_X_MAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SCHOOL_C_STAFF": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SCHOOL_C_STAFF_CHANGE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SECURITY_CA_SERGEANT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SECURITY_C_SERGEANT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SECURITY_C_SERGEANT_PAJAMAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SECURITY_S_AGENT": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 249.88758850097656,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 2.036284923553467,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SECURITY_S_AGENT_PAJAMAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SHARKS_C_CANNON": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SHARKS_C_CLAW": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SHARKS_C_CLAW_MAID": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SHARKS_C_KNIFE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SIXWING_CA_ACTOR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_SIXWING_CA_ACTOR_SPECIAL": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_ADMIN_RIFLE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_ADMIN_SHIELD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_ADMIN_SWORD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 254.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_ESPR_PILE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_ESPR_PILE_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_FOX_MORTAR": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_FOX_RIFLE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_FOX_RPG": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_FOX_SNIPER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_FOX_STINGER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 237.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_HB_CHOIENA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 227.9238739013672,
+      "textureHeight": 242.84774780273438,
+      "offsetX": 28.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_HOGSBACK_TOM": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 238.66419982910156,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_MILITIA_JIHUN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_MILITIA_SEONGTAE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 240.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 15.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_MILITIA_YURI": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_ORCA_CHARLIE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 239.98709106445312,
+      "textureHeight": 240.77452087402344,
+      "offsetX": 16.01291275024414,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_ORCA_EDDIE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_ORCA_EDDIE_CHILD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 244.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_ORCA_JESSICA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_POLICE_SOYEONG": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 240.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 15.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_POLICE_SOYEONG_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 240.9238739013672,
+      "textureHeight": 239.89712524414062,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_POLICE_SOYEONG_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 252.95709228515625,
+      "textureHeight": 240.8238983154297,
+      "offsetX": 3.042907953262329,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_POLICE_SOYEONG_RACING": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 249.9238739013672,
+      "textureHeight": 242.89712524414062,
+      "offsetX": 6.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_POLICE_SOYEONG_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_SL_RIFLE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 234.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_SL_SHIELD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 234.6370391845703,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_SL_SHOTGUN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 232.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_SL_SNIPER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 253.96371459960938,
+      "textureHeight": 238.88096618652344,
+      "offsetX": 2.036284923553467,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_SOF_JANE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 231.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 24.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_SOF_JANE_CHILD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_SOF_JANE_NEWYEAR2022": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 239.9773406982422,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 16.02266502380371,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_SOF_JOHN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_SOF_JOHN_1BIRTHDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_STATE_AIRBORNE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 235.66419982910156,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_STATE_ENGINEER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 238.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_STATE_RIFLE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 238.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_TIDE_GRENADE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 237.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_TIDE_GUNSHIELD": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 242.68035888671875,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_TIDE_SHOTGUN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 238.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_TIDE_SUBMACHINEGUN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 238.6309814453125,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_YG_SORIM": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 238.68035888671875,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_YG_SORIM_FOOLSDAY": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_YG_SORIM_RA": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_YG_SORIM_VALEN": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_S_YG_SORIM_X_MAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_UNION_C_ARMS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_VARUNA_CA_CHAKRAM": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_VARUNA_C_WIND": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.85064697265625,
+      "offsetX": 0.0,
+      "offsetY": 12.149349212646484
+    },
+    "AB_INVEN_ICON_NKM_UNIT_VARUNA_C_WIND_SUMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_VATICAN_C_BOOK": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 228.9238739013672,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 27.076120376586914,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_VATICAN_C_CINDY_PR": {
+      "width": 256.0,
+      "height": 242.0,
+      "textureWidth": 256.0,
+      "textureHeight": 242.0,
+      "offsetX": 0.0,
+      "offsetY": 0.0
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ZODIAC_CA_CHARLOTTE": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ZODIAC_CA_CHARLOTTE_X_MAS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 248.95709228515625,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ZODIAC_C_ARROW": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.7071075439453,
+      "offsetX": 0.0,
+      "offsetY": 12.292893409729004
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ZODIAC_C_HAMMER": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    },
+    "AB_INVEN_ICON_NKM_UNIT_ZODIAC_C_SCISSORS": {
+      "width": 256.0,
+      "height": 256.0,
+      "textureWidth": 256.0,
+      "textureHeight": 243.9238739013672,
+      "offsetX": 0.0,
+      "offsetY": 12.076120376586914
+    }
+  }
+}

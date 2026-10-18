@@ -1,0 +1,61 @@
+.viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  overflow: hidden;
+  background: #000;
+  isolation: isolate;
+}
+
+.stage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 1920px;
+  height: 1080px;
+  overflow: visible;
+  transform-origin: center;
+}
+
+.nativeCanvas,
+.hitLayer {
+  position: absolute;
+  inset: 0;
+}
+
+.nativeCanvas {
+  z-index: 0;
+}
+
+.hitLayer {
+  pointer-events: none;
+}
+
+.slotHitRoot {
+  position: absolute;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.hitButton {
+  position: absolute;
+  overflow: visible;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  pointer-events: none;
+}
+
+.hitSurface {
+  position: absolute;
+  inset: 0;
+  pointer-events: auto;
+  will-change: transform;
+}
+
+.episode15HitTarget {
+  transform-style: flat;
+}

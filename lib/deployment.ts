@@ -1,5 +1,7 @@
 import { mainImageAssetUrl } from "@/lib/mainImageAssets";
 import { minigameAssetUrl } from "@/lib/minigameAssets";
+import { spineAssetUrl } from "@/lib/spineAssets";
+import { storyDataAssetUrl } from "@/lib/storyDataAssets";
 import audioAssets from "@/data/site-audio-assets.json";
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 export const MAIN_BASE_PATH = process.env.NEXT_PUBLIC_MAIN_BASE_PATH ?? '';
@@ -18,6 +20,10 @@ export function deploymentUrl(url:string):string {
   }
   const imageUrl=mainImageAssetUrl(minigameAssetUrl(url));
   if(imageUrl!==url)return imageUrl;
+  const spineUrl=spineAssetUrl(url);
+  if(spineUrl!==url)return spineUrl;
+  const storyUrl=storyDataAssetUrl(url);
+  if(storyUrl!==url)return storyUrl;
   if (!url.startsWith('/') || url.startsWith('//') || !BASE_PATH || url===BASE_PATH || url.startsWith(BASE_PATH+'/')) return url;
   return BASE_PATH+url;
 }

@@ -1,0 +1,1046 @@
+{
+  "asset_name": "LUA_SI_WORLDMAP_TEMPLET_KOREA_y",
+  "root_name": "m_dicString",
+  "data": [
+    [
+      "SI_WORLDMAP_CITY_NAME_1",
+      "ADC-G1"
+    ],
+    [
+      "SI_WORLDMAP_CITY_NAME_2",
+      "프론트 베이"
+    ],
+    [
+      "SI_WORLDMAP_CITY_NAME_3",
+      "챔버"
+    ],
+    [
+      "SI_WORLDMAP_CITY_NAME_4",
+      "캄파멘토"
+    ],
+    [
+      "SI_WORLDMAP_CITY_NAME_5",
+      "로터스"
+    ],
+    [
+      "SI_WORLDMAP_CITY_NAME_6",
+      "샤레이드"
+    ],
+    [
+      "SI_WORLDMAP_CITY_NAME_ENG_1",
+      "Mu"
+    ],
+    [
+      "SI_WORLDMAP_CITY_NAME_ENG_2",
+      "Point Delta"
+    ],
+    [
+      "SI_WORLDMAP_CITY_NAME_ENG_3",
+      "Lambda"
+    ],
+    [
+      "SI_WORLDMAP_CITY_NAME_ENG_4",
+      "Epsilon"
+    ],
+    [
+      "SI_WORLDMAP_CITY_NAME_ENG_5",
+      "Iota"
+    ],
+    [
+      "SI_WORLDMAP_CITY_NAME_ENG_6",
+      "Zeta"
+    ],
+    [
+      "SI_WORLDMAP_CITY_TITLE_1",
+      "ADC-G1 CITY"
+    ],
+    [
+      "SI_WORLDMAP_CITY_TITLE_2",
+      "ADC-FRONT BAY"
+    ],
+    [
+      "SI_WORLDMAP_CITY_TITLE_3",
+      "ADC-CHAMBER"
+    ],
+    [
+      "SI_WORLDMAP_CITY_TITLE_4",
+      "ADC-CAMPAMENTO"
+    ],
+    [
+      "SI_WORLDMAP_CITY_TITLE_5",
+      "ADC-LOTUS"
+    ],
+    [
+      "SI_WORLDMAP_CITY_TITLE_6",
+      "ADC-CHARADE"
+    ],
+    [
+      "SI_WORLDMAP_CITY_DESC_1",
+      "관리실패의 진원지와 인접한 관리국 직할 도시로, 입주한 태스크포스 컴퍼니에 각종 편의와 지원 정책을 제공합니다.\n인류는 이 지역을 수복하기 위해 너무 많은 것을 잃어야 했습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_DESC_2",
+      "남극해 일대를 감시하는 항구 도시. 연안에 인접한 지역은 중세의 성채처럼 요새화가 이루어졌습니다.\n대정화 전쟁 후 사라진 침식체들이 아직 바다 깊은 곳에 도사리기 때문입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_DESC_3",
+      "거대한 고리 형태의 계획 도시. 도시 내측의 기밀 연구 시설에서는 관리국의 연구 인력들이 침식 균열을 조사 중입니다.\n이곳의 정보는 정부 고관 중에도 극히 일부에게만 제공됩니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_DESC_4",
+      "아마존 유역에 위치한 거점 도시. 밀림에는 대반격 이후 방치된 침식지대가 수없이 많습니다.\n이곳은 침식지대에서 희귀 물질이나 이터니움을 찾으러 떠나려는 사람으로 북적입니다. "
+    ],
+    [
+      "SI_WORLDMAP_CITY_DESC_5",
+      "천 년의 역사를 지닌 도시는 거대한 모래 폭풍에 의해 사라졌습니다.\n관리국은 원인을 제거했다고 밝혔지만, 깊은 밤 이따금씩 들려오는 울음소리는 이를 회의적으로 받아들이게 합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_DESC_6",
+      "끔찍한 기억을 딛고 다시 태어난 광역도시.\n태스크포스 컴퍼니 유치로 창출된 막대한 자본으로 금융 허브 지위를 차지했으며, 시내 어디서든 고급 정보를 들을 수 있습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_MANAGER_LEVEL_1",
+      "지부장 집무실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_MANAGER_LEVEL_2",
+      "지부장 집무실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_MANAGER_LEVEL_3",
+      "지부장 집무실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_MANAGER_LEVEL_4",
+      "지부장 집무실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_MANAGER_LEVEL_5",
+      "지부장 집무실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_STAFF_LEVEL_1",
+      "참모부실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_STAFF_LEVEL_2",
+      "참모부실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_STAFF_LEVEL_3",
+      "참모부실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_STAFF_LEVEL_4",
+      "참모부실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_STAFF_LEVEL_5",
+      "참모부실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_FINACIAL_LEVEL_1",
+      "재무실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_FINACIAL_LEVEL_2",
+      "재무실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_FINACIAL_LEVEL_3",
+      "재무실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_FINACIAL_LEVEL_4",
+      "재무실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_FINACIAL_LEVEL_5",
+      "재무실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_STORAGE_LEVEL_1",
+      "자재 창고"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_STORAGE_LEVEL_2",
+      "자재 창고"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_STORAGE_LEVEL_3",
+      "자재 창고"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_STORAGE_LEVEL_4",
+      "자재 창고"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_STORAGE_LEVEL_5",
+      "자재 창고"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_CAFETERIA_LEVEL_1",
+      "카페테리아"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_CAFETERIA_LEVEL_2",
+      "카페테리아"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_CAFETERIA_LEVEL_3",
+      "카페테리아"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_CAFETERIA_LEVEL_4",
+      "카페테리아"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_CAFETERIA_LEVEL_5",
+      "카페테리아"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_STRATEGY_LEVEL_1",
+      "미래전략실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_STRATEGY_LEVEL_2",
+      "미래전략실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_STRATEGY_LEVEL_3",
+      "미래전략실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_HQ_LEVEL_1",
+      "지휘 통제실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_HQ_LEVEL_2",
+      "지휘 통제실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_HQ_LEVEL_3",
+      "지휘 통제실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_PR_LEVEL_1",
+      "홍보실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_PR_LEVEL_2",
+      "홍보실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_PR_LEVEL_3",
+      "홍보실"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_RADAR_LEVEL_1",
+      "CSE 패시브 레이더"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_RADAR_LEVEL_2",
+      "CSE 패시브 레이더"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_RADAR_LEVEL_3",
+      "CSE 패시브 레이더"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_ARCHIVE_LEVEL_1",
+      "데이터 아카이브"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_ARCHIVE_LEVEL_2",
+      "데이터 아카이브"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_ARCHIVE_LEVEL_3",
+      "데이터 아카이브"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_COORDINATE_LEVEL_1",
+      "공간좌표 고정기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_COORDINATE_LEVEL_2",
+      "공간좌표 고정기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_COORDINATE_LEVEL_3",
+      "공간좌표 고정기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_INTERCEPT_LEVEL_1",
+      "요격 지원 장비"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_INTERCEPT_LEVEL_2",
+      "요격 지원 장비"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_INTERCEPT_LEVEL_3",
+      "요격 지원 장비"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_INTERCEPT_LEVEL_4",
+      "요격 지원 장비"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_RECHARGE_LEVEL_1",
+      "장비 충전 모듈"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_RECHARGE_LEVEL_2",
+      "장비 충전 모듈"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_FINDER_LEVEL_1",
+      "위상배열 레이더"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_FINDER_LEVEL_2",
+      "위상배열 레이더"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_FINDER_LEVEL_3",
+      "위상배열 레이더"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_RAID_UP_LEVEL_1",
+      "위상좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_RAID_UP_LEVEL_2",
+      "위상좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_RAID_UP_LEVEL_3",
+      "위상좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_RAID_UP_LEVEL_4",
+      "위상좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_RAID_UP_LEVEL_5",
+      "위상좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_RAID_UP_LEVEL_6",
+      "위상좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_RAID_UP_LEVEL_7",
+      "위상좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_RAID_UP_LEVEL_8",
+      "위상좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_DIVE_UP_LEVEL_1",
+      "공간좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_DIVE_UP_LEVEL_2",
+      "공간좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_DIVE_UP_LEVEL_3",
+      "공간좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_DIVE_UP_LEVEL_4",
+      "공간좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_DIVE_UP_LEVEL_5",
+      "공간좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_DIVE_UP_LEVEL_6",
+      "공간좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_DIVE_UP_LEVEL_7",
+      "공간좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_DIVE_UP_LEVEL_8",
+      "공간좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_DIVE_UP_LEVEL_9",
+      "공간좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_DIVE_UP_LEVEL_10",
+      "공간좌표 증폭기"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_NAME_SCAVENGER_LEVEL_1",
+      "콜로서스 전파 망원경"
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_MANAGER_LEVEL_1",
+      "지부장이 사무를 처리하는 공간입니다. 협소하지만 아늑합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_MANAGER_LEVEL_2",
+      "지부장이 사무를 처리하는 공간입니다. 수수하지만 진취적입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_MANAGER_LEVEL_3",
+      "지부장이 사무를 처리하는 공간입니다. 어수선하지만 매일매일이 새롭습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_MANAGER_LEVEL_4",
+      "지부장이 사무를 처리하는 공간입니다. 업무량은 늘어났지만 무척 멋져 보입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_MANAGER_LEVEL_5",
+      "지부장이 사무를 처리하는 공간입니다. 힘든 결정을 내려야 하지만 명예롭습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_STAFF_LEVEL_1",
+      "지부에서 근무하는 참모들은 항상 더 나은 업무 방식을 찾으려고 노력합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_STAFF_LEVEL_2",
+      "지부에서 근무하는 참모들은 항상 더 나은 업무 방식을 찾으려고 노력합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_STAFF_LEVEL_3",
+      "지부에서 근무하는 참모들은 항상 더 나은 업무 방식을 찾으려고 노력합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_STAFF_LEVEL_4",
+      "지부에서 근무하는 참모들은 항상 더 나은 업무 방식을 찾으려고 노력합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_STAFF_LEVEL_5",
+      "지부에서 근무하는 참모들은 항상 더 나은 업무 방식을 찾으려고 노력합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_FINACIAL_LEVEL_1",
+      "재무 부서는 예산을 효율적으로 운용해서 기업의 이익 창출에 기여하고 있습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_FINACIAL_LEVEL_2",
+      "재무 부서는 예산을 효율적으로 운용해서 기업의 이익 창출에 기여하고 있습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_FINACIAL_LEVEL_3",
+      "재무 부서는 예산을 효율적으로 운용해서 기업의 이익 창출에 기여하고 있습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_FINACIAL_LEVEL_4",
+      "재무 부서는 예산을 효율적으로 운용해서 기업의 이익 창출에 기여하고 있습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_FINACIAL_LEVEL_5",
+      "재무 부서는 예산을 효율적으로 운용해서 기업의 이익 창출에 기여하고 있습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_STORAGE_LEVEL_1",
+      "보급 부서는 원활한 물적 유통으로 기업이 비축하는 물자의 양을 증대시킵니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_STORAGE_LEVEL_2",
+      "보급 부서는 원활한 물적 유통으로 기업이 비축하는 물자의 양을 증대시킵니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_STORAGE_LEVEL_3",
+      "보급 부서는 원활한 물적 유통으로 기업이 비축하는 물자의 양을 증대시킵니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_STORAGE_LEVEL_4",
+      "보급 부서는 원활한 물적 유통으로 기업이 비축하는 물자의 양을 증대시킵니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_STORAGE_LEVEL_5",
+      "보급 부서는 원활한 물적 유통으로 기업이 비축하는 물자의 양을 증대시킵니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_CAFETERIA_LEVEL_1",
+      "지부에 설치한 휴게시설은 임직원의 피로 해소와 업계 정보 수집이 가능합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_CAFETERIA_LEVEL_2",
+      "지부에 설치한 휴게시설은 임직원의 피로 해소와 업계 정보 수집이 가능합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_CAFETERIA_LEVEL_3",
+      "지부에 설치한 휴게시설은 임직원의 피로 해소와 업계 정보 수집이 가능합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_CAFETERIA_LEVEL_4",
+      "지부에 설치한 휴게시설은 임직원의 피로 해소와 업계 정보 수집이 가능합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_CAFETERIA_LEVEL_5",
+      "지부에 설치한 휴게시설은 임직원의 피로 해소와 업계 정보 수집이 가능합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_STRATEGY_LEVEL_1",
+      "미래전략실은 장기적 전략에 기반한 업무 조정으로 비효율적인 절차를 제거합니다. "
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_STRATEGY_LEVEL_2",
+      "미래전략실은 장기적 전략에 기반한 업무 조정으로 비효율적인 절차를 제거합니다. "
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_STRATEGY_LEVEL_3",
+      "미래전략실은 장기적 전략에 기반한 업무 조정으로 비효율적인 절차를 제거합니다. "
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_HQ_LEVEL_1",
+      "지휘부는 파견 부대의 임무 수행을 관찰하면서 현장에 보다 적합한 판단을 제시합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_HQ_LEVEL_2",
+      "지휘부는 파견 부대의 임무 수행을 관찰하면서 현장에 보다 적합한 판단을 제시합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_HQ_LEVEL_3",
+      "지휘부는 파견 부대의 임무 수행을 관찰하면서 현장에 보다 적합한 판단을 제시합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_PR_LEVEL_1",
+      "홍보 부서는 기업의 인지도를 높이고 고부가가치 의뢰를 수주할 수 있게 합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_PR_LEVEL_2",
+      "홍보 부서는 기업의 인지도를 높이고 고부가가치 의뢰를 수주할 수 있게 합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_PR_LEVEL_3",
+      "홍보 부서는 기업의 인지도를 높이고 고부가가치 의뢰를 수주할 수 있게 합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_RADAR_LEVEL_1",
+      "침식체가 발산하는 침식파를 수집해 3차원 측량으로 추적하는 레이더입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_RADAR_LEVEL_2",
+      "침식체가 발산하는 침식파를 수집해 3차원 측량으로 추적하는 레이더입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_RADAR_LEVEL_3",
+      "침식체가 발산하는 침식파를 수집해 3차원 측량으로 추적하는 레이더입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_ARCHIVE_LEVEL_1",
+      "관리국 데이터베이스에 축적된 자료를 바탕으로 신속한 정보 분석이 가능합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_ARCHIVE_LEVEL_2",
+      "관리국 데이터베이스에 축적된 자료를 바탕으로 신속한 정보 분석이 가능합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_ARCHIVE_LEVEL_3",
+      "관리국 데이터베이스에 축적된 자료를 바탕으로 신속한 정보 분석이 가능합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_COORDINATE_LEVEL_1",
+      "공간 좌표의 유동성을 억제해서 관측이 어려운 이면세계로 진입할 수 있습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_COORDINATE_LEVEL_2",
+      "공간 좌표의 유동성을 억제해서 관측이 어려운 이면세계로 진입할 수 있습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_COORDINATE_LEVEL_3",
+      "공간 좌표의 유동성을 억제해서 관측이 어려운 이면세계로 진입할 수 있습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_INTERCEPT_LEVEL_1",
+      "고위험 침식체를 성공적으로 요격하기 위한 다양한 지원 장비를 제공합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_INTERCEPT_LEVEL_2",
+      "고위험 침식체를 성공적으로 요격하기 위한 다양한 지원 장비를 제공합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_INTERCEPT_LEVEL_3",
+      "고위험 침식체를 성공적으로 요격하기 위한 다양한 지원 장비를 제공합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_INTERCEPT_LEVEL_4",
+      "고위험 침식체를 성공적으로 요격하기 위한 다양한 지원 장비를 제공합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_RECHARGE_LEVEL_1",
+      "지원 장비의 효율성을 개선해서 예하 제대의 신속한 대응을 가능하게 합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_RECHARGE_LEVEL_2",
+      "지원 장비의 효율성을 개선해서 예하 제대의 신속한 대응을 가능하게 합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_FINDER_LEVEL_1",
+      "관리국은 침식체 요격 작전의 권한을 가장 먼저 발견한 업체에 부여하고 있습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_FINDER_LEVEL_2",
+      "관리국은 침식체 요격 작전의 권한을 가장 먼저 발견한 업체에 부여하고 있습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_FINDER_LEVEL_3",
+      "관리국은 침식체 요격 작전의 권한을 가장 먼저 발견한 업체에 부여하고 있습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_RAID_UP_LEVEL_1",
+      "레이드 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_RAID_UP_LEVEL_2",
+      "레이드 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_RAID_UP_LEVEL_3",
+      "레이드 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_RAID_UP_LEVEL_4",
+      "레이드 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_RAID_UP_LEVEL_5",
+      "레이드 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_RAID_UP_LEVEL_6",
+      "레이드 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_RAID_UP_LEVEL_7",
+      "레이드 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_RAID_UP_LEVEL_8",
+      "레이드 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_DIVE_UP_LEVEL_1",
+      "다이브 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_DIVE_UP_LEVEL_2",
+      "다이브 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_DIVE_UP_LEVEL_3",
+      "다이브 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_DIVE_UP_LEVEL_4",
+      "다이브 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_DIVE_UP_LEVEL_5",
+      "다이브 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_DIVE_UP_LEVEL_6",
+      "다이브 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_DIVE_UP_LEVEL_7",
+      "다이브 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_DIVE_UP_LEVEL_8",
+      "다이브 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_DIVE_UP_LEVEL_9",
+      "다이브 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_DIVE_UP_LEVEL_10",
+      "다이브 발생 레벨을 높여주는 시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_DESC_SCAVENGER_LEVEL_1",
+      "고심도 이면세계의 전파 신호도 분석할 수 있는 첨단감청시설입니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_MANAGER_LEVEL_1",
+      "지부에 지부장을 임명하고 운영할 수 있습니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_MANAGER_LEVEL_2",
+      "파견 임무로 획득하는 지부 경험치가 10% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_MANAGER_LEVEL_3",
+      "파견 임무로 획득하는 지부 경험치가 20% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_MANAGER_LEVEL_4",
+      "파견 임무로 획득하는 지부 경험치가 30% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_MANAGER_LEVEL_5",
+      "파견 임무로 획득하는 지부 경험치가 40% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_STAFF_LEVEL_1",
+      "파견 임무로 획득하는 유닛 경험치가 5% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_STAFF_LEVEL_2",
+      "파견 임무로 획득하는 유닛 경험치가 10% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_STAFF_LEVEL_3",
+      "파견 임무로 획득하는 유닛 경험치가 15% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_STAFF_LEVEL_4",
+      "파견 임무로 획득하는 유닛 경험치가 20% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_STAFF_LEVEL_5",
+      "파견 임무로 획득하는 유닛 경험치가 25% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_FINACIAL_LEVEL_1",
+      "파견 임무로 획득하는 크레딧이 5% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_FINACIAL_LEVEL_2",
+      "파견 임무로 획득하는 크레딧이 10% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_FINACIAL_LEVEL_3",
+      "파견 임무로 획득하는 크레딧이 15% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_FINACIAL_LEVEL_4",
+      "파견 임무로 획득하는 크레딧이 20% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_FINACIAL_LEVEL_5",
+      "파견 임무로 획득하는 크레딧이 25% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_STORAGE_LEVEL_1",
+      "파견 임무로 획득하는 이터니움이 5% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_STORAGE_LEVEL_2",
+      "파견 임무로 획득하는 이터니움이 10% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_STORAGE_LEVEL_3",
+      "파견 임무로 획득하는 이터니움이 15% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_STORAGE_LEVEL_4",
+      "파견 임무로 획득하는 이터니움이 20% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_STORAGE_LEVEL_5",
+      "파견 임무로 획득하는 이터니움이 25% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_CAFETERIA_LEVEL_1",
+      "파견 임무로 획득하는 정보가 10% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_CAFETERIA_LEVEL_2",
+      "파견 임무로 획득하는 정보가 20% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_CAFETERIA_LEVEL_3",
+      "파견 임무로 획득하는 정보가 30% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_CAFETERIA_LEVEL_4",
+      "파견 임무로 획득하는 정보가 40% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_CAFETERIA_LEVEL_5",
+      "파견 임무로 획득하는 정보가 50% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_STRATEGY_LEVEL_1",
+      "파견 임무에 소모되는 시간이 10% 감소합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_STRATEGY_LEVEL_2",
+      "파견 임무에 소모되는 시간이 15% 감소합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_STRATEGY_LEVEL_3",
+      "파견 임무에 소모되는 시간이 20% 감소합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_HQ_LEVEL_1",
+      "파견 임무의 대성공률이 15% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_HQ_LEVEL_2",
+      "파견 임무의 대성공률이 20% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_HQ_LEVEL_3",
+      "파견 임무의 대성공률이 25% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_PR_LEVEL_1",
+      "등급이 높은 파견 임무의 등장 확률이 10% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_PR_LEVEL_2",
+      "등급이 높은 파견 임무의 등장 확률이 20% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_PR_LEVEL_3",
+      "등급이 높은 파견 임무의 등장 확률이 30% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RADAR_LEVEL_1",
+      "파견 임무로 인한 고위 이변 탐색 확률이 10% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RADAR_LEVEL_2",
+      "파견 임무로 인한 고위 이변 탐색 확률이 20% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RADAR_LEVEL_3",
+      "파견 임무로 인한 고위 이변 탐색 확률이 30% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_ARCHIVE_LEVEL_1",
+      "해당 지부의 다이브 개시 및 강습전에 필요한 정보 요구량이 10% 감소합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_ARCHIVE_LEVEL_2",
+      "해당 지부의 다이브 개시 및 강습전에 필요한 정보 요구량이 15% 감소합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_ARCHIVE_LEVEL_3",
+      "해당 지부의 다이브 개시 및 강습전에 필요한 정보 요구량이 20% 감소합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_COORDINATE_LEVEL_1",
+      "이변 발생시 다이브가 등장할 확률이 10% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_COORDINATE_LEVEL_2",
+      "이변 발생시 다이브가 등장할 확률이 25% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_COORDINATE_LEVEL_3",
+      "이변 발생시 다이브가 등장할 확률이 40% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_INTERCEPT_LEVEL_1",
+      "레이드에서 사용하는 지원 장비의 레벨이 1 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_INTERCEPT_LEVEL_2",
+      "레이드에서 사용하는 지원 장비의 레벨이 2 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_INTERCEPT_LEVEL_3",
+      "레이드에서 사용하는 지원 장비의 레벨이 3 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_INTERCEPT_LEVEL_4",
+      "레이드에서 사용하는 지원 장비의 레벨이 4 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RECHARGE_LEVEL_1",
+      "레이드에서 사용하는 지원 장비의 비용이 15% 감소합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RECHARGE_LEVEL_2",
+      "레이드에서 사용하는 지원 장비의 비용이 30% 감소합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_FINDER_LEVEL_1",
+      "이변 발생시 레이드가 등장할 확률이 10% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_FINDER_LEVEL_2",
+      "이변 발생시 레이드가 등장할 확률이 25% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_FINDER_LEVEL_3",
+      "이변 발생시 레이드가 등장할 확률이 40% 증가합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_1",
+      "30~45 레벨의 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_2",
+      "45~60 레벨의 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_3",
+      "60~75 레벨의 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_4",
+      "75~90 레벨의 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_5",
+      "90~105 레벨의 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_6",
+      "105~120 레벨의 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_7",
+      "120~135 레벨의 레이드와 악몽 난이도 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_8",
+      "135~150 레벨의 레이드와 악몽 난이도 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_1_NEW",
+      "90 레벨의 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_2_NEW",
+      "110 레벨의 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_3_NEW",
+      "130 레벨의 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_4_NEW",
+      "150 레벨의 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_5_NEW",
+      "170 레벨의 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_RAID_UP_LEVEL_6_NEW",
+      "190 레벨의 레이드가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_DIVE_UP_LEVEL_1",
+      "20~28 레벨의 다이브가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_DIVE_UP_LEVEL_2",
+      "29~37 레벨의 다이브가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_DIVE_UP_LEVEL_3",
+      "38~46 레벨의 다이브가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_DIVE_UP_LEVEL_4",
+      "47~55 레벨의 다이브가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_DIVE_UP_LEVEL_5",
+      "56~64 레벨의 다이브가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_DIVE_UP_LEVEL_6",
+      "65~73 레벨의 다이브가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_DIVE_UP_LEVEL_7",
+      "74~82 레벨의 다이브가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_DIVE_UP_LEVEL_8",
+      "83~91 레벨의 다이브가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_DIVE_UP_LEVEL_9",
+      "92~100 레벨의 다이브가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_DIVE_UP_LEVEL_10",
+      "100 레벨 이상의 다이브가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_CITY_BUILDING_INFO_SCAVENGER_LEVEL_1",
+      "10레벨의 공간좌표 증폭기와 함께 건설 시, 스캐빈저 다이브가 출현합니다."
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_17",
+      "침식지 순찰"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_1",
+      "교전지 파견"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_16",
+      "침식 코어 특공"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_10",
+      "인사평가표 작성"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_2",
+      "병기출납보고서 작성"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_15",
+      "채용계획 작성"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_11",
+      "지부 정기보고"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_14",
+      "채굴 지원"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_9",
+      "원양 채굴"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_5",
+      "실종 부대 수색"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_18",
+      "폐선 인양"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_12",
+      "지역 치안 유지"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_7",
+      "외주업체 미팅"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_8",
+      "운송 보조"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_13",
+      "지형 조사"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_4",
+      "시내 순찰"
+    ],
+    [
+      "SI_WORLDMAP_MISSION_NAME_3",
+      "부식 충전"
+    ]
+  ]
+}

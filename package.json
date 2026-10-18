@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "node scripts/prepare-story-data.mjs",
     "dev": "next dev --webpack",
     "build": "next build --webpack && node scripts/prepare-export.mjs",
     "start": "node scripts/serve.mjs",

@@ -1,0 +1,47 @@
+.root {
+  position: absolute;
+  z-index: 110;
+  width: 200px;
+  height: 100px;
+  color: rgb(34 34 34);
+  font-family: "CounterSide Chronicle", "Malgun Gothic", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  pointer-events: none;
+  user-select: none;
+}
+
+.surface {
+  position: absolute;
+  top: 0;
+  left: calc(50% + 8.1px);
+  display: flex;
+  width: max-content;
+  min-width: 80px;
+  height: 96.664658px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 40px 20px;
+  line-height: 1;
+  transform: translateX(-50%);
+  white-space: pre;
+}
+
+.surface::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  box-sizing: border-box;
+  border: 30px solid transparent;
+  border-image-source: url("/story/common-ui/NKM_UI_HOYKEY_BG.png");
+  border-image-slice: 30 fill;
+  border-image-repeat: stretch;
+  content: "";
+  opacity: 0.866667;
+}
+
+.surface > span {
+  position: relative;
+  z-index: 1;
+}

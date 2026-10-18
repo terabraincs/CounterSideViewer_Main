@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { createSoundAssetUrl } from "@/lib/staticAssets";
 import operatorCatalog from "@/data/operator-voice-assets.json";
+import voiceCatalog from "@/data/voice-assets.json";
 import spokenVoiceLanguages from "@/data/voice-spoken-languages.json";
 
 export type VoiceCategory = "unit" | "operator";
@@ -17,6 +18,7 @@ type SpokenVoiceException = {
 const voiceLanguageExceptions = spokenVoiceLanguages.overrides as SpokenVoiceException[];
 
 const operatorVoicePaths = new Set(operatorCatalog.paths);
+const voicePaths = new Set(voiceCatalog.paths);
 const CHARACTER_VOICE_BASE_URL =
   "https://raw.githubusercontent.com/terabraincs/CS_Voice/main/unit_voice";
 
@@ -76,7 +78,7 @@ export function getVoiceFilePath(
   );
 
   if (
-    !operatorVoicePaths.has(`${voiceDirectory}/${bundleDirectory}/${fileName}`) && (!fs.existsSync(/* turbopackIgnore: true */ filePath) ||
+    !operatorVoicePaths.has(`${voiceDirectory}/${bundleDirectory}/${fileName}`) && !(category === "unit" && voicePaths.has(`${voiceDirectory}/${bundleDirectory}/${fileName}`)) && (!fs.existsSync(/* turbopackIgnore: true */ filePath) ||
     !fs.statSync(/* turbopackIgnore: true */ filePath).isFile())
   ) {
     return null;
